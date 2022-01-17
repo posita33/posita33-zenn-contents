@@ -1,5 +1,5 @@
 ---
-title: "ポジTAのZenn設定【執筆、Github連携、VSCode拡張】"
+title: "ポジTAのZenn設定"
 emoji: "🦾"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["zenn", "vscode", "github"]
@@ -19,6 +19,10 @@ https://zenn.dev/zenn/articles/deprecated-book-deployment
 【使える絵文字一覧】
 articleに使用する絵文字一覧
 https://getemoji.com/
+
+## アクセス解析
+Googleアナリティクスの設定はこの記事を参考にさせていただきました。
+https://zenn.dev/masakiyo/articles/76ca3b774c6746
 
 ## GitHub連携について
 

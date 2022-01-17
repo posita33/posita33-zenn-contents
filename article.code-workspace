@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"pasteImage.basePath": "${projectRoot}",
+		"pasteImage.insertPattern": "${imageSyntaxPrefix}/${imageFilePath}${imageSyntaxSuffix}",
+		"pasteImage.path": "${projectRoot}/images/articles/${currentFileNameWithoutExt}"
+	}
+}

@@ -20,3 +20,20 @@ topics: []
 published: false
 price: 0
 toc_depth: 2
+
+# 👇 ここでチャプターの並び順を指定する
+chapters:
+  - about
+  - create-book
+  - update-book
+  - conclusion
+  - chap_00_about
+  - chap_01_settings
+  - chap_01_ue5_install
+  - chap_01_vs2019_setup
+  - chap_01_vs2019_visual_assist
+  - chap_01_vs2019_free
+  - chap_02_foundation
+  - chap_02_create_project
+  - chap_02_bp_create_actor_class
+  - chap_02_cpp_create_actor_class

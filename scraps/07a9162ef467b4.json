@@ -1,0 +1,45 @@
+{
+  "title": "UE5から始めるC++&Blueprint執筆中　進捗報告",
+  "closed": false,
+  "archived": false,
+  "created_at": "2022-01-14",
+  "comments": [
+    {
+      "author": "posita33",
+      "created_at": "2022-01-14",
+      "body_markdown": "「Unreal Engine 5から始めるC++ & Blueprint」というBookを執筆中です。\nhttps://twitter.com/posita33/status/1480216964782260228\n\n基本文法をリリースするまでの進捗報告します。\n\nまずはnoteに書いてからZennのBookの方に清書しています\nnoteの記事はマガジンにまとめています。\nhttps://note.com/posi_ta/m/mfef4d45e4fb7\n\n\nロードマップ\nhttps://github.com/posita33/UE5Starter-CPPAndBP-community/projects/2",
+      "body_updated_at": "2022-01-14"
+    },
+    {
+      "author": "posita33",
+      "created_at": "2022-01-14",
+      "body_markdown": "書いていると必要なんだけど脱線してしまうのでColumn化\nはみ出たColumn記事はZennの方で管理することにしました。\n\nhttps://zenn.dev/posita33/articles/a0ee3a45e5cdb2\n\nhttps://zenn.dev/posita33/articles/8dd51074f1915a\n\nhttps://zenn.dev/posita33/articles/41737b3be89aa4",
+      "body_updated_at": "2022-01-14"
+    },
+    {
+      "author": "posita33",
+      "created_at": "2022-01-14",
+      "body_markdown": "変数を作成して取得・設定する\n\nBlueprint版\nhttps://note.com/posi_ta/n/n1e030f8a94be\n\nC++版\nhttps://note.com/posi_ta/n/n68c4b5a55019"
+    },
+    {
+      "author": "posita33",
+      "created_at": "2022-01-14",
+      "body_markdown": "Zennのロードマップ管理が素晴らしい。\nhttps://github.com/zenn-dev/zenn-community/projects/1\n\nZennのロードマップを手本に公開する予定の段階までのロードマップを作成\n基本文法が書けたところでZenn Bookを公開します。\n\nhttps://github.com/posita33/UE5Starter-CPPAndBP-community/projects/2\n"
+    },
+    {
+      "author": "posita33",
+      "created_at": "2022-01-15",
+      "body_markdown": "現状のZenn Bookを執筆するためのPDCAパイプラインについて\nhttps://note.com/posi_ta/n/n9d4b86ec1929"
+    },
+    {
+      "author": "posita33",
+      "created_at": "2022-01-15",
+      "body_markdown": "Componentを追加する\nサムネイルの印象を明るくしました\n入口は明るく照らしたい\n\nBlueprint版\nhttps://note.com/posi_ta/n/n89ec9cf7305e\n\nC++版\nhttps://note.com/posi_ta/n/na5498f45ab63\n"
+    },
+    {
+      "author": "posita33",
+      "created_at": "2022-01-17",
+      "body_markdown": "**Construction ScriptでComponentの設定を変更する**\n手順を起こすのが早くなってきた\n変数書くことに比べれば簡単\n難しいを克服するとハードルが下がる\n\nHardモードをクリアしよう\n\n【Blueprint版】\nhttps://note.com/posi_ta/n/n841efd0a37f9\n\n【C++版】\nhttps://note.com/posi_ta/n/nf03554cd32ae\n\n"
+    }
+  ]
+}

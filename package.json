@@ -19,5 +19,9 @@
   "homepage": "https://github.com/posita33/posita33-zenn-contents#readme",
   "dependencies": {
     "zenn-cli": "^0.1.102"
+  },
+  "devDependencies": {
+    "textlint-rule-preset-ja-spacing": "^2.2.0",
+    "textlint-rule-preset-ja-technical-writing": "^7.0.0"
   }
 }

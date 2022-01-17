@@ -20,7 +20,7 @@ https://zenn.dev/zenn/articles/deprecated-book-deployment
 articleに使用する絵文字一覧
 https://getemoji.com/
 
-## 公式のGitHub連携について
+## GitHub連携について
 
 ### GitHub連携について(公式)
 Zenn公式が分かりやすい説明を掲載しています。

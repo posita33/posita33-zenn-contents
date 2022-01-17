@@ -63,6 +63,10 @@ Paste Image拡張機能のペーストショートカット
 **Ctrl + Alt + V**
 (Ctrl + Vでは画像のコピーとMarkdown文がペーストされない)
 
+Bookの時はPaste Image拡張のPath情報を修正する
+![](/images/zenn_github_and_vscode_setup/2022-01-17-19-07-35.png)
+
+
 Excel to Markdown table拡張機能のショートカット
 **Alt + Shift + V**
 

@@ -1,0 +1,22 @@
+title: "Unreal Engine 5から始める C++ & Blueprint"
+summary: |-
+   「Unreal Engineですが、C++は使えますか？」
+
+    転職活動や仕事をする前の打合せで必ずと言っていいほど聞かれる質問です。
+
+    「C++は読めるのですが、Unreal Engineではあまり触ったことはないです。」
+
+    こんな返答をしたことはないでしょうか。
+
+    Blueprintで何とかなってしまうくらい、Blueprintは使いやすいです。
+    プラグインを作ったり、便利な機能を作ろうと思うと、C++やPythonといったソースコードの実装も覚えておいた方が良さそう。
+
+    Blueprintで出来ることをC++で書く方法についてまとめました。
+    まずはBlueprintで実装して、C++で再現する方法について書きます。
+
+    2022年にはおそらくUnreal Engine 5になるし心機一転！
+    BlueprintもC++も使えるようになっちゃいましょう！
+topics: []
+published: false
+price: 0
+toc_depth: 2

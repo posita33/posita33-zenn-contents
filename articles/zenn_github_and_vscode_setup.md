@@ -1,7 +1,7 @@
 ---
 title: "ポジTAのZenn設定"
-emoji: "🦾"
-type: "tech" # tech: 技術記事 / idea: アイデア
+emoji: "⚙️"
+type: "idea" # tech: 技術記事 / idea: アイデア
 topics: ["zenn", "vscode", "github"]
 published: true
 ---
@@ -119,6 +119,14 @@ https://marketplace.visualstudio.com/items?itemName=8amjp.charactercount
 
 ![CharacterCounter](/images/articles/zenn_github_and_vscode_setup/2022-01-17-18-34-48.png)
 *左下に文字数が表示される*
+
+### よく使うMarkdown記法のSnippet登録
+
+アコーディオンを使いたかったので調べてみたら、他にも使えそうなMarkdown記法がありました。
+よく使うMarkdown記法も一緒に追加しました。
+
+https://zenn.dev/posita33/articles/zenn_markdown_snippet
+(2022/1/18)
 
 ## 随時最適化
 書きながら改善した内容を記録していきます。

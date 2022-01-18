@@ -96,7 +96,7 @@ Markdown All in One拡張機能で整形するショートカット
 Git Graphをインストールしても何処から見たら分からなかった。
 
 図のようにソース管理に移動して、Git Graphアイコンをクリックすると見られる
-![](/images/books/ue5_starter_cpp_and_bp_001/zenn_github_and_vscode_setup/2022-01-19-06-00-56.png)
+![](/images/articles/zenn_github_and_vscode_setup/2022-01-19-06-00-56.png)
 :::
 
 ### 文章校正を効率化する(textlint、テキスト文章校正くん)

@@ -6,25 +6,6 @@ topics: ["unrealengine", "ue5", "ue4", "blueprint"]
 published: false
 ---
 
-noteのWebエディタで書いていたのですが、今回からVSCodeを使用してMarkdownで書いています。
-noteで更新していたのですが、今回からZennの方でもアップしてみます。
-
-それにしても、Markdownで書くとすごい早いです。
-校正ツールもローカルでできるようになったので、間違った文章が少なくなりました。
-
-1日記事を書くのをストップして、現状の執筆スピードについて考えて良かったです。
-
-まだまだ早くなれる！
-
-
-前回は「**Construction ScriptでComponentの設定を変更する**」方法について調査しました。
-今回は「**四則演算(+ - x ÷)**」方法について調査していきます。
-
-https://note.com/posi_ta/n/n841efd0a37f9
-
-https://note.com/posi_ta/n/nf03554cd32ae
-
-
 ## 【Blueprint版】四則演算(+ - x ÷)
 「**四則演算**」という難しい名前を使用しましたが、「**足し算**」「**引き算**」「**掛け算**」「**割り算**」のことです。
 
@@ -263,19 +244,3 @@ PrintStringノードでOutputピンの値を出力するように処理を修正
 
 使えない数式もありますので、使用する際には公式ドキュメントをご確認ください。
 https://docs.unrealengine.com/4.27/ja/RenderingAndGraphics/Materials/ExpressionReference/Math/
-
-## まとめ
-
-
-
-## UE4から始めるC++&Blueprint 進捗とロードマップ
-Zennで進捗報告を行い、GitHubでロードマップを公開中です。
-よかったら覗いてみてください。
-https://github.com/posita33/UE5Starter-CPPAndBP-community/projects/2
-
-https://zenn.dev/posita33/scraps/07a9162ef467b4
-
-
-
-
-

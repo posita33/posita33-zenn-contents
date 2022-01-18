@@ -72,6 +72,20 @@ Zennオリジナル記法以外にもよく使う記法を登録しました。
 
 ```json:markdown.json
 {
+	// Place your snippets for markdown here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+
 	"Markdown Zenn Message": {
 		"prefix": "mzenn",
 	 	"body": [
@@ -80,7 +94,7 @@ Zennオリジナル記法以外にもよく使う記法を登録しました。
 	 		":::"
 	 	],
 	 	"description": "Zenn Original : Messge Block"
-	}
+	},
 
 	"Markdown Zenn Message Alert": {
 		"prefix": "mzenn",
@@ -90,7 +104,7 @@ Zennオリジナル記法以外にもよく使う記法を登録しました。
 	 		":::"
 	 	],
 	 	"description": "Zenn Original : Messge Alert Block"
-	}
+	},
 
 	"Markdown Zenn Toggle": {
 		"prefix": "mzenn",
@@ -100,7 +114,7 @@ Zennオリジナル記法以外にもよく使う記法を登録しました。
 	 		":::"
 	 	],
 	 	"description": "Zenn Original : Toggle"
-	}
+	},
 
 	"Markdown Code cpp": {
 		"prefix": "mcode",
@@ -110,7 +124,7 @@ Zennオリジナル記法以外にもよく使う記法を登録しました。
 	 		"```"
 	 	],
 	 	"description": "code block : .cpp"
-	}
+	},
 
 	"Markdown Code header": {
 		"prefix": "mcode",
@@ -120,7 +134,7 @@ Zennオリジナル記法以外にもよく使う記法を登録しました。
 	 		"```"
 	 	],
 	 	"description": "code block : .h"
-	}
+	},
 
 	"Markdown Zenn Math": {
 		"prefix": "mmath",
@@ -130,7 +144,7 @@ Zennオリジナル記法以外にもよく使う記法を登録しました。
 	 		"$$"
 	 	],
 	 	"description": "Zenn Original : Math"
-	}
+	},
 
 	"Markdown Image Basic": {
 		"prefix": "mimage",
@@ -138,7 +152,7 @@ Zennオリジナル記法以外にもよく使う記法を登録しました。
 	 		"![Alt](Image Path)",
 	 	],
 	 	"description": "Image Basick"
-	}
+	},
 
 	"Markdown Image width": {
 		"prefix": "mimage",
@@ -146,7 +160,7 @@ Zennオリジナル記法以外にもよく使う記法を登録しました。
 	 		"![Alt](Image Path =250px)",
 	 	],
 	 	"description": "Image Width"
-	}
+	},
 
 	"Markdown Image caption": {
 		"prefix": "mimage",

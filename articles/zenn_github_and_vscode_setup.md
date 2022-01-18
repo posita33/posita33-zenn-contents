@@ -51,11 +51,15 @@ branch名は[**main**]から[**zenn**]に変えて管理することにしまし
 VSCodeの拡張(Expression)設定を参考にさせていただきました。
 https://zenn.dev/ctrlkeykoyubi/articles/e7d91c5286a409
 
+https://zenn.dev/nkys39/articles/struct-zenn-win10
+
 **InstallしたVSCode拡張(Expression)**
 - Paste Image
 - Zenn Editor
 - Excel to Markdown table
 - Markdown All in One
+- CharacterCount
+- Git Graph
 
 :::details ショートカットが分からずハマったところ
 **ショートカットが分からずハマったところ**
@@ -88,6 +92,13 @@ Markdown All in One拡張機能で整形するショートカット
 *連携することでキレイな表が書ける*
 :::
 
+:::details Git Graphの表示について
+Git Graphをインストールしても何処から見たら分からなかった。
+
+図のようにソース管理に移動して、Git Graphアイコンをクリックすると見られる
+![](/images/books/ue5_starter_cpp_and_bp_001/zenn_github_and_vscode_setup/2022-01-19-06-00-56.png)
+:::
+
 ### 文章校正を効率化する(textlint、テキスト文章校正くん)
 Webの文章校正ツールを使って文章校正していました。
 https://note.com/posi_ta/n/n3134dbf8a638
@@ -114,11 +125,15 @@ https://marketplace.visualstudio.com/items?itemName=ICS.japanese-proofreading
 
 ### 文字数をカウント
 
-アウトプットビルディングのために文字数が何文字か知りたいので、「**CharacterCounter**」をインストールしました。
+アウトプットビルディングのために文字数が何文字か知りたいので、「**CharacterCount**」をインストールしました。
 https://marketplace.visualstudio.com/items?itemName=8amjp.charactercount
 
-![CharacterCounter](/images/articles/zenn_github_and_vscode_setup/2022-01-17-18-34-48.png)
+![CharacterCount](/images/articles/zenn_github_and_vscode_setup/2022-01-17-18-34-48.png)
 *左下に文字数が表示される*
+
+画像のパス文字列までカウントしてしまうので、「簡単文字数カウント」Google Chrome拡張からPreviewページをカウントしている。
+https://chrome.google.com/webstore/detail/%E3%81%8B%E3%82%93%E3%81%9F%E3%82%93%E6%96%87%E5%AD%97%E6%95%B0%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88/lmmephjlhfdnijfigajbmemendbfhnha
+
 
 ### よく使うMarkdown記法のSnippet登録
 

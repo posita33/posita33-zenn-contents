@@ -1,5 +1,5 @@
 ---
-title: "UE5から始める C++ & BP 2.5.Blueprint 四則演算(+ - x ÷)"
+title: "2.6.BP 四則演算(+ - x ÷)"
 emoji: "⚙️"
 type: "idea" # tech: 技術記事 / idea: アイデア
 topics: ["unrealengine", "ue5", "ue4", "blueprint"]

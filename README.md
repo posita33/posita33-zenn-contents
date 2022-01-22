@@ -1,7 +1,7 @@
 # posita33-zenn-contents
 
-[![GitHub Repository](https://img.shields.io/badge/Repository-posita33--zenn--contents-green)](https://github.com/posita33/posita33-zenn-contents)
-[![GitHub license](https://img.shields.io/github/license/posita33/posita33-zenn-contents?style=for-the-badge)](https://github.com/posita33/posita33-zenn-contents/blob/zenn/LICENSE)
+[![GitHub Repository](https://img.shields.io/badge/Repository-posita33--zenn--contents-green?style=for-the-badge)](https://github.com/posita33/posita33-zenn-contents)
+[![GitHub license](https://img.shields.io/github/license/posita33/posita33-zenn-contents-green?style=for-the-badge)](https://github.com/posita33/posita33-zenn-contents/blob/zenn/LICENSE)
 
 ポジTA Zenn公開リポジトリ
 

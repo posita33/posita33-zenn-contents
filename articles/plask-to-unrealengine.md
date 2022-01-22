@@ -34,7 +34,7 @@ Googleアカウントかメールアドレスでサインアップすること�
 
 この後にアカウント名を決めるウィンドウで、アカウント名を設定します。
 
-### Plaskでモーション動画を撮影する
+### PlaskでWebカメラからモーション動画を撮影する
 
 トップページの[Get Started]をクリックします。
 ![](/images/articles/plask-to-unrealengine/2022-01-19-19-46-15.png)
@@ -60,6 +60,50 @@ Motionの抽出が終わると、Motion名を設定するダイアログが表�
 Motion名を設定して、[OK]ボタンをクリックします。
 ![](/images/articles/plask-to-unrealengine/2022-01-19-19-58-22.png)
 
+
+### Plaskでスマホ動画からモーションデータを抽出する
+:::message
+動画からモーションデータを抽出方法が分かりました。(2022/1/22)
+動画からモーションデータを抽出したい方はコチラをご参照ください。
+:::
+
+:::message alert
+使用する動画は横長の動画をお使いください。
+幅の長い方を【横】として扱われるので、縦長動画は左のお腹が上になってしまいます。
+:::
+
+![](/images/articles/plask-to-unrealengine/2022-01-22-11-00-00.png)
+
+:::details 動画からモーションデータを抽出する手順
+
+動画からのモーションデータ抽出はPlask公式チャンネルの動画を参考にしました。
+ありがとうございます！
+https://www.youtube.com/watch?v=pzpbS5G71MU
+
+[Library]の[+]ボタンをクリックします。
+![](/images/articles/plask-to-unrealengine/2022-01-22-10-29-01.png)
+
+モーションを抽出する動画を選択します。
+幅の長い方を横と判断するので、横長動画を選択してください。
+![](/images/articles/plask-to-unrealengine/2022-01-22-10-33-48.png)
+
+抽出を確認するダイアログが表示されるので、[Confirm]ボタンをクリックします。
+![](/images/articles/plask-to-unrealengine/2022-01-22-10-40-32.png)
+
+Webカメラの時と同様です。
+抽出する範囲を選択し、[Extract Motion]ボタンをクリックします。
+![](/images/articles/plask-to-unrealengine/2022-01-22-10-43-45.png)
+
+Motion名を設定して、[OK]ボタンをクリックします。
+![](/images/articles/plask-to-unrealengine/2022-01-22-10-45-11.png)
+
+抽出にかかる時間が表示されます。
+![](/images/articles/plask-to-unrealengine/2022-01-22-10-45-40.png)
+
+Libraryパネルに設定したMotion名が追加されました。
+![](/images/articles/plask-to-unrealengine/2022-01-22-10-47-04.png)
+:::
+
 ### PlaskのMannequinに撮影したアニメーションを反映する
 Motionの抽出すると最初の画面に移動します。
 左側の「Library」から「Mannequin_glb」をViewportにDrag&Dropします。
@@ -73,6 +117,7 @@ Motionの抽出すると最初の画面に移動します。
 
 タイムラインの再生ボタンをクリックすると、Motionが再生されます。
 ![](/images/articles/plask-to-unrealengine/2022-01-19-20-57-19.png)
+
 
 ### PlaskのモーションデータをFBXにExportする
 
@@ -114,6 +159,9 @@ Exportが完了するとFBXがダウンロードされます。
 ### Plaskのマニュアル
 他にもPlask上で出来ることがあるので、時間を見つけて試してみます。
 https://plasticmask.notion.site/User-guide-ac4bba1b75384c309e7a24e6542454ba
+
+YouTubeチャンネルにチュートリアル動画が上がっています。
+https://www.youtube.com/channel/UClHOCrckvQEcrkqH4A7PA5A
 
 
 ## UE5でMannequinにPlaskのMotionをImportする

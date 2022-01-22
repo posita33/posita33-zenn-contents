@@ -5,7 +5,7 @@
 
 ポジTA Zenn公開リポジトリ
 
-Repogitory for [https://zenn.dev/posita33](https://zenn.dev/posita33) (powered by [Zenn](https://zenn.dev/))
+Repository for [https://zenn.dev/posita33](https://zenn.dev/posita33) (powered by [Zenn](https://zenn.dev/))
 
 ## Link
 Zennの執筆設定を随時更新しています。

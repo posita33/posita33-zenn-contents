@@ -72,7 +72,7 @@ Motion名を設定して、[OK]ボタンをクリックします。
 幅の長い方を【横】として扱われるので、縦長動画は左のお腹が上になってしまいます。
 :::
 
-![](/images/articles/plask-to-unrealengine/2022-01-22-11-00-00.png)
+![](/images/articles/plask-to-unrealengine/2022-01-22-11-00-00.png)  
 
 :::details 動画からモーションデータを抽出する手順
 

@@ -45,6 +45,15 @@ branch名は[**main**]から[**zenn**]に変えて管理することにしまし
 ![branchの名前をzennに変える](/images/articles/zenn_github_and_vscode_setup/2022-01-17-17-03-03.png)
 *branch名を編集する手順*
 
+### 公開リポジトリにする際のライセンス設定について
+営利目的の使用を禁止にしておきたかったので、
+CC BY-SAで運用することにしました。(2021/1/22)
+https://creativecommons.org/licenses/by-nc/4.0/deed.ja
+
+CCライセンスの設定についてはコチラの記事を参考にさせていただきました。
+https://zenn.dev/spiegel/articles/20200919-ccl
+
+
 ## ZennをVSCodeで執筆するための拡張(Expression)設定
 
 ### 執筆を高速化する設定

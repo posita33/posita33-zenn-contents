@@ -555,6 +555,10 @@ Level Editorの[Play]ボタンをクリックします。
 変数[CalcType]の値が[1]なので、引き算の計算結果のPrintStringが実行されました。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-11-26-47.png)
 
+### C++とBlueprintの比較画像
+
+C++とBlueprintの比較画像です。
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-21-54-25.png)
 
 ### 全て保存してC++側は終了です。
 C++側の説明は以上になります。

@@ -228,7 +228,7 @@ Level Editorの[Play]ボタンをクリックします。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-07-04-59.png)
 
 
-### 論理演算子で条件を書く(論理演算子ノード)
+### 比較演算子で条件を書く(比較演算子ノード)
 
 比較演算子ノードでBranchノードの実行ピンを切り替える処理をC++で再現します。
 Blueprint側では比較演算子を使用して「NumAとNumBは等しい」という条件を作りました。

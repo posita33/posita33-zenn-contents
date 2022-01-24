@@ -142,17 +142,47 @@ switch文の書き方は以下になります。
 switch(条件)
 {
     case 0:
-        処理1
+        処理1;
         break;
     case 1:
-        処理2
+        処理2;
         break;
     case 2:
-        処理3
+        処理3;
         break;
     default:
-        条件が1,2,3のいずれにも当てはまらない時の処理
+        条件が1,2,3のいずれにも当てはまらない時の処理;
 }
+
+// case内が複数行の場合は、{}で囲む
+
+switch(条件)
+{
+    case 0:
+    {
+        処理1-1;
+        処理1-2;
+        break;
+    }
+    case 1:
+    {
+        処理2-1;
+        処理2-2;
+        break;
+    }
+    case 2:
+    {
+        処理3-1;
+        処理3-2;
+        break;
+    }
+    default:
+    {
+        条件が0,1,2のいずれにも当てはまらない時の処理1;
+        条件が0,1,2のいずれにも当てはまらない時の処理2;
+    }
+}
+
 ```
 
 変数[CalcType]の値をswitch文で切り替える処理に変更します。
@@ -176,28 +206,36 @@ void ACPPFlowControlSwitch::BeginPlay()
 		switch (CalcType)
 		{
 			case 0:
+			{
 				// Add(足し算)の処理
 				int32 ResultAdd = CalcVarA + CalcVarB;
 				FString StrResultAdd = FString::Printf(TEXT("%d"), ResultAdd);
 				UKismetSystemLibrary::PrintString(this, StrResultAdd, true, true, FColor::Red, Duration);
 				break;
+			}
 			case 1:
+			{
 				// Subtract(引き算)の処理
 				int32 ResultSubtract = CalcVarA - CalcVarB;
 				FString StrResultSubtract = FString::Printf(TEXT("%d"), ResultSubtract);
 				UKismetSystemLibrary::PrintString(this, StrResultSubtract, true, true, FColor::Yellow, Duration);
 				break;
+			}
 			case 2:
+			{
 				// Multiply(掛け算)の処理
 				int32 ResultMultiply = CalcVarA * CalcVarB;
 				FString StrResultMultiply = FString::Printf(TEXT("%d"), ResultMultiply);
 				UKismetSystemLibrary::PrintString(this, StrResultMultiply, true, true, FColor::Green, Duration);
 				break;
+			}
 			default:
+			{
 				// Divide(割り算)の処理(int > float)
 				float ResultDivide = (float)CalcVarA / (float)CalcVarB;
 				FString StrResultDivide = FString::Printf(TEXT("%f"), ResultDivide);
 				UKismetSystemLibrary::PrintString(this, StrResultDivide, true, true, FColor::Blue, Duration);
+			}
 		}
 	}
 }

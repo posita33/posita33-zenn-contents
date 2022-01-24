@@ -42,7 +42,6 @@ Solution Explorerから今回編集する2つのファイルを開きます。
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameFramework/Actor.h"
 #include "CPPFlowControlBranch.generated.h"
 
 UCLASS()

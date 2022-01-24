@@ -13,10 +13,10 @@ published: false
 「選択肢1～4のどれかを選択しなさい。」
 
 常に選択を迫られています。
-プログラミンでは分岐する処理を実装することができます。
+プログラミンでは分岐する処理を実装できます。
 今回は、Floｗ Control(制御文)について学習します。
 
-### 今回出来ること
+### 今回できること
 変数の値に応じて、PrintStringを切り替えて出力します。
 
 ### 学習用の新規レベル「Chapter_2_FlowControl_Branch」を作成する
@@ -59,7 +59,7 @@ Sequenceノードの[Then 0]実行ピンと「Hello World!」を出力する[Pri
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_branch/2022-01-22-13-16-20.png)
 
 変数[IsPrintHello]のGetノードを追加し、[Branch]ノードの[Condition]ピンに接続します。
-[Branch]ノードを図のように実行されるように実行ピンを接続します。
+[Branch]ノードを図のように実行されるよう実行ピンを接続します。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_branch/2022-01-22-13-21-52.png)
 
 [Compile]ボタンをクリックします。
@@ -191,10 +191,10 @@ DefaultValueを変更して、引き算のPrintStringが出力されるように
 変数[IsPrintString]が[False]なので、最初の[Branch]ノードは[False]の実行ピンを実行します。
 次の[Branch]ノードでは、変数[CalcType]と値が一致していないので[False]の実行ピンを実行します。
 次の[Branch]ノードでは、変数[CalcType]と値が一致するので、引き算の[PrintString]ノードが実行されます。
-[Branch]ノードを複数組み合わせることで、複数の選択肢に分岐することができます。
+[Branch]ノードを複数組み合わせることで、複数の選択肢に分岐できます。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_branch/2022-01-22-18-33-32.png)
 
-### 全て保存してBlueprint側は終了です。
+### すべて保存してBlueprint側は終了です。
 Blueprint側の説明は以上になります。
-プロジェクトを全て保存しましょう。
+プロジェクトをすべて保存しましょう。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_branch/2022-01-22-23-16-47.png)

@@ -43,7 +43,6 @@ Solution Explorerから今回編集する2つのファイルを開きます。
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameFramework/Actor.h"
 #include "CPPFlowControlSwitch.generated.h"
 
 UCLASS()
@@ -244,6 +243,7 @@ void ACPPFlowControlSwitch::BeginPlay()
 Ctrl + Sでファイルを保存し、Compileを行います。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-01-23-21-32-29.png)
 
+「CPPFlowControlSwitch」をViewportにDrag&Dropします。
 PrintStringの出力結果が分かりづらくなるので、「BP_FlowControl_Switch」を削除します。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-01-23-21-34-31.png)
 

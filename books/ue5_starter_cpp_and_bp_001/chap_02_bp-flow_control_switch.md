@@ -8,7 +8,7 @@ published: false
 
 ## 【Blueprint版】Flow Control(Switch)
 
-### 今回出来ること
+### 今回できること
 [Branch]ノードを複数使用して分岐した処理を[Switch]ノードで分岐させます。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_switch/2022-01-23-17-04-24.png)
@@ -37,7 +37,7 @@ published: false
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_switch/2022-01-23-16-23-50.png)
 
 メニューから[Switch on int]を選択します。
-[Switch]ノードを追加する時は、追加したいVariableTypeのSwitchノードを[Switch (ValiableType)]で検索することで見つけることができます。
+[Switch]ノードを追加する時は、追加したいVariableTypeのSwitchノードを[Switch (ValiableType)]で検索すると、メニューから見つけることができます。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_switch/2022-01-23-16-26-37.png)
 
 [Switch]ノードのOutputピンの数を[Add pin]の[+]をクリックして追加します。
@@ -71,7 +71,7 @@ Level Editorの[Play]ボタンをクリックします。
 ### Switchノードの設定について
 
 [Switch]ノードを選択すると、[Detail]パネルにプロパティが表示されます。
-プロパティの設定を変更することで[Switch]ノードの使い方を変更することができます。
+プロパティの設定を変更することで[Switch]ノードの使い方を変更できます。
 
 | Property        | About                                 |
 | --------------- | ------------------------------------- |
@@ -81,7 +81,7 @@ Level Editorの[Play]ボタンをクリックします。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_switch/2022-01-23-16-49-37.png)
 
 
-### 全て保存して、Blueprint側は終了
+### すべて保存して、Blueprint側は終了
 
 Blueprint側の説明はここまでになります。
 [Content Browser]から[Save All]ボタンをクリックし、[Save Selected]ボタンをクリックしてプロジェクトの変更のあったアセットをすべて保存します。

@@ -6,7 +6,7 @@ topics: ["unrealengine", "ue5", "ue4", "blueprint"]
 published: false
 ---
 
-### VisualStudioを開いて、編集するファイルを作成する
+### Visual Studioを開いて、編集するファイルを作成する
 プロジェクトを閉じていたら、プロジェクトを開き、
 「Chapter_2_FlowControl_Branch」を開きます。
 
@@ -250,7 +250,7 @@ else
 ```
 
 BeginPlay関数のif文の条件を比較演算子を使用するように変更します。
-(計算結果を出力する処理は変更が無いので省略して書いてあります。)
+(計算結果を出力する処理は変更がないので省略して書いてあります。)
 
 ```cpp:CPPFlowControlBranch.cpp BeginPlay()
 
@@ -278,7 +278,7 @@ Level Editorの[Play]ボタンをクリックします。
 
 
 比較演算子は「==」以外にも用意されています。
-条件文の種類と同じ値の時にどのような結果になるかまとめました。
+条件文の種類と同じ値の時、どのような結果になるかまとめました。
 
 ```cpp
 if(条件)
@@ -441,7 +441,7 @@ Level Editorの[Play]ボタンをクリックします。
 変数[Message]の値が「Blueprint Hello World!」で出力されました。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-10-39-25.png)
 
-条件演算子は変数の値を条件で2択で代入することが出来ます。
+条件演算子は変数の値を条件で値を代入できます。
 
 ```cpp
 // 条件演算子
@@ -560,10 +560,10 @@ Level Editorの[Play]ボタンをクリックします。
 C++とBlueprintの比較画像です。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-21-54-25.png)
 
-### 全て保存してC++側は終了です。
+### すべて保存してC++側は終了です。
 C++側の説明は以上になります。
-プロジェクトを全て保存しましょう。
+プロジェクトをすべて保存しましょう。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-11-38-13.png)
 
-VisualStudioのSolutionも全て保存しましょう。
+Visual StudioのSolutionもすべて保存しましょう。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-11-39-43.png)

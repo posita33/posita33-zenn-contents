@@ -8,7 +8,7 @@ published: false
 
 ## 【C++版】c++ 四則演算(+ - x ÷)
 
-### VisualStudioを開いて、編集するファイルを表示する
+### Visual Studioを開いて、編集するファイルを表示する
 
 プロジェクトを閉じていたら、プロジェクトを開き、
 「Chapter_2_7_Calculation」を開きます。
@@ -41,7 +41,7 @@ Blueprint版で実装した四則演算の結果をPrintStringで出力する処
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-19-09-43-43.png)
 
 ### 変数を宣言する
-Blueprint同様にVariableType：Integerの変数を二つ宣言します。
+Blueprint同様にVariableType：Integerの変数を2つ宣言します。
 
 | VariableName | VariableType | DefaultValue |
 | ------------ | ------------ | ------------ |
@@ -200,7 +200,7 @@ CalcVarA / CalcVarB // 割り算
 | 割る   | Divide   | ÷        | /(スラッシュ)      |
 
 Blueprint以外にもMaterialなど他のEditorでも四則演算ノードが用意されています。
-ノードのヘッダ部分に英語が表示されますので、四則演算の英単語を覚えていくと対応することが意味が分かります。
+ノードのヘッダ部分に英語が表示されますので、四則演算の英単語を覚えていくと対応できます。
 
 
 ```cpp:CPPSampleActor.cpp BeginePlay()
@@ -260,7 +260,7 @@ Blueprintの時と同様に、割り算の結果が小数点切り捨てにな�
 ### 割り算の結果を小数点まで表示させる
 割り算の結果が小数点切り捨てになります。
 Blueprintでは小数点まで表示させるには変数の型を[Integer]を[Float]に変換することで解決できました。
-C++で[int32]から[float]に変換（Cast）させて小数点を扱うことが出来る処理です。
+C++で[int32]から[float]に変換（Cast）することで小数点を扱えます。
 
 ```cpp:.cpp
 	// Divide(割り算)の処理(int > float)
@@ -277,7 +277,7 @@ C++で[int32]から[float]に変換（Cast）させて小数点を扱うこと�
 
 VariableTypeがint32の変数[CalcVarA],[CalcVarB]の変数型をヘッダーファイルでFloatに変更することもできます。
 一時的に[int32]から[float]に変換（Cast）させる方法は、変数の前に（VariableType）とすることで変換できます。
-出来るVariableTypeと出来ないVariableTypeがありますので、気を付けて使用してください。
+変換できるVariableTypeと、変換できないVariableTypeがありますので、気を付けて使用してください。
 ```cpp
 int32 ResultDivide = CalcVarA / CalcVarB;
   ↓
@@ -305,14 +305,14 @@ Level Editorの[Play]ボタンをクリックします。
 割り算の結果が小数点まで表示されます。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-19-14-23-15.png)
 
-### 全てを保存して、C++側の説明は終了です
+### すべてを保存して、C++側の説明は終了です
 C++側の説明は以上になります。
-プロジェクトを全て保存しましょう。
+プロジェクトをすべて保存しましょう。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-20-06-03-35.png)
 
 ## BlueprintとC++の処理を並べてみる
 BlueprintとC++の処理を並べてみます。
-Blueprintで[Sequence]ノードを使うと、処理を上から下に並べることが出来ます。
+Blueprintで[Sequence]ノードを使うと、処理を上から下に並べられます。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-20-06-19-13.png)
 
 

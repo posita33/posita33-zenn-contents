@@ -6,7 +6,7 @@ topics: ["cpp", "unrealengine", "ue4", "ue5"]
 published: false
 ---
 
-## VisualStudioを開いて、編集するファイルを作成する
+## Visual Studioを開いて、編集するファイルを作成する
 プロジェクトを閉じていたら、プロジェクトを開き、
 「Chapter_2_FlowControl_Switch」を開きます。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-01-23-18-40-44.png)
@@ -220,10 +220,10 @@ Level Editorの[Play]ボタンをクリックします。
 C++とBlueprintの比較画像です。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-01-23-21-44-52.png)
 
-### 全て保存してC++側は終了です。
+### すべて保存してC++側は終了です。
 C++側の説明は以上になります。
-プロジェクトを全て保存しましょう。
+プロジェクトをすべて保存しましょう。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-01-23-21-39-19.png)
 
-VisualStudioのSolutionも全て保存しましょう。
+Visual StudioのSolutionもすべて保存しましょう。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-01-23-21-46-14.png)

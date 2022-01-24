@@ -13,7 +13,7 @@ published: false
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-01-24-10-35-50.png)
 
-Enumeration（列挙型）をVariableTypeに設定することで、DefaultValueがリストから選択することができます。
+Enumeration（列挙型）をVariableTypeに設定することで、DefaultValueがリストから選択できます。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-01-24-10-37-33.png)
 
 ### 学習用の新規レベル「Chapter_2_Enumeration」を作成する
@@ -41,7 +41,7 @@ Contents Browserの空きスペースを右クリック > Blueprints > Enumerati
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-01-24-09-05-38.png)
 
 
-[New]ボタンをクリックすることで列挙定数を追加することができます。
+[New]ボタンをクリックすることで列挙定数を追加できます。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-01-24-09-15-13.png)
 
 列挙型を設定するEditorの入力項目について一覧にまとめました。
@@ -83,7 +83,7 @@ EventGrapth内で変数を使用ていると、VariableTypeを変更してもい
 
 変数[CalcType]のGetがエラー（赤）で表示されます。
 赤くなっているピンを[Alt + Click]で接続を解除します。
-同時に変更した箇所の一覧が表示されます。行をクリックすることで該当箇所へ移動することができます。
+同時に変更した箇所の一覧が表示されます。行をクリックすることで該当箇所へ移動できます。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-01-24-09-55-09.png)
 
 [Compile]ボタンをクリックして、変数[VariableType]のDefaultValueを確認します。
@@ -116,7 +116,7 @@ Level Editorの[Play]ボタンをクリックします。
 変数[CalcType]の値が[Subtract]なので、引き算の出力結果が表示されます。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-01-24-10-21-59.png)
 
-### 全て保存して、Blueprint側は終了
+### すべて保存して、Blueprint側は終了
 Blueprint側の説明はここまでになります。
 [Content Browser]から[Save All]ボタンをクリックし、[Save Selected]ボタンをクリックしてプロジェクトの変更のあったアセットをすべて保存します。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-01-24-10-31-44.png)

@@ -6,20 +6,21 @@ free: false
 Visual Assistを使用する場合は、Intellissenceをオフにしているのでエラーは表示されません。
 次の項目にお進みください。
 
-## 有料Extensionを使用しない VisualStudioの設定
-最初にVisualStudioが大量のエラーが出ているのは、Intellisenceがヘッダーファイルを見に行っているけど、見つからないから発生しているエラーです。
+## 有料Extensionを使用しないVisual Studioの設定
+最初にVisual Studioが大量のエラーが出ているのは、Intellisenceがヘッダーファイルを見に行っているけど、見つからないから発生しているエラーです。
 ![](https://storage.googleapis.com/zenn-user-upload/5221c310d098-20220110.png)
 
-プロジェクトファイルの設定を直すことでエラーを消すことが出来ます。
-今回のエラーはIntellisenseがヘッダーを開けないので、IncludeSearchPathを設定することでエラーを消すことが出来ます。
+プロジェクトファイルの設定を直すことでエラーを消すことができます。
+今回のエラーはIntellisenseがヘッダーを開けないので、IncludeSearchPathを設定することでエラーを消せます。
 
 プロジェクトファイルのプロパティを開きます。
 プロジェクトファイルを右クリック > Properties
 ![](https://storage.googleapis.com/zenn-user-upload/f36a5cea34b3-20220110.png)
 
 Include Search Pathを追加することで直ります。
-UE4のInclude Search Pathの一覧がGithubで提供されていました。
-UE5 EAでは「UE4Editor」というフォルダ名が「UnrealEditor」に変更されているので、置換したファイルをGithubに公開しました。
+UE4のInclude Search Pathの一覧がGitHubで提供されていました。
+UE5 EAでは「UE4Editor」というフォルダ名が「UnrealEditor」に変更されているので、置換したファイルをGitHubに公開しました。
+
 https://gist.github.com/posita33/c639a0d558d4332478df506b5ec773d2#file-includepaths_ue5ea-txt
 
 ※UE4で編集する場合（元ネタ）

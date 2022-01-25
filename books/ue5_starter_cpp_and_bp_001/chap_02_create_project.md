@@ -24,9 +24,10 @@ C++をクリックしてください。
 
 ## Blueprintプロジェクトを作成した状態からC++プロジェクトを作成する
 
-Blueprintを選択した状態でプロジェクトを作成しても、後からC++プロジェクトにすることが出来ます。
+Blueprintを選択した状態でプロジェクトを作成しても、後からC++プロジェクトにできます。
 ![](https://storage.googleapis.com/zenn-user-upload/24ca3464e502-20220110.png)
 
-Toolsメニューから、[New C++ Class...]を選択してC++のクラスを一つ作成すればC++の開発を行うことが出来ます。
+Toolsメニューから、[New C++ Class...]を選択してC++のクラスを
+1つ作成すればC++の開発を行えます。
 クラスの追加方法については次の項目で説明します。
 ![](https://storage.googleapis.com/zenn-user-upload/1f05087de8bc-20220110.png)

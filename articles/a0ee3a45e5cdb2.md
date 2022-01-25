@@ -28,11 +28,11 @@ UnrealEngineの場合は「UE4 エラーメッセージ」もおススメです�
 https://docs.microsoft.com/ja-jp/cpp/error-messages/compiler-errors-1/compiler-error-c2166?view=msvc-170
 
 ### エラーメッセージを翻訳する
-エラーメッセージをGoogle翻訳で翻訳することで意味を把握します。
+エラーメッセージをGoogle翻訳で翻訳して意味を把握します。
 ![](https://storage.googleapis.com/zenn-user-upload/16e2a245d53e-20220114.png)
 
 ### AnswerHubで質問を検索する
-UnrealEngineではAnswerHubという質問できるコミュニティがあります。エラーメッセージを検索することで、過去に同じエラーメッセージに悩まされた人たちのやり取りを見ることが出来ます。
+UnrealEngineではAnswerHubという質問できるコミュニティがあります。エラーメッセージを検索することで、同じエラーメッセージに悩まされた人たちのやり取りを見られます。
 ![](https://storage.googleapis.com/zenn-user-upload/b50c4a0b523e-20220114.png)
 
 ## エラーメッセージは友達

@@ -4,7 +4,7 @@ free: false
 ---
 
 ## Unreal Engine用にVisual Studioをセットアップ
-公式ドキュメントにVisual Studioの設定が書かれたドキュメントが公開されています。
+公式ドキュメントにVisual Studioの設定手順が公開されています。
 Unreal Engine 4.25以降はVS2019を使用するように書かれているので、VS2019を使用します。
 2022年1月9日の段階ではVS2022が最新です。
 https://docs.unrealengine.com/4.27/ja/ProductionPipelines/DevelopmentSetup/VisualStudioSetup/
@@ -38,7 +38,7 @@ Visual Studio Installerが立ち上がります。
 ![](https://storage.googleapis.com/zenn-user-upload/43b6d23c3440-20220109.png)
 
 英語UIで開発していきたい人は、言語パックの「日本語」を無効にし、「英語」のみを有効にします。
-筆者は検索の際に英語にしていた方が見つかりやすいので英語UIを使って開発しています。この本も英語UIでVisualStudioの操作を行っていきます。
+筆者は検索時に英語の方が見つかりやすいので英語UIを使って開発しています。この本も英語UIでVisual Studioの操作を行っていきます。
 ![](https://storage.googleapis.com/zenn-user-upload/c2109f3e1a72-20220109.png)
 
 Visual Studioを日本語のUIで開発したい方はこちらの記事を参考にしてください。
@@ -59,7 +59,7 @@ Visual Studioのインストールが開始されます。
 
 ### デバッグに必要なエディタシンボルがインストールされているか確認する
 デバッグに必要なエディタシンボルが入っているか確認しましょう。
-EpicGamesLauncherの起動横の▼＞オプションから確認することが出来ます。
+EpicGamesLauncherの起動横の▼＞オプションから確認できます。
 ![](https://storage.googleapis.com/zenn-user-upload/d0f700672890-20220109.png)
 
 デバッグに必要なエディタシンボルが入っていなかったら追加しましょう
@@ -75,7 +75,7 @@ FirstPersonテンプレートのC++プロジェクトを作成します。
 ![](https://storage.googleapis.com/zenn-user-upload/d5045357413a-20220109.png)
 
 C++を書いていくエディターをVisual Studio 2019に設定します。
-Editor Preferences...を開きます。
+[Editor Preferences...]を開きます。
 ![](https://storage.googleapis.com/zenn-user-upload/8ebfecafcf8a-20220109.png)
 
 SouceCodeカテゴリのSource Code Editorから[Visual Studio 2019]を選択します。
@@ -115,7 +115,7 @@ Solusion Configurationsの一覧が見やすくなります。
 
 ![](https://storage.googleapis.com/zenn-user-upload/a1372560fc8d-20220109.png)
 
-Projects and Solutions > General の[Always show error list if build finishes with error (ビルドがエラーで終わった場合、常にエラー リストを表示する)]をオフに設定します
+Projects and Solutions > Generalの[Always show error list if build finishes with error (ビルドがエラーで終わった場合、常にエラー リストを表示する)]をオフに設定します
 ![](https://storage.googleapis.com/zenn-user-upload/f8f9311605e4-20220109.png)
 
 出力 (Output) ウィンドウを使用して実際のコード エラーを確認することを推奨されています。

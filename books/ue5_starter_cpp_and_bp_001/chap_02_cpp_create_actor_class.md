@@ -27,8 +27,8 @@ Class TypeとClass名を設定して、[Create Class]をクリックします。
 
 Visual Studio側を確認します。
 Solution Explorerにソースコードが追加されています。
-Publicフォルダに「CPPSampleActor.h」(ヘッダーファイル)
-Privateフォルダに「CPPSampleActor.cpp」(C++ファイル)
+Publicフォルダ：「CPPSampleActor.h」(ヘッダーファイル)
+Privateフォルダ：「CPPSampleActor.cpp」(C++ファイル)
 
 ![](https://storage.googleapis.com/zenn-user-upload/7a257183e84d-20220110.png)
 
@@ -102,9 +102,9 @@ C++側にはファイル名の命名規則といったものは用意されて�
 **「コーディング規約」**
 
 という、こういう風にソースコードを書いてね。と定められているルールがあります。
-コチラもチーム開発で特にルールが決まっていないのであれば参考にするとソースコードのばらつきが無くなります。
+コチラもチーム開発でルールが決まっていないのであれば、参考にするとソースコードのばらつきが無くなります。
 https://docs.unrealengine.com/4.27/ja/ProductionPipelines/DevelopmentSetup/CodingStandard/
 
-githubで少し情報が古いですが、いい書き方、悪い書き方をまとめている方がいました。
+GitHubで少し情報が古いですが、いい書き方、悪い書き方をまとめている方がいました。
 https://github.com/DaedalicEntertainment/unreal-coding-conventions
 

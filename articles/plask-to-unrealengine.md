@@ -22,14 +22,14 @@ https://github.com/posita33/PlaskToUE5
 
 
 ### Plaskにサインアップする
-Plaskは無料で使用することができます。
+Plaskは無料で使用できます。
 Plaskを使用するためにSignUpします。
 
 https://plask.ai/
 
 ![](/images/articles/plask-to-unrealengine/2022-01-19-19-44-19.png)
 
-Googleアカウントかメールアドレスでサインアップすることが出来ます。
+Googleアカウントかメールアドレスでサインアップできます。
 ![](/images/articles/plask-to-unrealengine/2022-01-19-19-45-15.png)
 
 この後にアカウント名を決めるウィンドウで、アカウント名を設定します。
@@ -44,13 +44,13 @@ Googleアカウントかメールアドレスでサインアップすること�
 
 灰色になっている箇所にWebカメラの映像が写ります。
 Webカメラの選択は、右上の[Camera]から選択します。
-Webカメラの設定が出来たら、「録画ボタン(赤丸)」をクリックします。
+Webカメラの設定できたら、「録画ボタン(赤丸)」をクリックします。
 ![](/images/articles/plask-to-unrealengine/2022-01-19-19-53-18.png)
 
 録画を終了するには再び「録画ボタン(赤丸)」をクリックします。
 録画が完了するとプレビューが表示されるます。
 一番下のタイムラインでアニメーションにしたい範囲を指定します。
-範囲が指定出来たら、「Extract Motion」をクリックします。
+範囲が指定できたら、「Extract Motion」をクリックします。
 ![](/images/articles/plask-to-unrealengine/2022-01-19-19-57-07.png)
 
 Motionの抽出が始まります。大体の完了時間が表示されます。
@@ -157,7 +157,7 @@ Exportが完了するとFBXがダウンロードされます。
 
 
 ### Plaskのマニュアル
-他にもPlask上で出来ることがあるので、時間を見つけて試してみます。
+他にもPlask上でできることがあるので、時間を見つけて試してみます。
 https://plasticmask.notion.site/User-guide-ac4bba1b75384c309e7a24e6542454ba
 
 YouTubeチャンネルにチュートリアル動画が上がっています。
@@ -200,7 +200,7 @@ Plaskで作成したMotion「SK_PlaskMannequin_(Motion名).fbx」を「Animation
 ![](/images/articles/plask-to-unrealengine/2022-01-19-21-33-01.png)
 
 [Import Rotation]のXに[90.0]を設定します。
-設定を忘れても、後で直し方を解説します。
+設定を忘れても、あとで直し方を解説します。
 ![](/images/articles/plask-to-unrealengine/2022-01-19-21-34-11.png)
 
 MotionがImportされました。
@@ -227,13 +227,13 @@ UnityのYUpのモデルやMotionをインポートした対処法が役に立ち
 PlaskはUEのMannequinが使われていますが、中身はUnityで使用されるように作られています。
 ![](/images/articles/plask-to-unrealengine/2022-01-19-21-44-34.png)
 
-### 全て保存する
+### すべて保存する
 ここで一度すべて保存しましょう。
 ![](/images/articles/plask-to-unrealengine/2022-01-19-21-45-47.png)
 
 
 ## UE5でMannequinにPlaskのAnimationをリターゲットする
-Plaskで作成したMotionやBasePoseのFBXがImport出来たので、PlaskのMotionをUE5のMannequinで動くようにしましょう。
+Plaskで作成したMotionやBasePoseのFBXがImportできたので、PlaskのMotionをUE5のMannequinで動くようにしましょう。
 
 ### PlaskのMannequinはMixamoに似ている
 UnrealEngineのSK_MannequinとPlaskのMannequinのSkeltonのTree構造を比較しました。
@@ -250,7 +250,7 @@ https://virtualcast.jp/wiki/unity/humanoid/introduction
 https://zenn.dev/daichi_gamedev/books/unreal-engine-5/viewer/mixamo-to-ue
 
 「**UnrealEngine5の教科書**」素晴らしいです。
-現在ZennでBookを作成する際に参考にさせていただいてます。
+現在ZennでBookを作成する際に、参考にさせていただいてます。
 https://zenn.dev/daichi_gamedev/books/unreal-engine-5
 
 ## SK_PlaskMannequinのRigをSetUpする
@@ -265,11 +265,11 @@ https://zenn.dev/daichi_gamedev/books/unreal-engine-5
 Targetを図のような対応になるように設定します。
 ![](/images/articles/plask-to-unrealengine/2022-01-19-22-02-24.png)
 
-設定が出来たら、[Show Advanced]ボタンをクリックします。
+設定できたら、[Show Advanced]ボタンをクリックします。
 ![](/images/articles/plask-to-unrealengine/2022-01-19-22-14-09.png)
 
 Targetを図のような対応になるように設定します。
-右手は特に間違えやすいので、よく確認しながら設定しましょう。
+右手はとくに間違えやすいので、よく確認しながら設定しましょう。
 ![](/images/articles/plask-to-unrealengine/2022-01-19-22-13-29.png)
 
 [Save]ボタンからMapping情報を保存しておくと、[Load]ボタンから同じ設定を読み込むことができます。
@@ -323,9 +323,9 @@ ViewportのSK_MannequinがT-Poseになります。
 これで「SK_Mannequin」のBasePoseがA-PoseからT-Poseになり、「SK_PlaskMannequin」と同じT-Poseになりました。
 ![](/images/articles/plask-to-unrealengine/2022-01-19-22-42-45.png)
 
-### 全て保存する
+### すべて保存する
 
-ここで一度プロジェクトを全て保存しましょう。
+ここで一度プロジェクトをすべて保存しましょう。
 ![](/images/articles/plask-to-unrealengine/2022-01-19-22-37-36.png)
 
 
@@ -343,7 +343,7 @@ Plaskで作成したMotionを右クリックし、[Retarget Anim Assets] > [Dupl
 「UE4_Mannequin_Skelton」を選択し、[Retarget]ボタンをクリックします。
 ![](/images/articles/plask-to-unrealengine/2022-01-19-22-47-51.png)
 
-「Contents」フォルダ直下にSK_MannequinにリターゲットされたPlaskのMotionが作成されます。
+「Contents」フォルダ直下に、SK_MannequinにリターゲットされたPlaskのMotionが作成されます。
 ![](/images/articles/plask-to-unrealengine/2022-01-19-22-49-37.png)
 
 これで、Plaskで作成したMotionがSK_Mannequinのような汎用的なモデルでも使用できます。
@@ -351,9 +351,9 @@ Plaskで作成したMotionを右クリックし、[Retarget Anim Assets] > [Dupl
 
 ## まとめ
 PlaskからMotionを作成するのに必要な機材は「**PCとWebカメラ**」です。
-高精度と言う訳ではありませんが、手ごろな機材でこれだけの精度が出せるのがスゴイです。
+高精度と言う訳ではありませんが、手ごろな機材でこれだけの精度を出せるのがスゴイです。
 
-手軽だからこそ、いままであったらいいなと思っていたことが出来ます。
+手軽だからこそ、いままであったらいいなと思っていたことができます。
 
 - 意識合わせ
 - 静止画のポーズ付け

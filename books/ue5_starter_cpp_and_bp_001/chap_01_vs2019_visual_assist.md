@@ -3,7 +3,7 @@ title: "1.3. 有料Expression「Visual Assist」の導入 "
 free: false
 ---
 
-30日間無料で使用することが出来るので、学習中や学習後も使用するのがおススメです。
+30日間無料で使用することができるので、学習中や学習後も使用するのがおススメです。
 個人だと$129、企業だと$251かかります。
 有料Expressionを使わない方は、次の項目の設定にお進みください。
 
@@ -16,7 +16,7 @@ https://marketplace.visualstudio.com/items?itemName=WholeTomatoSoftware.VisualAs
 Extensions > Manage Extensions
 ![](https://storage.googleapis.com/zenn-user-upload/d332a29e143d-20220109.png)
 
-Onlineで UE4と検索 > Visual AssistをDownload
+Onlineで「UE4」と検索 > Visual AssistをDownload
 ![](https://storage.googleapis.com/zenn-user-upload/7b74bb1a6204-20220109.png)
 
 Visual Studioを閉じます。
@@ -40,7 +40,7 @@ Disable IntelliSenceをTrue（IntelliSenceをオフ）
 
 ## 【購入を決めた人用】Visual Assistを購入し、アカウント登録する
 ### Visual Assistを購入する（平日に購入してください）
-Trialの30日間が残り7日になると、VisualStudioを起動するとダイアログが表示されます。
+Trialの30日間が残り7日になると、Visual Studioを起動するとダイアログが表示されます。
 [Try]をクリックするとTraialが継続されます。
 今回は[Buy]をクリックして購入します。
 Serial Numberの発行はUTC-5の月～金なので、土日は対応してくれません。
@@ -54,9 +54,9 @@ Visual Assistの購入ページに移動します。
 https://www.wholetomato.com/purchase
 
 個人利用だと$129、企業利用だと$279です。
-時々セールをしているので$10安く販売されています。
-PayPalかCredit Cardで購入することが出来ます。
-他のページは日本語表示出来るのですが、購入ページは英語で進めていくことになります。
+ときどきセールをしているので$10安く販売されています。
+PayPalかCredit Cardで購入できます。
+他のページは日本語表示できるのですが、購入ページは英語で進めていくことになります。
 ![](https://storage.googleapis.com/zenn-user-upload/5e2b38d04bbd-20220110.png)
 
 英語表記で購入者情報を入力して、[Continue To PayPal]をクリックします。
@@ -76,7 +76,7 @@ https://kimini.jp/zip_addresses/index/2100005
 エラーがある際はコチラを参考にしてください。
 https://docs.wholetomato.com/default.asp?W841
 
-Serial Numberが書かれたメールが送られてきます。
+Serial Numberが書かれたメールを受信します。
 Serial Numberをコピーします。
 ![](https://storage.googleapis.com/zenn-user-upload/641e72867204-20220110.png)
 

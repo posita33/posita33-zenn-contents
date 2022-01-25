@@ -34,7 +34,7 @@ https://zenn.dev/zenn/articles/connect-to-github
 https://zenn.dev/zenn/articles/setup-zenn-github-with-export
 
 ### GitHubのZennリポジトリ名について
-Zennのコンテンツを管理するリポジトリ名を決める時に参考にさせていただきました。
+Zennのコンテンツを管理するリポジトリ名の参考にさせていただきました。
 https://zenn.dev/j5c8k6m8/articles/zenn-github-repository-name
 
 ポジTAのZennGitHubリポジトリは「**posita33-zenn-contents**」で管理します。
@@ -54,15 +54,15 @@ CCライセンスの設定についてはコチラの記事を参考にさせて
 https://zenn.dev/spiegel/articles/20200919-ccl
 
 
-## ZennをVSCodeで執筆するための拡張(Expression)設定
+## ZennをVS Codeで執筆するための拡張(Expression)設定
 
 ### 執筆を高速化する設定
-VSCodeの拡張(Expression)設定を参考にさせていただきました。
+VS Codeの拡張(Expression)設定を参考にさせていただきました。
 https://zenn.dev/ctrlkeykoyubi/articles/e7d91c5286a409
 
 https://zenn.dev/nkys39/articles/struct-zenn-win10
 
-**InstallしたVSCode拡張(Expression)**
+**InstallしたVS Code拡張(Expression)**
 - Paste Image
 - Zenn Editor
 - Excel to Markdown table
@@ -70,7 +70,8 @@ https://zenn.dev/nkys39/articles/struct-zenn-win10
 - CharacterCount
 - Git Graph
 
-:::details ショートカットが分からずハマったところ
+:::details ショートカットが分からずハマったところ  
+
 **ショートカットが分からずハマったところ**
 Paste Image拡張機能のペーストショートカット
 **Ctrl + Alt + V**
@@ -102,9 +103,9 @@ Markdown All in One拡張機能で整形するショートカット
 :::
 
 :::details Git Graphの表示について
-Git Graphをインストールしても何処から見たら分からなかった。
+Git Graphをインストールしても、どこから見たら分からなかったです。
 
-図のようにソース管理に移動して、Git Graphアイコンをクリックすると見られる
+図のようにソース管理に移動して、Git Graphアイコンをクリックすると見られます。
 ![](/images/articles/zenn_github_and_vscode_setup/2022-01-19-06-00-56.png)
 :::
 
@@ -112,8 +113,9 @@ Git Graphをインストールしても何処から見たら分からなかっ�
 Webの文章校正ツールを使って文章校正していました。
 https://note.com/posi_ta/n/n3134dbf8a638
 
-:::details VSCodeの文章校正
-ローカルのMarkdownファイルで記事を書いていくので、便利な文章校正が無いか探したら見つかりました。
+:::details VS Codeの文章校正
+ローカルのMarkdownファイルで記事を書いていくので、便利な文章校正を探したら見つかりました。
+
 https://zenn.dev/appgrape/articles/textlint-setting
 
 **他にもプリセットを入れたい時の設定**
@@ -153,5 +155,5 @@ https://zenn.dev/posita33/articles/zenn_markdown_snippet
 (2022/1/18)
 
 ## 随時最適化
-書きながら改善した内容を記録していきます。
+書きながら改善した内容を記録します。
 

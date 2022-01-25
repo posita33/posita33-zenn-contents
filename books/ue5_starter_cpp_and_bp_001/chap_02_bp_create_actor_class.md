@@ -27,6 +27,6 @@ Blueprintを作成するフォルダを作成します。
 プロジェクト内で決まり事がなければ、名前の付け方や、フォルダの構成については[UE4-style-guide]を参考にしています。最新では[ue5-style-guide]になっていたのでこちらを参照した方が良さそうです。
 https://github.com/Allar/ue5-style-guide
 
-UE4-style-guideの方は日本語訳されている方がいます。UE4とUE5でそこまでまだ変更が無いので十分役に立つ情報です。
+UE4-style-guideの方は日本語訳されている方がいます。UE4とUE5でそこまでまだ変更がないので十分役に立つ情報です。
 
 https://github.com/akenatsu/ue4-style-guide/blob/master/README.jp.md

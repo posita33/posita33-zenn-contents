@@ -151,6 +151,8 @@ ClassTypeとNameを設定して、[Create Class]ボタンをクリックしま�
 「Create C++ class derived from （クラス） 」メニューを実行したC++クラスの子クラスが作成されます。
 ![](/images/articles/column_cpp_bp-class_duplicate/2022-01-21-21-18-46.png)
 
+
+
 ```h:CPPActorChild.h
 // Fill out your copyright notice in the Description page of Project Settings.
 

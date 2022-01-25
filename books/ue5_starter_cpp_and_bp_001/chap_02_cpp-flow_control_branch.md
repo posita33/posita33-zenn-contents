@@ -109,7 +109,7 @@ void ACPPFlowControlBranch::BeginPlay()
 
 ```
 
-### C++でBlueprintのFlow Control(Branch)を再現する
+### C++でBlueprintのFlow Control（Branch）を再現する
 
 [Branch]ノード処理を切り替える
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-06-39-50.png)
@@ -227,7 +227,7 @@ Level Editorの[Play]ボタンをクリックします。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-07-04-59.png)
 
 
-### 比較演算子で条件を書く(比較演算子ノード)
+### 比較演算子で条件を書く（比較演算子ノード）
 
 比較演算子ノードでBranchノードの実行ピンを切り替える処理をC++で再現します。
 Blueprint側では比較演算子を使用して「NumAとNumBは等しい」という条件を作りました。
@@ -249,7 +249,7 @@ else
 ```
 
 BeginPlay関数のif文の条件を比較演算子を使用するように変更します。
-(計算結果を出力する処理は変更がないので省略して書いてあります。)
+（計算結果を出力する処理は変更がないので省略して書いてあります。）
 
 ```cpp:CPPFlowControlBranch.cpp BeginPlay()
 
@@ -450,7 +450,7 @@ Level Editorの[Play]ボタンをクリックします。
 条件がfalseの時：変数にはBの値が代入される
 ```
 
-### 連続したif文で複数の選択肢(Branchノード複数で切り替える)
+### 連続したif文で複数の選択肢（Branchノード複数で切り替える）
 [Branch]ノードを複数呼び出して、複数の選択肢で分岐する処理をC++で再現します。
 Blueprint側では変数[CalcType]の数値で引き算の計算結果を1つだけPrintStringで出力するように変更しました。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-06-42-55.png)

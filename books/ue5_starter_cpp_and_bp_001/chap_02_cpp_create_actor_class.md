@@ -3,7 +3,7 @@ title: "2.2.CPP クラス(親クラス：Actor)を作成する"
 free: false
 ---
 
-## C++のクラス(親クラス：Actor)を追加する
+## C++のクラス（親クラス：Actor）を追加する
 C++のクラスを新規作成します。
 メニューから作成する方法と、コンテンツブラウザから作成する方法があります。
 ・[Tools]メニューから[New C++ Class…]を選択する
@@ -27,8 +27,8 @@ Class TypeとClass名を設定して、[Create Class]をクリックします。
 
 Visual Studio側を確認します。
 Solution Explorerにソースコードが追加されています。
-Publicフォルダ：「CPPSampleActor.h」(ヘッダーファイル)
-Privateフォルダ：「CPPSampleActor.cpp」(C++ファイル)
+Publicフォルダ：「CPPSampleActor.h」（ヘッダーファイル）
+Privateフォルダ：「CPPSampleActor.cpp」（C++ファイル）
 
 ![](https://storage.googleapis.com/zenn-user-upload/7a257183e84d-20220110.png)
 

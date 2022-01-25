@@ -6,7 +6,7 @@ topics: ["unrealengine", "ue5", "ue4", "blueprint"]
 published: false
 ---
 
-## 【Blueprint版】Flow Control(Branch)
+## 【Blueprint版】Flow Control（Branch）
 
 「もし、あの時○○をしていたら。。。」
 
@@ -14,7 +14,7 @@ published: false
 
 常に選択を迫られています。
 プログラミンでは分岐する処理を実装できます。
-今回は、Floｗ Control(制御文)について学習します。
+今回は、Floｗ Control（制御文）について学習します。
 
 ### 今回できること
 変数の値に応じて、PrintStringを切り替えて出力します。
@@ -35,7 +35,7 @@ published: false
 
 ### Blueprintを複製する
 
-「BP_SampleActor」を複製(Ctrl + W)して、「BP_FlowControl_Branch」を作成します。
+「BP_SampleActor」を複製（Ctrl + W）して、「BP_FlowControl_Branch」を作成します。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_branch/2022-01-22-06-31-20.png)
 
 ### Flow Controlに使用する変数を宣言する
@@ -111,7 +111,7 @@ graph TB
 [Branch]ノードは[False]の実行ピンに処理を切り替えて、計算結果を出力する[PrintString]ノードを実行しました。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_branch/2022-01-22-16-43-53.png)
 
-比較演算子は「一致している(Equal)」以外にも用意されています。
+比較演算子は「一致している（Equal）」以外にも用意されています。
 一覧を用意しましたので、有効活用してください。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_branch/2022-01-22-16-46-25.png)
 
@@ -130,9 +130,9 @@ graph TB
 [AND]と書かれたノードは[AND Boolean]と検索して追加してください。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_branch/2022-01-22-17-24-53.png)
 
-「Make Literal Int」は変数を作成せずに、VariableType(変数の型)の値を使いたい時に使用するノードです。
-「Make Literal (VariableType)」をメニューから選択します。
-「Make Literal (VariableType)」のValueに値を設定します。
+「Make Literal Int」は変数を作成せずに、VariableType（変数の型）の値を使いたい時に使用するノードです。
+「Make Literal （VariableType）」をメニューから選択します。
+「Make Literal （VariableType）」のValueに値を設定します。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_branch/2022-01-22-17-36-34.png)
 
 [Compile]ボタンをクリックします。
@@ -144,7 +144,7 @@ graph TB
 「Hello World!」を出力する[PrintString]ノードの処理のみが実行されました。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_branch/2022-01-22-13-27-35.png)
 
-今回は変数[NumC]に[15]の値が設定されていたので、「10<NumC(15)」と[NumC(15)<30]の条件が両方ともTrueだったので、[AND Boolean]ノードは[True]になります。
+今回は変数[NumC]に[15]の値が設定されていたので、「10<NumC（15）」と[NumC（15）<30]の条件が両方ともTrueだったので、[AND Boolean]ノードは[True]になります。
 [Branch]ノードは[True]の処理に切り替えて、[Hello World!]を出力する[PrintString]ノードを実行しました。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_branch/2022-01-22-18-11-10.png)

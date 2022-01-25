@@ -67,7 +67,7 @@ Zennオリジナル記法以外にもよく使う記法を登録しました。
 |--------|-----------------------------------|
 | mzenn  | ZennのオリジナルMarkdown記法              |
 | mmath  | 数式                                |
-| mimage | 画像挿入のMarkdown(UnrealEngineだとよく使う) |
+| mimage | 画像挿入のMarkdown（UnrealEngineだとよく使う） |
 
 
 ```json:markdown.json
@@ -173,7 +173,7 @@ Zennオリジナル記法以外にもよく使う記法を登録しました。
 }
 ```
 
-### Zenn独自(mzenn)
+### Zenn独自（mzenn）
 
 prefixの文字列は重複するとリスト化します。
 ![](/images/articles/zenn_markdown_snippet/2022-01-18-15-49-25.png)
@@ -190,7 +190,7 @@ prefixの文字列は重複するとリスト化します。
 表示したい内容
 :::
 
-### ソースコード(mcode)
+### ソースコード（mcode）
 ソースコードもよく使うので、C++の[.Cpp]と[.h]を追加しました。
 ```cpp:.cpp
 int A = 10;
@@ -200,7 +200,7 @@ int A = 10;
 [📄 対応言語の一覧 →](https://prismjs.com/#supported-languages)
 
 
-### 数式(mmath)
+### 数式（mmath）
 数式を表示できるMarkdown記法
 
 $$

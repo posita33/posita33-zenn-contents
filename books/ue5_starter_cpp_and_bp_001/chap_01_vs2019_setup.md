@@ -22,7 +22,7 @@ Microsoftアカウントのログインが求められるので、Microsoftア�
 Visual Studio Communityのダウンロードをクリックします。
 ![](https://storage.googleapis.com/zenn-user-upload/554566f9f854-20220109.png)
 
-検索バーから[Visual Studio Community 2019]を検索して、「Download〙をクリックします。
+検索バーから[Visual Studio Community 2019]を検索して、「Download」をクリックします。
 ![](https://storage.googleapis.com/zenn-user-upload/4027bdde2be3-20220109.png)
 
 ダウンロードされたexeファイルを実行します。
@@ -38,7 +38,7 @@ Visual Studio Installerが立ち上がります。
 ![](https://storage.googleapis.com/zenn-user-upload/43b6d23c3440-20220109.png)
 
 英語UIで開発していきたい人は、言語パックの「日本語」を無効にし、「英語」のみを有効にします。
-筆者は検索時に英語の方が見つかりやすいので英語UIを使って開発しています。この本も英語UIでVisual Studioの操作を行っていきます。
+筆者は検索時に英語の方が見つかりやすいので英語UIを使って開発しています。この本も英語UIでVisual Studioの操作します。
 ![](https://storage.googleapis.com/zenn-user-upload/c2109f3e1a72-20220109.png)
 
 Visual Studioを日本語のUIで開発したい方はこちらの記事を参考にしてください。
@@ -115,10 +115,10 @@ Solusion Configurationsの一覧が見やすくなります。
 
 ![](https://storage.googleapis.com/zenn-user-upload/a1372560fc8d-20220109.png)
 
-Projects and Solutions > Generalの[Always show error list if build finishes with error (ビルドがエラーで終わった場合、常にエラー リストを表示する)]をオフに設定します
+Projects and Solutions > Generalの[Always show error list if build finishes with error （ビルドがエラーで終わった場合、常にエラー リストを表示する）]をオフに設定します
 ![](https://storage.googleapis.com/zenn-user-upload/f8f9311605e4-20220109.png)
 
-出力 (Output) ウィンドウを使用して実際のコード エラーを確認することを推奨されています。
+出力 （Output） ウィンドウを使用して実際のコード エラーを確認することを推奨されています。
 ![](https://storage.googleapis.com/zenn-user-upload/791f9f0bba1e-20220109.png)
 
 Visual Studio 2019側で、Build > Build Solutionを行うと、Outputウィンドウにエラー内容が表示されます。エラーの行をダブルクリックするとエラーの箇所に移動します。

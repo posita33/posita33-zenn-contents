@@ -6,7 +6,7 @@ topics: ["unrealengine", "ue5", "ue4", "blueprint"]
 published: false
 ---
 
-## 【C++版】c++ 四則演算(+ - x ÷)
+## 【C++版】c++ 四則演算（+ - x ÷）
 
 ### Visual Studioを開いて、編集するファイルを表示する
 
@@ -27,10 +27,10 @@ Solution Explorerから今回編集する2つのファイルを開きます。
 ### C++でBlueprintの四則演算を再現する
 
 Blueprint版で実装した四則演算の結果をPrintStringで出力する処理をC++で再現します。
-- 赤：Add(足し算)ノード
-- 黄：Subtract(引き算)ノード
-- 緑：Multiply(掛け算)ノード
-- 青：Divide(割り算)ノード
+- 赤：Add（足し算）ノード
+- 黄：Subtract（引き算）ノード
+- 緑：Multiply（掛け算）ノード
+- 青：Divide（割り算）ノード
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-19-07-57-14.png)
 
@@ -61,7 +61,7 @@ BlueprintではVariableTypeに「Integer」を設定しました。
 C++ではVariableTypeに「int32」を設定しましたが、同じ範囲をもつVariableTypeです。
 C++で使用できるintの種類を表にしました。
 
-| Type   | Byte数 | 範囲(Min)                  | 範囲Max                    | Blueprintの型 |
+| Type   | Byte数 | 範囲（Min）                  | 範囲Max                    | Blueprintの型 |
 | ------ | ------ | -------------------------- | -------------------------- | ------------- |
 | int8   | 1      | -128                       | 128                        | -             |
 | uint8  | 1      | 0                          | 255                        | Byte          |
@@ -87,7 +87,7 @@ intの右側の数値から8で割るとByte数が出ます。
 
 ### 四則演算の処理を再現する
 #### 足し算の処理を再現する
-まずはAdd(足し算)ノードを再現してみましょう。
+まずはAdd（足し算）ノードを再現してみましょう。
 CPPSampleActor.cpp BeginePlay関数に処理を追記します。
 
 ```cpp:CPPSampleActor.cpp BeginePlay()
@@ -196,8 +196,8 @@ CalcVarA / CalcVarB // 割り算
 | ------ | -------- | -------- | ------------------ |
 | 足す   | Add      | +        | +                  |
 | 引く   | Subtract | -        | -                  |
-| 掛ける | Multiply | ×        | *(アスタリスク)    |
-| 割る   | Divide   | ÷        | /(スラッシュ)      |
+| 掛ける | Multiply | ×        | *（アスタリスク）    |
+| 割る   | Divide   | ÷        | /（スラッシュ）      |
 
 Blueprint以外にもMaterialなど他のEditorでも四則演算ノードが用意されています。
 ノードのヘッダ部分に英語が表示されますので、四則演算の英単語を覚えていくと対応できます。
@@ -275,7 +275,7 @@ C++で[int32]から[float]に変換（Cast）することで小数点を扱え�
 		, Duration);
 ```
 
-VariableTypeがint32の変数[CalcVarA],[CalcVarB]の変数型をヘッダーファイルでFloatに変更することもできます。
+VariableTypeがint32の変数[CalcVarA],[CalcVarB]の変数型をヘッダーファイルでFloatに変更できます。
 一時的に[int32]から[float]に変換（Cast）させる方法は、変数の前に（VariableType）とすることで変換できます。
 変換できるVariableTypeと、変換できないVariableTypeがありますので、気を付けて使用してください。
 ```cpp

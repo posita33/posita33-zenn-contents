@@ -6,14 +6,14 @@ topics: ["cpp", "unrealengine", "ue4", "ue5"]
 published: false
 ---
 
-## 【C++版】Enumeration(列挙型)
+## 【C++版】Enumeration（列挙型）
 
 ### C++でBlueprintを再現すること
 
-Enumeration(列挙型)をC++で作成します。
+Enumeration（列挙型）をC++で作成します。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-01-24-13-08-54.png)
 
-Switch文をint32から作成したEnumeration(列挙型)に変更します。
+Switch文をint32から作成したEnumeration（列挙型）に変更します。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-01-24-13-02-15.png)
 
 ### Visual Studioを開いて、編集するファイルを作成する
@@ -143,9 +143,9 @@ void ACPPFlowControlSwitchEnum::BeginPlay()
 
 ```
 
-### C++でEnumeration(列挙型)「ECPPCalcType」を作成する
+### C++でEnumeration（列挙型）「ECPPCalcType」を作成する
 
-C++でEnumeration(列挙型)を作成します。
+C++でEnumeration（列挙型）を作成します。
 
 [Tools]メニューから[New C++ Class]を開きます。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-01-24-15-48-29.png)
@@ -167,11 +167,11 @@ Solution Explorerから「CPPCalcType.cpp」をRemoveします。
 Solution ExplorerからRemoveしても、ファイルは残っているので、Explorerから「CPPCalcType.cpp」を削除します。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-01-24-17-25-56.png)
 
-「CPPCalcType.h」にEnumeration(列挙型)を作成します。
+「CPPCalcType.h」にEnumeration（列挙型）を作成します。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-01-24-17-38-48.png)
 
 
-C++のEnumeration(列挙型)の書き方は以下のようになります。
+C++のEnumeration（列挙型）の書き方は以下のようになります。
 
 ```cpp:CPPCalcType.h
 // Fill out your copyright notice in the Description page of Project Settings.
@@ -218,7 +218,7 @@ Solution Explorerから編集する2つのファイルを開きます。
 
 ```
 
-Enumeration(列挙型)を使用したswitch文の書き方は以下のようになります。
+Enumeration（列挙型）を使用したswitch文の書き方は以下のようになります。
 
 ```cpp:.cpp
 switch (CalcType)
@@ -323,9 +323,9 @@ Level Editorの[Play]ボタンをクリックします
 変数[CalcType]の値が[ECPPCalcType::Subtract]なので、引き算の出力結果が表示されます。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-01-24-18-32-27.png)
 
-### C++で作成したEnumeration(列挙型)をBlueprintで使用する
+### C++で作成したEnumeration（列挙型）をBlueprintで使用する
 
-C++で作成したEnumeration(列挙型)を使用できます。
+C++で作成したEnumeration（列挙型）を使用できます。
 C++で作成したEnumeration「ECPPCalcType」をBlueprintで使用します。
 
 「BP_FLowControl_SwitchEnum」を開きます。
@@ -347,7 +347,7 @@ VariableTypeにEnumeration「ECPPCalcType」を設定した変数[CPPCalcType]�
 Bluerpintで作成したEnumeration[ECalcType]と同じOutputの実行ピンが表示されました。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-01-24-18-49-32.png)
 
-### C++で作成したEnumeration(列挙型)のDisplayNameを設定する
+### C++で作成したEnumeration（列挙型）のDisplayNameを設定する
 
 SwitchノードのOutputの実行ピンに列挙定数の名前が使われていました。
 C++では列挙定数名とは別に「DisplayName」を設定してOutputの実行ピンの名称を変更できます。

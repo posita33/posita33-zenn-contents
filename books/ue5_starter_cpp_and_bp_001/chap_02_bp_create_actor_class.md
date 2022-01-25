@@ -3,10 +3,10 @@ title: "2.2.BP クラス(親クラス：Actor)を作成する"
 free: false
 ---
 
-## Blueprintのクラス(親クラス：Actor)を追加する
+## Blueprintのクラス（親クラス：Actor）を追加する
 Blueprintでクラスを作成します。
 Blueprintを作成するフォルダを作成します。
-(プロジェクト名)/Blueprints
+（プロジェクト名）/Blueprints
 ![](https://storage.googleapis.com/zenn-user-upload/86f17b944b31-20220110.png)
 
 新規Blueprintのクラスを作成するには何種類か方法があります。

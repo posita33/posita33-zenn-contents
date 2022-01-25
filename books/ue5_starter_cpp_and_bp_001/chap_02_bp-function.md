@@ -6,7 +6,7 @@ topics: ["cpp", "unrealengine", "ue4", "ue5"]
 published: false
 ---
 
-## 【Blueprint版】関数(Function)
+## 【Blueprint版】関数（Function）
 
 ### 今回できること
 
@@ -30,7 +30,7 @@ published: false
 
 
 ### Blueprintを複製する
-「BP_FlowControl_SwitchEnum」を複製(Ctrl + W)して、「BP_Function」を作成します。
+「BP_FlowControl_SwitchEnum」を複製（Ctrl + W）して、「BP_Function」を作成します。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-Function/2022-01-25-09-02-46.png)
 
 
@@ -72,7 +72,7 @@ Function[Sum]をEvent Grapthに追加します。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-Function/2022-01-25-09-43-32.png)
 
-Function[Sum]を実行するように、実行ピンを接続しなおします。
+Function[Sum]を処理するように、実行ピンを接続しなおします。
 Function[Sum]のInput[A][B]に変数[CalcValueA],[CalcValueB]を接続します。
 Function[Sum]のOutput[ReturnValue]を[IntegerからString変換]ノードに接続します。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-Function/2022-01-25-09-48-25.png)
@@ -95,8 +95,8 @@ Function[Sum]で計算した結果が表示されます。
 Functionを使用した時の処理の流れは図のようになります。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-Function/2022-01-25-10-11-57.png)
 
-### Function内でのみ使用できるLocal Variable(ローカル変数)を作成する
-Functionでのみ使用できる変数「Local Variable(ローカル変数)」を使用します。
+### Function内でのみ使用できるLocal Variable（ローカル変数）を作成する
+Functionでのみ使用できる変数「Local Variable（ローカル変数）」を使用します。
 
 Local Variables[LocalResult]を作成します。
 Function[Sum]を開きます。
@@ -127,9 +127,9 @@ VariablesとLocal Variablesの違いについて
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-Function/2022-01-25-10-48-11.png)
 
 
-### Function[Sum]のpure化(純粋化)
+### Function[Sum]のpure化（純粋化）
 
-Blueprintの[Add]ノードのようにFunction[Sum]を実行ピンのないノードに変更します。
+Blueprintの[Add]ノードのようにFunction[Sum]を実行ピンがないノードに変更します。
 
 Function[Sum]のノードを選択し、[Detail]パネルから[Pure]のチェックボックスをチェックします。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-Function/2022-01-25-10-51-24.png)
@@ -138,7 +138,7 @@ Function[Sum]のノードを選択し、[Detail]パネルから[Pure]のチェ�
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-Function/2022-01-25-10-54-49.png)
 
-公式ドキュメントの純粋関数(Pure Function)の解説です。
+公式ドキュメントの純粋関数（Pure Function）の解説です。
 
 >関数は 純粋関数 または 非純粋関数 のどちらかになります。両者の大きな違いは、純粋関数がステートやクラスのメンバーを一切変更しないのに対し、 非純粋関数はステートを自由に変更します。純粋関数は通常、データ値を出力するだけの getter 関数や演算子に使用されます。 関数または演算子は、データ値を単に出力します。
 
@@ -180,7 +180,7 @@ Inputに繋げていたノード以外を範囲選択します。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-Function/2022-01-25-11-21-41.png)
 
-Input[A],[B],[Duration]を接続されていない、「引き算」,「掛け算」,「割り算」に接続し直します。
+Input[A],[B],[Duration]を接続されていない、「引き算」,「掛け算」と「割り算」に接続し直します。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-Function/2022-01-25-11-25-28.png)
 
 Function Nameを[PrintCalcResult]に変更します。

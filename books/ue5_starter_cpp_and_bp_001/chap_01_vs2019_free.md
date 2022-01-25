@@ -36,7 +36,7 @@ NMakeのIntellisence > Include Search Pathにペーストします。
 
 https://twitter.com/posita33/status/1471717823580098563
 
-次にオプションの設定を行います。
+次にオプションの設定します。
 Tools > Options…
 ![](https://storage.googleapis.com/zenn-user-upload/1430d58c190d-20220110.png)
 

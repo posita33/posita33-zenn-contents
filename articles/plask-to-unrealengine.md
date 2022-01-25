@@ -44,10 +44,10 @@ Googleアカウントかメールアドレスでサインアップできます�
 
 灰色になっている箇所にWebカメラの映像が写ります。
 Webカメラの選択は、右上の[Camera]から選択します。
-Webカメラの設定できたら、「録画ボタン(赤丸)」をクリックします。
+Webカメラの設定できたら、「録画ボタン（赤丸）」をクリックします。
 ![](/images/articles/plask-to-unrealengine/2022-01-19-19-53-18.png)
 
-録画を終了するには再び「録画ボタン(赤丸)」をクリックします。
+録画を終了するには再び「録画ボタン（赤丸）」をクリックします。
 録画が完了するとプレビューが表示されるます。
 一番下のタイムラインでアニメーションにしたい範囲を指定します。
 範囲が指定できたら、「Extract Motion」をクリックします。
@@ -63,7 +63,7 @@ Motion名を設定して、[OK]ボタンをクリックします。
 
 ### Plaskでスマホ動画からモーションデータを抽出する
 :::message
-動画からモーションデータを抽出方法が分かりました。(2022/1/22)
+動画からモーションデータを抽出方法が分かりました（2022/1/22）。
 動画からモーションデータを抽出したい方はコチラをご参照ください。
 :::
 
@@ -152,7 +152,7 @@ Exportが完了するとFBXがダウンロードされます。
 
 ![](/images/articles/plask-to-unrealengine/2022-01-19-21-06-10.png)
 
-名前を「SK_PlaskMannequin_(Motion名).fbx」に設定します。
+名前を「SK_PlaskMannequin_（Motion名）.fbx」に設定します。
 ![](/images/articles/plask-to-unrealengine/2022-01-19-21-10-03.png)
 
 
@@ -171,7 +171,7 @@ UE5にPlaskからExportしたMotionをImportします
 
 UE5 EAでプロジェクトを作成します。
 「SK_Mannequin」を使用するので、「ThirdPerson」テンプレートを選択します。
-![](/images/articles/plask-to-unrealengine/2022-01-19-21-12-55.png)!
+![](/images/articles/plask-to-unrealengine/2022-01-19-21-12-55.png)
 
 プロジェクトが作成されたら「Plask」のMotionインポート用のフォルダを作成します
 ![](/images/articles/plask-to-unrealengine/2022-01-19-21-17-55.png)
@@ -190,7 +190,7 @@ BasePoseとなるMeshとSkeltonがImportされました。
 
 ### Plaskで作成したMotionをImportする
 
-Plaskで作成したMotion「SK_PlaskMannequin_(Motion名).fbx」を「Animations」フォルダにImportします。
+Plaskで作成したMotion「SK_PlaskMannequin_（Motion名）.fbx」を「Animations」フォルダにImportします。
 ![](/images/articles/plask-to-unrealengine/2022-01-19-21-30-35.png)
 
 [Import Mesh]のチェックを外します。
@@ -209,7 +209,7 @@ MotionがImportされました。
 
 ### Import RotaionのX:0.0でImportした場合
 
-FBX Importの際に[Import Rotation]の設定を行わない場合の対処法です。
+FBX Importの際に[Import Rotation]の設定しない場合の対処法です。
 
 ![](/images/articles/plask-to-unrealengine/2022-01-19-21-37-25.png)
 
@@ -244,7 +244,7 @@ https://virtualcast.jp/wiki/unity/humanoid/introduction
 ![](/images/articles/plask-to-unrealengine/2022-01-19-21-50-41.png)
 
 
-「**MixamoからUE5(UE4)へアニメーションをリターゲットして使用する方法**」を参考にさせていただきました。
+「**MixamoからUE5（UE4）へアニメーションをリターゲットして使用する方法**」を参考にさせていただきました。
 ありがとうございます！
 
 https://zenn.dev/daichi_gamedev/books/unreal-engine-5/viewer/mixamo-to-ue
@@ -254,7 +254,7 @@ https://zenn.dev/daichi_gamedev/books/unreal-engine-5/viewer/mixamo-to-ue
 https://zenn.dev/daichi_gamedev/books/unreal-engine-5
 
 ## SK_PlaskMannequinのRigをSetUpする
-リターゲットできるように、異なるSkelton通しを対応させる設定を行います。
+リターゲットできるように、異なるSkelton通しを対応させる設定します。
 
 「SK_PlaskMannequin」を開いて、「Retarget Manager」を開きます。
 ![](/images/articles/plask-to-unrealengine/2022-01-19-21-55-43.png)

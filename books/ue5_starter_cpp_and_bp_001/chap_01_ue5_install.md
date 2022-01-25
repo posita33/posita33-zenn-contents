@@ -16,7 +16,7 @@ https://www.unrealengine.com/ja/download
 ![](https://storage.googleapis.com/zenn-user-upload/49d8d3543a4d-20220109.png)
 
 ## Unreal Engine 5早期アクセスをダウンロード
-この本を執筆している段階ではUnreal Engine 5が早期アクセス(Early accessなのでEAと略されることもあります)です。正式版がリリースされたタイミングで入手方法が変わってきます。
+この本を執筆している段階ではUnreal Engine 5が早期アクセス（Early accessなのでEAと略されることもあります）です。正式版がリリースされたタイミングで入手方法が変わってきます。
 
 ![](https://storage.googleapis.com/zenn-user-upload/297c239ca9be-20220109.png)
 

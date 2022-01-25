@@ -3,7 +3,7 @@ title: "1.3. 有料Expression「Visual Assist」の導入 "
 free: false
 ---
 
-30日間無料で使用することができるので、学習中や学習後も使用するのがおススメです。
+30日間無料で使用できるので、学習中や学習後も使用するのがおススメです。
 個人だと$129、企業だと$251かかります。
 有料Expressionを使わない方は、次の項目の設定にお進みください。
 
@@ -67,7 +67,7 @@ https://kimini.jp/zip_addresses/index/2100005
 
 購入完了です。
 領収書はすぐ送られてくるのですが、シリアル番号はUTC-5の月～金に処理が行われるようなので、平日に購入した方が良いです。
-（金曜日の夜に購入するとアクティベートは月曜日になってしまいます。）
+（金曜日の夜に購入するとアクティベートは月曜日になってしまいます）
 ![](https://storage.googleapis.com/zenn-user-upload/94345a0fb306-20220110.png)
 
 ### Visual Assistを登録する
@@ -92,7 +92,7 @@ Serial Numberをペーストしただけでは登録できないので、[Create
 メールアドレスの確認メールが送られてくるので、URLをクリックしてアカウントをActivateします。
 ![](https://storage.googleapis.com/zenn-user-upload/ec33851d2faf-20220110.png)
 
-[Serial Number]、アカウント情報(ID,Password)を入力して、[Register]ボタンをクリックします。
+[Serial Number]、アカウント情報（ID,Password）を入力して、[Register]ボタンをクリックします。
 ![](https://storage.googleapis.com/zenn-user-upload/743481a02f69-20220110.png)
 
 OKボタンをクリックすれば、登録完了です。

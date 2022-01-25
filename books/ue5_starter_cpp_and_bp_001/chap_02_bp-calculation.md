@@ -6,7 +6,7 @@ topics: ["unrealengine", "ue5", "ue4", "blueprint"]
 published: false
 ---
 
-## 【Blueprint版】四則演算(+ - x ÷)
+## 【Blueprint版】四則演算（+ - x ÷）
 「**四則演算**」という難しい名前を使用しましたが、「**足し算**」「**引き算**」「**掛け算**」「**割り算**」のことです。
 
 UE5から四則演算のノードの使用方法が変わります。
@@ -24,8 +24,8 @@ Blueprintで四則演算ノードを使用して、PrintStringで計算結果を
 | ------ | -------- | -------- | ------------------ |
 | 足す   | Add      | +        | +                  |
 | 引く   | Subtract | -        | -                  |
-| 掛ける | Multiply | ×        | *(アスタリスク)    |
-| 割る   | Divide   | ÷        | /(スラッシュ)      |
+| 掛ける | Multiply | ×        | *（アスタリスク）    |
+| 割る   | Divide   | ÷        | /（スラッシュ）      |
 
 ### 学習用の新規レベル「Chapter_2_7_Calculation」を作成する
 学習用の新規レベルを作成します。
@@ -64,7 +64,7 @@ $$
 変数[CalcVarA],[CalcVarB]のGetノードを追加し、PrintStringノードを追加します。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-01-18-15-08-37.png)
 
-変数[CalcVarA]のGetノードからDrag&Dropし、[**+(プラス)**]で検索します。
+変数[CalcVarA]のGetノードからDrag&Dropし、[**+（プラス）**]で検索します。
 メニューから[**Add**]を選択します。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-01-18-16-17-55.png)
 
@@ -86,7 +86,7 @@ Level Editorに戻り、Viewportに「**BP_SampleActor**」をDrag&Dropします
 赤い文字列がAddノードの計算結果です。
 
 $$
-CalcVarA(7) + CalcVarB(3) = 10
+CalcVarA（7） + CalcVarB（3） = 10
 $$
 
 足し算の計算結果が正しく行われています。
@@ -94,24 +94,24 @@ $$
 
 ### その他の四則演算ノードの追加
 
-その他の四則演算「**引き算(-)**」「**掛け算(×)**」「**割り算(÷)**」の結果をPrintStringで出力します。
+その他の四則演算「**引き算（-）**」「**掛け算（×）**」「**割り算（÷）**」の結果をPrintStringで出力します。
 
 **引き算**
 
 $$
-CalcVarA(7) - CalcVarB(3) = 4
+CalcVarA（7） - CalcVarB（3） = 4
 $$
 
 **掛け算**
 
 $$
-CalcVarA(7) × CalcVarB(3) = 21
+CalcVarA（7） × CalcVarB（3） = 21
 $$
 
 **割り算は割り切れないので小数点がある数値になります**
 
 $$
-CalcVarA(7) \div CalcVarB(3) = 2.333...
+CalcVarA（7） \div CalcVarB（3） = 2.333...
 $$
 
 
@@ -124,37 +124,37 @@ $$
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-01-18-16-43-27.png)
 
 
-[**Subtract(引き算)**]ノードを追加します。
-CalcVarAからDrag&Dropし、[**-(マイナス)**]で検索します。
+[**Subtract（引き算）**]ノードを追加します。
+CalcVarAからDrag&Dropし、[**-（マイナス）**]で検索します。
 メニューから[**Subtract**]を選択します。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-01-18-16-45-58.png)
 
-[**Subtract(引き算)**]ノードのOutputピンを[PrintString]ノードの[InString]ピンに接続します。
+[**Subtract（引き算）**]ノードのOutputピンを[PrintString]ノードの[InString]ピンに接続します。
 [PrintString]ノードの[TextColor]ピンには「黄色」を設定します。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-01-18-17-20-49.png)
 
 
-[**Multiply(掛け算)**]ノードを追加します。
-[**Subtract(引き算)**]ノードを追加手順と同様に範囲選択してCopy&Pasteし、四則演算ノードを削除します。
-CalcVarAからDrag&Dropし、[**\*(アスタリスク)**]で検索します。プログラミング言語の掛け算は[**\*(アスタリスク)**]を使用します。
+[**Multiply（掛け算）**]ノードを追加します。
+[**Subtract（引き算）**]ノードを追加手順と同様に範囲選択してCopy&Pasteし、四則演算ノードを削除します。
+CalcVarAからDrag&Dropし、[**\*（アスタリスク）**]で検索します。プログラミング言語の掛け算は[**\*（アスタリスク）**]を使用します。
 メニューから[**Multiply**]を選択します。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-01-18-17-04-46.png)
 
-[**Multiply(掛け算)**]ノードのOutputピンを[PrintString]ノードの[InString]ピンに接続します。
+[**Multiply（掛け算）**]ノードのOutputピンを[PrintString]ノードの[InString]ピンに接続します。
 [PrintString]ノードの[TextColor]ピンには「緑」を設定します。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-01-18-17-25-52.png)
 
-[**Divide(割り算)**]ノードを追加します。
-[**Subtract(引き算)**]ノードを追加手順と同様に範囲選択してCopy&Pasteし、四則演算ノードを削除します。
-CalcVarAからDrag&Dropし、[**/(スラッシュ)**]で検索します。プログラミング言語の割り算は[**/(スラッシュ)**]を使用します。
+[**Divide（割り算）**]ノードを追加します。
+[**Subtract（引き算）**]ノードを追加手順と同様に範囲選択してCopy&Pasteし、四則演算ノードを削除します。
+CalcVarAからDrag&Dropし、[**/（スラッシュ）**]で検索します。プログラミング言語の割り算は[**/（スラッシュ）**]を使用します。
 メニューから[**Divide**]を選択します。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-01-18-17-06-44.png)
 
-[**Divide(割り算)**]ノードのOutputピンを[PrintString]ノードの[InString]ピンに接続します。
+[**Divide（割り算）**]ノードのOutputピンを[PrintString]ノードの[InString]ピンに接続します。
 [PrintString]ノードの[TextColor]ピンには「水色」を設定します。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-01-18-17-27-24.png)
 
-四則演算ノード「**足し算(+)**」「**引き算(-)**」「**掛け算(×)**」「**割り算(÷)**」をPrintStringで出力するBlueprintです。
+四則演算ノード「**足し算（+）**」「**引き算（-）**」「**掛け算（×）**」「**割り算（÷）**」をPrintStringで出力するBlueprintです。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-01-18-17-31-52.png)
 
 [Compile]ボタンをクリックします。
@@ -172,21 +172,21 @@ CalcVarAからDrag&Dropし、[**/(スラッシュ)**]で検索します。プロ
 ### 割り算の結果に小数点も表示する
 割り算の結果を小数点まで表示されなかったのは、VariableType（整数の型）に問題があります。
 
-[**Divide(割り算)**]ノードのOutputピンのVariableType（整数の型）はIntegerです。
+[**Divide（割り算）**]ノードのOutputピンのVariableType（整数の型）はIntegerです。
 
-**Integer(整数型)**：整数しか持てないので、小数点の数値は切り捨てられます。
-
-$$
-CalcVarA(7) \div CalcVarB(3) = 2(Integer:整数)
-$$
-
-**Float(浮動小数点型)**：小数点が持てるので、小数点も保持できます。
+**Integer（整数型）**：整数しか持てないので、小数点の数値は切り捨てられます。
 
 $$
-CalcVarA(7) \div CalcVarB(3) = 2.333...(Float:小数点)
+CalcVarA（7） \div CalcVarB（3） = 2（Integer:整数）
 $$
 
-[**Divide(割り算)**]ノードのOutputピンをIntegerからFloatに変更します。
+**Float（浮動小数点型）**：小数点が持てるので、小数点も保持できます。
+
+$$
+CalcVarA（7） \div CalcVarB（3） = 2.333...（Float:小数点）
+$$
+
+[**Divide（割り算）**]ノードのOutputピンをIntegerからFloatに変更します。
 この昨日はUE5から実装される予定の機能です。
 UE4では型ごとに四則演算ノードが用意されていました。
 
@@ -195,7 +195,7 @@ UE4では型ごとに四則演算ノードが用意されていました。
 [Divide]ノードのOutputピンを右クリックし、「Convert Pin... > Float」と選択します。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-01-18-18-03-27.png)
 
-[**Divide(割り算)**]ノードのOutputピンから再び、[PrintString]ノードの[InString]ピンに接続します。
+[**Divide（割り算）**]ノードのOutputピンから再び、[PrintString]ノードの[InString]ピンに接続します。
 [Integer]から[String]に変換するノードは使用しないので削除します。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-01-18-18-05-01.png)
 
@@ -222,7 +222,7 @@ UE4では型ごとに四則演算ノードが用意されていました。
 EventGraphを右クリックし、メニューから[Add Math Expression]を選択します。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-01-18-18-22-32.png)
 
-[Math Expression]ノードを選択し、[Expression]プロパティのテキストボックスに[(A + B)]という足し算の数式を書きます。
+[Math Expression]ノードを選択し、[Expression]プロパティのテキストボックスに[（A + B）]という足し算の数式を書きます。
 
 数式内のA,Bという文字列はInputピンに変換されます。
 

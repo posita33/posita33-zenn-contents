@@ -6,7 +6,7 @@ topics: ["unrealengine", "ue5", "ue4", "blueprint"]
 published: false
 ---
 
-## 【Blueprint版】Flow Control(Switch)
+## 【Blueprint版】Flow Control（Switch）
 
 ### 今回できること
 [Branch]ノードを複数使用して分岐した処理を[Switch]ノードで分岐させます。
@@ -26,7 +26,7 @@ published: false
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_switch/2022-01-23-16-17-30.png)
 
 ### Blueprintを複製する
-「BP_FlowControl_Branch」をDuplicate(複製)して、「BP_FlowControl_Switch」を作成します。
+「BP_FlowControl_Branch」をDuplicate（複製）して、「BP_FlowControl_Switch」を作成します。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_switch/2022-01-23-16-20-45.png)
 
 
@@ -37,7 +37,7 @@ published: false
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_switch/2022-01-23-16-23-50.png)
 
 メニューから[Switch on int]を選択します。
-[Switch]ノードを追加する時は、追加したいVariableTypeのSwitchノードを[Switch (ValiableType)]で検索すると、メニューから見つけることができます。
+[Switch]ノードを追加する時は、追加したいVariableTypeのSwitchノードを[Switch （ValiableType）]で検索すると、メニューから見つけることができます。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_switch/2022-01-23-16-26-37.png)
 
 [Switch]ノードのOutputピンの数を[Add pin]の[+]をクリックして追加します。
@@ -45,7 +45,7 @@ Outputピンは以下のように計算結果の出力を切り替えます。
 - 0:足し算
 - 1:引き算
 - 2:掛け算
-- Default(該当しない値):割り算
+- Default（該当しない値）:割り算
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_switch/2022-01-23-16-33-01.png)
 
@@ -76,7 +76,7 @@ Level Editorの[Play]ボタンをクリックします。
 | Property        | About                                 |
 | --------------- | ------------------------------------- |
 | Start Index     | 実行ピンの一番上のIndex番号を設定する |
-| Has Default Pin | Defaultピンの表示(true)/非表示(false) |
+| Has Default Pin | Defaultピンの表示（true）/非表示（false） |
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_switch/2022-01-23-16-49-37.png)
 

@@ -127,7 +127,7 @@ void ACPPFlowControlSwitch::BeginPlay()
 
 ```
 
-## Switch文で数値を分岐する(Switchノード)
+## Switch文で数値を分岐する（Switchノード）
 
 Blueprintでは[Branch]ノードを使用して、計算結果の出力結果を切り替えていました。
 C++で処理を再現します。

@@ -6,7 +6,7 @@ topics: ["unrealengine", "ue5", "ue4", "blueprint"]
 published: false
 ---
 
-## 【Blueprint版】Enumeration(列挙型)
+## 【Blueprint版】Enumeration（列挙型）
 
 ### 今回できること
 変数[CalcType]のVariableTypeをEnumerationに変更することで、[Swith]ノードの分岐をより読みやすくします。
@@ -29,11 +29,11 @@ Enumeration（列挙型）をVariableTypeに設定することで、DefaultValue
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-01-24-08-52-19.png)
 
 
-### Enumeration(列挙型)を作成する
+### Enumeration（列挙型）を作成する
 
-Enumeration(列挙型)を作成します。
+Enumeration（列挙型）を作成します。
 
-Contents Browserの空きスペースを右クリック > Blueprints > Enumeration(列挙型)
+Contents Browserの空きスペースを右クリック > Blueprints > Enumeration（列挙型）
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-01-24-09-04-13.png)
 
 アセット名を「ECalcType」に設定します。
@@ -67,7 +67,7 @@ Contents Browserの空きスペースを右クリック > Blueprints > Enumerati
 
 ### Blueprintを複製する
 
-「BP_FlowControl_Switch」をDuplicate(複製)して、「BP_FlowControl_SwitchEnum」を作成します。
+「BP_FlowControl_Switch」をDuplicate（複製）して、「BP_FlowControl_SwitchEnum」を作成します。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-01-24-09-01-54.png)
 
 
@@ -89,7 +89,7 @@ EventGrapth内で変数を使用ていると、VariableTypeを変更してもい
 [Compile]ボタンをクリックして、変数[VariableType]のDefaultValueを確認します。
 DefaultValueの値がリスト化され、EnumerationのDisplayNameに設定した文字列が選択できます。
 VariableTypeがIntegerの時は数値で入力していたので、[1]というのは何の値なのか分かりませんでした。
-Enumeration(列挙型)にすることで、何の値を設定するのか明確になります。
+Enumeration（列挙型）にすることで、何の値を設定するのか明確になります。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-01-24-10-11-31.png)
 
 ### ECalcTypeのSwitchノードに処理を置き換える
@@ -101,7 +101,7 @@ Enumeration(列挙型)にすることで、何の値を設定するのか明確�
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-01-24-10-01-22.png)
 
 Integerの[Switch]ノードより[Switch]ノードからどの処理に接続してよいか分かりやすくなります。
-Enumeration(列挙型)はDisplayNameに設定した列挙定数しか設定できないので、「Default」実行ピンのようなあいまいな表現がなくなります。
+Enumeration（列挙型）はDisplayNameに設定した列挙定数しか設定できないので、「Default」実行ピンのようなあいまいな表現がなくなります。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-01-24-10-03-46.png)
 
 [Compile]ボタンをクリックします。

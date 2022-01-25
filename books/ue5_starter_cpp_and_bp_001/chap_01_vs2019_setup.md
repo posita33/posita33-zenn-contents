@@ -74,7 +74,7 @@ FirstPersonテンプレートのC++プロジェクトを作成します。
 - StarterContent：オフ
 ![](https://storage.googleapis.com/zenn-user-upload/d5045357413a-20220109.png)
 
-C++を書いていくエディターをVisual Studio 2019に設定します。
+C++を書いていくエディタをVisual Studio 2019に設定します。
 [Editor Preferences...]を開きます。
 ![](https://storage.googleapis.com/zenn-user-upload/8ebfecafcf8a-20220109.png)
 

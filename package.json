@@ -18,6 +18,20 @@
   },
   "homepage": "https://github.com/posita33/posita33-zenn-contents#readme",
   "dependencies": {
+    "@textlint-ja/textlint-rule-no-insert-dropping-sa": "^2.0.1",
+    "@textlint-ja/textlint-rule-no-synonyms": "^1.3.0",
+    "sudachi-synonyms-dictionary": "^10.0.0",
+    "textlint-rule-ja-hiragana-fukushi": "^1.3.0",
+    "textlint-rule-ja-hiragana-hojodoushi": "^1.0.4",
+    "textlint-rule-ja-no-inappropriate-words": "^2.0.0",
+    "textlint-rule-ja-no-orthographic-variants": "^2.0.0",
+    "textlint-rule-jis-charset": "^0.1.0",
+    "textlint-rule-no-hoso-kinshi-yogo": "^1.3.2",
+    "textlint-rule-no-mixed-zenkaku-and-hankaku-alphabet": "^1.0.1",
+    "textlint-rule-no-start-duplicated-conjunction": "^2.0.2",
+    "textlint-rule-no-surrogate-pair": "^1.0.1",
+    "textlint-rule-prefer-tari-tari": "^1.0.3",
+    "textlint-rule-use-si-units": "^1.0.2",
     "zenn-cli": "^0.1.105"
   },
   "devDependencies": {

@@ -124,6 +124,8 @@ https://qiita.com/takasp/items/22f7f72b691fda30aea2
 **textlint作者のazuさんページ**
 https://efcl.info/2015/09/10/introduce-textlint/
 
+textlintのおススメルール
+https://qiita.com/k8uwall/items/3c29ef2dce153e13bd1d
 
 textlint の設定は少し難しいので、「テキスト校正くん」という拡張がありました。
 https://marketplace.visualstudio.com/items?itemName=ICS.japanese-proofreading
@@ -152,7 +154,7 @@ https://chrome.google.com/webstore/detail/%E3%81%8B%E3%82%93%E3%81%9F%E3%82%93%E
 
 ### よく使うMarkdown記法のSnippet登録
 
-アコーディオンを使いたかったので調べてみたら、他にも使えそうなMarkdown記法がありました。
+アコーディオンを使用したかったので調べてみたら、他にも使用できそうなMarkdown記法がありました。
 よく使うMarkdown記法も一緒に追加しました。
 
 https://zenn.dev/posita33/articles/zenn_markdown_snippet

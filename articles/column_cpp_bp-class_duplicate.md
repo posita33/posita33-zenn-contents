@@ -66,14 +66,14 @@ void ACPPActor::BeginPlay()
 }
 ```
 
-## クラスをDuplicate(複製)する 
+## クラスをDuplicate（複製）する 
 
 同じ変数や関数を持ったクラスをDuplicate（複製）します。
 
-### BlueprintのクラスをDuplicate(複製する)
+### BlueprintのクラスをDuplicate（複製する）
 まずは簡単にDuplicate（複製）できるBlueprintの手順です。
-Duplicate(複製)したいBlueprintクラスを右クリックし、Duplicateを選択します。
-ショートカットキーは[**Ctrl + W**]です。(「Ctrl + C」> [Ctrl + V]でもOK)
+Duplicate（複製）したいBlueprintクラスを右クリックし、Duplicateを選択します。
+ショートカットキーは[**Ctrl + W**]です（「Ctrl + C」> [Ctrl + V]でもOK）。
 ![](/images/articles/column_cpp_bp-class_duplicate/2022-01-21-06-43-12.png)
 
 DuplicateされたBlueprintクラスを開くと、同じ処理が表示されます。
@@ -82,7 +82,7 @@ DuplicateされたBlueprintクラスを開くと、同じ処理が表示され�
 DuplicateしたBlueprintクラスの名前を変更します。
 ![](/images/articles/column_cpp_bp-class_duplicate/2022-01-21-08-00-35.png)
 
-### C++のクラスは同じ親を持つクラスを作成して処理をコピー＆ペーストする
+### C++のクラスは同じ親を持つクラスを作成して処理をコピー&ペーストする
 C++には複製機能が見つけられませんでした。
 C++のクラスを別名でコピーするといった事はあまり行われず、継承することで処理として解決することが一般的でした。
 ヘッダーファイルとCPPファイルの2つに分かれることも別名クラスファイルを作りづらい理由になっていました。
@@ -91,8 +91,8 @@ Contents BrowserからC++のクラスを右クリックして表示されるメ�
 
 |Menu |動作 |
 |---|---|
-|Create C++ class derived from (クラス) |(クラス)を継承したC++クラスを作成する|
-|Create Blueprint class based on (クラス) |(クラス)を継承したBlueprintクラスを作成する |
+|Create C++ class derived from （クラス） |（クラス）を継承したC++クラスを作成する|
+|Create Blueprint class based on （クラス） |（クラス）を継承したBlueprintクラスを作成する |
 
 ![](/images/articles/column_cpp_bp-class_duplicate/2022-01-21-07-37-21.png)
 
@@ -123,7 +123,7 @@ Blueprintの子クラスを作成します。
 親クラスとなるBlueprintクラスを右クリックし、[Create Child Blueprint Class]を選択します。  
 ![](/images/articles/column_cpp_bp-class_duplicate/2022-01-21-20-53-50.png)
 
-「(親クラスとなるBlueprintクラス名)_Child」が作成されます。
+「（親クラスとなるBlueprintクラス名）_Child」が作成されます。
 作成された子Blueprintを開いて、親クラスを確認します。
 ![](/images/articles/column_cpp_bp-class_duplicate/2022-01-21-20-58-26.png)
 
@@ -139,16 +139,16 @@ C++はクラスの複製はできなかったものの、継承したクラス�
 
 |Menu |動作 |
 |---|---|
-|Create C++ class derived from (クラス) |(クラス)を継承したC++クラスを作成する|
-|Create Blueprint class based on (クラス) |(クラス)を継承したBlueprintクラスを作成する |
+|Create C++ class derived from （クラス） |（クラス）を継承したC++クラスを作成する|
+|Create Blueprint class based on （クラス） |（クラス）を継承したBlueprintクラスを作成する |
 
-「Create C++ class derived from (クラス) 」メニューを実行してみます。
+「Create C++ class derived from （クラス） 」メニューを実行してみます。
 ![](/images/articles/column_cpp_bp-class_duplicate/2022-01-21-21-08-15.png)
 
 ClassTypeとNameを設定して、[Create Class]ボタンをクリックします。
 ![](/images/articles/column_cpp_bp-class_duplicate/2022-01-21-23-04-31.png)
 
-「Create C++ class derived from (クラス) 」メニューを実行したC++クラスの子クラスが作成されます。
+「Create C++ class derived from （クラス） 」メニューを実行したC++クラスの子クラスが作成されます。
 ![](/images/articles/column_cpp_bp-class_duplicate/2022-01-21-21-18-46.png)
 
 ```h:CPPActorChild.h
@@ -187,9 +187,9 @@ class CLASSDUPLICATE_API ACPPActorChild : public ACPPActor
 ```
 
 ### C++クラスを継承したBlueprintを作成する
-[Create Blueprint class based on (クラス) ]メニューを実行すると、C++クラスからBlueprintの子クラスを作成できます。
+[Create Blueprint class based on （クラス） ]メニューを実行すると、C++クラスからBlueprintの子クラスを作成できます。
 
-[Create Blueprint class based on (クラス) ]メニューを実行します。
+[Create Blueprint class based on （クラス） ]メニューを実行します。
 ![](/images/articles/column_cpp_bp-class_duplicate/2022-01-21-21-25-40.png)
 
 子クラスとなるBlueprint名を設定します。
@@ -199,7 +199,7 @@ class CLASSDUPLICATE_API ACPPActorChild : public ACPPActor
 選択したフォルダに移動すると、C++クラスの子クラスとなるBlueprintが作成されています。
 ![](/images/articles/column_cpp_bp-class_duplicate/2022-01-21-21-29-19.png)
 
-親クラスを確認すると、[Create Blueprint class based on (クラス) ]メニューを実行したC++クラスの名前が表示されています。
+親クラスを確認すると、[Create Blueprint class based on （クラス） ]メニューを実行したC++クラスの名前が表示されています。
 ![](/images/articles/column_cpp_bp-class_duplicate/2022-01-21-21-30-57.png)
 
 ## まとめ

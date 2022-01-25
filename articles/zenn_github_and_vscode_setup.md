@@ -25,7 +25,7 @@ https://zenn.dev/masakiyo/articles/76ca3b774c6746
 
 ## GitHub連携について
 
-### GitHub連携について(公式)
+### GitHub連携について（公式）
 Zenn公式が分かりやすい説明を掲載しています。
 
 https://zenn.dev/zenn/articles/connect-to-github
@@ -47,22 +47,22 @@ branch名は[**main**]から[**zenn**]に変えて管理することにしまし
 
 ### 公開リポジトリにする際のライセンス設定について
 営利目的の使用を禁止にしておきたかったので、
-CC BY-SAで運用することにしました。(2021/1/22)
+CC BY-SAで運用することにしました（2021/1/22）
 https://creativecommons.org/licenses/by-nc/4.0/deed.ja
 
 CCライセンスの設定についてはコチラの記事を参考にさせていただきました。
 https://zenn.dev/spiegel/articles/20200919-ccl
 
 
-## ZennをVS Codeで執筆するための拡張(Expression)設定
+## ZennをVS Codeで執筆するための拡張（Expression）設定
 
 ### 執筆を高速化する設定
-VS Codeの拡張(Expression)設定を参考にさせていただきました。
+VS Codeの拡張（Expression）設定を参考にさせていただきました。
 https://zenn.dev/ctrlkeykoyubi/articles/e7d91c5286a409
 
 https://zenn.dev/nkys39/articles/struct-zenn-win10
 
-**InstallしたVS Code拡張(Expression)**
+**InstallしたVS Code拡張（Expression）**
 - Paste Image
 - Zenn Editor
 - Excel to Markdown table
@@ -70,12 +70,12 @@ https://zenn.dev/nkys39/articles/struct-zenn-win10
 - CharacterCount
 - Git Graph
 
-:::details ショートカットが分からずハマったところ  
+:::details ショートカットが分からずハマったところ。
 
 **ショートカットが分からずハマったところ**
 Paste Image拡張機能のペーストショートカット
 **Ctrl + Alt + V**
-(Ctrl + Vでは画像のコピーとMarkdown文がペーストされない)
+（Ctrl + Vでは画像のコピーとMarkdown文がペーストされない）
 :::
 
 :::details Paste Imageの設定方法
@@ -86,11 +86,11 @@ https://zenn.dev/waddy/articles/image-paste-zenn-upload
 画像保存フォルダを[articles]を[books]で分けるようにワークスペースを別々にした。
 | ワークスペース名             | Paste Image : Path                       |
 | ---------------------------- | -------------------------------------- |
-| article.code-workspace       | images/articles/(画像ファイル名)       |
-| book-(book名).code-workspace | images/books/(book名)/(画像ファイル名) |
+| article.code-workspace       | images/articles/（画像ファイル名）       |
+| book-（book名）.code-workspace | images/books/（book名）/（画像ファイル名） |
 :::
 
-:::details 表を作る時のショートカット
+:::details 表を作る時のショートカット。
 
 Excel to Markdown table拡張機能のショートカット
 **Alt + Shift + V**
@@ -109,7 +109,7 @@ Git Graphをインストールしても、どこから見たら分からなか�
 ![](/images/articles/zenn_github_and_vscode_setup/2022-01-19-06-00-56.png)
 :::
 
-### 文章校正を効率化する(textlint、テキスト文章校正くん)
+### 文章校正を効率化する（textlint、テキスト文章校正くん）
 Webの文章校正ツールを使って文章校正していました。
 https://note.com/posi_ta/n/n3134dbf8a638
 
@@ -125,7 +125,7 @@ https://qiita.com/takasp/items/22f7f72b691fda30aea2
 https://efcl.info/2015/09/10/introduce-textlint/
 
 
-textlintの設定は少し難しいので、「テキスト校正くん」という拡張がありました。
+textlint の設定は少し難しいので、「テキスト校正くん」という拡張がありました。
 https://marketplace.visualstudio.com/items?itemName=ICS.japanese-proofreading
 
 ら抜き言葉といった言葉遣いを波線で教えてくれます。
@@ -156,7 +156,7 @@ https://chrome.google.com/webstore/detail/%E3%81%8B%E3%82%93%E3%81%9F%E3%82%93%E
 よく使うMarkdown記法も一緒に追加しました。
 
 https://zenn.dev/posita33/articles/zenn_markdown_snippet
-(2022/1/18)
+（2022/1/18）
 
 ## 随時最適化
 書きながら改善した内容を記録します。

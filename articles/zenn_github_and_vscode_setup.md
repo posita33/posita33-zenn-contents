@@ -132,6 +132,10 @@ https://marketplace.visualstudio.com/items?itemName=ICS.japanese-proofreading
 ✕食べれる
 〇食べられる
 ![](/images/articles/zenn_github_and_vscode_setup/2022-01-17-17-56-53.png)
+
+テキスト校正くんでチェックを外した設定です。
+![](/images/articles/zenn_github_and_vscode_setup/2022-01-25-22-26-59.png)
+
 :::
 
 ### 文字数をカウント

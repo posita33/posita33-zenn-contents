@@ -117,7 +117,7 @@ Function[Sum]の[ReturnValue]に[LocalResult]の値を設定します。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-Function/2022-01-25-10-44-38.png)
 
 
-VariablesとLocal Variablesの違いについて
+VariablesとLocal Variablesの違いについて表にまとめました。
 
 | 変数のタイプ    | 説明                                                      |
 | --------------- | --------------------------------------------------------- |

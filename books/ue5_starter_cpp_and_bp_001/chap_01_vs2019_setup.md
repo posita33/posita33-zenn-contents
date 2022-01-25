@@ -115,7 +115,7 @@ Solusion Configurationsの一覧が見やすくなります。
 
 ![](https://storage.googleapis.com/zenn-user-upload/a1372560fc8d-20220109.png)
 
-Projects and Solutions > Generalの[Always show error list if build finishes with error （ビルドがエラーで終わった場合、常にエラー リストを表示する）]をオフに設定します
+Projects and Solutions > Generalの[Always show error list if build finishes with error （ビルドがエラーで終わった場合、常にエラー リストを表示する）]をオフに設定します。
 ![](https://storage.googleapis.com/zenn-user-upload/f8f9311605e4-20220109.png)
 
 出力 （Output） ウィンドウを使用して実際のコード エラーを確認することを推奨されています。

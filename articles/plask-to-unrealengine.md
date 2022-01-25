@@ -165,7 +165,7 @@ https://www.youtube.com/channel/UClHOCrckvQEcrkqH4A7PA5A
 
 
 ## UE5でMannequinにPlaskのMotionをImportする
-UE5にPlaskからExportしたMotionをImportします
+UE5にPlaskからExportしたMotionをImportします。
 
 ### UE5のProjectを作成する
 
@@ -173,7 +173,7 @@ UE5 EAでプロジェクトを作成します。
 「SK_Mannequin」を使用するので、「ThirdPerson」テンプレートを選択します。
 ![](/images/articles/plask-to-unrealengine/2022-01-19-21-12-55.png)
 
-プロジェクトが作成されたら「Plask」のMotionインポート用のフォルダを作成します
+プロジェクトが作成されたら「Plask」のMotionインポート用のフォルダを作成します。
 ![](/images/articles/plask-to-unrealengine/2022-01-19-21-17-55.png)
 
 

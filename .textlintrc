@@ -15,7 +15,7 @@
          "allow": ["か"] 
       }
     },
-    "ja-technical-writing/ja-no-mixed-period": false,
+    "ja-technical-writing/ja-no-mixed-period": true,
     "ja-technical-writing/sentence-length": false, 
     "ja-technical-writing/no-exclamation-question-mark": false, 
     "spellcheck-tech-word": true,

@@ -80,7 +80,8 @@ Paste Image拡張機能のペーストショートカット
 
 :::details Paste Imageの設定方法
 **Paste Imageの設定方法**
-Paste Imageの設定はコチラの記事の方が分かりやすい
+Paste Imageの設定はコチラの記事の方が分かりやすいです。
+
 https://zenn.dev/waddy/articles/image-paste-zenn-upload
 
 画像保存フォルダを[articles]を[books]で分けるようにワークスペースを別々にした。

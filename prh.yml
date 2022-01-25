@@ -10,7 +10,7 @@ version: 1
 
 # 別の設定ファイルを読み込み、mergeすることもできます。
 imports:
-  # - ./prh-rules/media/techbooster.yml
+  - ./prh-rules/game-tech.yml
   # - ./prh-rules/files/markdown.yml
   # - ./prh-rules/files/review.yml
 
@@ -103,13 +103,3 @@ rules:
       # 日本語+単語境界の仕様は自分で調べてね…！
       - from: 今日もJS祭り
         to:   今日もjs祭り
-
-  #-------------------
-  # ゲーム系アプリケーション名
-  #-------------------
-  - expected: ZBrush
-    specs:
-      - from: zbrush
-        to: ZBrush
-
-        

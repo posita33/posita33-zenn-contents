@@ -6,15 +6,19 @@ topics: ["cpp", "unrealengine", "ue4", "ue5"]
 published: false
 ---
 
-## Visual Studioを開いて、編集するファイルを作成する
+## 編集するActorクラスを作成する
+
 プロジェクトを閉じていたら、プロジェクトを開き、
 「Chapter_2_FlowControl_Switch」を開きます。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-01-23-18-40-44.png)
 
 [Tools]メニューから[New C++ Class]を開きます。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-01-23-18-41-57.png)
 
 親クラスに[Actor]を選択します。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-01-23-18-42-21.png)
 
 ClassTypeとClass名を設定します。
@@ -43,6 +47,7 @@ Solution Explorerから今回編集する2つのファイルを開きます。
 #pragma once
 
 #include "CoreMinimal.h"
+#include "GameFramework/Actor.h"
 #include "CPPFlowControlSwitch.generated.h"
 
 UCLASS()
@@ -131,6 +136,7 @@ void ACPPFlowControlSwitch::BeginPlay()
 
 Blueprintでは[Branch]ノードを使用して、計算結果の出力結果を切り替えていました。
 C++で処理を再現します。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-01-23-21-23-19.png)
 
 
@@ -240,28 +246,38 @@ void ACPPFlowControlSwitch::BeginPlay()
 }
 
 ```
+
 Ctrl + Sでファイルを保存し、Compileを行います。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-01-23-21-32-29.png)
 
 「CPPFlowControlSwitch」をViewportにDrag&Dropします。
 PrintStringの出力結果が分かりづらくなるので、「BP_FlowControl_Switch」を削除します。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-01-23-21-34-31.png)
 
 Level Editorの[Play]ボタンをクリックします。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-01-23-21-32-39.png)
 
 変数[CalcType]の値が[1]なので、引き算の出力結果が表示されます。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-01-23-21-35-57.png)
 
 
 ### C++とBlueprintの比較画像
+
 C++とBlueprintの比較画像です。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-01-23-21-44-52.png)
 
-### すべて保存してC++側は終了です。
+### すべて保存
+
 C++側の説明は以上になります。
 プロジェクトをすべて保存しましょう。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-01-23-21-39-19.png)
 
 Visual StudioのSolutionもすべて保存しましょう。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-01-23-21-46-14.png)

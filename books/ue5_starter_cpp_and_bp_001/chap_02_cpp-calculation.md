@@ -305,7 +305,7 @@ Level Editorの[Play]ボタンをクリックします。
 割り算の結果が小数点まで表示されます。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-19-14-23-15.png)
 
-### すべてを保存して、C++側の説明は終了です
+### すべて保存
 C++側の説明は以上になります。
 プロジェクトをすべて保存しましょう。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-20-06-03-35.png)

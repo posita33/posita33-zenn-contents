@@ -16,7 +16,7 @@ Enumeration（列挙型）をC++で作成します。
 Switch文をint32から作成したEnumeration（列挙型）に変更します。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-01-24-13-02-15.png)
 
-### Visual Studioを開いて、編集するファイルを作成する
+### 編集するActorクラスを作成する
 
 プロジェクトを閉じていたら、プロジェクトを開き、
 「Chapter_2_Enumeration」を開きます。
@@ -53,6 +53,7 @@ Solution Explorerから今回編集する2つのファイルを開きます。
 #pragma once
 
 #include "CoreMinimal.h"
+#include "GameFramework/Actor.h"
 #include "CPPFlowControlSwitchEnum.generated.h"
 
 UCLASS()
@@ -317,7 +318,8 @@ Ctrl + Sでファイルを保存し、Compileを行います。
 PrintStringの出力結果が分かりづらくなるので、「BP_FlowControl_SwitchEnum」を削除します。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-01-24-18-29-04.png)
 
-Level Editorの[Play]ボタンをクリックします
+Level Editorの[Play]ボタンをクリックします。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-01-24-18-31-04.png)
 
 変数[CalcType]の値が[ECPPCalcType::Subtract]なので、引き算の出力結果が表示されます。
@@ -383,7 +385,7 @@ VariableTypeを[ECPPCalcType]に再設定します。
 Switchノードを再度作成すると、[Switch]ノードの実行ピンの名称がDisplay Nameで設定した名称に変更されています。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-01-24-18-56-00.png)
 
-### すべて保存してC++側は終了です。
+### すべて保存
 C++側の説明は以上になります。
 プロジェクトをすべて保存しましょう。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-01-24-22-38-39.png)

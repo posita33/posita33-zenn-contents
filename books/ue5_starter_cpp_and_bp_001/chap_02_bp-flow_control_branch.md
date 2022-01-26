@@ -194,7 +194,7 @@ DefaultValueを変更して、引き算のPrintStringが出力されるように
 [Branch]ノードを複数組み合わせることで、複数の選択肢に分岐できます。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_branch/2022-01-22-18-33-32.png)
 
-### すべて保存してBlueprint側は終了です。
+### すべて保存
 Blueprint側の説明は以上になります。
 プロジェクトをすべて保存しましょう。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_branch/2022-01-22-23-16-47.png)

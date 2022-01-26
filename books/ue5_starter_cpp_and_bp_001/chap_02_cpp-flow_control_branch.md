@@ -6,7 +6,7 @@ topics: ["unrealengine", "ue5", "ue4", "blueprint"]
 published: false
 ---
 
-### Visual Studioを開いて、編集するファイルを作成する
+### 編集するActorクラスを作成する
 プロジェクトを閉じていたら、プロジェクトを開き、
 「Chapter_2_FlowControl_Branch」を開きます。
 
@@ -42,6 +42,7 @@ Solution Explorerから今回編集する2つのファイルを開きます。
 #pragma once
 
 #include "CoreMinimal.h"
+#include "GameFramework/Actor.h"
 #include "CPPFlowControlBranch.generated.h"
 
 UCLASS()
@@ -559,7 +560,7 @@ Level Editorの[Play]ボタンをクリックします。
 C++とBlueprintの比較画像です。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-21-54-25.png)
 
-### すべて保存してC++側は終了です。
+### すべて保存
 C++側の説明は以上になります。
 プロジェクトをすべて保存しましょう。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-11-38-13.png)

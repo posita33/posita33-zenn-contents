@@ -81,7 +81,7 @@ Level Editorの[Play]ボタンをクリックします。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_switch/2022-01-23-16-49-37.png)
 
 
-### すべて保存して、Blueprint側は終了
+### すべて保存
 
 Blueprint側の説明はここまでになります。
 [Content Browser]から[Save All]ボタンをクリックし、[Save Selected]ボタンをクリックしてプロジェクトの変更のあったアセットをすべて保存します。

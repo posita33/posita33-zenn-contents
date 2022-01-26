@@ -116,7 +116,7 @@ Level Editorの[Play]ボタンをクリックします。
 変数[CalcType]の値が[Subtract]なので、引き算の出力結果が表示されます。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-01-24-10-21-59.png)
 
-### すべて保存して、Blueprint側は終了
+### すべて保存
 Blueprint側の説明はここまでになります。
 [Content Browser]から[Save All]ボタンをクリックし、[Save Selected]ボタンをクリックしてプロジェクトの変更のあったアセットをすべて保存します。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-01-24-10-31-44.png)

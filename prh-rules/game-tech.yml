@@ -5,7 +5,7 @@ imports:
 rules:
 
   #-------------------
-  # ゲーム系アプリケーション名
+  # 3DCGソフト一覧
   #-------------------
   - expected: ZBrush
     specs:
@@ -17,8 +17,43 @@ rules:
       - from: blender
         to: Blender
 
+  - expected: 3DS MAX
+    specs:
+      - from: 3ds max
+        to: 3DS MAX
+
+  - expected: MAYA
+    specs:
+      - from: maya
+        to: MAYA
+
+  - expected: Cinema 4D
+    specs:
+      - from: cinema 4d
+        to: Cinema 4D
+
+  - expected: LightWave 3D
+    specs:
+      - from: lightwave 3d
+        to: LightWave 3D
+
+  - expected: MODO
+    specs:
+      - from: modo
+        to: MODO
+
   - expected: Houdini
     specs:
       - from: houdini
         to: Houdini
+
+  - expected: Clarisse
+    specs:
+      - from: clarisse
+        to: Clarisse
+
+  - expected: Metasequoia
+    specs:
+      - from: metasequoia
+        to: Metasequoia
 

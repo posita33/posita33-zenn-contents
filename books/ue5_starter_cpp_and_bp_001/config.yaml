@@ -44,6 +44,7 @@ chapters:
   - chap_02_bp-component
   - chap_02_cpp-component
   - chap_02_bp-construction_script
+  - chap_02_cpp-construction_script
   - chap_02_bp-calculation
   - chap_02_cpp-calculation
   - chap_02_bp-flow_control_branch

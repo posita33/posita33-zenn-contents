@@ -42,6 +42,7 @@ chapters:
   - chap_02_bp-variable
   - chap_02_cpp-variable
   - chap_02_bp-component
+  - chap_02_cpp-component
   - chap_02_bp-calculation
   - chap_02_cpp-calculation
   - chap_02_bp-flow_control_branch

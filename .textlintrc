@@ -29,7 +29,7 @@
     "ja-no-orthographic-variants": true,
     "use-si-units": true,
     "no-hoso-kinshi-yogo": true,
-    "ja-no-inappropriate-words": true,
+    "ja-no-inappropriate-words": false,
 
     "prh": {
       "rulePaths": ["./prh.yml"]

@@ -1,12 +1,12 @@
 ---
-title: "【BP】 PrintStringでHello World!を出力する"
+title: "【BP】 PrintStringでHello World!"
 emoji: "😊"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: ["cpp", "unrealengine", "ue4", "ue5"]
+topics: ["unrealengine", "ue5", "ue4", "blueprint"]
 published: false
 ---
 
-## 【Blueprint版】PrintStringでHello World!を出力する
+## 【Blueprint】PrintStringでHello World!
 
 ### 今回できること
 
@@ -222,9 +222,15 @@ Blueprintにコメントを書きます。
 
 コメントを残すことは大事ですが、処理を変更した時にコメントを変更し忘れてしまうことがよくあります。処理とコメントが違うと混乱してしまうので、処理を修正したらコメントも必ず修正しましょう。
 
-### すべて保存
+### すべて保存する
 Blueprint側の説明は以上になります。
 プロジェクトをすべて保存しましょう。
 
 **【要画像修正！ 】**
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-Function/2022-01-25-12-29-47.png)
+
+## 参照URL
+
+https://docs.unrealengine.com/4.27/ja/ProgrammingAndScripting/Blueprints/Editor/UIBreakdowns/ClassBPUI/
+
+https://docs.unrealengine.com/4.27/ja/ProgrammingAndScripting/Blueprints/UserGuide/Comments/

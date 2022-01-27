@@ -1,12 +1,12 @@
 ---
-title: "【BP】 関数(Function)"
+title: "【C++】 関数(Function)"
 emoji: "📌"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["cpp", "unrealengine", "ue4", "ue5"]
 published: false
 ---
 
-## 【C++版】関数（Function）
+## 【C++】関数（Function）
 
 ### C++でBlueprintを再現すること
 

@@ -1,5 +1,5 @@
 ---
-title: "2.2.BP クラス(親クラス：Actor)を作成する"
+title: "【BP】Actorクラスを作成する"
 free: false
 ---
 

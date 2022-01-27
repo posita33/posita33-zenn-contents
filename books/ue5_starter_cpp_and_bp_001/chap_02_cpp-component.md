@@ -6,7 +6,7 @@ topics: ["cpp", "unrealengine", "ue4", "ue5"]
 published: false
 ---
 
-## 【C++版】Componentを追加する
+## 【C++】Componentを追加する
 
 ### C++でBlueprintを再現すること
 
@@ -352,7 +352,7 @@ BlueprintとC++同じ構成のComponentを実装した状態です。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-component/2022-01-27-11-30-11.png)
 
-### すべて保存
+### すべて保存する
 
 C++側の説明は以上になります。
 プロジェクトをすべて保存しましょう。

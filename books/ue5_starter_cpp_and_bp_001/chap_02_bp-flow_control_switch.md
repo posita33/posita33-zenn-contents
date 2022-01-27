@@ -6,7 +6,7 @@ topics: ["unrealengine", "ue5", "ue4", "blueprint"]
 published: false
 ---
 
-## 【Blueprint版】Flow Control（Switch）
+## 【Blueprint】Flow Control（Switch）
 
 ### 今回できること
 [Branch]ノードを複数使用して分岐した処理を[Switch]ノードで分岐させます。

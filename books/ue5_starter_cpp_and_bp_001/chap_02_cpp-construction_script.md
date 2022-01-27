@@ -1,14 +1,14 @@
 ---
-title: "【Blueprint版】Construction Script"
+title: "【C++】Construction Script"
 emoji: "🔥"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["cpp", "unrealengine", "ue4", "ue5"]
 published: false
 ---
 
-## 【C++版】Construction Script
+## 【C++】Construction Script
 
-### C++でBlueprintのConstruction Scriptを再現する
+### C++でBlueprintを再現すること
 C++でBlueprintのConstruction Scriptで実装した処理を再現します。
 
 - 宣言した変数がLevelEditorの[Detail]パネルで変更できる

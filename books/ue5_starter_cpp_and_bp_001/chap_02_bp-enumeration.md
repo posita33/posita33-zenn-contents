@@ -6,7 +6,7 @@ topics: ["unrealengine", "ue5", "ue4", "blueprint"]
 published: false
 ---
 
-## 【Blueprint版】Enumeration（列挙型）
+## 【Blueprint】Enumeration（列挙型）
 
 ### 今回できること
 変数[CalcType]のVariableTypeをEnumerationに変更することで、[Swith]ノードの分岐をより読みやすくします。
@@ -54,7 +54,7 @@ Contents Browserの空きスペースを右クリック > Blueprints > Enumerati
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-01-24-09-22-33.png)
 
-[New]ボタンで列挙定数を追加し、各行表の値を設定します
+[New]ボタンで列挙定数を追加し、各行表の値を設定します。
 
 | Display Name | Description      |
 | ------------ | ---------------- |

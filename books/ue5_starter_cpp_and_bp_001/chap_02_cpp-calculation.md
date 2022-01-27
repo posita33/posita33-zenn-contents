@@ -1,12 +1,28 @@
 ---
-title: "2.6.c++ 四則演算(+ - x ÷)"
+title: "【C++】 四則演算(+ - x ÷)"
 emoji: "⚙️"
 type: "idea" # tech: 技術記事 / idea: アイデア
 topics: ["unrealengine", "ue5", "ue4", "blueprint"]
 published: false
 ---
 
-## 【C++版】c++ 四則演算（+ - x ÷）
+## 【C++】四則演算（+ - x ÷）
+
+### C++でBlueprintを再現すること
+
+Blueprint版で実装した四則演算の結果をPrintStringで出力する処理をC++で再現します。
+- 赤：Add（足し算）ノード
+- 黄：Subtract（引き算）ノード
+- 緑：Multiply（掛け算）ノード
+- 青：Divide（割り算）ノード
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-19-07-57-14.png)
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-19-07-57-30.png)
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-19-07-57-48.png)
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-19-09-43-43.png)
 
 ### Visual Studioを開いて、編集するファイルを表示する
 
@@ -23,22 +39,6 @@ Solution Explorerから今回編集する2つのファイルを開きます。
 - CPPSampleActor.h
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-19-07-51-04.png)
-
-### C++でBlueprintの四則演算を再現する
-
-Blueprint版で実装した四則演算の結果をPrintStringで出力する処理をC++で再現します。
-- 赤：Add（足し算）ノード
-- 黄：Subtract（引き算）ノード
-- 緑：Multiply（掛け算）ノード
-- 青：Divide（割り算）ノード
-
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-19-07-57-14.png)
-
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-19-07-57-30.png)
-
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-19-07-57-48.png)
-
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-19-09-43-43.png)
 
 ### 変数を宣言する
 Blueprint同様にVariableType：Integerの変数を2つ宣言します。

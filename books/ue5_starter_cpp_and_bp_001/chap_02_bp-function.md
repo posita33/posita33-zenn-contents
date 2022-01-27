@@ -2,11 +2,11 @@
 title: "【BP】 関数(Function)"
 emoji: "🐷"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: ["cpp", "unrealengine", "ue4", "ue5"]
+topics: ["unrealengine", "ue5", "ue4", "blueprint"]
 published: false
 ---
 
-## 【Blueprint版】関数（Function）
+## 【Blueprint】関数（Function）
 
 ### 今回できること
 
@@ -129,7 +129,7 @@ VariablesとLocal Variablesの違いについて表にまとめました。
 
 ### Function[Sum]のpure化（純粋化）
 
-Blueprintの[Add]ノードのようにFunction[Sum]を実行ピンがないノードに変更します。
+Blueprintの[Add]ノードのようにFunction[Sum]を[実行]ピンがないノードに変更します。
 
 Function[Sum]のノードを選択し、[Detail]パネルから[Pure]のチェックボックスをチェックします。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-Function/2022-01-25-10-51-24.png)

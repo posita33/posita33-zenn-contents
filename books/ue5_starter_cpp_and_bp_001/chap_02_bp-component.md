@@ -7,7 +7,7 @@ published: false
 ---
 
 
-## 【Blueprint版】Componentを追加する
+## 【Blueprint】Componentを追加する
 
 ### 今回できること
 【要執筆】。
@@ -225,6 +225,7 @@ LevelEditorのViewportで[Arrow]の前方が明るくなりました。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-01-27-11-01-56.png)
 
 ### すべて保存する
+
 Blueprint側の説明はここまでになります。
 [Content Browser]から[Save All]ボタンをクリックし、[Save Selected]ボタンをクリックしてプロジェクトの変更のあったアセットをすべて保存します。
 

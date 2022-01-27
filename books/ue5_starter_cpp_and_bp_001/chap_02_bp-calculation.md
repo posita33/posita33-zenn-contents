@@ -1,12 +1,13 @@
 ---
-title: "2.6.BP 四則演算(+ - x ÷)"
+title: "【BP】 四則演算(+ - x ÷)"
 emoji: "⚙️"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["unrealengine", "ue5", "ue4", "blueprint"]
 published: false
 ---
 
-## 【Blueprint版】四則演算（+ - x ÷）
+## 【Blueprint】四則演算（+ - x ÷）
+
 「**四則演算**」という難しい名前を使用しましたが、「**足し算**」「**引き算**」「**掛け算**」「**割り算**」のことです。
 
 UE5から四則演算のノードの使用方法が変わります。

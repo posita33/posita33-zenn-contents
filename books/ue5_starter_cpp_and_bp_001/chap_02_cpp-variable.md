@@ -1,12 +1,12 @@
 ---
-title: "【CPP】 Variable(変数)"
+title: "【C++】Variable(変数)"
 emoji: "🐷"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["unrealengine", "ue5", "ue4", "blueprint"]
 published: false
 ---
 
-## 【C++】変数を作成して取得・設定する
+## 【C++】Variable（変数）
 
 ### C++でBlueprintを再現すること
 【要執筆】。

@@ -6,7 +6,7 @@ topics: ["unrealengine", "ue5", "ue4", "blueprint"]
 published: false
 ---
 
-## 【Blueprint版】Flow Control（Branch）
+## 【Blueprint】Flow Control（Branch）
 
 「もし、あの時○○をしていたら。。。」
 

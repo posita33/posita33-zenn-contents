@@ -1,12 +1,12 @@
 ---
-title: "【CPP】 PrintStringでHello World!を出力する"
+title: "【C++】 PrintStringでHello World!"
 emoji: "🐙"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["cpp", "unrealengine", "ue4", "ue5"]
 published: false
 ---
 
-## 【C++】EventBeginPlayでPrintStringを実行する
+## 【C++】PrintStringでHello World!
 
 ### C++でBlueprintを再現すること
 【要執筆】。

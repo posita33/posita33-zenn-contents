@@ -6,6 +6,23 @@ topics: ["unrealengine", "ue5", "ue4", "blueprint"]
 published: false
 ---
 
+## 【C++】Flow Control（Branch）
+
+### C++でBlueprintのFlow Control（Branch）を再現する
+
+[Branch]ノード処理を切り替える
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-06-39-50.png)
+
+比較演算子ノードで処理を切り替える
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-06-42-05.png)
+
+論理演算子ノードで処理を切り替える
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-06-42-26.png)
+
+複数の選択肢で分岐する
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-06-42-55.png)
+
+
 ### 編集するActorクラスを作成する
 プロジェクトを閉じていたら、プロジェクトを開き、
 「Chapter_2_FlowControl_Branch」を開きます。
@@ -109,20 +126,6 @@ void ACPPFlowControlBranch::BeginPlay()
 }
 
 ```
-
-### C++でBlueprintのFlow Control（Branch）を再現する
-
-[Branch]ノード処理を切り替える
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-06-39-50.png)
-
-比較演算子ノードで処理を切り替える
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-06-42-05.png)
-
-論理演算子ノードで処理を切り替える
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-06-42-26.png)
-
-複数の選択肢で分岐する
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-06-42-55.png)
 
 ### Flow Controlに使用する変数を宣言する
 

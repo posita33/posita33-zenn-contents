@@ -6,7 +6,7 @@ topics: ["cpp", "unrealengine", "ue4", "ue5"]
 published: false
 ---
 
-## 【C++版】Enumeration（列挙型）
+## 【C++】Enumeration（列挙型）
 
 ### C++でBlueprintを再現すること
 

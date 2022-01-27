@@ -1,12 +1,12 @@
 ---
-title: "【Blueprint版】Construction Script"
+title: "【BP】Construction Script"
 emoji: "👌"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["unrealengine", "ue5", "ue4", "blueprint"]
 published: false
 ---
 
-## 【Blueprint版】Construction Script
+## 【Blueprint】Construction Script
 
 ### 今回できること
 

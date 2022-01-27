@@ -1,5 +1,5 @@
 ---
-title: "2.2.CPP クラス(親クラス：Actor)を作成する"
+title: "【C++】Actorクラスを作成する"
 free: false
 ---
 
@@ -97,7 +97,8 @@ void ACPPSampleActor::Tick(float DeltaTime)
 ```
 
 ## コーディング規約
-C++側にはファイル名の命名規則といったものは用意されていないのですが、
+
+C++側にはファイル名の命名規則といったものは用意されていません。
 
 **「コーディング規約」**
 
@@ -107,4 +108,3 @@ https://docs.unrealengine.com/4.27/ja/ProductionPipelines/DevelopmentSetup/Codin
 
 GitHubで少し情報が古いですが、いい書き方、悪い書き方をまとめている方がいました。
 https://github.com/DaedalicEntertainment/unreal-coding-conventions
-

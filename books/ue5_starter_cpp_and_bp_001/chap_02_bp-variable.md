@@ -24,11 +24,12 @@ published: false
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-01-27-07-05-41.png)
 
-作成したレベルを保存します（File > Save Current Level）
+[File]メニューからCurrent Levelを保存します。
+ショートカット「Ctrl + S」でも保存できます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-01-27-07-05-54.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-01-26-22-32-19.png)
 
-名前を「Chapter_2_4_Variable」に設定して、「Save」ボタンをクリックします。
+「Maps」フォルダを選択し、Nameに「Chapter_2_4_Variable」を設定して、「Save」ボタンをクリックします。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-01-27-07-06-15.png)
 

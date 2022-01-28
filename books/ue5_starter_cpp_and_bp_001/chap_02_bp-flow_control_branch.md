@@ -29,7 +29,12 @@ published: false
 [Default]を選択します。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_branch/2022-01-21-05-32-35.png)
 
-「Maps」フォルダに「Chapter_2_FlowControl_Branch」を入力し、[Save]ボタンをクリックします。
+[File]メニューからCurrent Levelを保存します。
+ショートカット「Ctrl + S」でも保存できます。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-01-26-22-32-19.png)
+
+「Maps」フォルダを選択し、Nameに「Chapter_2_FlowControl_Branch」を入力し、[Save]ボタンをクリックします。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_branch/2022-01-22-06-54-22.png)
 
 

@@ -25,7 +25,12 @@ Enumeration（列挙型）をVariableTypeに設定することで、DefaultValue
 [Default]を選択します。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-01-24-08-49-18.png)
 
-「Maps」フォルダに「Chapter_2_Enumeration」を入力し、[Save]ボタンをクリックします。
+[File]メニューからCurrent Levelを保存します。
+ショートカット「Ctrl + S」でも保存できます。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-01-26-22-32-19.png)
+
+「Maps」フォルダを選択し、Nameに「Chapter_2_Enumeration」を入力し、[Save]ボタンをクリックします。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-01-24-08-52-19.png)
 
 

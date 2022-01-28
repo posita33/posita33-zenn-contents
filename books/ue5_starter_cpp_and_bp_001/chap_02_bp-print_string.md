@@ -24,7 +24,7 @@ Mapsフォルダを作為します。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-01-26-22-32-19.png)
 
-「Maps」フォルダに[Chapter_2_3_HelloWorld]という名称で保存します。
+「Maps」フォルダを選択し、Nameに[Chapter_2_3_HelloWorld]という名称で保存します。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-01-26-22-32-35.png)
 

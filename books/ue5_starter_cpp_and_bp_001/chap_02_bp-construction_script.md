@@ -25,7 +25,12 @@ published: false
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-construction_script/2022-01-27-11-48-11.png)
 
-「Maps」フォルダに「Chapter_2_6_ConstructionScript」を入力し、[Save]ボタンをクリックします。
+[File]メニューからCurrent Levelを保存します。
+ショートカット「Ctrl + S」でも保存できます。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-01-26-22-32-19.png)
+
+「Maps」フォルダを選択し、Nameに「Chapter_2_6_ConstructionScript」を入力し、[Save]ボタンをクリックします。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-construction_script/2022-01-27-11-48-23.png)
 

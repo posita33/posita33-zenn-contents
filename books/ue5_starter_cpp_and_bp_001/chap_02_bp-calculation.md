@@ -29,14 +29,20 @@ Blueprintで四則演算ノードを使用して、PrintStringで計算結果を
 | 割る   | Divide   | ÷        | /（スラッシュ）      |
 
 ### 学習用の新規レベル「Chapter_2_7_Calculation」を作成する
+
 学習用の新規レベルを作成します。
 [File]から[New Level…]を選択します。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-01-18-07-32-48.png)
 
+[File]メニューからCurrent Levelを保存します。
+ショートカット「Ctrl + S」でも保存できます。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-01-26-22-32-19.png)
+
 [Default]を選択します。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-01-18-07-33-00.png)
 
-「Maps」フォルダに「Chapter_2_7_Calculation」を入力し、[Save]ボタンをクリックします。
+「Maps」フォルダを選択し、Nameに「Chapter_2_7_Calculation」を入力し、[Save]ボタンをクリックします。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-01-18-07-35-22.png)
 
 ### 計算に使用する変数を追加する

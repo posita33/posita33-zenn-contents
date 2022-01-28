@@ -30,7 +30,12 @@ Project Settingsに入力イベントを追加して、Blueprintで追加した�
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-01-27-17-53-44.png)
 
-「Maps」フォルダに「Chapter_2_InputEvent」を入力し、[Save]ボタンをクリックします。
+[File]メニューからCurrent Levelを保存します。
+ショートカット「Ctrl + S」でも保存できます。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-01-26-22-32-19.png)
+
+「Maps」フォルダを選択し、Nameに「Chapter_2_InputEvent」を入力し、[Save]ボタンをクリックします。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-01-27-17-56-03.png)
 

@@ -23,8 +23,12 @@ published: false
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-01-27-09-46-34.png)
 
-[Default]を選択
-「Maps」フォルダに「Chapter_2_5_Component」を入力し、[Save]ボタンをクリックします。
+[File]メニューからCurrent Levelを保存します。
+ショートカット「Ctrl + S」でも保存できます。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-01-26-22-32-19.png)
+
+「Maps」フォルダを選択し、Nameに「Chapter_2_5_Component」を入力し、[Save]ボタンをクリックします。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-01-27-09-46-51.png)
 *Mapsフォルダを選択 > Name：Chapeter_2_5_Component > Saveボタンクリック*

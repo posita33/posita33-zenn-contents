@@ -36,20 +36,20 @@ ClassTypeとClass名を設定します。
 | Property   | Value          |
 | ---------- | -------------- |
 | Class Type | Public         |
-| Name       | CPPInputAction |
+| Name       | CPPInputEvent |
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-input_event/2022-01-28-06-19-06.png)
 
 Solution Explorerから今回編集する2つのファイルを開きます。
 
-- CPPInputAction.h
-- CPPInputAction.cpp
+- CPPInputEvent.h
+- CPPInputEvent.cpp
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-input_event/2022-01-28-08-21-54.png)
 
 開いたファイルを学習する初期状態に修正します。
 
-```cpp:CPPInputAction.h
+```cpp:CPPInputEvent.h
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
@@ -93,7 +93,7 @@ private:
 
 };
 ```
-```cpp:CPPInputAction.cpp
+```cpp:CPPInputEvent.cpp
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
@@ -169,9 +169,9 @@ Blueprintの点線で囲んだ箇所をC++で再現します。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-input_event/2022-01-28-10-58-07.png)
 
-「CPPInputAction.h」に必要となるプロトタイプ宣言を記述します。
+「CPPInputEvent.h」に必要となるプロトタイプ宣言を記述します。
 
-```cpp:CPPInputAction.h
+```cpp:CPPInputEvent.h
 private:
 	// Input設定
 	void SetupInput();
@@ -181,11 +181,11 @@ private:
 	void ReleasedH();
 ```
 
-「CPPInputAction.cpp」に関数を定義します。
+「CPPInputEvent.cpp」に関数を定義します。
 
 [UGameplayStatics::GetPlayerController]を使用するので、「GameplayStatics.h」のincludeを追加してください。
 
-```cpp:CPPInputAction.cpp
+```cpp:CPPInputEvent.cpp
 #include "Kismet/GameplayStatics.h" // 追加
 
 void ACPPInputEvent::SetupInput()
@@ -280,15 +280,15 @@ BlueprintでActionEventを使用した処理をC++で再現します。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-input_event/2022-01-28-11-10-42.png)
 
-「CPPInputAction.h」にAction「PrintCalcResult」が発生した時に処理する関数のプロトタイプを宣言します。
+「CPPInputEvent.h」にAction「PrintCalcResult」が発生した時に処理する関数のプロトタイプを宣言します。
 
-```cpp:CPPInputAction.h
+```cpp:CPPInputEvent.h
 private:
 	void PressedActionPrintCalcResult();
 ```
-「CPPInputAction.cpp」に[PressedActionPrintCalcResult]関数を定義し、[SetupInput]でAction[ActionPrintCalcResult]が発生した際に[PressedActionPrintCalcResult]を処理するように編集します。
+「CPPInputEvent.cpp」に[PressedActionPrintCalcResult]関数を定義し、[SetupInput]でAction[ActionPrintCalcResult]が発生した際に[PressedActionPrintCalcResult]を処理するように編集します。
 
-```cpp:CPPInputAction.cpp
+```cpp:CPPInputEvent.cpp
 void ACPPInputEvent::PressedActionPrintCalcResult()
 {
 	// 計算結果を出力する処理

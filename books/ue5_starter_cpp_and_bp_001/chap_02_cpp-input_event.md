@@ -5,7 +5,7 @@ type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["cpp", "unrealengine", "ue4", "ue5"]
 published: false
 ---
-## 【C++】関数（Function）
+## 【C++】Input Event（入力イベント）
 
 ### C++でBlueprintを再現すること
 
@@ -227,9 +227,11 @@ C++でも同様に、EnableInputで入力を有効にできます。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-input_event/2022-01-28-10-16-20.png)
 
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-input_event/2022-01-28-10-06-01.png)
+
 Build.csに必要となるモジュールを追加することで解決します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-input_event/2022-01-28-10-06-01.png)
+
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-input_event/2022-01-28-09-54-17.png)
 

@@ -1,5 +1,5 @@
 ---
-title: "【BP】Input Event(入力イベント)"
+title: "【BP】Input Event（入力イベント）"
 emoji: "🙆"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["unrealengine", "ue5", "ue4", "blueprint"]
@@ -17,7 +17,7 @@ published: false
 
 Project Settingsに入力イベントを追加して、Blueprintで追加した入力イベント呼び出します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-01-27-19-14-55.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-01-27-19-13-30.png)
 
 ### 学習用の新規レベル「Chapter_2_InputEvent」を作成する
 

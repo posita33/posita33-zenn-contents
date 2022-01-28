@@ -11,21 +11,25 @@ published: false
 ### C++でBlueprintを再現すること
 
 Enumeration（列挙型）をC++で作成します。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-01-24-13-08-54.png)
 
 Switch文をint32から作成したEnumeration（列挙型）に変更します。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-01-24-13-02-15.png)
 
 ### 編集するActorクラスを作成する
 
-プロジェクトを閉じていたら、プロジェクトを開き、
-「Chapter_2_Enumeration」を開きます。
+プロジェクトを閉じていたら、プロジェクトを開き、「Chapter_2_Enumeration」を開きます。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-01-24-13-20-53.png)
 
 [Tools]メニューから[New C++ Class]を開きます。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-01-24-15-48-29.png)
 
 親クラスに[Actor]を選択します。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-01-24-16-00-18.png)
 
 ClassTypeとClass名を設定します。
@@ -149,9 +153,11 @@ void ACPPFlowControlSwitchEnum::BeginPlay()
 C++でEnumeration（列挙型）を作成します。
 
 [Tools]メニューから[New C++ Class]を開きます。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-01-24-15-48-29.png)
 
 親クラスに「None」を選択します。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-01-24-16-56-11.png)
 
 ClassTypeとClass名を設定します。
@@ -166,9 +172,11 @@ ClassTypeとClass名を設定します。
 「CPPCalcType.h」のみ使用するので、「CPPCalcType.cpp」は削除します。
 Solution Explorerから「CPPCalcType.cpp」をRemoveします。
 Solution ExplorerからRemoveしても、ファイルは残っているので、Explorerから「CPPCalcType.cpp」を削除します。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-01-24-17-25-56.png)
 
 「CPPCalcType.h」にEnumeration（列挙型）を作成します。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-01-24-17-38-48.png)
 
 
@@ -312,10 +320,12 @@ void ACPPFlowControlSwitchEnum::BeginPlay()
 ```
 
 Ctrl + Sでファイルを保存し、Compileを行います。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-01-24-18-30-30.png)
 
 「CPPFlowControlSwitchEnum」をViewportにDrag&Dropします。
 PrintStringの出力結果が分かりづらくなるので、「BP_FlowControl_SwitchEnum」を削除します。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-01-24-18-29-04.png)
 
 Level Editorの[Play]ボタンをクリックします。
@@ -323,6 +333,7 @@ Level Editorの[Play]ボタンをクリックします。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-01-24-18-31-04.png)
 
 変数[CalcType]の値が[ECPPCalcType::Subtract]なので、引き算の出力結果が表示されます。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-01-24-18-32-27.png)
 
 ### C++で作成したEnumeration（列挙型）をBlueprintで使用する
@@ -331,6 +342,7 @@ C++で作成したEnumeration（列挙型）を使用できます。
 C++で作成したEnumeration「ECPPCalcType」をBlueprintで使用します。
 
 「BP_FLowControl_SwitchEnum」を開きます。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-01-24-18-39-04.png)
 
 
@@ -343,10 +355,12 @@ VariableTypeにEnumeration「ECPPCalcType」を設定した変数[CPPCalcType]�
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-01-24-18-42-01.png)
 
 列挙型のDefaultValueですが、列挙定数が足りていない場合はプロジェクトを再起動してください。（UE5 EAしか起こらない？）
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-01-24-18-45-20.png)
 
 追加した変数[CPPCalcType]でSwitchノードを作成してみます。
 Bluerpintで作成したEnumeration[ECalcType]と同じOutputの実行ピンが表示されました。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-01-24-18-49-32.png)
 
 ### C++で作成したEnumeration（列挙型）のDisplayNameを設定する
@@ -375,6 +389,7 @@ enum class ECPPCalcType : uint8
 ```
 
 Ctrl + Sでファイルを保存し、Compileを行います。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-01-24-18-30-30.png)
 
 「CPPCalcType.h」を変更してCompileすると、変数[CPPCalcType]に設定していたVariableTypeが「HOTRELOADED ECPPCalcType 0」というVariableTypeになってしまいます。
@@ -383,14 +398,18 @@ VariableTypeを[ECPPCalcType]に再設定します。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-01-24-18-58-51.png)
 
 Switchノードを再度作成すると、[Switch]ノードの実行ピンの名称がDisplay Nameで設定した名称に変更されています。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-01-24-18-56-00.png)
 
 ### すべて保存
+
 C++側の説明は以上になります。
 プロジェクトをすべて保存しましょう。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-01-24-22-38-39.png)
 
 Visual StudioのSolutionもすべて保存しましょう。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-01-23-21-46-14.png)
 
 ## 参照URL

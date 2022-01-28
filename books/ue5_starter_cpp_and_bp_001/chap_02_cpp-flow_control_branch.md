@@ -10,29 +10,35 @@ published: false
 
 ### C++でBlueprintのFlow Control（Branch）を再現する
 
-[Branch]ノード処理を切り替える
+[Branch]ノード処理を切り替える。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-06-39-50.png)
 
-比較演算子ノードで処理を切り替える
+比較演算子ノードで処理を切り替える。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-06-42-05.png)
 
-論理演算子ノードで処理を切り替える
+論理演算子ノードで処理を切り替える。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-06-42-26.png)
 
-複数の選択肢で分岐する
+複数の選択肢で分岐する。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-06-42-55.png)
 
 
 ### 編集するActorクラスを作成する
-プロジェクトを閉じていたら、プロジェクトを開き、
-「Chapter_2_FlowControl_Branch」を開きます。
+
+プロジェクトを閉じていたら、プロジェクトを開き、「Chapter_2_FlowControl_Branch」を開きます。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-06-03-53.png)
 
 [Tools]メニューから[New C++ Class]を開きます。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-06-09-39.png)
 
 親クラスに[Actor]を選択します。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-06-08-00.png)
 
 ClassTypeとClass名を設定します。
@@ -45,6 +51,7 @@ ClassTypeとClass名を設定します。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-06-12-16.png)
 
 Solution Explorerから今回編集する2つのファイルを開きます。
+
 - CPPFlowControlBranch.h
 - CPPFlowControlBranch.cpp
 
@@ -124,7 +131,6 @@ void ACPPFlowControlBranch::BeginPlay()
 	FString StrResultDivide = FString::Printf(TEXT("%f"), ResultDivide);
 	UKismetSystemLibrary::PrintString(this, StrResultDivide, true, true, FColor::Blue, Duration);
 }
-
 ```
 
 ### Flow Controlに使用する変数を宣言する
@@ -153,8 +159,8 @@ private:
 
 ### if/else文で処理を切り替える（Branchノード）
 
-
 [Branch]ノード処理を切り替える処理をC++で再現します。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-06-39-50.png)
 
 C++では**if文**を使用します。
@@ -178,7 +184,6 @@ else
 CPPFlowControlBranch.cpp BeginPlay関数をif文で修正しましょう。
 
 ```cpp:CPPFlowControlBranch.cpp BeginPlay()
-
 void ACPPFlowControlBranch::BeginPlay()
 {
 	Super::BeginPlay();
@@ -215,19 +220,22 @@ void ACPPFlowControlBranch::BeginPlay()
 		UKismetSystemLibrary::PrintString(this, StrResultDivide, true, true, FColor::Blue, Duration);
 	}
 }
-
 ```
 
 Ctrl + Sでファイルを保存し、Compileを行います。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-07-02-24.png)
 
 LevelEditorに戻り、「CPPFlowControlBranch」をViewportにDrag&Dropします。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-07-00-33.png)
 
 Level Editorの[Play]ボタンをクリックします。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-07-03-47.png)
 
 変数[IsPrintHello]の値がtrueなので、「Hello World!」を出力するPrintStringが実行されました。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-07-04-59.png)
 
 
@@ -235,6 +243,7 @@ Level Editorの[Play]ボタンをクリックします。
 
 比較演算子ノードでBranchノードの実行ピンを切り替える処理をC++で再現します。
 Blueprint側では比較演算子を使用して「NumAとNumBは等しい」という条件を作りました。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-06-42-05.png)
 
 比較演算子を使用したif文の書き方は以下になります。
@@ -271,12 +280,15 @@ BeginPlay関数のif文の条件を比較演算子を使用するように変更
 ```
 
 Ctrl + Sでファイルを保存し、Compileを行います。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-07-02-24.png)
 
 Level Editorの[Play]ボタンをクリックします。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-07-03-47.png)
 
 変数[NumA][NumB]の値は等しくないので、falseとなり、計算結果を出力する処理が実行されます。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-10-14-05.png)
 
 
@@ -330,6 +342,7 @@ C++とBlueprintの比較演算子をまとめた一覧です。
 
 論理演算子ノードでBranchノードの実行ピンを切り替える処理をC++で再現します。
 Blueprint側では論理演算子を使用して「NumCは10より大きく、30以下」という条件を作りました。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-06-42-26.png)
 
 C++で論理演算子を使用する時の書き方です。
@@ -360,16 +373,18 @@ BeginPlay関数のif文の条件を論理演算子を使用するように変更
 	{
 		(計算結果を出力する処理)
 	}
-
 ```
 
 Ctrl + Sでファイルを保存し、Compileを行います。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-07-02-24.png)
 
 Level Editorの[Play]ボタンをクリックします。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-07-03-47.png)
 
 変数[NumC]の値は[15]なので、「NumCは10より大きく、30以下」の結果は[true]になり、「Hello World!」を出力するPrintStringの処理が実行されました。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-10-23-36.png)
 
 C++側の「AND Boolean」「OR Boolean」「Not Boolean」の書き方です。
@@ -428,20 +443,21 @@ C++とBlueprintの論理演算子をまとめた一覧です。
 C++側のみですが、**条件演算子**という書き方があります。
 
 ```cpp
-
 	FString Message = "C++ Hello World!";
           ↓
 	FString Message = (IsBlueprint) ? "Blueprint Hello World!" : "C++ Hello World!";
-
 ```
 
 Ctrl + Sでファイルを保存し、Compileを行います。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-07-02-24.png)
 
 Level Editorの[Play]ボタンをクリックします。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-07-03-47.png)
 
 変数[Message]の値が「Blueprint Hello World!」で出力されました。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-10-39-25.png)
 
 条件演算子は変数の値を条件で値を代入できます。
@@ -455,8 +471,10 @@ Level Editorの[Play]ボタンをクリックします。
 ```
 
 ### 連続したif文で複数の選択肢（Branchノード複数で切り替える）
+
 [Branch]ノードを複数呼び出して、複数の選択肢で分岐する処理をC++で再現します。
 Blueprint側では変数[CalcType]の数値で引き算の計算結果を1つだけPrintStringで出力するように変更しました。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-06-42-55.png)
 
 C++で複数の条件で分岐したいときは、[else if]を使用します。
@@ -499,6 +517,7 @@ Blueprint側と同様に、変数[CalcType]の数値で引き算の計算結果�
 	int32 NumC = 15;
 	bool IsPrintHello = true;
 ```
+
 計算結果を出力する処理を変数[CalcType]の値で分岐するように変更しましょう。
 
 ```cpp:CPPFlowControlBranch.cpp BeginPlay()
@@ -550,23 +569,30 @@ void ACPPFlowControlBranch::BeginPlay()
 ```
 
 Ctrl + Sでファイルを保存し、Compileを行います。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-07-02-24.png)
 
 Level Editorの[Play]ボタンをクリックします。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-07-03-47.png)
 
 変数[CalcType]の値が[1]なので、引き算の計算結果のPrintStringが実行されました。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-11-26-47.png)
 
 ### C++とBlueprintの比較画像
 
 C++とBlueprintの比較画像です。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-21-54-25.png)
 
 ### すべて保存
+
 C++側の説明は以上になります。
 プロジェクトをすべて保存しましょう。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-11-38-13.png)
 
 Visual StudioのSolutionもすべて保存しましょう。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-11-39-43.png)

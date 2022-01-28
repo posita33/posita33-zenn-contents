@@ -6,7 +6,6 @@ topics: ["unrealengine", "ue5", "ue4", "blueprint"]
 published: false
 ---
 
-
 ## 【Blueprint】Input Event（入力イベント）
 
 ### 今回できること
@@ -93,9 +92,11 @@ Blueprintが入力を受け付けるように修正します。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-01-27-18-26-56.png)
 
 [Compile]ボタンをクリックします。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-01-27-18-14-10.png)
 
 Level Editorの[Play]ボタンをクリックします。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-01-27-18-16-07.png)
 
 [H]キーを入力するとBlueprintが反応します。

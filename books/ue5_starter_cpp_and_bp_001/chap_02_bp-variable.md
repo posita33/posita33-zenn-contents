@@ -34,6 +34,7 @@ published: false
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-01-27-07-06-15.png)
 
 ### 変数を追加する（ノードのInputピンから）
+
 「BP_SampleActor」をダブルクリックしてBlueprint Editorで開きます。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-01-27-07-06-37.png)

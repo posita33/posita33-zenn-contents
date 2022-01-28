@@ -9,6 +9,7 @@ published: false
 ## 【C++】Construction Script
 
 ### C++でBlueprintを再現すること
+
 C++でBlueprintのConstruction Scriptで実装した処理を再現します。
 
 - 宣言した変数がLevelEditorの[Detail]パネルで変更できる
@@ -162,6 +163,7 @@ BlueprintのConstructionScriptをC++側ではOnConstruction関数で再現でき
 https://zenn.dev/posita33/articles/41737b3be89aa4
 
 ### C++OnConstruction関数とBlueprintのConstructionScript
+
 変数はUPROERTYでEditAnyWhereを設定することで、Blueprint側のInstance Editableを有効にした時と同様に扱えました。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-construction_script/2022-01-27-14-04-34.png)

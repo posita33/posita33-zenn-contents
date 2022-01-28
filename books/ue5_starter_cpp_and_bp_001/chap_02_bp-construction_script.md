@@ -35,6 +35,7 @@ published: false
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-construction_script/2022-01-27-11-48-23.png)
 
 ### LevelEditorで編集可能な変数を追加する
+
 PointLightのプロパティをBlueprintのConstructionScriptから変更するための変数を作成します。
 
 | VariableName | VariableType           | 変数の概要                           |
@@ -49,7 +50,6 @@ PointLightのプロパティをBlueprintのConstructionScriptから変更する�
 追加した変数にCategoryを設定します。
 
 - Category：Point Light
-
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-construction_script/2022-01-27-11-51-04.png)
 
@@ -83,6 +83,7 @@ LevelEditorに戻り、「BP_SampleActor」をViewportにDrag&Dropします。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-construction_script/2022-01-27-13-23-37.png)
 
 ### ConstructionScriptでPointLightの表示/表示を設定する
+
 [Derail]パネルに表示された変数を使用して、Point Lightのプロパティを変更できるようにします。
 「BP_SampleActor」をBlueprintEditorで開きます。
 
@@ -121,6 +122,7 @@ ConstructionScriptに処理を書くことで、Viewportに配置してからの
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-construction_script/2022-01-27-13-25-36.png)
 
 ### ConstructionScriptでPointLightのIntensity（光の強さ）を調整をする
+
 次にPointLightのIntensity（光の強さ）を調整します。
 Componentの[PointLight]と変数[PointLight]のGetノードを追加します。
 
@@ -162,6 +164,7 @@ ConstructionScriptで設定できるようにすると最初の状態に戻し�
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-construction_script/2022-01-27-13-27-27.png)
 
 ### ConstructionScriptでPointLightのLightColorを調整をする
+
 次にPointLightのLightColor（光の色）を調整します。
 Componentの[PointLight]と変数[LightColor]のGetノードを追加します。
 
@@ -233,5 +236,6 @@ Blueprint側の説明はここまでになります。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-construction_script/2022-01-27-13-32-36.png)
 
 ## 【参照URL】
+
 https://docs.unrealengine.com/4.27/ja/ProgrammingAndScripting/Blueprints/UserGuide/UserConstructionScript/
 

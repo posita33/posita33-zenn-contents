@@ -14,15 +14,18 @@ published: false
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-01-24-10-35-50.png)
 
 Enumeration（列挙型）をVariableTypeに設定することで、DefaultValueがリストから選択できます。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-01-24-10-37-33.png)
 
 ### 学習用の新規レベル「Chapter_2_Enumeration」を作成する
 
 学習用の新規レベルを作成します。
 [File]メニューから[New Level…]を選択します。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-01-24-08-49-02.png)
 
 [Default]を選択します。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-01-24-08-49-18.png)
 
 [File]メニューからCurrent Levelを保存します。
@@ -31,6 +34,7 @@ Enumeration（列挙型）をVariableTypeに設定することで、DefaultValue
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-01-26-22-32-19.png)
 
 「Maps」フォルダを選択し、Nameに「Chapter_2_Enumeration」を入力し、[Save]ボタンをクリックします。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-01-24-08-52-19.png)
 
 
@@ -38,11 +42,12 @@ Enumeration（列挙型）をVariableTypeに設定することで、DefaultValue
 
 Enumeration（列挙型）を作成します。
 
-Contents Browserの空きスペースを右クリック > Blueprints > Enumeration（列挙型）
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-01-24-09-04-13.png)
+*Contents Browserの空きスペースを右クリック > Blueprints > Enumeration（列挙型）*
 
 アセット名を「ECalcType」に設定します。
 「EcalcType」をダブルクリックで開きます。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-01-24-09-05-38.png)
 
 

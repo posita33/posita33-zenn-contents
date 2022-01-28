@@ -13,6 +13,7 @@ published: false
 【要執筆】。
 
 ### 学習用の新規レベル「Chapter_2_Component」を作成する
+
 学習用の新規レベルを作成します。
 [File]から[New Level…]を選択します。
 
@@ -34,9 +35,11 @@ published: false
 *Mapsフォルダを選択 > Name：Chapeter_2_5_Component > Saveボタンクリック*
 
 ### Engine ContentからStaticMeshとMaterialをコピーする
+
 「Engine Content」に入っているStaticMeshをプロジェクトフォルダにコピーして使用します。
 
 [Content Browser]の[Settings]ボタンをクリックし、[Show Engine Content]を有効にします。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-01-27-09-47-58.png)
 *[Content Browser]の[Settings]ボタンをクリック > [Show Engine Content]を有効*
 
@@ -62,9 +65,9 @@ CubeをMeshewフォルダにDrag&Drop > [Copy Here]を選択
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-01-27-09-49-21.png)
 
 「SM_SampleCube」の質感を設定するためのMaterial「BasicShapeMaterial」を「Materials」フォルダにコピーします。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-01-27-09-49-39.png)
 *「BasicShapesフォルダ」の「BasicShapeMaterial」を「Materials」フォルダにDrag&Drop > [Copy Here]を選択*
-
 
 「Materials」フォルダに「BasicShapeMaterial」がコピーされます。
 名前を「M_SampleMaterial」に変更します。
@@ -134,6 +137,7 @@ SM_SampleMeshが表示されます。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-01-27-10-55-04.png)
 
 ### ArrowComponentを追加する
+
 「Cube」は前後左右が分からないので、方向を表示する「ArrowComponent」を追加します。
 
 「BP_SampleActor」をダブルクリックしてBlueprint Editorを開きます。
@@ -153,6 +157,7 @@ Cube内に埋もれているので、矢印が確認しやすいように移動�
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-01-27-10-57-09.png)
 
 ### ArrowComponentをStaticMeshComponentにアタッチする
+
 StaticMeshComponentを移動させた時に、ArrowComponentを一緒に移動できるように設定します。
 図のようなStaticMeshComponentとArrowComponentが同じ階層にある場合、StaticMeshComponentを移動させるとStaticMeshComponentのみが移動します。
 

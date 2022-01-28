@@ -11,6 +11,7 @@ published: false
 ### C++でBlueprintを再現すること
 
 Blueprint版で実装した四則演算の結果をPrintStringで出力する処理をC++で再現します。
+
 - 赤：Add（足し算）ノード
 - 黄：Subtract（引き算）ノード
 - 緑：Multiply（掛け算）ノード
@@ -26,11 +27,12 @@ Blueprint版で実装した四則演算の結果をPrintStringで出力する処
 
 ### Visual Studioを開いて、編集するファイルを表示する
 
-プロジェクトを閉じていたら、プロジェクトを開き、
-「Chapter_2_7_Calculation」を開きます。
+プロジェクトを閉じていたら、プロジェクトを開き、「Chapter_2_7_Calculation」を開きます。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-19-07-45-05.png)
 
 ToolsからVisual Studioを開きます。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-19-07-50-21.png)
 
 Solution Explorerから今回編集する2つのファイルを開きます。
@@ -41,13 +43,13 @@ Solution Explorerから今回編集する2つのファイルを開きます。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-19-07-51-04.png)
 
 ### 変数を宣言する
+
 Blueprint同様にVariableType：Integerの変数を2つ宣言します。
 
 | VariableName | VariableType | DefaultValue |
 | ------------ | ------------ | ------------ |
 | CalcVarA     | int32        | 7            |
 | CalcVarB     | int32        | 3            |
-
 
 ```h:CPPSampleActor.h
 private:
@@ -86,7 +88,9 @@ intの右側の数値から8で割るとByte数が出ます。
 ```
 
 ### 四則演算の処理を再現する
+
 #### 足し算の処理を再現する
+
 まずはAdd（足し算）ノードを再現してみましょう。
 CPPSampleActor.cpp BeginePlay関数に処理を追記します。
 
@@ -107,6 +111,7 @@ CPPSampleActor.cpp BeginePlay関数に処理を追記します。
 
 [Add]ノードは「KismetMathLibrary.h」で[Add_IntInt]関数として宣言されています。
 Blueprintを再現するので、使用するには「KismetMathLibrary.h」をincludeします。
+
 ```cpp
 #include "Kismet/KismetMathLibrary.h" // 追加
 
@@ -122,6 +127,7 @@ Blueprintを再現するので、使用するには「KismetMathLibrary.h」をi
 
 「KismetMathLibrary.ini」で処理が実装されています。
 実際に行っていることは「A + B」です。
+
 ```cpp:KismetMathLibrary.ini
 KISMET_MATH_FORCEINLINE
 int32 UKismetMathLibrary::Add_IntInt(int32 A, int32 B)
@@ -131,6 +137,7 @@ int32 UKismetMathLibrary::Add_IntInt(int32 A, int32 B)
 ```
 
 [Add_IntInt]関数を使用しないで書いてみましょう。
+
 ```cpp
 	int32 ResultAdd = UKismetMathLibrary::Add_IntInt(CalcVarA,CalcVarB);
        ↓
@@ -139,6 +146,7 @@ int32 UKismetMathLibrary::Add_IntInt(int32 A, int32 B)
 
 [Conv_IntToString]関数でint32からFStringに変換しています。
 こちらも[Conv_IntToString]関数を使わずに書いてみましょう。
+
 ```cpp
 //Conv_IntToString()を使用するにはincludeの追加が必要です
 #include "Kismet/KismetStringLibrary.h"
@@ -166,13 +174,16 @@ PrintString関数以外は、Blueprintで使用したノードを使用しない
 
 ```
 Ctrl + Sでファイルを保存し、Compileを行います。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-19-09-29-32.png)
 
 LevelEditorに戻り「CPPSampleActor」をViewportに配置します。
 Blueprit側のPrintStringが出力されると確認しづらいので、Viewportに配置した「BP_SampleActor」を削除します。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-19-09-27-37.png)
 
 Level Editorの[Play]ボタンをクリックします。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-19-09-30-37.png)
 
 CalcVarA + CalcVarB（7+3）の結果が正しく出力されました。
@@ -190,8 +201,10 @@ CalcVarA - CalcVarB // 引き算
 CalcVarA * CalcVarB // 掛け算
 CalcVarA / CalcVarB // 割り算
 ```
+
 数式に使用する「+」などの文字は「**演算子**」と言います。
 「**数式の演算子**」と「**プログラミングの演算子**」では、掛け算と割り算の記号が違います。
+
 | 日本語 | 英語     | 数式の演算子 | プログラミングの演算子 |
 | ------ | -------- | -------- | ------------------ |
 | 足す   | Add      | +        | +                  |
@@ -201,7 +214,6 @@ CalcVarA / CalcVarB // 割り算
 
 Blueprint以外にもMaterialなど他のEditorでも四則演算ノードが用意されています。
 ノードのヘッダ部分に英語が表示されますので、四則演算の英単語を覚えていくと対応できます。
-
 
 ```cpp:CPPSampleActor.cpp BeginePlay()
 	// Subtract(引き算)の処理
@@ -215,6 +227,7 @@ Blueprint以外にもMaterialなど他のEditorでも四則演算ノードが用
 		, FColor::Yellow
 		, Duration);
 ```
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-19-07-57-30.png)
 
 ```cpp:CPPSampleActor.cpp BeginePlay()
@@ -229,6 +242,7 @@ Blueprint以外にもMaterialなど他のEditorでも四則演算ノードが用
 		, FColor::Green
 		, Duration);
 ```
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-19-07-57-48.png)
 
 ```cpp:CPPSampleActor.cpp BeginePlay()
@@ -244,20 +258,25 @@ Blueprint以外にもMaterialなど他のEditorでも四則演算ノードが用
 		, Duration);
 
 ```
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-19-09-43-43.png)
 
 
 Ctrl + Sでファイルを保存し、Compileを行います。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-19-09-29-32.png)
 
 Level Editorの[Play]ボタンをクリックします。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-19-09-30-37.png)
 
 四則演算の結果が正しく表示されました。
 Blueprintの時と同様に、割り算の結果が小数点切り捨てになります。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-19-09-51-59.png)
 
 ### 割り算の結果を小数点まで表示させる
+
 割り算の結果が小数点切り捨てになります。
 Blueprintでは小数点まで表示させるには変数の型を[Integer]を[Float]に変換することで解決できました。
 C++で[int32]から[float]に変換（Cast）することで小数点を扱えます。
@@ -278,6 +297,7 @@ C++で[int32]から[float]に変換（Cast）することで小数点を扱え�
 VariableTypeがint32の変数[CalcVarA],[CalcVarB]の変数型をヘッダーファイルでFloatに変更できます。
 一時的に[int32]から[float]に変換（Cast）させる方法は、変数の前に（VariableType）とすることで変換できます。
 変換できるVariableTypeと、変換できないVariableTypeがありますので、気を付けて使用してください。
+
 ```cpp
 int32 ResultDivide = CalcVarA / CalcVarB;
   ↓
@@ -285,6 +305,7 @@ float ResultDivide = (float)CalcVarA / (float)CalcVarB;
 ```
 
 少数点を含む文字列をFStringに変換するには、「%d」から「%f」に変更します。
+
 ```cpp
 FString::Printf(TEXT("%d"), ResultDivide);
   ↓
@@ -293,26 +314,34 @@ FString::Printf(TEXT("%f"), ResultDivide);
 
 フォーマット指定子といって、「%英字1文字」の部分を、引数に渡した変数で置き換えてくれます。
 変数の型によって、「半角英字1文字」の部分を変更します。
+
 https://www.k-cube.co.jp/wakaba/server/format.html
 
 
 Ctrl + Sでファイルを保存し、Compileを行います。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-19-09-29-32.png)
 
 Level Editorの[Play]ボタンをクリックします。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-19-09-30-37.png)
 
 割り算の結果が小数点まで表示されます。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-19-14-23-15.png)
 
 ### すべて保存
+
 C++側の説明は以上になります。
 プロジェクトをすべて保存しましょう。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-20-06-03-35.png)
 
 ## BlueprintとC++の処理を並べてみる
+
 BlueprintとC++の処理を並べてみます。
 Blueprintで[Sequence]ノードを使うと、処理を上から下に並べられます。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-20-06-19-13.png)
 
 

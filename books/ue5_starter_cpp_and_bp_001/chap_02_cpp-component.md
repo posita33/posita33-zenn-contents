@@ -78,7 +78,7 @@ UPROPERTYはプロパティ指定子というUnreal独自のプロパティで�
 
 **Componentの追加や設定はConstructorで行います。**
 
-```cpp:.cpp
+```cpp:CPPSampleActor.cpp
 ACPPSampleActor::ACPPSampleActor()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
@@ -107,6 +107,7 @@ SubobjectFNameには任意の文字列を設定できます。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-component/2022-01-27-11-20-40.png)
 
 ### StaticMeshComponentを追加する
+
 次に、[**StaticMeshComponent**]を追加します。
 VariableNameは「StaticMesh」に設定します。
 
@@ -168,7 +169,6 @@ Pathが分からない時はアセットをマウスオーバーすると、「 
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-component/2022-01-27-11-23-43.png)
 
-
 Ctrl + Sでファイルを保存し、Compileを行います。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-component/2022-01-27-11-24-04.png)
@@ -180,6 +180,7 @@ Viewportには「SM_SampleCube」が表示されます。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-component/2022-01-27-11-24-20.png)
 
 ### ArrowComponentを追加する
+
 次に、[ArrowComponent]を追加します。
 VariableNameは「Arrow」に設定します。
 
@@ -260,7 +261,6 @@ Locationも移動した位置が設定されています。
 VariableNameは「PointLight」に設定します。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-component/2022-01-27-11-27-06.png)
-
 
 [ArrowComponent]と同様に移動した位置をLocationに設定します。
 
@@ -361,6 +361,7 @@ C++側の説明は以上になります。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-01-26-16-00-41.png)
 
 Visual StudioのSolutionもすべて保存しましょう。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-01-23-21-46-14.png)
 
 ### 最終的なソースコード

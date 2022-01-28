@@ -110,6 +110,7 @@ Event DispatherにBindしたイベントは、Event Dispatherを呼び出す（C
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-event_dispatcher/2022-01-28-15-52-22.png)
 
 ### すべて保存する
+
 Blueprint側の説明は以上になります。
 プロジェクトをすべて保存しましょう。
 

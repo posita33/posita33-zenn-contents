@@ -1,9 +1,6 @@
 ---
-title: "【BP】 Event Dispatcher"
-emoji: "😺"
-type: "tech" # tech: 技術記事 / idea: アイデア
-topics: ["unrealengine", "ue5", "ue4", "blueprint"]
-published: false
+title: "【BP】Event Dispatcher"
+free: false
 ---
 
 ## 【Blueprint】Event Dispatcher

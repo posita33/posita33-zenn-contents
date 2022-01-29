@@ -1,9 +1,6 @@
 ---
-title: "【BP】Flow Control(Switch)"
-emoji: "🐷"
-type: "tech" # tech: 技術記事 / idea: アイデア
-topics: ["unrealengine", "ue5", "ue4", "blueprint"]
-published: false
+title: "【BP】Flow Control（Switch）"
+free: false
 ---
 
 ## 【Blueprint】Flow Control（Switch）

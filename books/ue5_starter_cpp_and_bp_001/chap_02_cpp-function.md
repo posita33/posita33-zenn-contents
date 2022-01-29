@@ -1,12 +1,9 @@
 ---
-title: "【C++】 関数(Function)"
-emoji: "📌"
-type: "tech" # tech: 技術記事 / idea: アイデア
-topics: ["cpp", "unrealengine", "ue4", "ue5"]
-published: false
+title: "【C++】 Function（関数）
+free: false
 ---
 
-## 【C++】関数（Function）
+## 【C++】Function（関数）
 
 ### C++でBlueprintを再現すること
 

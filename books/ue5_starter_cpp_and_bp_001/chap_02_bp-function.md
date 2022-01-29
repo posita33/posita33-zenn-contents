@@ -1,12 +1,9 @@
 ---
-title: "【BP】 関数(Function)"
-emoji: "🐷"
-type: "tech" # tech: 技術記事 / idea: アイデア
-topics: ["unrealengine", "ue5", "ue4", "blueprint"]
-published: false
+title: "【BP】Function（関数）"
+free: false
 ---
 
-## 【Blueprint】関数（Function）
+## 【Blueprint】Function（関数）
 
 ### 今回できること
 

@@ -1,9 +1,6 @@
 ---
 title: "【C++】Construction Script"
-emoji: "🔥"
-type: "tech" # tech: 技術記事 / idea: アイデア
-topics: ["cpp", "unrealengine", "ue4", "ue5"]
-published: false
+free: false
 ---
 
 ## 【C++】Construction Script

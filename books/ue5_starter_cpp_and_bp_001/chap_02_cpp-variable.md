@@ -1,9 +1,6 @@
 ---
-title: "【C++】Variable(変数)"
-emoji: "🐷"
-type: "tech" # tech: 技術記事 / idea: アイデア
-topics: ["unrealengine", "ue5", "ue4", "blueprint"]
-published: false
+title: "【C++】Variable（変数）"
+free: false
 ---
 
 ## 【C++】Variable（変数）

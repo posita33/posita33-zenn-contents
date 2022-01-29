@@ -1,12 +1,15 @@
 ---
 title: "【C++】Flow Control(Switch)"
-emoji: "😽"
-type: "tech" # tech: 技術記事 / idea: アイデア
-topics: ["cpp", "unrealengine", "ue4", "ue5"]
-published: false
+free: false
 ---
 
-## 編集するActorクラスを作成する
+## 【C++】Function（関数）
+
+### C++でBlueprintを再現すること
+
+TODO【要執筆】。
+
+### 編集するActorクラスを作成する
 
 プロジェクトを閉じていたら、プロジェクトを開き、
 「Chapter_2_FlowControl_Switch」を開きます。
@@ -132,7 +135,7 @@ void ACPPFlowControlSwitch::BeginPlay()
 
 ```
 
-## Switch文で数値を分岐する（Switchノード）
+### Switch文で数値を分岐する（Switchノード）
 
 Blueprintでは[Branch]ノードを使用して、計算結果の出力結果を切り替えていました。
 C++で処理を再現します。
@@ -281,3 +284,4 @@ C++側の説明は以上になります。
 Visual StudioのSolutionもすべて保存しましょう。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-01-23-21-46-14.png)
+

@@ -1,10 +1,8 @@
 ---
 title: "【C++】Input Event（入力イベント）"
-emoji: "🔖"
-type: "tech" # tech: 技術記事 / idea: アイデア
-topics: ["cpp", "unrealengine", "ue4", "ue5"]
-published: false
+free: false
 ---
+
 ## 【C++】Input Event（入力イベント）
 
 ### C++でBlueprintを再現すること

@@ -1,9 +1,6 @@
 ---
-title: "【C++】 四則演算(+ - x ÷)"
-emoji: "⚙️"
-type: "idea" # tech: 技術記事 / idea: アイデア
-topics: ["unrealengine", "ue5", "ue4", "blueprint"]
-published: false
+title: "【C++】四則演算（+ - x ÷）"
+free: false
 ---
 
 ## 【C++】四則演算（+ - x ÷）

@@ -1,9 +1,6 @@
 ---
 title: "【BP】Input Event（入力イベント）"
-emoji: "🙆"
-type: "tech" # tech: 技術記事 / idea: アイデア
-topics: ["unrealengine", "ue5", "ue4", "blueprint"]
-published: false
+free: false
 ---
 
 ## 【Blueprint】Input Event（入力イベント）

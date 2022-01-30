@@ -1,5 +1,5 @@
 ---
-title: "【C++】 Function（関数）
+title: "【C++】 Function（関数）"
 free: false
 ---
 

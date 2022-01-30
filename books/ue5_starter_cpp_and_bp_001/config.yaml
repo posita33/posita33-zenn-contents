@@ -59,4 +59,5 @@ chapters:
   - chap_02_cpp-input_event
   - chap_02_bp-event_dispatcher
   - chap_02_cpp-event_dispatcher
+  - chap_02_bp-array
   

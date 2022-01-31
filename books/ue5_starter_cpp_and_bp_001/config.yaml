@@ -61,4 +61,7 @@ chapters:
   - chap_02_cpp-event_dispatcher
   - chap_02_bp-array
   - chap_02_cpp-array
-   
+  - chap_02_bp-array
+  - chap_02_bp-flow_control_loop
+
+  

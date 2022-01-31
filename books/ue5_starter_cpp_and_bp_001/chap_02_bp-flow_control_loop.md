@@ -9,14 +9,13 @@ free: false
 
 Flow Control（Loop）は繰り返し処理を行うことができます。
 10000回の計算をランダムに計算できるのがコンピューターの強みです。
-ブループリントには3種類のLoopノードが用意されています。
+Blueprintには3種類のLoopノードが用意されています。
 
 - For Loop
 - For Each Loop
 - While Loop
 
 [For Loop]と[For Earch Loop]にはBreak付きのノードが用意されています。
-
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_loop/2022-01-31-15-40-34.png)
 

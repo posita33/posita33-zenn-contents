@@ -29,12 +29,15 @@ Blueptintの計算結果の出力処理するFunction[PrintCalcResult]を再現�
 
 プロジェクトを閉じていたら、プロジェクトを開き、
 「Chapter_2_Function」を開きます。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-01-26-07-30-29.png)
 
 [Tools]メニューから[New C++ Class]を開きます。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-01-26-07-31-47.png)
 
 親クラスに[Actor]を選択します。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-01-26-07-32-21.png)
 
 ClassTypeとClass名を設定します。
@@ -162,12 +165,12 @@ C++では関数のひな形となる「**プロトタイプ**」をヘッダー�
 public:
 	int32 Sum(int32 A, int32 B);
 ```
+
 プロトタイプは処理を書かずに、Functionがどのような作りか説明します。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-01-26-18-09-39.png)
 
 Blueprintの[Detail]パネルで設定した内容と一緒です。
-
 
 | Input/Output | VariableName | VariableType | C++                     |
 | ------------ | ------------ | ------------ | ----------------------- |
@@ -176,7 +179,6 @@ Blueprintの[Detail]パネルで設定した内容と一緒です。
 | Output       | ReturnValue  | Integer      | int32（戻り値の型だけ） |
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-01-26-10-01-43.png)
-
 
 CPPFunction.cppにFunction[Sum]を定義します。
 Visual Studioの機能で、Function名にカーソルを合わせて、「▼」をクリックするとメニューが表示されます。
@@ -192,6 +194,7 @@ int32 ACPPFunction::Sum(int32 A, int32 B)
 	return A + B;
 }
 ```
+
 BlueprintとC++のFunction[Sum]を横に並べてみましょう。
 お互いの共通部分を矢印で示すと、Function[Sum]何をしているのか分かりやすくないですか？
 
@@ -204,7 +207,6 @@ BlueprintとC++では以下のような関係性を持っています。
 | Grapth       | .cppファイル |
 | Detailパネル | .hファイル   |
 
-
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-01-26-08-41-18.png)
 
 ### Function[Sum]を使用する
@@ -212,13 +214,11 @@ BlueprintとC++では以下のような関係性を持っています。
 「プロトタイプ」「関数の定義」ができたので、Function[Sum]を使用します。
 変数[CalcVarA]と[CalcVarB]の足し算をFunction[Sum]を使用するように変更します。
 
-
 ```cpp
 int32 ResultAdd = CalcVarA + CalcVarB;
    ↓
 int32 ResultAdd = Sum(CalcVarA,CalcVarB);
 ```
-
 
 ```cpp:CPPFunction.cpp BeginPlay()
 case ECPPCalcType::Add:
@@ -248,6 +248,7 @@ PrintStringの出力結果が分かりづらくなるので、「BP_Function」�
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-01-26-09-17-13.png)
 
 Level Editorの[Play]ボタンをクリックします。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-01-26-09-17-33.png)
 
 Function[Sum]が実行され、足し算の計算結果が出力されます。
@@ -340,15 +341,16 @@ case ECPPCalcType::Add:
 ```
 
 Ctrl + Sでファイルを保存し、Compileを行います。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-01-26-09-13-31.png)
 
 Level Editorの[Play]ボタンをクリックします。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-01-26-09-17-33.png)
 
 値渡しのFunction[Sum]と参照渡しのFunction[SumRef]は同じ結果を出力します。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-01-26-09-25-43.png)
-
 
 何が違うのでしょうか？
 
@@ -390,9 +392,11 @@ case ECPPCalcType::Add:
 ```
 
 Ctrl + Sでファイルを保存し、Compileを行います。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-01-26-09-13-31.png)
 
 Level Editorの[Play]ボタンをクリックします。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-01-26-09-17-33.png)
 
 値渡しのFunction[Sum]と、参照渡しのFunction[SumRef]で出力結果が違います。
@@ -435,7 +439,6 @@ Inputに宣言した変数の左側[▽]をクリックすると、プロパテ�
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-01-26-15-16-48.png)
 
-
 ### 参照渡しの引数を関数内で変更させない（C++のみ）
 
 **参照渡し**は軽くなる分、変数の値を変更されるリスクが伴います。
@@ -470,7 +473,6 @@ Blueprintでも変数に[Blueprint Read Only]を有効にすることで[const]�
 しかし、[Blueprint Read Only]を付けてしまうと、処理中に変数の値を変更できなくなります。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-01-26-15-27-12.png)
-
 
 「値渡し」と「参照渡し」を確認できたので、処理を元に戻します。
 
@@ -590,9 +592,11 @@ void ACPPFunction::BeginPlay()
 ```
 
 Ctrl + Sでファイルを保存し、Compileを行います。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-01-26-09-13-31.png)
 
 Level Editorの[Play]ボタンをクリックします。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-01-26-09-17-33.png)
 
 足し算の計算結果が出力されました。
@@ -614,6 +618,7 @@ C++側の説明は以上になります。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-01-26-16-00-41.png)
 
 Visual StudioのSolutionもすべて保存しましょう。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-01-23-21-46-14.png)
 
 ## 参照URL

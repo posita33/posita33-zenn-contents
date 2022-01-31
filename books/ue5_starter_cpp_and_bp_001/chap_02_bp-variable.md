@@ -196,6 +196,7 @@ Level Editorの[Play]ボタンをクリックします。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-01-27-07-39-58.png)
 
 ### 変数の値をSet（設定）する
+
 次にPrint Stringで変数を使う前に、値を[3.0](3秒)に変更するように変更します。
 Get Durationを追加したのと同様に、変数[Duration]をEventGraphにDrag&Dropします。
 マウスを離すとメニューが表示されるので、[Set Duration]を選択します。

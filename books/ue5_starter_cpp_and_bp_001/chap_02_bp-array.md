@@ -266,7 +266,6 @@ Increamentをして[+1]した変数[TypeIndex]の値をループする計算を�
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-01-30-07-44-53.png)
 
-
 [compile]ボタンをクリックします。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-01-30-06-27-58.png)

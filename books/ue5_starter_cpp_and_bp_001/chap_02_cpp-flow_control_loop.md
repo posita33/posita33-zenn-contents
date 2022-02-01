@@ -573,7 +573,7 @@ Level Editorの[Play]ボタンをクリックします。
 C++側の説明は以上になります。
 プロジェクトをすべて保存しましょう。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-event_dispatcher/2022-01-29-01-17-54.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-02-06-43-30.png)
 
 Visual StudioのSolutionもすべて保存しましょう。
 

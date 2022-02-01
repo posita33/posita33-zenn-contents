@@ -310,6 +310,9 @@ Level Editorの[Play]ボタンをクリックします。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-01-05-49-07.png)
 
+
+
+
 ```cpp:ACPPFlowControlLoop.cpp PrintHello()
 void ACPPFlowControlLoop::PrintHello()
 {
@@ -342,15 +345,228 @@ Level Editorの[Play]ボタンをクリックします。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-01-05-51-31.png)
 
+
+```cpp
+for (int i = 0; i <= 4; i++)
+{
+	// 繰り返し処理
+	if(条件)
+	{
+		//条件がTrue
+		break;
+	}
+}
+// 完了後の処理
+```
+
+```cpp
+int32 FirstIndex = 0;
+int32 LastIndex = 4;
+
+// for loop
+for (int32 index = FirstIndex; index <= LastIndex; index++)
+{
+	// Loop Body
+	if(Messages[index].Contains(TEXT("文字列")))
+	{
+		// 文字列が含まれる場合
+		break;
+	}
+}
+// Completed
+```
+
+```cpp:CPPFlowControlLoop.cpp PrintHello()
+void ACPPFlowControlLoop::PrintHello()
+{
+	int32 FirstIndex = 0;
+	int32 LastIndex = Messages.Num() - 1;
+
+	// for loop
+	for (int32 index = FirstIndex; index <= LastIndex; index++)
+	{
+		// 文字列に"Bonjour"が含まれているか
+		if (Messages[index].Contains(TEXT("Bonjour")))
+		{
+			// TrueならLoopを抜ける
+			break;
+		}
+
+		// Messagesの値を出力する
+		UKismetSystemLibrary::PrintString(this, Messages[index], true, true, TextColor, Duration);
+	}
+	// CompletedをPrintStringで出力する
+	UKismetSystemLibrary::PrintString(this, TEXT("Completed"), true, true, FColor::Cyan, Duration);
+}
+```
+
+Ctrl + Sでファイルを保存し、Compileを行います。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-01-06-08-33.png)
+
+Level Editorの[Play]ボタンをクリックします。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-01-06-12-50.png)
+
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-02-05-58-37.png)
+
+### continue文（C++のみ）
+
+```cpp
+for (int i = 0; i <= 4; i++)
+{
+	// 繰り返し処理
+	if(条件)
+	{
+		//条件がTrue
+		continue;
+	}
+}
+// 完了後の処理
+```
+
+```cpp:CPPFlowControlLoop.cpp PrintHello()
+void ACPPFlowControlLoop::PrintHello()
+{
+	int32 FirstIndex = 0;
+	int32 LastIndex = Messages.Num() - 1;
+
+	// for loop
+	for (int32 index = FirstIndex; index <= LastIndex; index++)
+	{
+		// 文字列に"Bonjour"が含まれているか
+		if (Messages[index].Contains(TEXT("Bonjour")))
+		{
+			// TrueならLoopを続ける
+			continue;
+		}
+
+		// Messagesの値を出力する
+		UKismetSystemLibrary::PrintString(this, Messages[index], true, true, TextColor, Duration);
+	}
+	// CompletedをPrintStringで出力する
+	UKismetSystemLibrary::PrintString(this, TEXT("Completed"), true, true, FColor::Cyan, Duration);
+}
+```
+
+Ctrl + Sでファイルを保存し、Compileを行います。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-01-06-08-33.png)
+
+Level Editorの[Play]ボタンをクリックします。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-01-06-12-50.png)
+
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-02-05-55-59.png)
+
+
 ### Foreach Loop with Breakノードで配列をすべて出力する
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-01-05-53-20.png)
+
+
+```cpp
+TArray<FString> Strs;
+
+for (FString Str : Strs)
+{
+	// Index[0]～Index[LastIndex]までLoopする
+}
+// 完了後の処理
+```
+
+```cpp:CPPFlowControlLoop.cpp PrintHello()
+void ACPPFlowControlLoop::PrintHello()
+{
+	// C++版のFor Each Loop with Break
+	for (FString Message : Messages)
+	{
+		// 文字列に"Bonjour"が含まれているか
+		if (Message.Contains(TEXT("Bonjour")))
+		{
+			// TrueならLoopを続ける
+			break;
+		}
+		// Messagesの値を出力する
+		UKismetSystemLibrary::PrintString(this, Message, true, true, TextColor, Duration);
+	}
+	// CompletedをPrintStringで出力する
+	UKismetSystemLibrary::PrintString(this, TEXT("Completed"), true, true, FColor::Cyan, Duration);
+}
+```
+
+Ctrl + Sでファイルを保存し、Compileを行います。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-01-06-08-33.png)
+
+Level Editorの[Play]ボタンをクリックします。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-01-06-12-50.png)
 
 ### While loopノード
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-01-05-53-46.png)
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-01-05-54-01.png)
+
+While Loopは無限ループになりやすいので、ループを抜ける処理を必ず用意します。
+
+```cpp
+while (whileの条件)
+{
+	// 繰り返し処理
+	if(条件)
+	{
+		//条件がTrue
+		whileの条件 = false;
+	}
+	else
+	{
+		処理
+	}
+}
+// 完了後の処理
+```
+
+```cpp:PPFlowControlLoop.cpp PrintHello()
+void ACPPFlowControlLoop::PrintHello()
+{
+	bool NotBonjour = true;
+	int32 HelloIndex = 0;
+
+	while (NotBonjour)
+	{
+		// 文字列に"Bonjour"が含まれているか
+		if (Messages[HelloIndex].Contains(TEXT("Bonjour")))
+		{
+			// While Loopの条件をfalseに設定する
+			NotBonjour = false;
+		}
+		else
+		{
+			// Messagesの値を出力する
+			UKismetSystemLibrary::PrintString(this, Messages[HelloIndex], true, true, TextColor, Duration);
+		}
+		// HelloIndexをインクリメント
+		HelloIndex++;
+	}
+
+	// CompletedをPrintStringで出力する
+	UKismetSystemLibrary::PrintString(this, TEXT("Completed"), true, true, FColor::Cyan, Duration);
+}
+```
+
+Ctrl + Sでファイルを保存し、Compileを行います。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-01-06-08-33.png)
+
+Level Editorの[Play]ボタンをクリックします。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-01-06-12-50.png)
+
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-02-06-34-19.png)
 
 ### すべて保存
 
@@ -364,3 +580,7 @@ Visual StudioのSolutionもすべて保存しましょう。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-01-23-21-46-14.png)
 
 ## 参照URL
+
+https://docs.unrealengine.com/4.26/ja/ProgrammingAndScripting/ProgrammingWithCPP/UnrealArchitecture/TArrays/
+
+https://www.unrealengine.com/ja/blog/ranged-based-for-loops

@@ -3,7 +3,7 @@ title: "【C++】Flow Control（Loop）"
 free: false
 ---
 
-## 【C++】Function（関数）
+## 【C++】Flow Control（Loop）
 
 ### C++でBlueprintを再現すること
 

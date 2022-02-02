@@ -7,7 +7,7 @@ free: false
 
 ### C++でBlueprintを再現すること
 
-Blueprintの3種類のLoopノードをC++で再現する
+Blueprintの3種類のLoopノードをC++で再現します。
 
 - For Loop
 - For Each Loop
@@ -24,10 +24,13 @@ Blueprintの3種類のLoopノードをC++で再現する
 - While Loop
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_loop/2022-01-31-15-40-54.png)
+*For Loop*
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_loop/2022-01-31-15-41-03.png)
+*For Each Loop*
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_loop/2022-01-31-15-41-14.png)
+*While Loop*
 
 ### 編集するActorクラスを作成する
 
@@ -247,8 +250,12 @@ void ACPPFlowControlLoop::PrintHello()
 
 ### For LoopノードでPrintStringを繰り返し呼び出す
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-01-05-46-26.png)
+For LoopノードでPrintStringを繰り返し呼び出した処理をC++で再現します。
 
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-03-05-49-38.png)
+
+C++でFor Loopノードを再現すると以下のようになります。
+indexでは文字が長いので、i,j,kといった1文字を使用します。
 
 ```cpp
 for (int i = 0; i <= 4; i++)
@@ -257,6 +264,8 @@ for (int i = 0; i <= 4; i++)
 }
 // 完了後の処理
 ```
+
+今回はBlueprintのノードを再現するので、分かりやすいようにBlueprintのノードの名称を使用します。
 
 ```cpp
 int32 FirstIndex = 0;
@@ -270,10 +279,13 @@ for (int32 index = FirstIndex; index <= LastIndex; index++)
 // Completed
 ```
 
+Blueprintの名称と同じにすることで、C++の書き方との対応が分かりやすくなったのではないでしょうか。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-01-06-55-02.png)
 
+「CPPFlowControlLoop.cpp」の[PrintHello]を[For Loop]ノードを再現する記述に編集します。
 
-```cpp:ACPPFlowControlLoop.cpp PrintHello()
+```cpp:CPPFlowControlLoop.cpp PrintHello()
 void ACPPFlowControlLoop::PrintHello()
 {
 	int32 FirstIndex = 0;
@@ -294,7 +306,7 @@ Ctrl + Sでファイルを保存し、Compileを行います。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-01-06-08-33.png)
 
-「ACPPFlowControlLoop」をViewportにDrag&Dropします。
+「CPPFlowControlLoop」をViewportにDrag&Dropします。
 PrintStringの出力結果が分かりづらくなるので、「BP_FlowControl_Loop」を削除します。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-01-06-11-32.png)
@@ -303,15 +315,34 @@ Level Editorの[Play]ボタンをクリックします。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-01-06-12-50.png)
 
+Blueprintと同様に配列のIndexNoがすべて出力された後に、Completedの文字が出力されました。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-01-06-43-14.png)
 
 ### For Loopノードで配列をすべて出力する
 
+[For Loop]ノードの[Last Index]ピンに配列[Messages]のLastIndexを接続して、配列をすべて出力する処理をC++で再現します。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-01-05-49-07.png)
 
+C++ではfor文の条件を柔軟に書き換えられます。
+配列のLastIndexか配列数でfor文を続けるか条件を書きます。
 
+```cpp
+// 配列のLastIndexで比較する場合
+int32 LastIndex = Messages.Num() - 1;
+// 配列のLastIndex以下なら（BlueprintのFor Loopノードと同じ書き方）
+for (int32 index = FirstIndex; index <= LastIndex; index++)
 
+// 配列数で比較する場合
+int32 LastIndex = Messages.Num();
+// 配列数より小さかったらLoopを続ける
+for (int32 index = FirstIndex; index < LastIndex; index++)
+// 配列数に一致していなかったらLoopを続ける
+for (int32 index = FirstIndex; index != LastIndex; index++)
+```
+
+今回はBluprintノードを再現するので、「**配列のLastIndex以下か**」の条件で再現します。
 
 ```cpp:ACPPFlowControlLoop.cpp PrintHello()
 void ACPPFlowControlLoop::PrintHello()
@@ -338,13 +369,17 @@ Level Editorの[Play]ボタンをクリックします。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-01-06-12-50.png)
 
+Blueprintと同様に配列を最初から最後まで出力できました。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-01-07-06-48.png)
 
 ### For Loop with BreakノードでLoopを途中で抜ける
 
+配列[Messages]の文字列に「Boujour」が含まれていた時に[Break]実行ピンでLoopを途中で抜けた処理をC++で再現します。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-01-05-51-31.png)
 
+C++ではfor文内の「`break`」が呼び出されるとfor文を途中で抜けます。
 
 ```cpp
 for (int i = 0; i <= 4; i++)
@@ -358,6 +393,15 @@ for (int i = 0; i <= 4; i++)
 }
 // 完了後の処理
 ```
+
+文字列が含まれているか判定する「Contains」ノードはC++で以下のように書きます。
+
+```cpp
+FString str = TEXT("文字列が含まれているか");
+str.Contains(TEXT("文字列"); // 含まれている（true）、含まれていない（false）
+```
+
+Blueprintの処理を再現すると以下のような記述になります。
 
 ```cpp
 int32 FirstIndex = 0;
@@ -375,6 +419,8 @@ for (int32 index = FirstIndex; index <= LastIndex; index++)
 }
 // Completed
 ```
+
+[PrintHello]に再現した処理を反映します。
 
 ```cpp:CPPFlowControlLoop.cpp PrintHello()
 void ACPPFlowControlLoop::PrintHello()
@@ -408,10 +454,14 @@ Level Editorの[Play]ボタンをクリックします。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-01-06-12-50.png)
 
+[Bonjour]が含まれていない、[Break]が実行される前の文字列のみ表示されました。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-02-05-58-37.png)
 
 ### continue文（C++のみ）
+
+C++では「`break`」の他に「`continue`」を使用できます。
+「`continue`」が呼ばれると、処理の途中で次のindexのLoopが始まります。
 
 ```cpp
 for (int i = 0; i <= 4; i++)
@@ -425,6 +475,8 @@ for (int i = 0; i <= 4; i++)
 }
 // 完了後の処理
 ```
+
+「`break`」を「`continue`」に変更します。
 
 ```cpp:CPPFlowControlLoop.cpp PrintHello()
 void ACPPFlowControlLoop::PrintHello()
@@ -458,14 +510,17 @@ Level Editorの[Play]ボタンをクリックします。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-01-06-12-50.png)
 
+[Bonjour]が含まれていた文字以外は出力されました。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-02-05-55-59.png)
 
-
 ### Foreach Loop with Breakノードで配列をすべて出力する
+
+[For Loop with Break]ノードから[For Each Loop with Break]ノードに変更した処理をC++で再現します。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-01-05-53-20.png)
 
+C++で[For Each Loop]ノードを再現した書き方は以下になります。
 
 ```cpp
 TArray<FString> Strs;
@@ -476,6 +531,8 @@ for (FString Str : Strs)
 }
 // 完了後の処理
 ```
+
+[For Each Loop]ノードを再現した処理と、「`break`」を追加して、[For Each Loop with Break]ノードを再現します。
 
 ```cpp:CPPFlowControlLoop.cpp PrintHello()
 void ACPPFlowControlLoop::PrintHello()
@@ -505,12 +562,20 @@ Level Editorの[Play]ボタンをクリックします。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-01-06-12-50.png)
 
+[For Each Loop with Break]ノードの処理と同様の結果となりました。
+配列を0～LastIndexまで処理するのであれば、「For Each Loop」の書き方が最適です。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-03-06-34-18.png)
+
 ### While loopノード
+
+最後に[While Loop]ノードの処理を再現します。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-01-05-53-46.png)
 
-
-While Loopは無限ループになりやすいので、ループを抜ける処理を必ず用意します。
+[While Loop]ノードはC++では以下のように書きます。
+whileの条件が[false]になった時にLoopを抜けます。
+[While Loop]は無限ループになりやすいので、ループを抜ける処理を必ず用意します。
 
 ```cpp
 while (whileの条件)
@@ -528,6 +593,8 @@ while (whileの条件)
 }
 // 完了後の処理
 ```
+
+[While Loop]ノードの処理を再現するように編集します。
 
 ```cpp:PPFlowControlLoop.cpp PrintHello()
 void ACPPFlowControlLoop::PrintHello()
@@ -565,6 +632,7 @@ Level Editorの[Play]ボタンをクリックします。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-01-06-12-50.png)
 
+[While Loop]ノードと同様の処理になりました。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-02-06-34-19.png)
 

@@ -43,9 +43,10 @@ Enumeration（列挙型）を作成します。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-01-24-09-04-13.png)
 *Contents Browserの空きスペースを右クリック > Blueprints > Enumeration（列挙型）*
 
-アセット名を「ECalcType」に設定します。
-「EcalcType」をダブルクリックで開きます。
+アセット名を「EBPCalcType」に設定します。
+「EBPCalcType」をダブルクリックで開きます。
 
+TODO：画像を修正
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-01-24-09-05-38.png)
 
 

@@ -574,7 +574,7 @@ Level Editorの[Play]ボタンをクリックします。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-01-05-53-46.png)
 
 [While Loop]ノードはC++では以下のように書きます。
-whileの条件が[false]になった時にLoopを抜けます。
+whileの条件が[false]になった時、Loopを抜けます。
 [While Loop]は無限ループになりやすいので、ループを抜ける処理を必ず用意します。
 
 ```cpp

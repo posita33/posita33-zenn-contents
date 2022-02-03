@@ -153,13 +153,18 @@ https://marketplace.visualstudio.com/items?itemName=8amjp.charactercount
 https://chrome.google.com/webstore/detail/%E3%81%8B%E3%82%93%E3%81%9F%E3%82%93%E6%96%87%E5%AD%97%E6%95%B0%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88/lmmephjlhfdnijfigajbmemendbfhnha
 
 
-### よく使うMarkdown記法のSnippet登録
+### よく使うMarkdown記法のSnippet登録（追加：2022/1/18）
 
 アコーディオンを使用したかったので調べてみたら、他にも使用できそうなMarkdown記法がありました。
 よく使うMarkdown記法も一緒に追加しました。
 
 https://zenn.dev/posita33/articles/zenn_markdown_snippet
-（2022/1/18）
+
+### Todo検索「Todo Tree」（追加：2022/2/4）
+
+TODO検索をしたかったのでVS Code Extension「Todo Tree」をインストールした。
+
+https://zenn.dev/posita33/articles/vscode_extension_todo_tree
 
 ## 随時最適化
 書きながら改善した内容を記録します。

@@ -3,6 +3,9 @@
 		{
 			"name": "posita33-zenn-contents",
 			"path": "."
+		},
+		{
+			"path": "..\\UE5Starter-CPPAndBP_Projects"
 		}
 	],
 	"settings": {

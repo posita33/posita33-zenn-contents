@@ -1,5 +1,5 @@
 ---
-title: "1.4. 有料Extensionを使用しない VisualStudioの設定"
+title: "有料Extensionを使用しない Visual Studioの設定"
 free: false
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "1.2. Visual Studio 2019のセットアップ"
+title: "Visual Studio 2019のセットアップ"
 free: false
 ---
 

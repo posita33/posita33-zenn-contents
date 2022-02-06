@@ -1,7 +1,12 @@
 ---
-title: "１.1. Unreal Engine 5のインストール"
+title: "Unreal Engine 5のインストール"
 free: false
 ---
+
+:::message alert
+Unreal Engine 5 早期アクセスで書いています。
+今後正式版が出た時にUIの変更があります。
+:::
 
 ## EpicGamesLauncherのインストール
 UnrealEngineを使用するにはEpicGamesLauncherをインストールします。
@@ -35,6 +40,17 @@ C++の開発で必要になります。
 
 ![](https://storage.googleapis.com/zenn-user-upload/1f5a4151377c-20220109.png) 
 *ライブラリタブの[UE5起動]ボタンの右側の▼をクリック > オプション*
+
+## 一足先にUE5 正式版を試したい方
+
+Unreal EngineはGitHubからソースコードを取得できます。「ue5-main」ブランチがUE5の正式版ソースコードになります。
+一足先にUE5正式版を試したい方はコチラの記事を参考に試してみるのもおススメです。
+
+https://zenn.dev/pokotaro/articles/7d60ecaf7a2f57
+
+
+https://twitter.com/posita33/status/1490217759820890113
+
 
 ## オンラインラーニング：Unreal Engine 5クイックスタート
 

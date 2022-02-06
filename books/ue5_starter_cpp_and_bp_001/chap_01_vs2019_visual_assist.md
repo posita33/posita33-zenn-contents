@@ -1,5 +1,5 @@
 ---
-title: "1.3. 有料Expression「Visual Assist」の導入 "
+title: "有料Expression「Visual Assist」の導入 "
 free: false
 ---
 

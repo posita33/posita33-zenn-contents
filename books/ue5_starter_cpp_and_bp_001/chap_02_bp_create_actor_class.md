@@ -15,7 +15,7 @@ Blueprintを作成するフォルダを作成します。
 - コンテンツブラウザのAddボタンから、[Blueprint Class]を選択する
 - コンテンツブラウザの空きスペースを右クリック、[Blueprint Class]を選択する
 - 左上のBlueprintsメニューから[New Empty Blueprint Class…]を選択する
-- 
+
 ![](https://storage.googleapis.com/zenn-user-upload/8ac7cd070292-20220110.png)
 
 次に親クラスを選択します。

@@ -24,7 +24,7 @@ C++では参照渡しをConst宣言できるので安全に処理が軽くなり
 
 ### 編集するActorクラスを作成する
 
-プロジェクトを閉じていたら、プロジェクトを開き、「Chapter_2_FlowControl_Loop」を開きます。
+プロジェクトを閉じていたら、プロジェクトを開き、「Chapter_2_Structure」を開きます。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-structure/2022-02-06-12-14-46.png)
 

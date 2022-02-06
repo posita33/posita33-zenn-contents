@@ -8,7 +8,12 @@ free: false
 ### 今回できること
 
 変数をArray（配列）に変更します。
+Array（配列）は同じVariableTypeを複数持つことができます。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-02-05-18-21-43.png)
+
 Array（配列）の設定方法や取得について解説します。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-01-29-22-59-46.png)
 
 Array（配列）の取得でよく使用する2つの方法について解説します。
@@ -187,6 +192,13 @@ Level Editorの[Play]ボタンをクリックします。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-01-30-11-58-55.png)
 
+配列からRandomのElementとIndexを取得できるRandom関数があります。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-02-06-12-01-04.png)
+
+Random関数から取得できるElementは値渡しになるので、参照渡しにしたい場合はRandom関数のIndexをGet（a ref）に渡して取得します。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-02-06-11-56-34.png)
 
 ### 変数[CalcType]を配列の変数[CalcTypes]に変更する
 

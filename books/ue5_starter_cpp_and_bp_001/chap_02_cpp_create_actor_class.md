@@ -3,14 +3,24 @@ title: "【C++】Actorクラスを作成する"
 free: false
 ---
 
-## C++のクラス（親クラス：Actor）を追加する
+## 【C++】Actorクラスを作成する
+
+### C++でBlueprintを再現すること
+
+C++でクラス（親クラス：Actor）を作成できます。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp_create_actor_class/2022-02-07-06-57-33.png)
+
+### C++のクラス（親クラス：Actor）を追加する
 
 C++のクラスを新規作成します。
-メニューから作成する方法と、コンテンツブラウザから作成する方法があります。
-・[Tools]メニューから[New C++ Class…]を選択する
-・コンテンツブラウザの[C++ Classes]を選択すると右クリックやAddボタンのメニューが変わる。[New C++ Class…]を選択する。
 
-![](https://storage.googleapis.com/zenn-user-upload/9dca4066fbd6-20220110.png)
+メニューから作成する方法と、[Content Drawer]から作成する方法があります。
+
+・[Tools]メニューから[New C++ Class…]を選択する
+・[Content Drawer]の[C++ Classes]を選択すると右クリックやAddボタンのメニューが変わる。[New C++ Class…]を選択する。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp_create_actor_class/2022-02-07-06-36-23.png)
 
 親クラスを選択します。
 [Actor]を選択して、[Next >]をクリックします。
@@ -19,25 +29,33 @@ C++のクラスを新規作成します。
 
 Class TypeとClass名を設定して、[Create Class]をクリックします。
 
-| Property   | Value          |
-| ---------- | -------------- |
-| Class Type | Public         |
-| Name       | CPPSampleActor |
+| Property   | Value         |
+| ---------- | ------------- |
+| Class Type | Public        |
+| Name       | CPPHelloWorld |
 
-![](https://storage.googleapis.com/zenn-user-upload/59f94540abb6-20220110.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp_create_actor_class/2022-02-07-06-38-53.png)
 
-コンテンツブラウザのC++ Classesフォルダ側に作成したC++のクラスが追加されます。
+[Content Drawer]の[C++ Classes]フォルダ側に作成したC++のクラスが追加されます。
 
-![](https://storage.googleapis.com/zenn-user-upload/a41809c2a4f3-20220110.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp_create_actor_class/2022-02-07-06-45-29.png)
 
 Visual Studio側を確認します。
-Solution Explorerにソースコードが追加されています。
-Publicフォルダ：「CPPSampleActor.h」（ヘッダーファイル）
-Privateフォルダ：「CPPSampleActor.cpp」（C++ファイル）
 
-![](https://storage.googleapis.com/zenn-user-upload/7a257183e84d-20220110.png)
+プロジェクトに変更があったので、確認のダイアログが表示されます。
+[Reload All]ボタンをクリックすると変更が反映されます。（以後、この工程は省略します。）
 
-**CPPSampleActor.h（ヘッダーファイル）**
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp_create_actor_class/2022-02-07-06-44-18.png)
+
+[Solution Explorer]にソースコードが追加されています。
+[Solution Explorer]はUnreal Engineの[Content Drawer]のようにVisual StudioのSolutionを管理する機能です。
+
+- Publicフォルダ：「CPPHelloWorld.h」（ヘッダーファイル）
+- Privateフォルダ：「CPPHelloWorld.cpp」（C++ファイル）
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp_create_actor_class/2022-02-07-06-49-01.png)
+
+**CPPHelloWorld.h（ヘッダーファイル）**
 ヘッダーファイルは関数の宣言や変数の定義を書いていきます。
 
 ```cpp
@@ -47,16 +65,16 @@ Privateフォルダ：「CPPSampleActor.cpp」（C++ファイル）
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "CPPSampleActor.generated.h"
+#include "CPPHelloWorld.generated.h"
 
 UCLASS()
-class CPP_BP_API ACPPSampleActor : public AActor
+class CPP_BP_API ACPPHelloWorld : public AActor
 {
 	GENERATED_BODY()
 	
 public:	
 	// Sets default values for this actor's properties
-	ACPPSampleActor();
+	ACPPHelloWorld();
 
 protected:
 	// Called when the game starts or when spawned
@@ -69,17 +87,17 @@ public:
 };
 ```
 
-**CPPSampleActor.cpp（C++ファイル）**
-C++ファイルはヘッダーファイルで宣言した関数の処理を実装します。
+**CPPHelloWorld.cpp（C++ファイル）**
+C++ファイルはヘッダーファイルで宣言した関数の処理を定義します。
 
 ```cpp
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "CPPSampleActor.h"
+#include "CPPHelloWorld.h"
 
 // Sets default values
-ACPPSampleActor::ACPPSampleActor()
+ACPPHelloWorld::ACPPHelloWorld()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
@@ -87,19 +105,28 @@ ACPPSampleActor::ACPPSampleActor()
 }
 
 // Called when the game starts or when spawned
-void ACPPSampleActor::BeginPlay()
+void ACPPHelloWorld::BeginPlay()
 {
 	Super::BeginPlay();
 	
 }
 
 // Called every frame
-void ACPPSampleActor::Tick(float DeltaTime)
+void ACPPHelloWorld::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
 }
 ```
+
+### すべて保存
+
+C++側の説明は以上になります。
+
+Visual StudioのSolutionをすべて保存しましょう。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp_create_actor_class/2022-02-07-06-53-51.png)
+
 
 ## コーディング規約
 

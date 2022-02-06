@@ -161,6 +161,8 @@ Structure（構造体）のメンバーが大量にある場合は、Breakノー
 
 Function[PrintCalcResultArgStructure]を使用した処理に編集します。
 
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-structure/2022-02-06-17-13-22.png)
+
 Function[PrintCalcResultArgStructure]をEventGraphに追加します。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-structure/2022-02-05-14-04-14.png)
@@ -200,6 +202,47 @@ Inputが整理されて構造体化されることで、ピンに設定する項
 Level Editorに戻り、「BP_Structure」をViewportにDrag&Dropします。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-structure/2022-02-05-14-40-47.png)
+
+Level Editorの[Play]ボタンをクリックします。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-structure/2022-02-05-14-42-06.png)
+
+[C]キーをPressするとFunction[PrintCalcResultArgStructure]はFunction[PrintCalcResult]と同様の処理を行います。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-structure/2022-02-05-14-42-52.png)
+
+### Structure（構造体）の配列を使った処理に修正する
+
+Structure（構造体）もArray（配列）として宣言できます。
+
+| VariableName | VariableType         | Category     | DefaultValue |
+| ------------ | -------------------- | ------------ | ------------ |
+| CalcInfos    | FBPCalcInfo（Array） | Flow Control | 0            |
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-structure/2022-02-06-17-12-33.png)
+
+Default Valueを設定するために[Compile]ボタンをクリックします。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-structure/2022-02-06-17-27-39.png)
+
+Default Valueを一覧の値になるように設定します。
+
+| Index | Type     | NumA | NumB |
+|-------|----------|------|------|
+| [0]   | Add      | 7    | 3    |
+| [1]   | Subtract | 7    | 3    |
+| [2]   | Multiply | 7    | 3    |
+| [3]   | Divide   | 7    | 3    |
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-structure/2022-02-06-17-15-07.png)
+
+Structure（構造体）の配列をGet(a ref)で取得するように修正します。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-structure/2022-02-06-17-19-33.png)
+
+[Compile]ボタンをクリックします。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-structure/2022-02-05-14-39-07.png)
 
 Level Editorの[Play]ボタンをクリックします。
 

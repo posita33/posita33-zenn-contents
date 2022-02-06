@@ -33,7 +33,8 @@ chapters:
   - chap_01_vs2019_setup
   - chap_01_vs2019_visual_assist
   - chap_01_vs2019_free
-  - chap_02_foundation
+  - chap_01_vs2019_unreal_vs
+  - chap_02_basic_grammar
   - chap_02_create_project
   - chap_02_bp_create_actor_class
   - chap_02_cpp_create_actor_class

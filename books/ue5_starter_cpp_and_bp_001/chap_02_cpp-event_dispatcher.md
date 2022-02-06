@@ -167,6 +167,7 @@ void ACPPEventDispatcher::PrintCalcResult(const ECPPCalcType Type, const int32 A
 			float ResultDivide = (float)A / (float)B;
 			FString StrResultDivide = FString::Printf(TEXT("%f"), ResultDivide);
 			UKismetSystemLibrary::PrintString(this, StrResultDivide, true, true, FColor::Blue, PrintDuration);
+			break;
 		}
 	}
 }

@@ -7,31 +7,47 @@ free: false
 
 ### 今回できること
 
-**【要追記！ 】**
+[PrintString]ノードでViewportやOutputLogに文字列を出力できます。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-08-07-03-38.png)
+
+Blueprintのコメントの書くことができます。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-01-26-22-48-12.png)
 
 ### Mapsフォルダを作成してレベルを保存する
 
 学習用のレベルとして保存します。
-Mapsフォルダを作為します。
+「Maps」フォルダを作為します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-01-26-22-31-45.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-08-06-04-59.png)
 
 [File]メニューからCurrent Levelを保存します。
 ショートカット「Ctrl + S」でも保存できます。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-01-26-22-32-19.png)
 
-「Maps」フォルダを選択し、Nameに[Chapter_2_3_HelloWorld]という名称で保存します。
+「Maps」フォルダを選択し、Nameに[Chapter_2_HelloWorld]という名称で保存します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-01-26-22-32-35.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-08-06-07-27.png)
 
 ### Blueprint Editorについて
 
-Class Blueprint「BP_SampleActor」をダブルクリックし、Blueprint Editorを開きます。
+Class Blueprint「BP_HelloWorld」をダブルクリックし、Blueprint Editorを開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-01-26-22-33-00.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-08-06-08-47.png)
 
 Blueprint Editorが開きます。
+
+ときどき、データ専用ブループリントが立ち上がることもあります。
+
+https://docs.unrealengine.com/4.26/ja/ProgrammingAndScripting/Blueprints/UserGuide/Types/ClassBlueprint/#%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AE%E3%81%BF%E3%81%AE%E3%83%96%E3%83%AB%E3%83%BC%E3%83%97%E3%83%AA%E3%83%B3%E3%83%88
+
+「Hello World!」を出力する処理を書くので、データ専用ブループリントが立ち上がった時は「Open Full Blueprint Editor」をクリックしてください。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-08-06-11-53.png)
+
+編集できるBlueprint Editorが開きます。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-01-26-22-34-10.png)
 
@@ -43,7 +59,7 @@ Actor ClassのBlueprintには3種類のタブが用意されています。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-01-26-22-34-54.png)
 
-今回はEvent Graphに処理を実装します。
+今回は**Event Graph**に処理を実装します。
 1つ1つのメニューやボタンについては、公式ドキュメントを参照してください。
 
 https://docs.unrealengine.com/4.27/ja/ProgrammingAndScripting/Blueprints/Editor/UIBreakdowns/ClassBPUI/
@@ -81,14 +97,25 @@ Event BeginPlayの実行ピンとPrintStringの実行ピンを接続します。
 
 ### LevelEditorのViewportにBlueprintを追加してプレイする
 
-「BP_SampleActor」をLevelEditorのViewportに追加します。
+ViewportにBlueprintを配置する前に[Place Actors]パネルを表示しましょう。
+[Window]メニューから[Place Actors]を選択します。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-08-06-26-32.png)
+
+[Place Actors]タブを[Content Drawer]と同じように、折りたためるようにします。
+タブを折りたためる機能はUE5から搭載されます。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-08-06-31-55.png)
+*タブを右クリック > Move To Sidebar*
+
+「BP_HelloWorld」をLevelEditorのViewportに追加します。
 追加する方法は2つあります。
 
-- コンテンツブラウザから「BP_SampleActor」をレベルのビューポートにドラッグ&ドロップ
-- Place Actorsの検索バーで「BP_SampleActor」を検索して、レベルのビューポートにドラッグ&ドロップ
+- [Content Drawer]から「BP_HelloWorld」をViewportにDrag&Drop
+- [Place Actors]の検索バーで「BP_HelloWorld」を検索して、ViewportにDrag&Drop
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-01-26-22-39-10.png)
-*コンテンツブラウザかPlace Actorsから、レベルのビューポートにドラッグ＆ドロップ*
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-08-06-39-22.png)
+*Content DrawerかPlace Actorsから、レベルのビューポートにDrag&Drop*
 
 「Play」ボタンをクリックします。
 
@@ -98,14 +125,15 @@ Event BeginPlayの実行ピンとPrintStringの実行ピンを接続します。
 Level EditorのViewport左上に「Print String」ノードの[In String]に設定した文字列の「Hello World!」が表示されます。
 キーボードの[ESC]キーで終了します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-01-26-22-40-22.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-08-06-41-37.png)
+
 
 ### PrintStringノードの隠された設定について
 
-「BP_SampleActor」をダブルクリックし、Blueprint Editorを開きます。
+「BP_HelloWorld」をダブルクリックし、Blueprint Editorを開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-01-26-22-41-06.png)
-*BP_SampleActorをダブルクリック*
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-08-06-08-47.png)
+*BP_HelloWorldをダブルクリック*
 
 Print Stringノードの[Development Only]にある▽ボタンをクリックします。
 Print Stringの左側に隠されていた入力ピンが表示されます。
@@ -138,29 +166,32 @@ Level Editor側に戻って、[Play]ボタンをクリックします。
 Level EditorのViewport左上に表示される文字列が10秒間表示されます。
 文字列の色もColor Pickerで設定した色に表示されました。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-01-26-22-43-03.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-08-06-45-24.png)
 
-Outputタブを表示します。
+[Window]メニューから[OutputLog]タブを表示します。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-08-06-48-36.png)
+*Window > OutputLog*
+
+[Place Actors]タブと同様にSidebarにタブを置きます。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-08-06-53-45.png)
+
 一番下までスクロールすると[Print String]の[In String]で設定した文字列が出力されています。
 
 ```
-LogBlueprintUserMessages: [BP_SampleActor_C_1] Hello World!
+LogBlueprintUserMessages: [BP_HelloWorld_C_2] Hello World!
 ```
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-01-26-22-45-14.png)
-
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-08-06-56-33.png)
 
 Print Stringは2個所にIn Stringで設定した文字列を出力できます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-01-26-22-45-33.png)
-
-Output Logタブが表示されていない時は、[Window]>[Output Log]から表示できます。
-
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-01-26-22-45-48.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-08-07-03-38.png)
 
 [Print String]の[Print to Screen]、[Print to Log]のチェックボックスを無効にすると、[In String]の文字列が出力されなくなります。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-01-26-22-46-00.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-08-07-07-30.png)
 
 Print Stringノードはまた使用するので、確認が済んだらチェックボックスを有効に戻しましょう。
 
@@ -223,12 +254,12 @@ Blueprintにコメントを書きます。
 Blueprint側の説明は以上になります。
 プロジェクトをすべて保存しましょう。
 
-**【要画像修正！ 】**
-
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-Function/2022-01-25-12-29-47.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-08-07-09-27.png)
 
 ## 参照URL
 
 https://docs.unrealengine.com/4.27/ja/ProgrammingAndScripting/Blueprints/Editor/UIBreakdowns/ClassBPUI/
 
 https://docs.unrealengine.com/4.27/ja/ProgrammingAndScripting/Blueprints/UserGuide/Comments/
+
+https://docs.unrealengine.com/4.26/ja/ProgrammingAndScripting/Blueprints/UserGuide/Types/

@@ -6,28 +6,39 @@ free: false
 ## 【C++】PrintStringでHello World!
 
 ### C++でBlueprintを再現すること
-【要執筆】。
+
+Blueprintと同様にViewportに文字列を表示することを再現します。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-09-06-44-29.png)
+
+PrintStringノードをC++で再現することで、C++のPrintString関数の使い方を把握します。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-01-27-06-35-51.png)
 
 ### Event BeginPlayにPrint String関数を呼び出す処理を実装する
 
+プロジェクトを閉じていたら、プロジェクトを開き、「Chapter_2_HelloWorld」を開きます。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-09-06-39-14.png)
+
 Visual Studio 2019を開きます。
-UE5のエディタからは[Tools]メニューか、コンテンツブラウザから作成したActorクラスをダブルクリックとVisual Studioが開けます。
+UE5のエディタからは[Tools]メニューか、[Content Drawer]から作成したActorクラスをダブルクリックとVisual Studioが開けます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-01-27-06-15-13.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-09-06-19-38.png)
 
-CPPSampleActor.cppのBeginPlay関数にPrintString実装します。
+CPPHelloWorld.cppのBeginPlay関数にPrintString実装します。
 まず、#inclueにKismet/KismetSystemLibrary.hを追加します。
 
-```cpp:CPPSampleActor.cpp
-#include "CPPSampleActor.h"
+```cpp:CPPHelloWorld.cpp
+#include "CPPHelloWorld.h"
 #include "Kismet/KismetSystemLibrary.h" //追加
 ```
 
 Blueprintで普段使用しているPrintStringノードは、UKismetSystemLibraryクラスにPrintString関数として定義されています。
 UKismetSystemLibraryクラスのPrintString関数を呼び出すように処理を追加します。
 
-```cpp:CPPSampleActor.cpp BeginPlay()
-void ACPPSampleActor::BeginPlay()
+```cpp:CPPHelloWorld.cpp BeginPlay()
+void ACPPHelloWorld::BeginPlay()
 {
 	Super::BeginPlay();
 	
@@ -36,27 +47,33 @@ void ACPPSampleActor::BeginPlay()
 	UKismetSystemLibrary::PrintString(this, "C++ Hello World!", true, true, FColor::Cyan, 2.f);
 }
 ```
-ソースコードを変更したら、保存します（ショートカット：Ctrl＋Sで保存すると早いです）。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-01-27-06-16-57.png)
+ソースコードを変更したら、保存します（ショートカット：Ctrl+Sで保存すると早いです）。
+複数のファイルを保存する時は、[Save All]（ショートカット：Ctrl+Shift+S）を選択してください。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-09-06-28-46.png)
 
 Build ＞Build Solutionを行いコンパイルを行います。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-01-27-06-17-19.png)
 
-他の手段として、UE5のLevelEditor右下の小さいアイコンがC++のソースコードをコンパイルするボタンなので、アイコンをクリックするとコンパイルが実行されます。
+UE5のLevelEditor右下の小さいアイコンがC++のソースコードをコンパイルするボタンなので、アイコンをクリックするとコンパイルが実行されます。
 「Compile Complite!」が表示されればコンパイル成功です。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-01-27-06-17-30.png)
 
+Unreal VS拡張をインストールしているのであれば、[Build Startup Project]をクリックするだけなので便利です。今後はUnreal VS拡張がインストールされている前提で説明します。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-09-06-34-01.png)
+
 ### LevelEditorのViewportにC++のクラスを追加してプレイする
-「CPPSampleActor」をLevelEditorのViewportに追加します。
+「CPPHelloWorld」をLevelEditorのViewportに追加します。
 追加する方法はBlueprintと同じです。
 
-- コンテンツブラウザから「CPPSampleActor」をレベルのビューポートにドラッグ&ドロップ
-- Place Actorsの検索バーで「CPPSampleActor」を検索して、レベルのビューポートにドラッグ&ドロップ
+- [Content Drawer]から「CPPHelloWorld」をレベルのビューポートにドラッグ&ドロップ
+- Place Actorsの検索バーで「CPPHelloWorld」を検索して、レベルのビューポートにドラッグ&ドロップ
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-01-27-06-34-14.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-09-06-43-12.png)
 
 C++のActorクラスにはコンポーネントが何もないのでサムネイルが表示されません。レベルに追加されたかは[World Outliner]から確認してください。
 
@@ -68,11 +85,11 @@ C++のActorクラスにはコンポーネントが何もないのでサムネイ
 
 BluepintのPrintStringノードと同様にLevelEditorのVieport左上に出力がされました。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-01-27-06-35-06.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-09-06-44-29.png)
 
 Output LogタブにもBlueprintノードのPrintStringノードと同様の出力がされています。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-01-27-06-35-21.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-09-06-45-33.png)
 
 ### UKismetSystemLibraryクラスのPrintString関数とBlueprintのPrintStringノードを比較する
 
@@ -109,7 +126,7 @@ UE4でBlueprintに慣れている人がC++をさわり始めると、上から�
 慣れの問題なので、どちらも慣れるまで書くしか解決法がありません。
 たくさん書きましょう。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-01-27-06-37-48.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-09-06-47-51.png)
 
 ### PrintStringノードの正体
 PrintStringノードは、KismetSystemLibrary.hで定義され、KismetInputLibrary.cppで実装されています。
@@ -227,10 +244,10 @@ UE_LOG(LogBlueprint, VeryVerbose, TEXT("Screen messages disabled (!GAreScreenMes
 ```
 
 GEngine->AddOnScreenDebugMessage関数とUE_LOGマクロを使用する処理を追加して、文字列を出力してみましょう。
-CPPSampleActor.cpp BeginPlay関数に処理を追加します。
+CPPHelloWorld.cpp BeginPlay関数に処理を追加します。
 
 ```cpp
-void ACPPSampleActor::BeginPlay()
+void ACPPHelloWorld::BeginPlay()
 {
 	Super::BeginPlay();
 
@@ -250,7 +267,7 @@ void ACPPSampleActor::BeginPlay()
 
 ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-01-27-06-40-44.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-09-06-34-01.png)
 
 [Play]ボタンをクリックします。
 
@@ -258,11 +275,11 @@ void ACPPSampleActor::BeginPlay()
 
 PrintString関数とは違うサイズで出力されました。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-01-27-06-41-04.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-09-06-50-22.png)
 
 Output Logにはそれぞれ色の違う文字列が出力されています。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-01-27-06-41-47.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-09-06-51-04.png)
 
 
 ### すべて保存
@@ -270,12 +287,10 @@ Output Logにはそれぞれ色の違う文字列が出力されています。
 C++側の説明は以上になります。
 プロジェクトをすべて保存しましょう。
 
-【画像差し替え】
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-01-26-16-00-41.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-09-06-52-50.png)
 
 Visual StudioのSolutionもすべて保存しましょう。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-01-23-21-46-14.png)
-
 
 ## 【参照URL】
 

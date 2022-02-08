@@ -11,7 +11,7 @@ Blueprintと同様にViewportに文字列を表示することを再現します
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-09-06-44-29.png)
 
-PrintStringノードをC++で再現することで、C++のPrintString関数の使い方を把握します。
+PrintStringノードをC++で再現し、C++とBlueprintのPrintStringが対応している箇所を把握します。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-01-27-06-35-51.png)
 

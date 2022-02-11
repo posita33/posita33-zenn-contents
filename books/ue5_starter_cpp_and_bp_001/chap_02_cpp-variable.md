@@ -465,3 +465,11 @@ Visual StudioのSolutionもすべて保存しましょう。
 ここまでのソースコードとプロジェクトファイルをGitHubからダウンロードできます。
 
 https://github.com/posita33/UE5Starter-CPPAndBP_Projects/tree/main/Resources/Chapter_02/Variable
+
+**CPPVariable.h**
+
+https://github.com/posita33/UE5Starter-CPPAndBP_Projects/blob/main/Resources/Chapter_02/Variable/Source_end/CPP_BP/Public/CPPVariable.h
+
+**CPPVariable.cpp**
+
+https://github.com/posita33/UE5Starter-CPPAndBP_Projects/blob/main/Resources/Chapter_02/Variable/Source_end/CPP_BP/Private/CPPVariable.cpp

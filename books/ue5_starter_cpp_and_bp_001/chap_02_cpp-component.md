@@ -432,108 +432,17 @@ Visual StudioのSolutionもすべて保存しましょう。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-01-23-21-46-14.png)
 
-### 最終的なソースコード
+### ソースコードとプロジェクト
 
-```cpp:CPPComponent.h
-// Fill out your copyright notice in the Description page of Project Settings.
+ここまでのソースコードとプロジェクトファイルをGitHubからダウンロードできます。
 
-#pragma once
+https://github.com/posita33/UE5Starter-CPPAndBP_Projects/tree/main/Resources/Chapter_02/Component
 
-#include "CoreMinimal.h"
-#include "GameFramework/Actor.h"
-#include "Components/ArrowComponent.h" // 追加
-#include "Components/PointLightComponent.h" // 追加
-#include "CPPComponent.generated.h"
+**CPPComponent.h**
+
+https://github.com/posita33/UE5Starter-CPPAndBP_Projects/blob/main/Resources/Chapter_02/Component/Source_end/CPP_BP/Public/CPPComponent.h
 
 
-UCLASS()
-class CPP_BP_API ACPPComponent : public AActor
-{
-	GENERATED_BODY()
-	
-public:	
-	// Sets default values for this actor's properties
-	ACPPComponent();
+**CPPComponent.cpp**
 
-	// Scene Component
-	UPROPERTY(EditAnywhere)
-	USceneComponent* DefaultSceneRoot;
-
-	// StaticMesh Component
-	UPROPERTY(EditAnywhere)
-	UStaticMeshComponent* StaticMesh;
-
-	// Arrow Component
-	UPROPERTY(VisibleAnywhere)
-	UArrowComponent* Arrow;
-
-	// PointLightComponent Component
-	UPROPERTY(EditAnywhere)
-	UPointLightComponent* PointLight;
-
-	// DurationのGet関数
-	float GetDuration() { return Duration; }
-
-	// TextColorのGet関数
-	FLinearColor GetTextColor() { return TextColor; }
-
-protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
-
-public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
-
-private:
-	// PrintString関数のDurationに設定する変数
-	const float Duration = 10.0f;
-
-	// PrintString関数のTextColorに設定する変数
-	const FLinearColor TextColor = FColor(255, 255, 255);
-};
-```
-
-```cpp:CPPComponent.cpp ACPPComponent() （Constructor）
-// Sets default values
-ACPPComponent::ACPPComponent()
-{
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = true;
-
-	// SceneComponentを作成する
-	DefaultSceneRoot = CreateDefaultSubobject<USceneComponent>(TEXT("SceneComponent"));
-
-	// SceneComponentをRootComponentに設定する
-	RootComponent = DefaultSceneRoot;
-
-	// StaticMeshComponentを作成する
-	StaticMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("StaticMeshComponent"));
-
-	// StaticMeshをLaodしてStaticMeshComponentのStaticMeshに設定する
-	UStaticMesh* Mesh = LoadObject<UStaticMesh>(NULL, TEXT("/Game/CPP_BP/Meshes/SM_SampleCube"), NULL, LOAD_None, NULL);
-	StaticMesh->SetStaticMesh(Mesh);
-
-	// StaticMeshComponentをRootComponentにAttachする
-	StaticMesh->SetupAttachment(RootComponent);
-
-	// ArrowComponentを作成する
-	Arrow = CreateDefaultSubobject<UArrowComponent>(TEXT("ArrowComponent"));
-	
-	// ArrowComponentの位置を設定する
-	Arrow->SetRelativeLocation(FVector(30.0f, 0.0f, 0.0f));
-
-	// ArrowComponentをStaticMeshComponentにAttachする
-	Arrow->SetupAttachment(StaticMesh);
-
-	// PointLightComponentを作成する
-	PointLight = CreateDefaultSubobject<UPointLightComponent>(TEXT("PointLightComponent"));
-
-	// PointLightComponentの位置を設定する
-	PointLight->SetRelativeLocation(FVector(130.0f, 0.0f, 0.0f));
-
-	// PointLightComponentをStaticMeshComponentにAttachする
-	PointLight->SetupAttachment(StaticMesh);
-}
-```
-
+https://github.com/posita33/UE5Starter-CPPAndBP_Projects/blob/main/Resources/Chapter_02/Component/Source_end/CPP_BP/Private/CPPComponent.cpp

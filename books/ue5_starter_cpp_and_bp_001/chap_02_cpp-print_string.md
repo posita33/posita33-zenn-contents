@@ -303,3 +303,11 @@ https://docs.unrealengine.com/4.27/en-US/API/Runtime/Engine/Engine/UEngine/AddOn
 ここまでのソースコードとプロジェクトファイルをGitHubからダウンロードできます。
 
 https://github.com/posita33/UE5Starter-CPPAndBP_Projects/tree/main/Resources/Chapter_02/HelloWorld
+
+**CPPHelloWorld.h**
+
+https://github.com/posita33/UE5Starter-CPPAndBP_Projects/blob/main/Resources/Chapter_02/HelloWorld/Source_end/CPP_BP/Public/CPPHelloWorld.h
+
+**CPPHelloWorld.cpp**
+
+https://github.com/posita33/UE5Starter-CPPAndBP_Projects/blob/main/Resources/Chapter_02/HelloWorld/Source_end/CPP_BP/Private/CPPHelloWorld.cpp

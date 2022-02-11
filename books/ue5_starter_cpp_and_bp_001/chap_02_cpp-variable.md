@@ -6,37 +6,90 @@ free: false
 ## 【C++】Variable（変数）
 
 ### C++でBlueprintを再現すること
-【要執筆】。
 
-### Visual Studioを開いて、CPPSampleActor.cppを表示する
-プロジェクトを閉じていたら、プロジェクトを開き、「Chapter_2_4_Variable」を開きます。
-
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-01-27-08-32-57.png)
-
-[Tools]メニューからVisual Studioを開きます。
-
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-01-27-08-33-18.png)
-
-Solution Explorerから「CPPSampleActor.cpp」をダブルクリックして開きます。
-
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-01-27-08-33-33.png)
-
-前回書いたPrintString関数の引数をBlueprintと同じように変数化します。
+PrintString関数の引数をBlueprintと同じように変数化します。
 C++では関数の引数がBlueprintのInputピンになります。
 関数の引数については、関数の項目で詳しく説明します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-01-27-08-33-47.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-02-11-16-44-49.png)
+
+### 編集するActorクラスを作成する
+
+プロジェクトを閉じていたら、プロジェクトを開き、「Chapter_2_Variable」を開きます。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-02-11-15-04-52.png)
+
+[Tools]メニューから[New C++ Class]を開きます。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-02-11-15-09-17.png)
+
+親クラスに[Actor]を選択します。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-02-11-15-10-15.png)
+
+ClassTypeとClass名を設定します。
+
+| Property   | Value       |
+| ---------- | ----------- |
+| Class Type | Public      |
+| Name       | CPPVariable |
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-02-11-15-14-06.png)
+
+Solution Explorerから今回編集する2つのファイルを開きます。
+
+- CPPVariable.h
+- CPPVariable.cpp
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-02-11-15-26-39.png)
+
+開いたファイルを学習する初期状態に修正します。
+
+```cpp:CPPVariable.h
+// Fill out your copyright notice in the Description page of Project Settings.
+
+#pragma once
+
+#include "CoreMinimal.h"
+#include "GameFramework/Actor.h"
+#include "CPPVariable.generated.h"
+
+UCLASS()
+class CPP_BP_API ACPPVariable : public AActor
+{
+	GENERATED_BODY()
+	
+protected:
+	// Called when the game starts or when spawned
+	virtual void BeginPlay() override;
+
+};
+```
+
+```cpp:CPPVariable.cpp
+// Fill out your copyright notice in the Description page of Project Settings.
+
+
+#include "CPPVariable.h"
+#include "Kismet/KismetSystemLibrary.h"
+
+// Called when the game starts or when spawned
+void ACPPVariable::BeginPlay()
+{
+	// PrintStringノードと同じ処理
+	// UKismetSystemLibraryクラスのPrintString関数を呼び出す
+	UKismetSystemLibrary::PrintString(this, "C++ Hello World!", true, true, FColor::Cyan, 2.f);
+}
+```
 
 ### PrintString関数で文字列を出力するための変数を作成する
 
 変数「Message」を作成して、Print StringのIn Stringに接続する内容をC++で実装します。
 Event BeginePlayノードに該当するBeginPlay関数を編集します。
 
-```cpp:CPPSampleActor.cpp
-void ACPPSampleActor::BeginPlay()
+```cpp:CPPVariable.cpp
+void ACPPVariable::BeginPlay()
 {
-	Super::BeginPlay();
-
 	FString Message= "C++ Hello World!";
 
 	// PrintStringノードと同じ処理
@@ -55,30 +108,22 @@ https://wa3.i-3-i.info/word18069.html
 
 Blueprintプリントでは変数の設定をDetailパネルで編集できます。
 Variable Name、Variable Type、Default Valueというラベルが書かれているので親切です。
-C++は**「文法を理解している」という暗黙の了解**で記述することになります。**文法を理解すれば大丈夫です**。一緒に頑張りましょう。
+C++は「**文法を理解している**」という**暗黙の了解**で記述することになります。**文法を理解すれば大丈夫です**。一緒に頑張りましょう。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-01-27-08-36-56.png)
 
 作成した変数名[Message]をPrint String関数のIn Stringにあたる、左から2番目の引数に変数名[Message]を記入します。
 引数は","（カンマ）区切りです。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-01-27-08-37-19.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-02-11-15-35-44.png)
 
 Blueprintは変数[Message]のGetノードからPrintStringノードの[In String]ピンに接続しました。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-01-27-08-37-32.png)
 
-ソースコードを編集したので、Compileを行います。
-編集したファイルを保存します。
+ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-01-27-08-37-56.png)
-*File > Save (編集したファイル)*
-
-Build > Build Solutionか、Level Editorの右下のアイコンでComileを行います。
-
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-01-27-08-38-30.png)
-
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-01-27-08-38-43.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-09-06-34-01.png)
 
 BlueprintではCompile > 保存でした。
 C++は保存されたファイルに対してCompileを行います。
@@ -88,20 +133,19 @@ C++は保存されたファイルに対してCompileを行います。
 編集したC++のActorクラスをLevelEditorのViewportにDrag&Dropします。
 World Outlinerに追加したActorクラス名が表示されることを確認します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-01-27-08-40-47.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-02-11-15-49-18.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-01-27-08-39-22.png)
 
-
-
 変数「Message」に設定した文字列が表示されました。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-01-27-08-39-34.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-02-11-15-52-08.png)
 
-
+:::message
 **【Column】 String型ではなくUnrealEngine独自のFStringクラス**
+:::
 
 int（整数）型やfloat（浮動小数点）型のVariable TypeにはFが付かないのに、String型にはVariable Typeを**FString**とFを最初に付けて宣言します。
 
@@ -131,57 +175,51 @@ https://docs.unrealengine.com/4.27/en-US/ProgrammingAndScripting/ProgrammingWith
 
 ヘッダファイルに変数を宣言する。
 変数[Message]はBeginPlay関数内に変数を宣言しました。
-今回の変数[Duration]はヘッダファイル[CPPSampleActor.h]に変数を宣言します。
-SolutionExplorerの「CPPSampleActor.h」を開きます。
+今回の変数[Duration]はヘッダファイル[CPPVariable.h]に変数を宣言します。
+SolutionExplorerの「CPPVariable.h」を開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-01-27-08-42-34.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-02-11-15-55-46.png)
 
-CPPSampleActor.h
-
-```cpp:CPPSampleActor.h
+```cpp:CPPVariable.h
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "CPPSampleActor.generated.h"
+#include "CPPVariable.generated.h"
 
 UCLASS()
-class CPP_BP_API ACPPSampleActor : public AActor
+class CPP_BP_API ACPPVariable : public AActor
 {
 	GENERATED_BODY()
 	
-public:	
-	// Sets default values for this actor's properties
-	ACPPSampleActor();
-
-	// PrintString関数のDurationに設定する変数
-	float Duration = 10.0f;
-
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
-
+private:	
+	// PrintString関数のDurationに設定する変数
+	float Duration = 10.0f;
 };
 ```
 
 変数[Duration]を宣言した箇所だけ抽出しました。
 
-Variable Name：Durationa
-Variable Type：float
-Default Value：10.0f
+|               | Value    |
+| ------------- | -------- |
+| Variable Name | Duration |
+| Variable Type | float    |
+| Default Value | 10.0f    |
 
 ```cpp
 	// PrintString関数のDurationに設定する変数
 	float Duration = 10.0f;
 ```
 
+:::message
 **【Column】数値の最後に文字は接尾語**
+:::
 10.0fの”f”はfloatの接尾語です。[10.0]と書いてもCompileは成功します。
 
 > 値の終わりに接尾語を付けることで、その値の型を指定できます。
@@ -189,19 +227,16 @@ Default Value：10.0f
 
 https://atmarkit.itmedia.co.jp/ait/articles/1002/10/news122_3.html
 
-
 次は処理を書きます。
 処理を書く前にBlueprintの処理を確認します。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-01-27-08-45-01.png)
 
-Solution Explorerから「CPPSampleActor.cpp」をダブルクリックして開き、BeginPlay関数に処理を実装します。
+Solution Explorerから「CPPVariable.cpp」をダブルクリックして開き、BeginPlay関数に処理を実装します。
 
-```cpp:CPPSampleActor.cpp BeginPlay()
-void ACPPSampleActor::BeginPlay()
+```cpp:CPPVariable.cpp BeginPlay()
+void ACPPVariable::BeginPlay()
 {
-	Super::BeginPlay();
-
 	FString Message = "C++ Hello World!";
 
 	Duration = 3.0f;
@@ -218,17 +253,17 @@ Duration = 3.0f;
 **Getノード**
 DurationをPrintString関数の引数に記述する。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-01-27-08-46-10.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-02-11-16-15-36.png)
 
-Ctrl + Sでファイルを保存し、Compileを行います。
+ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-01-27-08-46-26.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-09-06-34-01.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-01-27-08-46-39.png)
 
-文字が変数[Duration]に設定した[3.0f](3秒間)表示されます。
+文字が変数[Duration]に設定した[3.0f]（3秒間）表示されます。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-01-27-08-46-49.png)
 
@@ -239,12 +274,11 @@ C++で読み取り専用の変数を再現します。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-01-27-08-47-20.png)
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-01-27-08-47-27.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-02-11-16-24-53.png)
 
+「CPPVariable.h」に宣言したDurationの先頭に「const」を追加します。
 
-「CPPSampleActor.h」に宣言したDurationの先頭に「const」を追加します。
-
-```cpp:CPPSampleActor.h
+```cpp:CPPVariable.h
 private:
 	// PrintString関数のDurationに設定する変数
 	const float Duration = 10.0f;
@@ -255,7 +289,6 @@ const修飾子は変数の型の前に宣言します。
 const VariableType VariableName = DefaultValue; 
 ```
 
-
 const 修飾子を変数に設定すると、一度設定したDefault Valueから変更することが出来なくなります。
 
 > C++ 言語には、定数を表現するための const 修飾子が用意されています。ここでは const 修飾子のさまざまな使い方について説明します。
@@ -264,27 +297,27 @@ const 修飾子を使う目的は、コンパイラによる最適化を促進�
 
 [引用元：C++の基礎 : const 修飾子](http://www.s-cradle.com/developer/sophiaframework/tutorial/Cpp/const.html)
 
-Ctrl＋Sでファイルを保存し、[Build]メニューから[Build Solution]を選択してCompileします。
+ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-01-27-09-23-16.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-09-06-34-01.png)
 
 Blueprintの時と同じようにCompileがエラーになります。
 [Output]ウィンドウのErrorメッセージをダブルクリックします。
 エラー箇所に移動すると、変数[Duration]の値を変更している箇所がエラーと判定されています。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-01-27-09-23-34.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-02-11-16-30-05.png)
 
 変数[Duration]に値を設定している行を削除します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-01-27-09-24-34.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-02-11-16-31-15.png)
 
-Ctrl＋Sでファイルを保存し、[Build]メニューから[Build Solution]を選択してCompileします。
+ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-01-27-09-24-45.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-09-06-34-01.png)
 
 今度はCompileが成功しました。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-01-27-09-25-30.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-02-11-16-32-57.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
@@ -293,10 +326,9 @@ Level Editorの[Play]ボタンをクリックします。
 const修飾子を一緒に宣言したことで、変数に設定したDefault Valueが約束されます。値を変更したくない変数にはconst修飾子を宣言することで、読み取り専用の変数として使用できます。
 const修飾子は関数で大活躍します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-01-27-09-25-44.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-02-11-16-34-33.png)
 
 https://zenn.dev/posita33/articles/a0ee3a45e5cdb2
-
 
 ### VariableTypeを別の型（floatからFString）に変換する
 
@@ -305,20 +337,18 @@ C++で**Variable TypeをFloatからStringに変換するノード**を再現し�
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-01-27-09-27-31.png)
 
-Solution Explorerから「CPPSampleActor.cpp」をダブルクリックして開き、BeginPlay関数に処理を実装します。
+Solution Explorerから「CPPVariable.cpp」をダブルクリックして開き、BeginPlay関数に処理を実装します。
 確認しやすいようにPrintString関数を複数行にしました。
 
-```cpp:CPPSampleActor.cpp
-#include "CPPSampleActor.h"
+```cpp:CPPVariable.cpp
+#include "CPPVariable.h"
 #include "Kismet/KismetSystemLibrary.h"
 #include "Kismet/KismetStringLibrary.h" // 追加
 ```
 
-```cpp:CPPSampleActor.cpp
-void ACPPSampleActor::BeginPlay()
+```cpp:CPPVariable.cpp
+void ACPPVariable::BeginPlay()
 {
-	Super::BeginPlay();
-
 	FString Message = "C++ Hello World!";
 
 	// PrintStringノードと同じ処理
@@ -345,9 +375,9 @@ UKismetStringLibraryクラスのConv_FloatToString関数はKismetStringLibrary.h
 #include "Kismet/KismetStringLibrary.h" // 追加
 ```
 
-Ctrl + Sでファイルを保存し、Compileを行います。
+ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-01-27-09-29-46.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-09-06-34-01.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
@@ -355,7 +385,7 @@ Level Editorの[Play]ボタンをクリックします。
 
 変数[Duration]の値が文字列として画面に表示されます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-01-27-09-30-00.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-02-11-16-37-25.png)
 
 https://zenn.dev/posita33/articles/8dd51074f1915a
 
@@ -367,9 +397,10 @@ https://zenn.dev/posita33/articles/8dd51074f1915a
 
 PrintStringのTextColorに使用されるVariable TypeはLinearColorです。
 C++でVariable Typeを宣言する時は[**FLinearColor**]になります。
-「**CPPSampleActor.h**」に変数[**TextColor**]を宣言します。
+「**CPPVariable.h**」に変数[**TextColor**]を宣言します。
 
-```cpp:CPPSampleActor.h
+```cpp:CPPVariable.h
+private:
 	// PrintString関数のDurationに設定する変数
 	const float Duration = 10.0f;
 
@@ -377,15 +408,13 @@ C++でVariable Typeを宣言する時は[**FLinearColor**]になります。
 	const FLinearColor TextColor = FLinearColor(0.0, 0.66, 1.0);
 ```
 
-「CPPSampleActor.cpp」のPrintString関数に変数[TextColor]を使用するように記入します。
+「CPPVariable.cpp」のPrintString関数に変数[TextColor]を使用するように記入します。
 In Stringには変数[Message]を使用するように戻します。
 
-```cpp:CPPSampleActor.cpp
+```cpp:CPPVariable.cpp
 // Called when the game starts or when spawned
-void ACPPSampleActor::BeginPlay()
+void ACPPVariable::BeginPlay()
 {
-	Super::BeginPlay();
-
 	FString Message = "C++ Hello World!";
 
 	// PrintStringノードと同じ処理
@@ -400,8 +429,9 @@ void ACPPSampleActor::BeginPlay()
 }
 ```
 
-Ctrl + Sでファイルを保存し、Compileを行います。
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-01-27-09-33-44.png)
+ソースコードを保存して、Compileを実行します。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-09-06-34-01.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
@@ -409,85 +439,23 @@ Level Editorの[Play]ボタンをクリックします。
 
 TextColorが変更されました。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-01-27-09-34-09.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-02-11-16-40-07.png)
 
 https://zenn.dev/posita33/articles/41737b3be89aa4
 
 ### C++とBlueprintの比較画像
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-01-27-09-35-00.png)
+C++とBlueprintの比較画像です。
 
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-02-11-16-42-15.png)
 
-## 最終的なソースコード
+### すべて保存
 
-```cpp:CPPSampleActor.h
-#include "CoreMinimal.h"
-#include "GameFramework/Actor.h"
-#include "CPPSampleActor.generated.h"
+C++側の説明は以上になります。
+プロジェクトをすべて保存しましょう。
 
-UCLASS()
-class CPP_BP_API ACPPSampleActor : public AActor
-{
-	GENERATED_BODY()
-	
-public:	
-	// Sets default values for this actor's properties
-	ACPPSampleActor();
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-02-11-16-47-23.png)
 
-	// PrintString関数のDurationに設定する変数
-	const float Duration = 10.0f;
+Visual StudioのSolutionもすべて保存しましょう。
 
-	// PrintString関数のTextColorに設定する変数
-	const FLinearColor TextColor = FColor(255, 255, 255);
-
-protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
-
-public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
-};
-```
-
-```cpp:CPPSampleActor.h
-// Fill out your copyright notice in the Description page of Project Settings.
-
-
-#include "CPPSampleActor.h"
-#include "Kismet/KismetSystemLibrary.h"
-#include "Kismet/KismetStringLibrary.h" // 追加
-
-// Sets default values
-ACPPSampleActor::ACPPSampleActor()
-{
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = true;
-}
-
-// Called when the game starts or when spawned
-void ACPPSampleActor::BeginPlay()
-{
-	Super::BeginPlay();
-
-	FString Message = "C++ Hello World!";
-
-	// PrintStringノードと同じ処理
-	// UKismetSystemLibraryクラスのPrintString関数を呼び出す
-	UKismetSystemLibrary::PrintString(
-		this
-		, Message // Messageに戻す
-		, true
-		, true
-		, TextColor  // Textのカラー情報に変数TextColorを設定
-		, Duration);
-}
-
-// Called every frame
-void ACPPSampleActor::Tick(float DeltaTime)
-{
-	Super::Tick(DeltaTime);
-
-}
-```
-
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-02-11-16-48-10.png)

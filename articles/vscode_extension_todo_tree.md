@@ -8,7 +8,7 @@ published: true
 
 ## 忘れないうちにTODOを残す
 
-JAVAを書いていた時の習慣で、TODOコメントを残しています。
+Javaを書いていた時の習慣で、TODOコメントを残しています。
 あとで「TODO」を全体検索で探せばいいかと考えていていました。
 EclipseはTODOがリスト化されて、TODOをクリックすれば該当箇所に飛べたので便利でした。
 
@@ -34,6 +34,37 @@ TODOの行をクリックすると該当箇所に飛ぶことができます。
 TODOの箇所の背景色が見やすくなっているので気付きやすくなります。
 
 ![](/images/articles/vscode_extension_todo_tree/2022-02-04-06-14-05.png)
+
+## 他にも使えるタグ
+
+`TODO`以外にも使用できるタグがあります。
+Todo Treeのアイコンもタグごとに違います。
+
+```
+BUG
+HACK
+FIXME
+XXX
+[ ] 項目（未完了）
+[x] 項目（完了）
+```
+
+![](/images/articles/vscode_extension_todo_tree/2022-02-11-12-52-48.png)
+
+項目をリスト化するとチェックボックスで管理できるので便利です。
+
+```
+- [ ] 項目（未完了）
+- [x] 項目（完了）
+  - [ ] サブ項目（未完了）
+  - [x] サブ項目（完了）
+```
+
+![](/images/articles/vscode_extension_todo_tree/2022-02-11-12-54-30.png)
+
+Todo Treeで監視できるタグは[Todo-tree > General: Tags]から追加できます。
+
+![](/images/articles/vscode_extension_todo_tree/2022-02-11-12-59-04.png)
 
 ## まとめ
 

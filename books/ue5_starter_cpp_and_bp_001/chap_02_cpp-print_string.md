@@ -297,3 +297,9 @@ Visual StudioのSolutionもすべて保存しましょう。
 https://docs.unrealengine.com/4.27/ja/ProgrammingAndScripting/ProgrammingWithCPP/UnrealArchitecture/StringHandling/FString/
 
 https://docs.unrealengine.com/4.27/en-US/API/Runtime/Engine/Engine/UEngine/AddOnScreenDebugMessage/1/
+
+### ソースコードとプロジェクト
+
+ここまでのソースコードとプロジェクトファイルをGitHubからダウンロードできます。
+
+https://github.com/posita33/UE5Starter-CPPAndBP_Projects/tree/main/Resources/Chapter_02/HelloWorld

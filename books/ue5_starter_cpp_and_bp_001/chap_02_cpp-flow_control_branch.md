@@ -28,7 +28,7 @@ free: false
 
 プロジェクトを閉じていたら、プロジェクトを開き、「Chapter_2_FlowControl_Branch」を開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-06-03-53.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-02-12-21-09-50.png)
 
 [Tools]メニューから[New C++ Class]を開きます。
 
@@ -52,12 +52,11 @@ Solution Explorerから今回編集する2つのファイルを開きます。
 - CPPFlowControlBranch.h
 - CPPFlowControlBranch.cpp
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-06-22-17.png)
-
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-02-12-21-11-44.png)
 
 開いたファイルを学習する初期状態に修正します。
 
-```h:CPPFlowControlBranch.h
+```cpp:CPPFlowControlBranch.h
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
@@ -99,8 +98,6 @@ private:
 // Called when the game starts or when spawned
 void ACPPFlowControlBranch::BeginPlay()
 {
-	Super::BeginPlay();
-
 	FString Message = "C++ Hello World!";
 
 	// PrintStringノードと同じ処理
@@ -115,8 +112,7 @@ void ACPPFlowControlBranch::BeginPlay()
 	// Subtract(引き算)の処理
 	int32 ResultSubtract = CalcVarA - CalcVarB;
 	FString StrResultSubtract = FString::Printf(TEXT("%d"), ResultSubtract);
-	UKismetSystemLibrary::PrintString(this, StrResultSubtract, true, true, FColor::Yellow
-		, Duration);
+	UKismetSystemLibrary::PrintString(this, StrResultSubtract, true, true, FColor::Yellow, Duration);
 
 	// Multiply(掛け算)の処理
 	int32 ResultMultiply = CalcVarA * CalcVarB;
@@ -151,7 +147,7 @@ private:
 	int32 NumA = 1;
 	int32 NumB = 2;
 	int32 NumC = 15;
-	bool IsPrintHello = true;
+	bool IsBlueprint = true;
 ```
 
 ### if/else文で処理を切り替える（Branchノード）
@@ -183,8 +179,6 @@ CPPFlowControlBranch.cpp BeginPlay関数をif文で修正しましょう。
 ```cpp:CPPFlowControlBranch.cpp BeginPlay()
 void ACPPFlowControlBranch::BeginPlay()
 {
-	Super::BeginPlay();
-
 	FString Message = "C++ Hello World!";
 
 	if (IsPrintHello)
@@ -203,8 +197,7 @@ void ACPPFlowControlBranch::BeginPlay()
 		// Subtract(引き算)の処理
 		int32 ResultSubtract = CalcVarA - CalcVarB;
 		FString StrResultSubtract = FString::Printf(TEXT("%d"), ResultSubtract);
-		UKismetSystemLibrary::PrintString(this, StrResultSubtract, true, true, FColor::Yellow
-			, Duration);
+		UKismetSystemLibrary::PrintString(this, StrResultSubtract, true, true, FColor::Yellow, Duration);
 
 		// Multiply(掛け算)の処理
 		int32 ResultMultiply = CalcVarA * CalcVarB;
@@ -219,13 +212,14 @@ void ACPPFlowControlBranch::BeginPlay()
 }
 ```
 
-Ctrl + Sでファイルを保存し、Compileを行います。
+ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-07-02-24.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-02-12-21-15-56.png)
 
 LevelEditorに戻り、「CPPFlowControlBranch」をViewportにDrag&Dropします。
+PrintStringの表示を分かりやすくするために、「BP_FlowControl_Branch」を削除します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-07-00-33.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-02-12-21-20-13.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
@@ -276,9 +270,9 @@ BeginPlay関数のif文の条件を比較演算子を使用するように変更
 
 ```
 
-Ctrl + Sでファイルを保存し、Compileを行います。
+ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-07-02-24.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-02-12-21-15-56.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
@@ -333,8 +327,6 @@ C++とBlueprintの比較演算子をまとめた一覧です。
 | >=  | ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_branch/2022-01-22-14-29-35.png) | ≧    | 以上       | A>=B   | AはB以上         |
 | !=  | ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_branch/2022-01-22-14-29-57.png) | ≠    | 等しくない | A!=B   | AとBは等しくない |
 
-
-
 ### 論理演算子で複雑な条件を書く（論理演算子ノード）
 
 論理演算子ノードでBranchノードの実行ピンを切り替える処理をC++で再現します。
@@ -372,9 +364,9 @@ BeginPlay関数のif文の条件を論理演算子を使用するように変更
 	}
 ```
 
-Ctrl + Sでファイルを保存し、Compileを行います。
+ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-07-02-24.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-02-12-21-15-56.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
@@ -445,9 +437,9 @@ C++側のみですが、**条件演算子**という書き方があります。
 	FString Message = (IsBlueprint) ? "Blueprint Hello World!" : "C++ Hello World!";
 ```
 
-Ctrl + Sでファイルを保存し、Compileを行います。
+ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-07-02-24.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-02-12-21-15-56.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
@@ -520,8 +512,6 @@ Blueprint側と同様に、変数[CalcType]の数値で引き算の計算結果�
 ```cpp:CPPFlowControlBranch.cpp BeginPlay()
 void ACPPFlowControlBranch::BeginPlay()
 {
-	Super::BeginPlay();
-
 	FString Message = "C++ Hello World!";
 
 	if (IsPrintHello)
@@ -565,9 +555,9 @@ void ACPPFlowControlBranch::BeginPlay()
 
 ```
 
-Ctrl + Sでファイルを保存し、Compileを行います。
+ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-07-02-24.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-02-12-21-15-56.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
@@ -577,19 +567,33 @@ Level Editorの[Play]ボタンをクリックします。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-11-26-47.png)
 
-### C++とBlueprintの比較画像
-
-C++とBlueprintの比較画像です。
-
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-21-54-25.png)
-
 ### すべて保存
 
 C++側の説明は以上になります。
 プロジェクトをすべて保存しましょう。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-11-38-13.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-02-12-21-28-17.png)
 
 Visual StudioのSolutionもすべて保存しましょう。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-11-39-43.png)
+
+## C++とBlueprintの比較画像
+
+C++とBlueprintの比較画像です。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-21-54-25.png)
+
+## ソースコードとプロジェクト
+
+ここまでのソースコードとプロジェクトファイルをGitHubからダウンロードできます。
+
+https://github.com/posita33/UE5Starter-CPPAndBP_Projects/tree/main/Resources/Chapter_02/FlowControl_Branch
+
+**CPPFlowControlBranch.h**
+
+https://github.com/posita33/UE5Starter-CPPAndBP_Projects/blob/main/Resources/Chapter_02/FlowControl_Branch/Source_end/CPP_BP/Public/CPPFlowControlBranch.h
+
+**CPPFlowControlBranch.cpp**
+
+https://github.com/posita33/UE5Starter-CPPAndBP_Projects/blob/main/Resources/Chapter_02/FlowControl_Branch/Source_end/CPP_BP/Private/CPPFlowControlBranch.cpp

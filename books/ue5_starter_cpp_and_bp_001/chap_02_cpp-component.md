@@ -45,6 +45,8 @@ Solution Explorerから今回編集する2つのファイルを開きます。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-component/2022-02-11-21-01-56.png)
 
+開いたファイルを学習する初期状態に修正します。
+
 ```cpp:CPPComponent.h
 // Fill out your copyright notice in the Description page of Project Settings.
 
@@ -432,7 +434,7 @@ Visual StudioのSolutionもすべて保存しましょう。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-01-23-21-46-14.png)
 
-### ソースコードとプロジェクト
+## ソースコードとプロジェクト
 
 ここまでのソースコードとプロジェクトファイルをGitHubからダウンロードできます。
 

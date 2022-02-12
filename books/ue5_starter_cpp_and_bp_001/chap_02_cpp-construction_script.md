@@ -52,6 +52,8 @@ Solution Explorerから今回編集する2つのファイルを開きます。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-construction_script/2022-02-12-15-04-20.png)
 
+開いたファイルを学習する初期状態に修正します。
+
 ```cpp:CPPConstructionScript.h
 // Fill out your copyright notice in the Description page of Project Settings.
 
@@ -59,8 +61,8 @@ Solution Explorerから今回編集する2つのファイルを開きます。
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "Components/ArrowComponent.h" // 追加
-#include "Components/PointLightComponent.h" // 追加
+#include "Components/ArrowComponent.h"
+#include "Components/PointLightComponent.h"
 #include "CPPConstructionScript.generated.h"
 
 UCLASS()

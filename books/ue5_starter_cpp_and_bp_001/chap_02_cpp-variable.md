@@ -460,7 +460,7 @@ Visual StudioのSolutionもすべて保存しましょう。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-02-11-16-48-10.png)
 
-### ソースコードとプロジェクト
+## ソースコードとプロジェクト
 
 ここまでのソースコードとプロジェクトファイルをGitHubからダウンロードできます。
 

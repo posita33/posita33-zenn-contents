@@ -26,7 +26,7 @@ Blueprintで四則演算ノードを使用して、PrintStringで計算結果を
 | 掛ける | Multiply | ×        | *（アスタリスク）    |
 | 割る   | Divide   | ÷        | /（スラッシュ）      |
 
-### 学習用の新規レベル「Chapter_2_7_Calculation」を作成する
+### 学習用の新規レベル「Chapter_2_Calculation」を作成する
 
 学習用の新規レベルを作成します。
 [File]から[New Level…]を選択します。
@@ -42,15 +42,21 @@ Blueprintで四則演算ノードを使用して、PrintStringで計算結果を
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-01-18-07-33-00.png)
 
-「Maps」フォルダを選択し、Nameに「Chapter_2_7_Calculation」を入力し、[Save]ボタンをクリックします。
+「Maps」フォルダを選択し、Nameに「Chapter_2_Calculation」を入力し、[Save]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-01-18-07-35-22.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-02-12-16-09-12.png)
+
+### Blueprintを複製する
+
+「BP_ConstructionScript」を複製（Ctrl + W）して、「BP_Calculation」を作成します。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-02-12-16-13-06.png)
 
 ### 計算に使用する変数を追加する
 
-「**BP_SampleActor**」をBlueprint Editorで開きます。
+「**BP_Calculation**」をBlueprint Editorで開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-01-18-07-51-11.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-02-12-16-14-34.png)
 
 四則演算ノードの計算で使用する変数を追加します。
 今回は**FloatとInegerの違いを説明するため**に、**VariableTypeをInteger**(**整数**)に設定します。
@@ -88,11 +94,11 @@ $$
 
 [Compile]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-01-18-16-22-19.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-02-12-16-21-04.png)
 
-Level Editorに戻り、Viewportに「**BP_SampleActor**」をDrag&Dropします。
+Level Editorに戻り、Viewportに「**BP_Calculation**」をDrag&Dropします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-01-18-16-29-02.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-02-12-16-22-36.png)
 
 [Play]ボタンをクリックします。
 
@@ -130,17 +136,14 @@ $$
 CalcVarA（7） \div CalcVarB（3） = 2.333...
 $$
 
+「**BP_Calculation**」をBlueprint Editorで開きます。
 
-「**BP_SampleActor**」をBlueprint Editorで開きます。
-
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-01-18-07-51-11.png)
-
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-02-12-16-14-34.png)
 
 足し算の処理を範囲選択して、Copy&Pasteします。
 [Add]ノードを削除します。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-01-18-16-43-27.png)
-
 
 [**Subtract（引き算）**]ノードを追加します。
 CalcVarAからDrag&Dropし、[**-（マイナス）**]で検索します。
@@ -184,7 +187,7 @@ CalcVarAからDrag&Dropし、[**/（スラッシュ）**]で検索します。�
 
 [Compile]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-01-18-16-22-19.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-02-12-16-21-04.png)
 
 [Play]ボタンをクリックします。
 
@@ -232,7 +235,7 @@ UE4では型ごとに四則演算ノードが用意されていました。
 
 [Compile]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-01-18-16-22-19.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-02-12-16-21-04.png)
 
 [Play]ボタンをクリックします。
 
@@ -247,7 +250,6 @@ UE4では型ごとに四則演算ノードが用意されていました。
 何を変数に設定するかでVariableTypeに気を付けましょう。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-01-18-18-10-17.png)
-
 
 ### MathExpressionノードで数式を書く
 
@@ -269,7 +271,7 @@ PrintStringノードでOutputピンの値を出力するように処理を修正
 
 [Compile]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-01-18-16-22-19.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-02-12-16-21-04.png)
 
 [Play]ボタンをクリックします。
 
@@ -285,5 +287,16 @@ PrintStringノードでOutputピンの値を出力するように処理を修正
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-01-18-19-56-12.png)
 
 使えない数式もありますので、使用する際には公式ドキュメントをご確認ください。
+
+https://docs.unrealengine.com/4.27/ja/RenderingAndGraphics/Materials/ExpressionReference/Math/
+
+### すべて保存する
+
+Blueprint側の説明はここまでになります。
+[Content Drawer]から[Save All]ボタンをクリックし、[Save Selected]ボタンをクリックしてプロジェクトの変更のあったアセットをすべて保存します。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-02-12-16-35-32.png)
+
+## 参照URL
 
 https://docs.unrealengine.com/4.27/ja/RenderingAndGraphics/Materials/ExpressionReference/Math/

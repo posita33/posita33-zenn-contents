@@ -67,11 +67,11 @@ Outputピンは以下のように計算結果の出力を切り替えます。
 
 [Compile]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_switch/2022-01-23-16-54-14.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_switch/2022-02-12-21-46-54.png)
 
 LevelEditorに戻り、「BP_FlowControl_Switch」をViewportにDrag&Dropします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_switch/2022-01-23-16-57-11.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_switch/2022-02-12-21-49-14.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
@@ -102,4 +102,4 @@ Level Editorの[Play]ボタンをクリックします。
 Blueprint側の説明はここまでになります。
 [Content Browser]から[Save All]ボタンをクリックし、[Save Selected]ボタンをクリックしてプロジェクトの変更のあったアセットをすべて保存します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_switch/2022-01-23-17-03-08.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_switch/2022-02-12-21-50-51.png)

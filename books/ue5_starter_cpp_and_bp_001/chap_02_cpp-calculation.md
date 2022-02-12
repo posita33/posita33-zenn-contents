@@ -22,22 +22,86 @@ Blueprint版で実装した四則演算の結果をPrintStringで出力する処
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-19-09-43-43.png)
 
-### Visual Studioを開いて、編集するファイルを表示する
+### 編集するActorクラスを作成する
 
-プロジェクトを閉じていたら、プロジェクトを開き、「Chapter_2_7_Calculation」を開きます。
+プロジェクトを閉じていたら、プロジェクトを開き、「Chapter_2_Calculation」を開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-19-07-45-05.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-02-12-18-35-03.png)
 
-ToolsからVisual Studioを開きます。
+[Tools]メニューから[New C++ Class]を開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-19-07-50-21.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-02-12-18-36-03.png)
+
+親クラスに[Actor]を選択します。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-02-12-18-36-23.png)
+
+ClassTypeとClass名を設定します。
+
+| Property   | Value          |
+| ---------- | -------------- |
+| Class Type | Public         |
+| Name       | CPPCalculation |
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-02-12-18-38-34.png)
 
 Solution Explorerから今回編集する2つのファイルを開きます。
 
-- CPPSampleActor.cpp
-- CPPSampleActor.h
+- CPPCalculation.cpp
+- CPPCalculation.h
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-19-07-51-04.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-02-12-18-41-24.png)
+
+開いたファイルを学習する初期状態に修正します。
+この後にComponentやConstructionScriptは使用しないので処理を削除してあります。
+
+```cpp:.cpp
+// Fill out your copyright notice in the Description page of Project Settings.
+
+#pragma once
+
+#include "CoreMinimal.h"
+#include "GameFramework/Actor.h"
+#include "CPPCalculation.generated.h"
+
+UCLASS()
+class CPP_BP_API ACPPCalculation : public AActor
+{
+	GENERATED_BODY()
+
+protected:
+	// Called when the game starts or when spawned
+	virtual void BeginPlay() override;
+
+private:
+	// PrintString関数のDurationに設定する変数
+	const float Duration = 10.0f;
+
+	// PrintString関数のTextColorに設定する変数
+	const FLinearColor TextColor = FLinearColor(0.0, 0.66, 1.0);
+
+};
+
+```
+
+```cpp:CPPCalculation.cpp
+// Fill out your copyright notice in the Description page of Project Settings.
+
+
+#include "CPPCalculation.h"
+#include "Kismet/KismetSystemLibrary.h"
+
+// Called when the game starts or when spawned
+void ACPPCalculation::BeginPlay()
+{
+	FString Message = "C++ Hello World!";
+
+	// PrintStringノードと同じ処理
+	// UKismetSystemLibraryクラスのPrintString関数を呼び出す
+	UKismetSystemLibrary::PrintString(this, Message, true, true, TextColor, Duration);
+}
+
+```
 
 ### 変数を宣言する
 
@@ -48,7 +112,7 @@ Blueprint同様にVariableType：Integerの変数を2つ宣言します。
 | CalcVarA     | int32        | 7            |
 | CalcVarB     | int32        | 3            |
 
-```h:CPPSampleActor.h
+```h:CPPCalculation.h
 private:
 	// 計算用の変数
 	int32 CalcVarA = 7;
@@ -60,7 +124,7 @@ BlueprintではVariableTypeに「Integer」を設定しました。
 C++ではVariableTypeに「int32」を設定しましたが、同じ範囲をもつVariableTypeです。
 C++で使用できるintの種類を表にしました。
 
-| Type   | Byte数 | 範囲（Min）                  | 範囲Max                    | Blueprintの型 |
+| Type   | Byte数 | 範囲（Min）                | 範囲Max                    | Blueprintの型 |
 | ------ | ------ | -------------------------- | -------------------------- | ------------- |
 | int8   | 1      | -128                       | 128                        | -             |
 | uint8  | 1      | 0                          | 255                        | Byte          |
@@ -89,9 +153,14 @@ intの右側の数値から8で割るとByte数が出ます。
 #### 足し算の処理を再現する
 
 まずはAdd（足し算）ノードを再現してみましょう。
-CPPSampleActor.cpp BeginePlay関数に処理を追記します。
+CPPCalculation.cpp BeginePlay関数に処理を追記します。
 
-```cpp:CPPSampleActor.cpp BeginePlay()
+
+```cpp:CPPCalculation.cpp
+#include "Kismet/KismetMathLibrary.h" // 追加
+```
+
+```cpp:CPPCalculation.cpp BeginePlay()
 	// Add(足し算)の処理
 	int32 ResultAdd = UKismetMathLibrary::Add_IntInt(CalcVarA,CalcVarB);
 	FString StrResultAdd = Conv_IntToString(ResultAdd);
@@ -156,7 +225,7 @@ int32 UKismetMathLibrary::Add_IntInt(int32 A, int32 B)
 
 PrintString関数以外は、Blueprintで使用したノードを使用しない書き方です。
 
-```cpp:CPPSampleActor.cpp BeginePlay()
+```cpp:CPPCalculation.cpp BeginePlay()
 
 	// Add(足し算)の処理
 	int32 ResultAdd = CalcVarA + CalcVarB;
@@ -170,14 +239,15 @@ PrintString関数以外は、Blueprintで使用したノードを使用しない
 		, Duration);
 
 ```
-Ctrl + Sでファイルを保存し、Compileを行います。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-19-09-29-32.png)
+ソースコードを保存して、Compileを実行します。
 
-LevelEditorに戻り「CPPSampleActor」をViewportに配置します。
-Blueprit側のPrintStringが出力されると確認しづらいので、Viewportに配置した「BP_SampleActor」を削除します。
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-02-12-18-55-41.png)
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-19-09-27-37.png)
+LevelEditorに戻り「CPPCalculation」をViewportに配置します。
+Blueprit側のPrintStringが出力されると確認しづらいので、Viewportに配置した「BP_Calculation」を削除します。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-02-12-18-59-43.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
@@ -185,7 +255,7 @@ Level Editorの[Play]ボタンをクリックします。
 
 CalcVarA + CalcVarB（7+3）の結果が正しく出力されました。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-19-09-34-06.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-02-12-19-06-26.png)
 
 #### 引き算、掛け算、割り算の処理を再現する
 
@@ -203,16 +273,16 @@ CalcVarA / CalcVarB // 割り算
 「**数式の演算子**」と「**プログラミングの演算子**」では、掛け算と割り算の記号が違います。
 
 | 日本語 | 英語     | 数式の演算子 | プログラミングの演算子 |
-| ------ | -------- | -------- | ------------------ |
-| 足す   | Add      | +        | +                  |
-| 引く   | Subtract | -        | -                  |
-| 掛ける | Multiply | ×        | *（アスタリスク）    |
-| 割る   | Divide   | ÷        | /（スラッシュ）      |
+| ------ | -------- | ------------ | ---------------------- |
+| 足す   | Add      | +            | +                      |
+| 引く   | Subtract | -            | -                      |
+| 掛ける | Multiply | ×            | *（アスタリスク）      |
+| 割る   | Divide   | ÷            | /（スラッシュ）        |
 
 Blueprint以外にもMaterialなど他のEditorでも四則演算ノードが用意されています。
 ノードのヘッダ部分に英語が表示されますので、四則演算の英単語を覚えていくと対応できます。
 
-```cpp:CPPSampleActor.cpp BeginePlay()
+```cpp:CPPCalculation.cpp BeginePlay()
 	// Subtract(引き算)の処理
 	int32 ResultSubtract = CalcVarA - CalcVarB;
 	FString StrResultSubtract = FString::Printf(TEXT("%d"), ResultSubtract);
@@ -227,7 +297,7 @@ Blueprint以外にもMaterialなど他のEditorでも四則演算ノードが用
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-19-07-57-30.png)
 
-```cpp:CPPSampleActor.cpp BeginePlay()
+```cpp:CPPCalculation.cpp BeginePlay()
 	// Multiply(掛け算)の処理
 	int32 ResultMultiply = CalcVarA * CalcVarB;
 	FString StrResultMultiply = FString::Printf(TEXT("%d"), ResultMultiply);
@@ -242,7 +312,7 @@ Blueprint以外にもMaterialなど他のEditorでも四則演算ノードが用
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-19-07-57-48.png)
 
-```cpp:CPPSampleActor.cpp BeginePlay()
+```cpp:CPPCalculation.cpp BeginePlay()
 	// Divide(割り算)の処理
 	int32 ResultDivide = CalcVarA / CalcVarB;
 	FString StrResultDivide = FString::Printf(TEXT("%d"), ResultDivide);
@@ -258,10 +328,9 @@ Blueprint以外にもMaterialなど他のEditorでも四則演算ノードが用
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-19-09-43-43.png)
 
+ソースコードを保存して、Compileを実行します。
 
-Ctrl + Sでファイルを保存し、Compileを行います。
-
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-19-09-29-32.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-02-12-18-55-41.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
@@ -270,7 +339,7 @@ Level Editorの[Play]ボタンをクリックします。
 四則演算の結果が正しく表示されました。
 Blueprintの時と同様に、割り算の結果が小数点切り捨てになります。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-19-09-51-59.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-02-12-19-13-50.png)
 
 ### 割り算の結果を小数点まで表示させる
 
@@ -314,10 +383,9 @@ FString::Printf(TEXT("%f"), ResultDivide);
 
 https://www.k-cube.co.jp/wakaba/server/format.html
 
+ソースコードを保存して、Compileを実行します。
 
-Ctrl + Sでファイルを保存し、Compileを行います。
-
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-19-09-29-32.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-02-12-18-55-41.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
@@ -325,22 +393,36 @@ Level Editorの[Play]ボタンをクリックします。
 
 割り算の結果が小数点まで表示されます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-19-14-23-15.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-02-12-19-18-02.png)
 
 ### すべて保存
 
 C++側の説明は以上になります。
 プロジェクトをすべて保存しましょう。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-20-06-03-35.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-02-12-19-20-01.png)
+
+Visual StudioのSolutionもすべて保存しましょう。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-02-12-19-21-00.png)
 
 ## BlueprintとC++の処理を並べてみる
 
 BlueprintとC++の処理を並べてみます。
 Blueprintで[Sequence]ノードを使うと、処理を上から下に並べられます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-20-06-19-13.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-02-12-20-19-58.png)
 
+## ソースコードとプロジェクト
 
+ここまでのソースコードとプロジェクトファイルをGitHubからダウンロードできます。
 
+https://github.com/posita33/UE5Starter-CPPAndBP_Projects/tree/main/Resources/Chapter_02/Calculation
 
+**CPPCalculation.h**
+
+https://github.com/posita33/UE5Starter-CPPAndBP_Projects/blob/main/Resources/Chapter_02/Calculation/Source_end/CPP_BP/Public/CPPCalculation.h
+
+**CPPCalculation.cpp**
+
+https://github.com/posita33/UE5Starter-CPPAndBP_Projects/blob/main/Resources/Chapter_02/Calculation/Source_end/CPP_BP/Private/CPPCalculation.cpp

@@ -37,7 +37,7 @@ ConstructionScriptタブはPlayが実行される前に、配置したActorのCo
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-construction_script/2022-02-12-08-52-34.png)
 
-## Blueprintを複製する
+### Blueprintを複製する
 
 「BP_Component」を複製（Ctrl + W）して、「BP_ConstructionScript」を作成します。
 

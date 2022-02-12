@@ -15,7 +15,7 @@ Blueprintで追加したComponentとComponentの親子構成をC++で再現し�
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-component/2022-01-27-11-11-38.png)
 
-### Visual Studioを開いて、編集するファイルを表示する
+### 編集するActorクラスを作成する
 
 プロジェクトを閉じていたら、プロジェクトを開き、「Chapter_2_Component」を開きます。
 

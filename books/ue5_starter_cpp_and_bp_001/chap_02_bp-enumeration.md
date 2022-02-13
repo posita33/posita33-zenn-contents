@@ -46,13 +46,11 @@ Enumeration（列挙型）を作成します。
 アセット名を「EBPCalcType」に設定します。
 「EBPCalcType」をダブルクリックで開きます。
 
-TODO：画像を修正
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-01-24-09-05-38.png)
-
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-02-13-15-47-45.png)
 
 [New]ボタンをクリックすることで列挙定数を追加できます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-01-24-09-15-13.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-02-13-15-49-11.png)
 
 列挙型を設定するEditorの入力項目について一覧にまとめました。
 
@@ -62,7 +60,7 @@ TODO：画像を修正
 | Description      | -        | 列挙定数の説明       |
 | Enum Description | -        | 作成した列挙型の説明 |
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-01-24-09-22-33.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-02-13-15-53-04.png)
 
 [New]ボタンで列挙定数を追加し、各行表の値を設定します。
 
@@ -73,7 +71,7 @@ TODO：画像を修正
 | Multiply     | Multiplicatation |
 | Divide       | Division         |
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-01-24-09-24-23.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-02-13-15-54-15.png)
 
 ### Blueprintを複製する
 
@@ -81,12 +79,12 @@ TODO：画像を修正
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-01-24-09-01-54.png)
 
 
-### 変数[CalcType]のVariableTypeを[Integer]から[ECalcType]に変更する
+### 変数[CalcType]のVariableTypeを[Integer]から[EBPCalcType]に変更する
 
 「BP_FlowControl_SwitchEnum」をダブルクリックして開きます。
-変数「CalcType」のVariableTypeを「ECalcType」に変更します。
+変数「CalcType」のVariableTypeを「EBPCalcType」に変更します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-01-24-09-48-38.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-02-13-15-56-47.png)
 
 EventGrapth内で変数を使用ていると、VariableTypeを変更してもいいかを確認するダイアログが表示されます。
 [Change Variable Type]ボタンをクリックして、VariableTypeを変更します。
@@ -94,32 +92,32 @@ EventGrapth内で変数を使用ていると、VariableTypeを変更してもい
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-01-24-09-53-09.png)
 
 変数[CalcType]のGetがエラー（赤）で表示されます。
-赤くなっているピンを[Alt + Click]で接続を解除します。
+赤くなっているピンを[Alt + Click]で切断します。
 同時に変更した箇所の一覧が表示されます。行をクリックすることで該当箇所へ移動できます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-01-24-09-55-09.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-02-13-16-01-05.png)
 
 [Compile]ボタンをクリックして、変数[VariableType]のDefaultValueを確認します。
 DefaultValueの値がリスト化され、EnumerationのDisplayNameに設定した文字列が選択できます。
 VariableTypeがIntegerの時は数値で入力していたので、[1]というのは何の値なのか分かりませんでした。
 Enumeration（列挙型）にすることで、何の値を設定するのか明確になります。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-01-24-10-11-31.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-02-13-16-03-16.png)
 
-### ECalcTypeのSwitchノードに処理を置き換える
+### EBPCalcTypeのSwitchノードに処理を置き換える
 
-変数[CalcType]のGetノードからDrag&Dropし、[Switch on ECalcType]を選択します。
+変数[CalcType]のGetノードからDrag&Dropし、[Switch on EBPCalcType]を選択します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-01-24-09-59-42.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-02-13-16-04-50.png)
 
 [Switch]ノードのOutput側実行ピンにEnumerationのDisplayNameで設定した文字列が表示されます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-01-24-10-01-22.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-02-13-16-06-05.png)
 
 Integerの[Switch]ノードより[Switch]ノードからどの処理に接続してよいか分かりやすくなります。
 Enumeration（列挙型）はDisplayNameに設定した列挙定数しか設定できないので、「Default」実行ピンのようなあいまいな表現がなくなります。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-01-24-10-03-46.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-02-13-16-08-21.png)
 
 [Compile]ボタンをクリックします。
 
@@ -127,7 +125,7 @@ Enumeration（列挙型）はDisplayNameに設定した列挙定数しか設定�
 
 LevelEditorに戻り、「BP_FlowControl_SwitchEnum」をViewportにDrag&Dropします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-01-24-10-19-33.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-02-13-16-10-37.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
@@ -142,8 +140,7 @@ Level Editorの[Play]ボタンをクリックします。
 Blueprint側の説明はここまでになります。
 [Content Browser]から[Save All]ボタンをクリックし、[Save Selected]ボタンをクリックしてプロジェクトの変更のあったアセットをすべて保存します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-01-24-10-31-44.png)
-
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-02-13-16-11-41.png)
 
 ## 参照URL
 

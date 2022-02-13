@@ -13,7 +13,6 @@ Event Dispatcherを作成します。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-event_dispatcher/2022-01-28-15-52-22.png)
 
-
 ### 学習用の新規レベル「Chapter_2_EventDispatcher」を作成する
 
 学習用の新規レベルを作成します。
@@ -46,7 +45,7 @@ Event Dispatcher[OnPrintHello]を作成します。
 
 「BP_EventDispatcher」を開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-event_dispatcher/2022-01-28-15-08-02.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-event_dispatcher/2022-02-13-18-18-23.png)
 
 [My Blueprint]パネルの[Event Dispatchers]カテゴリーの[+]ボタンをクリックします。
 追加されたEvent Dispatherの名前を[OnPrintHello]に設定します。
@@ -91,7 +90,7 @@ Event Dispatcher[OnPrintHello]をEvent GraphにDrag&Dropします。
 
 Level Editorに戻り、「BP_EventDispatcher」をViewportにDrag&Dropします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-event_dispatcher/2022-01-28-15-36-57.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-event_dispatcher/2022-02-13-18-22-19.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
@@ -111,8 +110,7 @@ Event DispatherにBindしたイベントは、Event Dispatherを呼び出す（C
 Blueprint側の説明は以上になります。
 プロジェクトをすべて保存しましょう。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-01-27-19-14-55.png)
-
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-event_dispatcher/2022-02-13-18-24-42.png)
 
 ## 参照URL
 

@@ -62,7 +62,7 @@ Project Settingsに入力イベントを追加して、Blueprintで追加した�
 
 Level Editorに戻り、「BP_InputEvent」をViewportにDrag&Dropします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-01-27-18-15-31.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-02-13-17-41-35.png)
 
 Level Editorの[Play]ボタンをクリックします。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-01-27-18-16-07.png)
@@ -159,7 +159,7 @@ Project Settingsで追加したActionイベントを入力した時にFunction[P
 
 「BP_InputEvent」を開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-01-27-19-03-18.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-02-13-17-46-38.png)
 
 メニューからProject Settingsで追加したInput Actionイベント[ActionPrintCalcResult]を選択します。
 
@@ -186,7 +186,7 @@ Project Settingsで追加したActionイベントを入力した時にunction[Pr
 Blueprint側の説明は以上になります。
 プロジェクトをすべて保存しましょう。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-01-27-19-14-55.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-02-13-17-49-29.png)
 
 ## 参照URL
 

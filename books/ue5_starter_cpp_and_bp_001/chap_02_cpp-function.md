@@ -19,7 +19,6 @@ C++では「値渡し」と「参照渡し」に違いについて説明しま�
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-01-26-17-45-39.png)
 
-
 Blueptintの計算結果の出力処理するFunction[PrintCalcResult]を再現します。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-01-26-07-03-31.png)
@@ -30,7 +29,7 @@ Blueptintの計算結果の出力処理するFunction[PrintCalcResult]を再現�
 プロジェクトを閉じていたら、プロジェクトを開き、
 「Chapter_2_Function」を開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-01-26-07-30-29.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-02-13-17-12-08.png)
 
 [Tools]メニューから[New C++ Class]を開きます。
 
@@ -54,7 +53,7 @@ Solution Explorerから今回編集する2つのファイルを開きます。
 - CPPFunction.h
 - CPPFunction.cpp
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-01-26-07-53-18.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-02-13-17-16-01.png)
 
 開いたファイルを学習する初期状態に修正します。
 
@@ -106,8 +105,6 @@ private:
 // Called when the game starts or when spawned
 void ACPPFunction::BeginPlay()
 {
-	Super::BeginPlay();
-
 	FString Message = "C++ Hello World!";
 
 	if (IsPrintHello)
@@ -239,14 +236,14 @@ switch文のAddの分岐に入るため、「CPPFunction.h」に宣言されて�
 	ECPPCalcType CalcType = ECPPCalcType::Add;
 ```
 
-Ctrl + Sでファイルを保存し、Compileを行います。
+ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-01-26-09-13-31.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-02-13-17-20-17.png)
 
 「CPPFunction」をViewportにDrag&Dropします。
 PrintStringの出力結果が分かりづらくなるので、「BP_Function」を削除します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-01-26-09-17-13.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-02-13-17-22-03.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
@@ -341,9 +338,9 @@ case ECPPCalcType::Add:
 }
 ```
 
-Ctrl + Sでファイルを保存し、Compileを行います。
+ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-01-26-09-13-31.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-02-13-17-20-17.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
@@ -392,9 +389,9 @@ case ECPPCalcType::Add:
 }
 ```
 
-Ctrl + Sでファイルを保存し、Compileを行います。
+ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-01-26-09-13-31.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-02-13-17-20-17.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
@@ -575,8 +572,6 @@ C++で再現すると以下のようになります。
 ```cpp:CPPFunction.cpp BeginPlay()
 void ACPPFunction::BeginPlay()
 {
-	Super::BeginPlay();
-
 	FString Message = "C++ Hello World!";
 
 	if (IsPrintHello)
@@ -593,9 +588,9 @@ void ACPPFunction::BeginPlay()
 }
 ```
 
-Ctrl + Sでファイルを保存し、Compileを行います。
+ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-01-26-09-13-31.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-02-13-17-20-17.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
@@ -617,7 +612,7 @@ Function化することで、何の処理をするのか明確になり読みや
 C++側の説明は以上になります。
 プロジェクトをすべて保存しましょう。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-01-26-16-00-41.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-02-13-17-30-23.png)
 
 Visual StudioのSolutionもすべて保存しましょう。
 
@@ -627,7 +622,18 @@ Visual StudioのSolutionもすべて保存しましょう。
 
 https://rinatz.github.io/cpp-book/ch04-03-scopes/
 
-
 https://kinnaji.com/2020/01/28/passbyreference/
 
+## ソースコードとプロジェクト
 
+ここまでのソースコードとプロジェクトファイルをGitHubからダウンロードできます。
+
+https://github.com/posita33/UE5Starter-CPPAndBP_Projects/tree/main/Resources/Chapter_02/Function
+
+**CPPFunction.h**
+
+https://github.com/posita33/UE5Starter-CPPAndBP_Projects/blob/main/Resources/Chapter_02/Function/Source_end/CPP_BP/Public/CPPFunction.h
+
+**CPPFunction.cpp**
+
+https://github.com/posita33/UE5Starter-CPPAndBP_Projects/blob/main/Resources/Chapter_02/Function/Source_end/CPP_BP/Private/CPPFunction.cpp

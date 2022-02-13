@@ -59,6 +59,10 @@ Blueprintには3種類のLoopノードが用意されています。
 
 ### For LoopノードでPrintStringを繰り返し呼び出す
 
+「BP_FlowControl_Loop」を開きます。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_loop/2022-02-13-21-06-58.png)
+
 For Loopノードを使用して[PrintString]ノードを繰り返し呼び出します。
 
 メニューから[For Loop]を選択します。
@@ -83,9 +87,9 @@ Custom Event[PrintHello]が呼ばれたら、[For Loop]ノードを呼び出し�
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_loop/2022-01-31-13-20-39.png)
 
-Level Editorに戻り、「BP_Array」をViewportにDrag&Dropします。
+Level Editorに戻り、「BP_FlowControl_Loop」をViewportにDrag&Dropします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_loop/2022-01-31-13-21-56.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_loop/2022-02-13-21-11-35.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
@@ -247,10 +251,10 @@ Level Editorの[Play]ボタンをクリックします。
 
 ### すべて保存
 
-Blueprint側の説明はここまでになります。
-[Content Browser]から[Save All]ボタンをクリックし、[Save Selected]ボタンをクリックしてプロジェクトの変更のあったアセットをすべて保存します。
+Blueprint側の説明は以上になります。
+プロジェクトをすべて保存しましょう。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_loop/2022-01-31-15-30-10.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_loop/2022-02-13-21-30-44.png)
 
 ## 参照URL
 

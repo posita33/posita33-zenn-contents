@@ -52,8 +52,11 @@ Array（配列）の取得でよく使用する2つの方法について解説�
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-01-29-22-52-59.png)
 
-
 ### 変数[Message]を配列の変数[Messages]に変更する
+
+「BP_Array」を開きます。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-02-13-21-04-39.png)
 
 変数[Message]を配列の変数[Messages]に変更します。
 

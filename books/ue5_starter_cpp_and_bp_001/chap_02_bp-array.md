@@ -126,7 +126,7 @@ Getノードを[Print String]ノードの[In String]に接続します。
 
 Level Editorに戻り、「BP_Array」をViewportにDrag&Dropします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-01-29-23-12-33.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-02-13-18-48-34.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
@@ -210,12 +210,12 @@ Index番号を保持するための変数[TypeIndex]を宣言します。
 | ------------ | ------------ | ------------ | ------------ |
 | TypeIndex    | Integer      | Flow Control | 0            |
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-01-30-07-09-37.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-02-13-18-55-51.png)
 
 変数[CalcType]を選択し、Variable Nameを[CalcTypes]に変更します。
 Variable Typeの右端のアイコンをクリックし、[Array（配列）]を選択します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-01-30-07-13-32.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-02-13-18-58-18.png)
 
 Default Valueを設定するので、[Compile]ボタンをクリックします。
 
@@ -298,12 +298,10 @@ Level Editorの[Play]ボタンをクリックします。
 Blueprint側の説明はここまでになります。
 [Content Browser]から[Save All]ボタンをクリックし、[Save Selected]ボタンをクリックしてプロジェクトの変更のあったアセットをすべて保存します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-01-30-11-06-14.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-02-13-19-05-12.png)
 
 ## 参照URL
 
 https://docs.unrealengine.com/4.27/ja/ProgrammingAndScripting/Blueprints/UserGuide/Arrays/
 
 https://docs.unrealengine.com/4.27/ja/ProgrammingAndScripting/Blueprints/BP_HowTo/WorkingWithArrays/
-
-

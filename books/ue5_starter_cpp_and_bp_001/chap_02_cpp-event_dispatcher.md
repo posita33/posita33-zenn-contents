@@ -17,7 +17,7 @@ Event Dispatcherを作成します。
 
 プロジェクトを閉じていたら、プロジェクトを開き、「Chapter_2_EventDispatcher」を開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-event_dispatcher/2022-01-28-17-42-00.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-event_dispatcher/2022-02-13-18-27-41.png)
 
 [Tools]メニューから[New C++ Class]を開きます。
 
@@ -41,7 +41,7 @@ Solution Explorerから今回編集する2つのファイルを開きます。
 - CPPEventDispatcher.h
 - CPPEventDispatcher.cpp
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-event_dispatcher/2022-01-28-17-52-56.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-event_dispatcher/2022-02-13-18-30-10.png)
 
 開いたファイルを学習する初期状態に修正します。
 
@@ -115,8 +115,6 @@ int32 ACPPEventDispatcher::Sum(int32 A, int32 B)
 // Called when the game starts or when spawned
 void ACPPEventDispatcher::BeginPlay()
 {
-	Super::BeginPlay();
-
 	SetupInput();
 
 	if (IsPrintHello)
@@ -196,6 +194,7 @@ void ACPPEventDispatcher::PressedActionPrintCalcResult()
 	PrintCalcResult(CalcType, CalcVarA, CalcVarB, Duration);
 }
 ```
+
 ### Event Dispatcher[OnPrintHello]を追加する
 
 Blueprintで[My Blueprint]パネルの[Event Dispatchers]カテゴリーにEvent Dispatcher[OnPrintHello]を追加しました。
@@ -264,14 +263,14 @@ void ACPPEventDispatcher::PressedH()
 }
 ```
 
-Ctrl + Sでファイルを保存し、Compileを行います。
+ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-event_dispatcher/2022-01-29-00-56-55.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-event_dispatcher/2022-02-13-18-35-50.png)
 
 「ACPPEventDispatcher」をViewportにDrag&Dropします。
 PrintStringの出力結果が分かりづらくなるので、「BP_EventDispatcher」を削除します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-event_dispatcher/2022-01-29-00-53-05.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-event_dispatcher/2022-02-13-18-37-46.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
@@ -290,7 +289,7 @@ BlueprintとC++との処理を対応させた図です。
 C++側の説明は以上になります。
 プロジェクトをすべて保存しましょう。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-event_dispatcher/2022-01-29-01-17-54.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-event_dispatcher/2022-02-13-18-39-11.png)
 
 Visual StudioのSolutionもすべて保存しましょう。
 
@@ -301,3 +300,17 @@ Visual StudioのSolutionもすべて保存しましょう。
 https://docs.unrealengine.com/4.27/ja/ProgrammingAndScripting/ProgrammingWithCPP/UnrealArchitecture/Delegates/
 
 https://forums.unrealengine.com/t/c-event-dispatchers-how-do-we-implement-them/23185
+
+## ソースコードとプロジェクト
+
+ここまでのソースコードとプロジェクトファイルをGitHubからダウンロードできます。
+
+https://github.com/posita33/UE5Starter-CPPAndBP_Projects/tree/main/Resources/Chapter_02/EventDispatcher
+
+**CPPEventDispatcher.h**
+
+https://github.com/posita33/UE5Starter-CPPAndBP_Projects/blob/main/Resources/Chapter_02/EventDispatcher/Source_end/CPP_BP/Public/CPPEventDispatcher.h
+
+**CPPEventDispatcher.cpp**
+
+https://github.com/posita33/UE5Starter-CPPAndBP_Projects/blob/main/Resources/Chapter_02/EventDispatcher/Source_end/CPP_BP/Private/CPPEventDispatcher.cpp

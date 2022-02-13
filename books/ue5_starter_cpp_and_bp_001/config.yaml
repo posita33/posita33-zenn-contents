@@ -16,8 +16,8 @@ summary: |-
 
     2022年にはおそらくUnreal Engine 5になるし心機一転！
     BlueprintもC++も使えるようになっちゃいましょう！
-topics: []
-published: false
+topics: ["cpp", "unrealengine", "ue4", "ue5"]
+published: true
 price: 0
 toc_depth: 2
 

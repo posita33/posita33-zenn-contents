@@ -19,7 +19,7 @@ Project Settingsに入力イベントを追加して、Blueprintで追加した�
 
 プロジェクトを閉じていたら、プロジェクトを開き、「Chapter_2_InputEvent」を開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-input_event/2022-01-28-06-12-58.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-input_event/2022-02-13-17-52-13.png)
 
 [Tools]メニューから[New C++ Class]を開きます。
 
@@ -43,7 +43,7 @@ Solution Explorerから今回編集する2つのファイルを開きます。
 - CPPInputEvent.h
 - CPPInputEvent.cpp
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-input_event/2022-01-28-08-21-54.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-input_event/2022-02-13-17-54-19.png)
 
 開いたファイルを学習する初期状態に修正します。
 
@@ -106,8 +106,6 @@ int32 ACPPInputEvent::Sum(int32 A, int32 B)
 // Called when the game starts or when spawned
 void ACPPInputEvent::BeginPlay()
 {
-	Super::BeginPlay();
-
 	if (IsPrintHello)
 	{
 		// PrintStringノードと同じ処理
@@ -224,13 +222,13 @@ C++でも同様に、EnableInputで入力を有効にできます。
 プロトタイプ宣言と関数の定義をしたので、Compileを行います。
 しかし、Linkエラーが発生します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-input_event/2022-01-28-10-16-20.png)
+ソースコードを保存して、Compileを実行します。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-input_event/2022-02-13-17-59-08.png)
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-input_event/2022-01-28-10-06-01.png)
 
 Build.csに必要となるモジュールを追加することで解決します。
-
-
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-input_event/2022-01-28-09-54-17.png)
 
@@ -249,7 +247,30 @@ PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engi
 
 InputComponent->BindKeyに必要なライブラリが"SlateCore", "Slate"にあったのでライブラリが無くてエラーになっていました。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-input_event/2022-01-28-10-16-20.png)
+BeginPlay関数でSetupInput関数を呼び出すように修正します。
+
+```cpp:CPPInputEvent.cpp BeginPlay()
+void ACPPInputEvent::BeginPlay()
+{
+	SetupInput();
+
+	if (IsPrintHello)
+	{
+		// PrintStringノードと同じ処理
+		// UKismetSystemLibraryクラスのPrintString関数を呼び出す
+		UKismetSystemLibrary::PrintString(this, Message, true, true, TextColor, Duration);
+	}
+	else
+	{
+		// 計算結果を出力する処理
+		PrintCalcResult(CalcType, CalcVarA, CalcVarB, Duration);
+	}
+}
+```
+
+ソースコードを保存して、Compileを実行します。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-input_event/2022-02-13-17-59-08.png)
 
 Build.csを修正したことでLinkエラーが解決しました。
 
@@ -258,9 +279,10 @@ Build.csを修正したことでLinkエラーが解決しました。
 「CPPInputEvent」をViewportにDrag&Dropします。
 PrintStringの出力結果が分かりづらくなるので、「BP_InputEvent」を削除します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-input_event/2022-01-28-09-33-48.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-input_event/2022-02-13-18-04-20.png)
 
 Level Editorの[Play]ボタンをクリックします。
+
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-01-26-09-17-33.png)
 
 [H]キーの入力するとPrintStringが出力されます。
@@ -308,9 +330,9 @@ void ACPPInputEvent::SetupInput()
 }
 ```
 
-Ctrl + Sでファイルを保存し、Compileを行います。
+ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-input_event/2022-01-28-11-18-11.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-input_event/2022-02-13-17-59-08.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
@@ -325,7 +347,7 @@ Action[ActionPrintCalcResult]に設定した[C]キーを入力すると、[Press
 C++側の説明は以上になります。
 プロジェクトをすべて保存しましょう。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-input_event/2022-01-28-10-42-27.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-input_event/2022-02-13-18-10-27.png)
 
 Visual StudioのSolutionもすべて保存しましょう。
 
@@ -335,7 +357,6 @@ Visual StudioのSolutionもすべて保存しましょう。
 
 https://docs.unrealengine.com/4.27/ja/ProductionPipelines/BuildTools/UnrealBuildTool/ModuleFiles/
 
-
 https://answers.unrealengine.com/questions/166084/check-keyboard-events-in-code.html
 
 https://forums.unrealengine.com/t/why-does-bindkey-cause-link-error/35447/2
@@ -343,3 +364,21 @@ https://forums.unrealengine.com/t/why-does-bindkey-cause-link-error/35447/2
 https://docs.microsoft.com/ja-jp/cpp/error-messages/tool-errors/linker-tools-error-lnk2019?view=msvc-170
 
 https://answers.unrealengine.com/questions/63322/how-to-get-the-player-controller-in-c.html
+
+## ソースコードとプロジェクト
+
+ここまでのソースコードとプロジェクトファイルをGitHubからダウンロードできます。
+
+https://github.com/posita33/UE5Starter-CPPAndBP_Projects/tree/main/Resources/Chapter_02/InputEvent
+
+**CPP_BP.Build.cs**
+
+https://github.com/posita33/UE5Starter-CPPAndBP_Projects/blob/main/Resources/Chapter_02/InputEvent/Source_end/CPP_BP/CPP_BP.Build.cs
+
+**CPPInputEvent.h**
+
+https://github.com/posita33/UE5Starter-CPPAndBP_Projects/blob/main/Resources/Chapter_02/InputEvent/Source_end/CPP_BP/Public/CPPInputEvent.h
+
+**CPPInputEvent.cpp**
+
+https://github.com/posita33/UE5Starter-CPPAndBP_Projects/blob/main/Resources/Chapter_02/InputEvent/Source_end/CPP_BP/Private/CPPInputEvent.cpp

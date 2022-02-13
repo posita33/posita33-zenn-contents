@@ -26,7 +26,7 @@ C++では参照渡しをConst宣言できるので安全に処理が軽くなり
 
 プロジェクトを閉じていたら、プロジェクトを開き、「Chapter_2_Structure」を開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-structure/2022-02-06-12-14-46.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-structure/2022-02-13-22-08-25.png)
 
 [Tools]メニューから[New C++ Class]を開きます。
 
@@ -50,7 +50,7 @@ Solution Explorerから今回編集する2つのファイルを開きます。
 - CPPStructure.h
 - CPPStructure.cpp
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-structure/2022-02-06-13-20-44.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-structure/2022-02-13-22-10-36.png)
 
 開いたファイルを学習する初期状態に修正します。
 
@@ -93,7 +93,6 @@ protected:
 
 private:
 	TArray<FString> Messages = { TEXT("C++ Hello World!"), TEXT("你好 世界!"), TEXT("Bonjour le monde!"), TEXT("Hallo Welt!"), TEXT("こんにちは世界!") };
-	//TArray<FString> Messages = { "C++ Hello World!", "你好 世界!", "Bonjour le monde!", "Hallo Welt!", "こんにちは世界!" };
 
 	// 計算結果を出力する関数
 	void PrintCalcResult(const ECPPCalcType Type, const int32 A, const int32 B, const float PrintDuration);
@@ -144,8 +143,6 @@ int32 ACPPStructure::Sum(int32 A, int32 B)
 // Called when the game starts or when spawned
 void ACPPStructure::BeginPlay()
 {
-	Super::BeginPlay();
-
 	SetupInput();
 
 	if (IsPrintHello)
@@ -277,11 +274,11 @@ ClassTypeとClass名を設定します。
 
 「CPPCalcInfo.h」のみ使用するので、「CPPCalcInfo.cpp」は削除します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-structure/2022-02-06-14-24-46.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-structure/2022-02-13-22-21-56.png)
 
 「CPPCalcInfo.h」を開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-structure/2022-02-06-15-59-32.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-structure/2022-02-13-22-22-59.png)
 
 Unreal Engineのc++でStructure（構造体）を宣言する時は以下のように書きます。
 
@@ -457,14 +454,14 @@ void ACPPStructure::PressedActionPrintCalcResult()
 }
 ```
 
-Ctrl + Sでファイルを保存し、Compileを行います。
+ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-structure/2022-02-06-16-47-11.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-structure/2022-02-13-22-28-45.png)
 
 「CPPStructure」をViewportにDrag&Dropします。
 PrintStringの出力結果が分かりづらくなるので、「BP_Structure」を削除します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-structure/2022-02-06-16-48-58.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-structure/2022-02-13-22-32-02.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
@@ -479,7 +476,7 @@ Level Editorの[Play]ボタンをクリックします。
 C++側の説明は以上になります。
 プロジェクトをすべて保存しましょう。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-structure/2022-02-06-17-46-31.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-structure/2022-02-13-22-33-37.png)
 
 Visual StudioのSolutionもすべて保存しましょう。
 

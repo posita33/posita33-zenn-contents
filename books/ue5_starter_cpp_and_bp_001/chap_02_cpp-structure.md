@@ -486,5 +486,22 @@ Visual StudioのSolutionもすべて保存しましょう。
 
 https://www.youtube.com/watch?v=F9zvOW4cm28
 
-
 https://docs.microsoft.com/ja-jp/cpp/cpp/initializing-classes-and-structs-without-constructors-cpp?view=msvc-170
+
+## ソースコードとプロジェクト
+
+ここまでのソースコードとプロジェクトファイルをGitHubからダウンロードできます。
+
+https://github.com/posita33/UE5Starter-CPPAndBP_Projects/tree/main/Resources/Chapter_02/Structure
+
+**CPPCalcInfo.h**
+
+https://github.com/posita33/UE5Starter-CPPAndBP_Projects/blob/main/Resources/Chapter_02/Structure/Source_end/CPP_BP/Public/CPPCalcInfo.h
+
+**CPPStructure.h**
+
+https://github.com/posita33/UE5Starter-CPPAndBP_Projects/blob/main/Resources/Chapter_02/Structure/Source_end/CPP_BP/Public/CPPStructure.h
+
+**CPPStructure.cpp**
+
+https://github.com/posita33/UE5Starter-CPPAndBP_Projects/blob/main/Resources/Chapter_02/Structure/Source_end/CPP_BP/Private/CPPStructure.cpp

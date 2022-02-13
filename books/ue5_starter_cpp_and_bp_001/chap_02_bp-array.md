@@ -298,8 +298,8 @@ Level Editorの[Play]ボタンをクリックします。
 
 ### すべて保存
 
-Blueprint側の説明はここまでになります。
-[Content Browser]から[Save All]ボタンをクリックし、[Save Selected]ボタンをクリックしてプロジェクトの変更のあったアセットをすべて保存します。
+Blueprint側の説明は以上になります。
+プロジェクトをすべて保存しましょう。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-02-13-19-05-12.png)
 

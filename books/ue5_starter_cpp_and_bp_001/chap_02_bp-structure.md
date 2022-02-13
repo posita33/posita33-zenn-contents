@@ -83,7 +83,7 @@ Structure（構造体）「FBPCalcInfo」を作成します。
 
 「BP_Structure」を開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-structure/2022-02-05-05-47-40.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-structure/2022-02-13-21-56-03.png)
 
 Function「PrintCalcResult」のInput側を[FBPCalcInfo]に置き換えたFunction[PrintCalcResultArgStructure]を作成します。
 
@@ -201,7 +201,7 @@ Inputが整理されて構造体化されることで、ピンに設定する項
 
 Level Editorに戻り、「BP_Structure」をViewportにDrag&Dropします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-structure/2022-02-05-14-40-47.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-structure/2022-02-13-22-01-55.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
@@ -254,10 +254,10 @@ Level Editorの[Play]ボタンをクリックします。
 
 ### すべて保存
 
-Blueprint側の説明はここまでになります。
-[Content Browser]から[Save All]ボタンをクリックし、[Save Selected]ボタンをクリックしてプロジェクトの変更のあったアセットをすべて保存します。
+Blueprint側の説明は以上になります。
+プロジェクトをすべて保存しましょう。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-structure/2022-02-05-14-44-29.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-structure/2022-02-13-22-06-03.png)
 
 ## 参照URL
 

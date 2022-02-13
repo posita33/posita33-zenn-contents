@@ -36,7 +36,7 @@ Blueprintの3種類のLoopノードをC++で再現します。
 
 プロジェクトを閉じていたら、プロジェクトを開き、「Chapter_2_FlowControl_Loop」を開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-01-05-40-05.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-13-21-33-59.png)
 
 [Tools]メニューから[New C++ Class]を開きます。
 
@@ -60,7 +60,7 @@ Solution Explorerから今回編集する2つのファイルを開きます。
 - CPPFlowControlLoop.h
 - CPPFlowControlLoop.cpp
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-01-05-56-39.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-13-21-36-21.png)
 
 開いたファイルを学習する初期状態に修正します。
 
@@ -303,14 +303,14 @@ void ACPPFlowControlLoop::PrintHello()
 }
 ```
 
-Ctrl + Sでファイルを保存し、Compileを行います。
+ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-01-06-08-33.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-13-21-39-51.png)
 
 「CPPFlowControlLoop」をViewportにDrag&Dropします。
 PrintStringの出力結果が分かりづらくなるので、「BP_FlowControl_Loop」を削除します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-01-06-11-32.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-13-21-41-47.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
@@ -362,9 +362,9 @@ void ACPPFlowControlLoop::PrintHello()
 }
 ```
 
-Ctrl + Sでファイルを保存し、Compileを行います。
+ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-01-06-08-33.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-13-21-39-51.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
@@ -447,9 +447,9 @@ void ACPPFlowControlLoop::PrintHello()
 }
 ```
 
-Ctrl + Sでファイルを保存し、Compileを行います。
+ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-01-06-08-33.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-13-21-39-51.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
@@ -503,9 +503,9 @@ void ACPPFlowControlLoop::PrintHello()
 }
 ```
 
-Ctrl + Sでファイルを保存し、Compileを行います。
+ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-01-06-08-33.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-13-21-39-51.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
@@ -555,9 +555,9 @@ void ACPPFlowControlLoop::PrintHello()
 }
 ```
 
-Ctrl + Sでファイルを保存し、Compileを行います。
+ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-01-06-08-33.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-13-21-39-51.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
@@ -625,9 +625,9 @@ void ACPPFlowControlLoop::PrintHello()
 }
 ```
 
-Ctrl + Sでファイルを保存し、Compileを行います。
+ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-01-06-08-33.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-13-21-39-51.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
@@ -642,7 +642,7 @@ Level Editorの[Play]ボタンをクリックします。
 C++側の説明は以上になります。
 プロジェクトをすべて保存しましょう。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-02-06-43-30.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-13-21-48-17.png)
 
 Visual StudioのSolutionもすべて保存しましょう。
 
@@ -653,3 +653,17 @@ Visual StudioのSolutionもすべて保存しましょう。
 https://docs.unrealengine.com/4.26/ja/ProgrammingAndScripting/ProgrammingWithCPP/UnrealArchitecture/TArrays/
 
 https://www.unrealengine.com/ja/blog/ranged-based-for-loops
+
+## ソースコードとプロジェクト
+
+ここまでのソースコードとプロジェクトファイルをGitHubからダウンロードできます。
+
+https://github.com/posita33/UE5Starter-CPPAndBP_Projects/tree/main/Resources/Chapter_02/FlowControl_Loop
+
+**CPPFlowControlLoop.h**
+
+https://github.com/posita33/UE5Starter-CPPAndBP_Projects/blob/main/Resources/Chapter_02/FlowControl_Loop/Source_end/CPP_BP/Public/CPPFlowControlLoop.h
+
+**CPPFlowControlLoop.cpp**
+
+https://github.com/posita33/UE5Starter-CPPAndBP_Projects/blob/main/Resources/Chapter_02/FlowControl_Loop/Source_end/CPP_BP/Private/CPPFlowControlLoop.cpp

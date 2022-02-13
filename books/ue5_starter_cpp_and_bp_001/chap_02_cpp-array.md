@@ -24,7 +24,7 @@ Array（配列）の取得でよく使用する2つの方法について解説�
 
 プロジェクトを閉じていたら、プロジェクトを開き、「Chapter_2_Array」を開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-array/2022-01-30-18-50-48.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-array/2022-02-13-19-07-25.png)
 
 [Tools]メニューから[New C++ Class]を開きます。
 
@@ -48,7 +48,7 @@ Solution Explorerから今回編集する2つのファイルを開きます。
 - CPPArray.h
 - CPPArray.cpp
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-array/2022-01-30-18-58-41.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-array/2022-02-13-19-11-31.png)
 
 開いたファイルを学習する初期状態に修正します。
 
@@ -140,8 +140,6 @@ int32 ACPPArray::Sum(int32 A, int32 B)
 // Called when the game starts or when spawned
 void ACPPArray::BeginPlay()
 {
-	Super::BeginPlay();
-
 	SetupInput();
 
 	if (IsPrintHello)
@@ -271,14 +269,14 @@ C++の配列のGetは配列の変数の後ろに[]を入力し、[]内に取得�
 ArrayVariable[IndexNo]
 ```
 
-Ctrl + Sでファイルを保存し、Compileを行います。
+ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-array/2022-01-30-21-45-39.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-array/2022-02-13-19-15-30.png)
 
 「ACPPArray」をViewportにDrag&Dropします。
 PrintStringの出力結果が分かりづらくなるので、「BP_Array」を削除します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-array/2022-01-30-21-48-35.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-array/2022-02-13-19-17-32.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
@@ -295,9 +293,10 @@ TArray<FString> Messages = { TEXT("C++ Hello World!"), TEXT("你好 世界!"), T
     ↓
 TArray<FString> Messages = { "C++ Hello World!", "你好 世界!", "Bonjour le monde!", "Hallo Welt!", "こんにちは世界!" };
 ```
-Ctrl + Sでファイルを保存し、Compileを行います。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-array/2022-01-30-21-45-39.png)
+ソースコードを保存して、Compileを実行します。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-array/2022-02-13-19-15-30.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
@@ -360,7 +359,7 @@ Blueprintの処理はノードを複数つないでいますが、C++では1行�
 
 変数[CalcType]を配列の変数[CalcTypes]に変更します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-array/2022-01-30-22-34-02.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-array/2022-02-13-19-23-56.png)
 
 C++で再現すると以下のようになります。
 
@@ -395,9 +394,10 @@ void ACPPArray::PressedActionPrintCalcResult()
 	TypeIndex = TypeIndex % CalcTypes.Num();
 }
 ```
-Ctrl + Sでファイルを保存し、Compileを行います。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-array/2022-01-30-21-45-39.png)
+ソースコードを保存して、Compileを実行します。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-array/2022-02-13-19-15-30.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
@@ -427,11 +427,27 @@ BlueprintとC++の処理の対応図です。
 C++側の説明は以上になります。
 プロジェクトをすべて保存しましょう。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-array/2022-01-30-23-09-04.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-array/2022-02-13-19-27-28.png)
 
 Visual StudioのSolutionもすべて保存しましょう。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-01-23-21-46-14.png)
 
 ## 参照URL 
+
 https://docs.unrealengine.com/4.27/ja/ProgrammingAndScripting/ProgrammingWithCPP/UnrealArchitecture/TArrays/
+
+
+## ソースコードとプロジェクト
+
+ここまでのソースコードとプロジェクトファイルをGitHubからダウンロードできます。
+
+https://github.com/posita33/UE5Starter-CPPAndBP_Projects/tree/main/Resources/Chapter_02/Array
+
+**CPPArray.h**
+
+https://github.com/posita33/UE5Starter-CPPAndBP_Projects/blob/main/Resources/Chapter_02/Array/Source_end/CPP_BP/Public/CPPArray.h
+
+**CPPArray.cpp**
+
+https://github.com/posita33/UE5Starter-CPPAndBP_Projects/blob/main/Resources/Chapter_02/Array/Source_end/CPP_BP/Private/CPPArray.cpp

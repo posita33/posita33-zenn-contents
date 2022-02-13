@@ -290,7 +290,6 @@ Blueprintのキーボード入力イベントの処理を再現できました�
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-input_event/2022-01-28-09-37-47.png)
 
-
 ### Project Settingsで追加したActionイベントを追加する
 
 Project settingsでActionを追加しました。

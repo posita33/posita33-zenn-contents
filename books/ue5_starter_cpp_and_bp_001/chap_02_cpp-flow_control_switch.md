@@ -7,14 +7,16 @@ free: false
 
 ### C++でBlueprintを再現すること
 
-TODO【要執筆】。
+BlueprintのSwitchノードをC++で再現します。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-02-12-21-57-22.png)
 
 ### 編集するActorクラスを作成する
 
 プロジェクトを閉じていたら、プロジェクトを開き、
 「Chapter_2_FlowControl_Switch」を開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-01-23-18-40-44.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-02-12-21-55-24.png)
 
 [Tools]メニューから[New C++ Class]を開きます。
 
@@ -33,18 +35,16 @@ ClassTypeとClass名を設定します。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-01-23-18-44-39.png)
 
-
 Solution Explorerから今回編集する2つのファイルを開きます。
 
 - CPPFlowControlSwitch.h
 - CPPFlowControlSwitch.cpp
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-01-23-21-01-26.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-02-12-22-00-03.png)
 
 開いたファイルを学習する初期状態に修正します。
 
 ```cpp:CPPFlowControlSwitch.h
-
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
@@ -90,8 +90,6 @@ private:
 // Called when the game starts or when spawned
 void ACPPFlowControlSwitch::BeginPlay()
 {
-	Super::BeginPlay();
-
 	FString Message = "C++ Hello World!";
 
 	if (IsPrintHello)
@@ -199,8 +197,6 @@ switch(条件)
 
 void ACPPFlowControlSwitch::BeginPlay()
 {
-	Super::BeginPlay();
-
 	FString Message = "C++ Hello World!";
 
 	if (IsPrintHello)
@@ -250,14 +246,14 @@ void ACPPFlowControlSwitch::BeginPlay()
 
 ```
 
-Ctrl + Sでファイルを保存し、Compileを行います。
+ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-01-23-21-32-29.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-02-12-22-04-00.png)
 
 「CPPFlowControlSwitch」をViewportにDrag&Dropします。
 PrintStringの出力結果が分かりづらくなるので、「BP_FlowControl_Switch」を削除します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-01-23-21-34-31.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-02-13-15-31-22.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
@@ -267,21 +263,33 @@ Level Editorの[Play]ボタンをクリックします。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-01-23-21-35-57.png)
 
-
-### C++とBlueprintの比較画像
-
-C++とBlueprintの比較画像です。
-
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-01-23-21-44-52.png)
-
 ### すべて保存
 
 C++側の説明は以上になります。
 プロジェクトをすべて保存しましょう。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-01-23-21-39-19.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-02-13-15-38-26.png)
 
 Visual StudioのSolutionもすべて保存しましょう。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-01-23-21-46-14.png)
 
+## C++とBlueprintの比較画像
+
+C++とBlueprintの比較画像です。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-02-13-15-36-37.png)
+
+## ソースコードとプロジェクト
+
+ここまでのソースコードとプロジェクトファイルをGitHubからダウンロードできます。
+
+https://github.com/posita33/UE5Starter-CPPAndBP_Projects/tree/main/Resources/Chapter_02/FlowControl_Switch
+
+**CPPFlowControlSwitch.h**
+
+https://github.com/posita33/UE5Starter-CPPAndBP_Projects/blob/main/Resources/Chapter_02/FlowControl_Switch/Source_end/CPP_BP/Public/CPPFlowControlSwitch.h
+
+**CPPFlowControlSwitch.cpp**
+
+https://github.com/posita33/UE5Starter-CPPAndBP_Projects/blob/main/Resources/Chapter_02/FlowControl_Switch/Source_end/CPP_BP/Private/CPPFlowControlSwitch.cpp

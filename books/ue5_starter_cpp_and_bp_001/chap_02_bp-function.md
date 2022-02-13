@@ -77,6 +77,10 @@ InputのA,Bを[Add]ノードで計算するように接続します。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-Function/2022-01-25-09-38-38.png)
 
+Functionに設定したInput,Outputを反映するために、[Compile]ボタンをクリックします。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-Function/2022-01-25-09-54-55.png)
+
 Function[Sum]をEvent Grapthに追加します。
 追加方法は2種類あります。
 
@@ -93,7 +97,7 @@ Function[Sum]のOutput[ReturnValue]を[IntegerからString変換]ノードに接
 
 Function[Sum]の実行ピンを通過するように、変数[CalcType]のDefaultValueを[Add]に変更します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-Function/2022-01-25-09-52-18.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-function/2022-02-13-17-00-39.png)
 
 [Compile]ボタンをクリックします。
 
@@ -101,7 +105,7 @@ Function[Sum]の実行ピンを通過するように、変数[CalcType]のDefaul
 
 LevelEditorに戻り、「BP_Function」をViewportにDrag&Dropします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-Function/2022-01-25-09-57-12.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-function/2022-02-13-17-02-07.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
@@ -242,13 +246,12 @@ Level Editorの[Play]ボタンをクリックします。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-Function/2022-01-25-12-28-09.png)
 
-
 ### すべて保存
 
 Blueprint側の説明は以上になります。
 プロジェクトをすべて保存しましょう。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-Function/2022-01-25-12-29-47.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-function/2022-02-13-17-09-37.png)
 
 ## 参照URL
 

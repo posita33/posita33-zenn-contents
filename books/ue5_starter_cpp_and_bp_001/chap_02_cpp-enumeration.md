@@ -9,7 +9,7 @@ free: false
 
 Enumeration（列挙型）をC++で作成します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-01-24-13-08-54.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-02-13-16-15-19.png)
 
 Switch文をint32から作成したEnumeration（列挙型）に変更します。
 
@@ -19,7 +19,7 @@ Switch文をint32から作成したEnumeration（列挙型）に変更します�
 
 プロジェクトを閉じていたら、プロジェクトを開き、「Chapter_2_Enumeration」を開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-01-24-13-20-53.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-02-13-16-16-20.png)
 
 [Tools]メニューから[New C++ Class]を開きます。
 
@@ -43,12 +43,11 @@ Solution Explorerから今回編集する2つのファイルを開きます。
 - CPPFlowControlSwitchEnum.h
 - CPPFlowControlSwitchEnum.cpp
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-01-24-17-19-58.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-02-13-16-19-30.png)
 
 開いたファイルを学習する初期状態に修正します。
 
 ```cpp:CPPFlowControlSwitchEnum.h
-
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
@@ -94,8 +93,6 @@ private:
 // Called when the game starts or when spawned
 void ACPPFlowControlSwitchEnum::BeginPlay()
 {
-	Super::BeginPlay();
-
 	FString Message = "C++ Hello World!";
 
 	if (IsPrintHello)
@@ -170,12 +167,11 @@ ClassTypeとClass名を設定します。
 Solution Explorerから「CPPCalcType.cpp」をRemoveします。
 Solution ExplorerからRemoveしても、ファイルは残っているので、Explorerから「CPPCalcType.cpp」を削除します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-01-24-17-25-56.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-02-13-16-25-32.png)
 
 「CPPCalcType.h」にEnumeration（列挙型）を作成します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-01-24-17-38-48.png)
-
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-02-13-16-26-33.png)
 
 C++のEnumeration（列挙型）の書き方は以下のようになります。
 
@@ -203,7 +199,7 @@ Solution Explorerから編集する2つのファイルを開きます。
 - CPPFlowControlSwitchEnum.h
 - CPPFlowControlSwitchEnum.cpp
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-01-24-17-19-58.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-02-13-16-19-30.png)
 
 「CPPFlowControlSwitchEnum.h」を編集します。
 
@@ -265,8 +261,6 @@ switch (CalcType)
 // Called when the game starts or when spawned
 void ACPPFlowControlSwitchEnum::BeginPlay()
 {
-	Super::BeginPlay();
-
 	FString Message = "C++ Hello World!";
 
 	if (IsPrintHello)
@@ -316,14 +310,14 @@ void ACPPFlowControlSwitchEnum::BeginPlay()
 
 ```
 
-Ctrl + Sでファイルを保存し、Compileを行います。
+ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-01-24-18-30-30.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-02-13-16-30-12.png)
 
 「CPPFlowControlSwitchEnum」をViewportにDrag&Dropします。
 PrintStringの出力結果が分かりづらくなるので、「BP_FlowControl_SwitchEnum」を削除します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-01-24-18-29-04.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-02-13-16-33-22.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
@@ -349,16 +343,16 @@ VariableTypeにEnumeration「ECPPCalcType」を設定した変数[CPPCalcType]�
 | ------------ | ------------ | ------------ | ------------ |
 | CPPCalcType  | ECPPCalcType | Flow Control | Subtract     |
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-01-24-18-42-01.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-02-13-16-37-51.png)
 
 列挙型のDefaultValueですが、列挙定数が足りていない場合はプロジェクトを再起動してください。（UE5 EAしか起こらない？）
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-01-24-18-45-20.png)
 
 追加した変数[CPPCalcType]でSwitchノードを作成してみます。
-Bluerpintで作成したEnumeration[ECalcType]と同じOutputの実行ピンが表示されました。
+Bluerpintで作成したEnumeration[EBPCalcType]と同じOutputの実行ピンが表示されました。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-01-24-18-49-32.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-02-13-16-39-37.png)
 
 ### C++で作成したEnumeration（列挙型）のDisplayNameを設定する
 
@@ -385,25 +379,25 @@ enum class ECPPCalcType : uint8
 
 ```
 
-Ctrl + Sでファイルを保存し、Compileを行います。
+ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-01-24-18-30-30.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-02-13-16-30-12.png)
 
 「CPPCalcType.h」を変更してCompileすると、変数[CPPCalcType]に設定していたVariableTypeが「HOTRELOADED ECPPCalcType 0」というVariableTypeになってしまいます。
 VariableTypeを[ECPPCalcType]に再設定します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-01-24-18-58-51.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-02-13-16-42-19.png)
 
 Switchノードを再度作成すると、[Switch]ノードの実行ピンの名称がDisplay Nameで設定した名称に変更されています。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-01-24-18-56-00.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-02-13-16-45-33.png)
 
 ### すべて保存
 
 C++側の説明は以上になります。
 プロジェクトをすべて保存しましょう。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-01-24-22-38-39.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-02-13-16-47-05.png)
 
 Visual StudioのSolutionもすべて保存しましょう。
 
@@ -414,3 +408,22 @@ Visual StudioのSolutionもすべて保存しましょう。
 https://www.youtube.com/watch?v=aHHTXIqUUxY
 
 https://papersloth.hatenablog.com/entry/2017/07/07/005225
+
+
+## ソースコードとプロジェクト
+
+ここまでのソースコードとプロジェクトファイルをGitHubからダウンロードできます。
+
+https://github.com/posita33/UE5Starter-CPPAndBP_Projects/tree/main/Resources/Chapter_02/Enumeration
+
+**CPPCalcType.h**
+
+https://github.com/posita33/UE5Starter-CPPAndBP_Projects/blob/main/Resources/Chapter_02/Enumeration/Source_end/CPP_BP/Public/CPPCalcType.h
+
+**CPPFlowControlSwitchEnum.h**
+
+https://github.com/posita33/UE5Starter-CPPAndBP_Projects/blob/main/Resources/Chapter_02/Enumeration/Source_end/CPP_BP/Public/CPPFlowControlSwitchEnum.h
+
+**CPPFlowControlSwitchEnum.cpp**
+
+https://github.com/posita33/UE5Starter-CPPAndBP_Projects/blob/main/Resources/Chapter_02/Enumeration/Source_end/CPP_BP/Private/CPPFlowControlSwitchEnum.cpp

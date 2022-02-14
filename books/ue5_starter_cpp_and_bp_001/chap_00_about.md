@@ -54,6 +54,13 @@ https://github.com/posita33/UE5Starter-CPPAndBP-community/projects/2
 
 https://zenn.dev/posita33/scraps/07a9162ef467b4
 
+## ライセンスについて
+
+無料で公開していますが、CC BY-SAで運用しています。
+
+https://creativecommons.org/licenses/by-nc/4.0/deed.ja
+
+営利目的で使用する際にはお問い合わせください。
 
 ## 最新情報はポジTAのSNSで！（フォローお願いします）
 

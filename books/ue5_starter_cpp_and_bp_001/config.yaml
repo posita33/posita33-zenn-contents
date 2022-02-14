@@ -11,11 +11,17 @@ summary: |-
     Blueprintで何とかなってしまうくらい、Blueprintは使いやすいです。
     プラグインを作ったり、便利な機能を作ろうと思うと、C++やPythonといったソースコードの実装も覚えておいた方が良さそう。
 
-    Blueprintで出来ることをC++で書く方法についてまとめました。
+    BlueprintでできることをC++で書く方法についてまとめました。
     まずはBlueprintで実装して、C++で再現する方法について書きます。
 
     2022年にはおそらくUnreal Engine 5になるし心機一転！
     BlueprintもC++も使えるようになっちゃいましょう！
+
+
+    このBook用に読者の方とコミュニケーションを取れるスクラップを作成しました。💬感想ご意見ありましたらお気軽にお書きください。
+    https://zenn.dev/posita33/scraps/d3532d0c071e1b
+
+
 topics: ["cpp", "unrealengine", "ue4", "ue5"]
 published: true
 price: 0

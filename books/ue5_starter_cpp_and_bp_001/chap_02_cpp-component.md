@@ -107,7 +107,7 @@ C++でRootComponentにSceneComponentを設定する処理を実装します。
 - VariableType：USceneComponent*
 - VariableName：DefaultSceneRoot
 
-USceneComponent*の「*」はポインタです。
+USceneComponent*の「`*`」はポインタです。
 「USceneComponentのポインタ型」というのが正式な名称です。
 ポインタについては別の機会で説明します。
 

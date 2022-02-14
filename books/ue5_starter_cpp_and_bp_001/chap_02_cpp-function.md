@@ -260,7 +260,6 @@ C++でローカル変数を使用した処理を再現します。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-01-26-10-06-42.png)
 
-
 ```cpp:CPPFunction.cpp Sum()
 int32 ACPPFunction::Sum(int32 A, int32 B)
 {
@@ -300,7 +299,6 @@ GitHubで【ゼロから学ぶC++】が公開されています。
 C++に関して詳しく説明されているので、興味がある方はこちらも閲覧してみてはいかがでしょうか。
 
 https://rinatz.github.io/cpp-book/ch04-03-scopes/
-
 
 ### 値渡しと参照渡し
 

@@ -1,0 +1,20 @@
+title: "UE5 MetaSoundで音を作ろう"
+summary: |-
+   音は見えないけど重要なコンテンツです。
+
+    UE5から「**MetaSound**」という新しい高性能オーディオシステムが導入されます。
+
+    MetaSoundではDTMソフトのように音源をUE5内で作成できます。
+
+    プロシージャルな音作りやUE5においての音の設定についてまとめます。
+
+    C++&BPの息抜きがてら趣味で書いた本です。
+
+topics: ["cpp", "unrealengine", "ue4", "ue5"]
+published: false
+price: 0 # 有料の場合200〜5000
+# 本に含めるチャプターを順番に並べましょう
+chapters:
+  - chap_00_about
+  - chapter01_about
+  - chapter01_play_soundwave

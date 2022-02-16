@@ -11,10 +11,11 @@ summary: |-
     C++&BPの息抜きがてら趣味で書いた本です。
 
 topics: ["cpp", "unrealengine", "ue4", "ue5"]
-published: false
+published: true
 price: 0 # 有料の場合200〜5000
 # 本に含めるチャプターを順番に並べましょう
 chapters:
   - chap_00_about
   - chapter01_about
   - chapter01_play_soundwave
+  - chapter01_random

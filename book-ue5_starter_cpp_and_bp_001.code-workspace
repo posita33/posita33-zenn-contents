@@ -6,6 +6,9 @@
 		},
 		{
 			"path": "..\\UE5Starter-CPPAndBP_Projects"
+		},
+		{
+			"path": "..\\UE5-MetaSound-CreateSound_Projects"
 		}
 	],
 	"settings": {

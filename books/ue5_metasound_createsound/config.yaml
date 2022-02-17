@@ -2,7 +2,7 @@ title: "UE5 MetaSoundで音を作ろう"
 summary: |-
    音は見えないけど重要なコンテンツです。
 
-    UE5から「**MetaSound**」という新しい高性能オーディオシステムが導入されます。
+    UE5から「MetaSound」という新しい高性能オーディオシステムが導入されます。
 
     MetaSoundではDTMソフトのように音源をUE5内で作成できます。
 

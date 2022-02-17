@@ -13,9 +13,9 @@ MetaSoundではDTMソフトのように音源をUE5内で作成できます。
 
 プロシージャルな音作りやUE5においての音の設定についてまとめます。
 
-C++&BPの息抜きがてら趣味で書いた本です。
+C++&BPの息抜きがてら趣味で書いている本です。
 
-![本の紹介](/images/books/ue5_starter_cpp_and_bp_001/chap_00_about/2022-01-27-17-31-43.png)
+![本の紹介](/images/books/ue5_starter_cpp_and_bp_001/chap_00_about/2022-02-18-06-05-24.png)
 
 ## 読者コミュニティ・作業進捗
 
@@ -25,12 +25,10 @@ https://zenn.dev/posita33/scraps/d3532d0c071e1b
 
 ## 進捗とロードマップ
 
-Zennで進捗報告を行い、GitHubでロードマップを公開中です。
+GitHubでロードマップを公開中です。
 よかったら覗いてみてください。
 
 https://github.com/posita33/UE5Starter-CPPAndBP-community/projects/3
-
-https://zenn.dev/posita33/scraps/07a9162ef467b4
 
 ## ライセンスについて
 

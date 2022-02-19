@@ -8,7 +8,19 @@ Unreal Engine 5 早期アクセスで書いています。
 今後正式版が出た時にUIの変更があります。
 :::
 
+## Unreal Engineの開発に必要なマシンスペック
+
+:::message
+UnrealEngineはグラフィックボードを積んだPCが必要になります。
+:::
+
+公式ドキュメントのマシンスペックを確認してから始めてください。
+UnrealEngine5では標準プロジェクトでLumenが使われるので、DirectX 12 対応のグラフィックボードを積まないとクラッシュします。
+
+https://docs.unrealengine.com/4.27/ja/Basics/InstallingUnrealEngine/RecommendedSpecifications/
+
 ## EpicGamesLauncherのインストール
+
 UnrealEngineを使用するにはEpicGamesLauncherをインストールします。
 
 https://www.unrealengine.com/ja/download  

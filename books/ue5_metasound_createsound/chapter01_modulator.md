@@ -98,3 +98,17 @@ MetaSoundでもPitchとVolumeをRandomの範囲で変更でき、Modulatorノー
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chapter01_modulator/2022-02-18-07-07-57.png)
 *MetaSoundでModulatorノードを使用した時と同様の処理*
+
+## Multiply(Audio by float)でGainを変更する方法
+
+AudioピンからDrag&Dropし、[multiply(Audio by Float)]を選択します。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chapter01_modulator/2022-02-19-16-25-12.png)
+
+Float側に[Random(Float):Value]を接続するとAudioのGainを変更できます。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chapter01_modulator/2022-02-19-16-26-46.png)
+
+モノラルの音源であれば、[Multiply(Audio by float)]ノードでGainを調整する方が簡単です。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chapter01_modulator/2022-02-19-16-29-07.png)

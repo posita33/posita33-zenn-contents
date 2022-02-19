@@ -22,3 +22,5 @@ chapters:
   - chapter01_play_soundwave
   - chapter01_random
   - chapter01_modulator
+  - chapter02_about
+  - chapter02_play_c_sound

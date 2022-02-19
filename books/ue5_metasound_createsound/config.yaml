@@ -26,4 +26,5 @@ chapters:
   - chapter02_play_c_sound
   - chapter02_envelope
   - chapter02_clear_sound
+  - chapter02_bpm_and_tempo
 

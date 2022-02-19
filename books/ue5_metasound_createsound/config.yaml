@@ -24,3 +24,6 @@ chapters:
   - chapter01_modulator
   - chapter02_about
   - chapter02_play_c_sound
+  - chapter02_envelope
+  - chapter02_clear_sound
+

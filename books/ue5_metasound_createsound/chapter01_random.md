@@ -73,4 +73,4 @@ MetaSoundを触るのであればBlueprintの変数定義について学習す�
 
 Blueprintの変数の扱い方はこちらの本で解説しています。
 
-https://zenn.dev/posita33/books/ue5_metasound_createsound/viewer/chap_02_bp-variable
+https://zenn.dev/posita33/books/ue5_starter_cpp_and_bp_001/viewer/chap_02_bp-variable

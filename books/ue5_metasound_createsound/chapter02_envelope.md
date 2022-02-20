@@ -53,7 +53,7 @@ SineノードにAD Envelopeを掛け算することで「ド」と短い音（�
 AD Envelopeの[Attack Curve]と[Decay Curve]を分かりやすくした図です。
 デフォルト値の[1.0]はLinear（1.0）で数値が変化します。
 [1.0]より値が小さくなるとカーブが[Logarithmic（対数）]のカーブに変わります。
-[1.0]より値が大きくなるとカーブが[Exponential(指数関数)]のカーブになります。
+[1.0]より値が大きくなるとカーブが[Exponential（指数関数）]のカーブになります。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chapter02_Envelope/2022-02-19-17-29-14.png)
 *Curveの形状*
@@ -135,7 +135,7 @@ Sustain Timeを求める数式です。
 **Sustain Time = Delay Time - (Attack Time + Decay Time)**
 0.2 = 0.41 - (0.01 + 0.2)
 
-Inputに[Attack Time],[Decay Time],[Sustain Time]を作成して、Delay Timeを求めるように計算すると良いかもしれません。
+Inputに[Attack Time],[Decay Time],[Sustain Time]を作成して、Delay Timeを求めるように計算します。
 
 **Delay Time = Attack Time + Decay Time + Sustain Time**
 0.41 = 0.01 + 0.2 + 0.2
@@ -144,9 +144,9 @@ Inputに[Attack Time],[Decay Time],[Sustain Time]を作成して、Delay Timeを
 *Sustain Time = Delay Time - (Attack Time + Decay Time)*
 
 ADSR Envelopeでは[Attack Curve]と[Decay Curve]の他に[Release Curve]が追加されます。分かりやすくした図を作成しました。
-デフォルト値の[1.0]はLinear(1.0)で数値が変化していきます。
-[1.0]より値が小さくなるとカーブが[Logarithmic(対数)]のカーブに変わります。
-[1.0]より値が大きくなるとカーブが[Exponential(指数関数)]のカーブになります。
+デフォルト値の[1.0]はLinear(1.0)で数値が変化します。
+[1.0]より値が小さくなるとカーブが[Logarithmic（対数）]のカーブに変わります。
+[1.0]より値が大きくなるとカーブが[Exponential（指数関数）]のカーブになります。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chapter02_Envelope/2022-02-19-17-39-03.png)
 *Curveの形状*
@@ -154,4 +154,3 @@ ADSR Envelopeでは[Attack Curve]と[Decay Curve]の他に[Release Curve]が追�
 ADSR Envelopeはピアノの鍵盤のように押した時に音が出て（Attack > Decay）、指を押させている間は音が出続け(Sustain)、指を鍵盤から離した時に徐々に音が消えていく（Release）という状態遷移を再現する時に使うようです。
 
 http://iphonedtm.blog.fc2.com/blog-entry-17.html
-

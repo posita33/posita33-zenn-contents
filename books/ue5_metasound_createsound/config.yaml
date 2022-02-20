@@ -36,4 +36,6 @@ chapters:
   - chapter04_sound_attenuation
   - chapter05_about
   - chapter05_trigger_start_and_stop
+  - chapter06_about
+  - chapter06_unreal_midi_plugin
   

@@ -128,7 +128,7 @@ Trigger Releaseが呼ばれるまでSustain Levelの数値でSineのAudioが再�
 ![](/images/books/ue5_metasound_createsound/chapter02_Envelope/2022-02-19-17-38-11.png)
 *右クリック > Trigger Delay*
 
-Sustain Timeが[0.2(秒)]になるように[Trigger Delay：Delay Time]に[0.41]を設定します。
+Sustain Timeが[0.2（秒）]になるように[Trigger Delay：Delay Time]に[0.41]を設定します。
 [Play]を押すと、[0.41]秒後に[ADSR Envelope(Audio)：Trigger Release]が実行されるようになります。
 Sustain Timeを求める数式です。
 

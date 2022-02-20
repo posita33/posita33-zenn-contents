@@ -75,13 +75,13 @@ MetaSound[MS_Explosion1]をビューポートに配置して、[Play]ボタン�
 ![](/images/books/ue5_metasound_createsound/chapter04_sound_attenuation/2022-02-20-21-14-03.png)
 *MS_Explosion1の [Attenuation Settings]に[ATT_Explosion]を設定*
 
-[Attenuation Settings]に[ATT_Explosion]を設定したMS_Explosion1を選択すると二つのSphere（球）が表示されます。
+[Attenuation Settings]に[ATT_Explosion]を設定したMS_Explosion1を選択すると2つのSphere（球）が表示されます。
 MS_ExplosionをFloorの角に移動して、外側の球がギリギリ対角線に入るくらいになるようにして、再び[Play]ボタンをクリックします。
 
 ![](/images/books/ue5_metasound_createsound/chapter04_sound_attenuation/2022-02-20-21-44-48.png)
 *MS_Explosion1をFloorの角に移動する*
 
-プレイした時にMS_Explosion1の距離に応じて音の聴こえ方が変わるのが分かります。
+プレイした時にMS_Explosion1の距離に応じて音の聴こえ方が変わります。
 音源から離れるほど音が遠ざかって聴こえるようになります。
 
 ![](/images/books/ue5_metasound_createsound/chapter04_sound_attenuation/2022-02-20-21-45-05.png)
@@ -103,10 +103,12 @@ Sound Attenuationアセットにはたくさん設定がありますが、今回
 ![](/images/books/ue5_metasound_createsound/chapter04_sound_attenuation/2022-02-20-21-46-44.png)
 *Innner RadiusとFalloff Distanceの数値について*
 
-Innner Radius内とFalloff Distance内のFalloff Distance外(外側の球の外)の音の聴こえ方についてです。
-・Inner Radius内：音源そのままのVolume
-・Falloff Distance内：音の減衰が始まる（遠くなるほどVolumeが小さくなる）
-・Falloff Distance外：音が聞こえなくなる
+Innner Radius内とFalloff Distance内のFalloff Distance外（外側の球の外）の音の聴こえ方についてです。
+
+- Inner Radius内：音源そのままのVolume
+- Falloff Distance内：音の減衰が始まる（遠くなるほどVolumeが小さくなる）
+- Falloff Distance外：音が聞こえなくなる
+- 
 外側の円は音が聞こえる範囲とも言えます。
 Inner RadiusとFalloff DistanceはAttenuationの範囲を指定するプロパティです。
 
@@ -114,13 +116,13 @@ Inner RadiusとFalloff DistanceはAttenuationの範囲を指定するプロパ�
 *Inner Radius内とFalloff Distance内外のVolumeについて*
 
 次に[Attenuation Shape]を[Box]に変更します。
-2つのSphere(球)は形状がBoxに変わります。形状がBoxに変わったことで、Inner RadiusがExtentに変わり、内側の形状を設定する項目が変わりました。
+2つのSphere（球）は形状がBoxに変わります。形状がBoxに変わったことで、Inner RadiusがExtentに変わり、内側の形状を設定する項目が変わりました。
 形状が変わることで内側の形状を変えるプロパティが変化します。
 
 ![](/images/books/ue5_metasound_createsound/chapter04_sound_attenuation/2022-02-20-21-47-18.png)
 *Attenuation ShapeをBoxに変更すると、Sphere（球）からBoxに形状が変化する*
 
-[Attenuation Shape]には[Sphere(球)]、[Capsule]、[Box]、[Cone]の4つの形状を選択することが出来ます。それぞれ、内側の形状の設定とそこから減衰する距離を設定できるようになっています。
+[Attenuation Shape]には[Sphere（球）]、[Capsule]、[Box]、[Cone]の4つの形状を選択できます。それぞれ、内側の形状の設定とそこから減衰する距離を設定できるようになっています。
 
 ![](/images/books/ue5_metasound_createsound/chapter04_sound_attenuation/2022-02-20-21-51-20.png)
 *形状は[Sphere(球)]、[Capsule]、[Box]、[Cone]の4種類*
@@ -132,12 +134,12 @@ Inner RadiusとFalloff DistanceはAttenuationの範囲を指定するプロパ�
 ![](/images/books/ue5_metasound_createsound/chapter04_sound_attenuation/2022-02-20-21-51-35.png)
 *Attenuation Function：Linear*
 
-[Attenuation Function]を[Logarithmic]に変更すると、減衰がカーブを描いて変化します。近づくほど変化が大きくなり、遠くになるとゆっくり減衰していきます。
+[Attenuation Function]を[Logarithmic]に変更すると、減衰がカーブを描いて変化します。近づくほど変化が大きくなり、遠くになるとゆっくり減衰します。
 
 ![](/images/books/ue5_metasound_createsound/chapter04_sound_attenuation/2022-02-20-21-51-52.png)
 *Attenuation Function：Logarithmic*
 
-他にも減衰を設定するカーブのプリセットが用意されています。Customは自分で独自のカーブを作成することが出来ます。その他のカーブのプリセットは公式ドキュメントにどのようなカーブを描くか書かれていますので設定を変更してプレイしたりしながら確認してみましょう。
+他にも減衰を設定するカーブのプリセットが用意されています。Customは自分で独自のカーブを作成できます。その他のカーブのプリセットは公式ドキュメントにどのようなカーブを描くか書かれていますので設定を変更してプレイしたりしながら確認してみましょう。
 
 ![](/images/books/ue5_metasound_createsound/chapter04_sound_attenuation/2022-02-20-21-52-10.png)
 *Attenuation Functionは5種類+Custom*

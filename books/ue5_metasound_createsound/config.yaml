@@ -32,4 +32,6 @@ chapters:
   - chapter03_about
   - chapter03_noise
   - chapter03_wind
+  - chapter04_about
+  - chapter04_sound_attenuation
   

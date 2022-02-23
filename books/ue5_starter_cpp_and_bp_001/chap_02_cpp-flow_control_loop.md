@@ -44,7 +44,7 @@ Blueprintの3種類のLoopノードをC++で再現します。
 
 親クラスに[Actor]を選択します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-input_event/2022-01-28-06-15-50.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-23-08-41-15.png)
 
 ClassTypeとClass名を設定します。
 
@@ -305,7 +305,7 @@ void ACPPFlowControlLoop::PrintHello()
 
 ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-13-21-39-51.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-23-10-58-50.png)
 
 「CPPFlowControlLoop」をViewportにDrag&Dropします。
 PrintStringの出力結果が分かりづらくなるので、「BP_FlowControl_Loop」を削除します。
@@ -314,7 +314,7 @@ PrintStringの出力結果が分かりづらくなるので、「BP_FlowControl_
 
 Level Editorの[Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-01-06-12-50.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 Blueprintと同様に配列のIndexNoがすべて出力された後に、Completedの文字が出力されました。
 
@@ -364,11 +364,11 @@ void ACPPFlowControlLoop::PrintHello()
 
 ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-13-21-39-51.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-23-10-58-50.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-01-06-12-50.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 Blueprintと同様に配列を最初から最後まで出力できました。
 
@@ -449,11 +449,11 @@ void ACPPFlowControlLoop::PrintHello()
 
 ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-13-21-39-51.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-23-10-58-50.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-01-06-12-50.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 [Bonjour]が含まれていない、[Break]が実行される前の文字列のみ表示されました。
 
@@ -505,11 +505,11 @@ void ACPPFlowControlLoop::PrintHello()
 
 ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-13-21-39-51.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-23-10-58-50.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-01-06-12-50.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 [Bonjour]が含まれていた文字以外は出力されました。
 
@@ -557,11 +557,11 @@ void ACPPFlowControlLoop::PrintHello()
 
 ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-13-21-39-51.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-23-10-58-50.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-01-06-12-50.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 [For Each Loop with Break]ノードの処理と同様の結果となりました。
 配列を0～LastIndexまで処理するのであれば、「For Each Loop」の書き方が最適です。
@@ -627,11 +627,11 @@ void ACPPFlowControlLoop::PrintHello()
 
 ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-13-21-39-51.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-23-10-58-50.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-01-06-12-50.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 [While Loop]ノードと同様の処理になりました。
 

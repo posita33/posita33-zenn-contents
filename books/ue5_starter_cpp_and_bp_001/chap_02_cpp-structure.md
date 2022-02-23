@@ -34,7 +34,7 @@ C++では参照渡しをConst宣言できるので安全に処理が軽くなり
 
 親クラスに[Actor]を選択します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-structure/2022-02-06-13-00-13.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-structure/2022-02-23-08-44-41.png)
 
 ClassTypeとClass名を設定します。
 
@@ -456,7 +456,7 @@ void ACPPStructure::PressedActionPrintCalcResult()
 
 ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-structure/2022-02-13-22-28-45.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-23-10-58-50.png)
 
 「CPPStructure」をViewportにDrag&Dropします。
 PrintStringの出力結果が分かりづらくなるので、「BP_Structure」を削除します。
@@ -465,7 +465,7 @@ PrintStringの出力結果が分かりづらくなるので、「BP_Structure」
 
 Level Editorの[Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-structure/2022-02-06-16-49-59.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 [C]キーをPressするとStructure（構造体）の配列を順番に処理します。
 

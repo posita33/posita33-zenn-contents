@@ -35,19 +35,19 @@ free: false
 
 ### 学習用の新規レベル「Chapter_2_FlowControl_Branch」を作成する
 
-学習用の新規レベルを作成します。
+学習用に新規レベルを作成します。
 [File]から[New Level…]を選択します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_branch/2022-01-21-05-31-55.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-11-21-55.png)
 
-[Default]を選択します。
+[Basic]を選択し、[Create]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_branch/2022-01-21-05-32-35.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-11-23-32.png)
 
 [File]メニューからCurrent Levelを保存します。
 ショートカット「Ctrl + S」でも保存できます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-01-26-22-32-19.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-11-24-39.png)
 
 「Maps」フォルダを選択し、Nameに「Chapter_2_FlowControl_Branch」を入力し、[Save]ボタンをクリックします。
 
@@ -96,7 +96,7 @@ LevelEditorに移動し、「BP_FlowControl_Branch」をViewportにDrag&Dropし�
 
 [Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_branch/2022-01-22-13-27-10.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 「Hello World!」を出力する[PrintString]ノードの処理のみが実行されました。
 
@@ -137,7 +137,7 @@ graph TB
 
 [Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_branch/2022-01-22-13-27-10.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 計算結果のPrintStringが出力されました。
 
@@ -181,7 +181,7 @@ graph TB
 
 [Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_branch/2022-01-22-13-27-10.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 「Hello World!」を出力する[PrintString]ノードの処理のみが実行されました。
 
@@ -230,7 +230,7 @@ DefaultValueを変更して、引き算のPrintStringが出力されるように
 
 [Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_branch/2022-01-22-13-27-10.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 引き算の結果が表示されます。
 

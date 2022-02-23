@@ -8,10 +8,17 @@ Unreal Engine 5 早期アクセスで書いています。
 今後正式版が出た時にUIの変更があります。
 :::
 
+:::message
+2022/2/23 Unreal Engine 5 Preview 1が使用できるようになりました。
+Unreal Engine 5 早期アクセスで書かれているので一部UIが違います。
+随時更新します。
+:::
+
 ## Unreal Engineの開発に必要なマシンスペック
 
 :::message
 UnrealEngineはグラフィックボードを積んだPCが必要になります。
+SSDやHDDの空き容量も100GBくらい余裕がある状態であることを確認してください。
 :::
 
 公式ドキュメントのマシンスペックを確認してから始めてください。
@@ -34,24 +41,50 @@ https://www.unrealengine.com/ja/download
 
 ![](https://storage.googleapis.com/zenn-user-upload/49d8d3543a4d-20220109.png)
 
-## Unreal Engine 5早期アクセスをダウンロード
+## Unreal Engine 5 Preview 1 をインストールする
 
-この本を執筆している段階ではUnreal Engine 5が早期アクセス（Early accessなのでEAと略されることもあります）です。正式版がリリースされたタイミングで入手方法が変わってきます。
+EpicGamesLauncherの[Unreal Engine]タブから[ライブラリ]に移動します。
+Engineバージョンの[+]ボタンをクリックします。
 
-![](https://storage.googleapis.com/zenn-user-upload/297c239ca9be-20220109.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_01_ue5_install/2022-02-23-04-55-30.png)
 
-インストールする際にオプションで以下の2つを有効にしてください。
-C++の開発で必要になります。
+バージョンが書かれている▼の個所をクリックするとインストールするバージョンが選べます。
+[5.0.0 Preview 1]を選択します。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_01_ue5_install/2022-02-23-04-58-41.png)
+
+[インストール]ボタンをクリックします。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_01_ue5_install/2022-02-23-05-09-36.png)
+
+[インストール]ボタンをクリックします。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_01_ue5_install/2022-02-23-05-00-56.png)
+
+[オプション]をクリックします。
+
+:::message
+C++の開発をしない方はこのままインストールボタンをクリックして大丈夫です。
+:::
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_01_ue5_install/2022-02-23-05-04-58.png)
+
+[デバッグに必要なエディタシンボル]を有効☑にし、[適用]ボタンをクリックします。
+
+C++の開発では以下の2つの項目は必要になります。
 
 - **エンジンソース**
 - **デバッグに必要なエディタシンボル**
 
-![](https://storage.googleapis.com/zenn-user-upload/452e4f1da6ca-20220109.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_01_ue5_install/2022-02-23-05-03-32.png)
 
-インストールする際にオプションを有効にし忘れても後からインストールできます。
+[インストール]ボタンをクリックします。
 
-![](https://storage.googleapis.com/zenn-user-upload/1f5a4151377c-20220109.png) 
-*ライブラリタブの[UE5起動]ボタンの右側の▼をクリック > オプション*
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_01_ue5_install/2022-02-23-05-05-31.png)
+
+Unreal Engine 5のインストールが開始されます。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_01_ue5_install/2022-02-23-05-06-06.png)
 
 ## 一足先にUE5 正式版を試したい方
 
@@ -63,6 +96,8 @@ https://zenn.dev/pokotaro/articles/7d60ecaf7a2f57
 
 https://twitter.com/posita33/status/1490217759820890113
 
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_01_ue5_install/2022-02-23-04-59-50.png)
 
 ## オンラインラーニング：Unreal Engine 5クイックスタート
 

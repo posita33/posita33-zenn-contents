@@ -75,11 +75,11 @@ Visual Studioのインストールが開始されます。
 デバッグに必要なエディタシンボルが入っているか確認しましょう。
 EpicGamesLauncherの起動横の▼＞オプションから確認できます。
 
-![](https://storage.googleapis.com/zenn-user-upload/d0f700672890-20220109.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_01_vs2019_setup/2022-02-23-07-14-30.png)
 
 デバッグに必要なエディタシンボルが入っていなかったら追加しましょう。
 
-![](https://storage.googleapis.com/zenn-user-upload/1b602710c3cf-20220109.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_01_vs2019_setup/2022-02-23-07-15-38.png)
 
 ### C++プロジェクトを作成し、使用するエディタをVisual Studio 2019に設定する
 
@@ -90,16 +90,16 @@ FirstPersonテンプレートのC++プロジェクトを作成します。
 - C++
 - StarterContent：オフ
 
-![](https://storage.googleapis.com/zenn-user-upload/d5045357413a-20220109.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_01_vs2019_setup/2022-02-23-07-20-45.png)
 
 C++を書いていくエディタをVisual Studio 2019に設定します。
 [Editor Preferences...]を開きます。
 
-![](https://storage.googleapis.com/zenn-user-upload/8ebfecafcf8a-20220109.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_01_vs2019_setup/2022-02-23-07-23-52.png)
 
 SouceCodeカテゴリのSource Code Editorから[Visual Studio 2019]を選択します。
 
-![](https://storage.googleapis.com/zenn-user-upload/29d4270cc1c9-20220109.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_01_vs2019_setup/2022-02-23-07-26-42.png)
 
 プロジェクトを再起動すると設定が反映されます。
 
@@ -107,11 +107,11 @@ SouceCodeカテゴリのSource Code Editorから[Visual Studio 2019]を選択し
 
 Visual Studioでのソリューションファイルを更新しておきます。
 
-![](https://storage.googleapis.com/zenn-user-upload/37699f524d94-20220109.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_01_vs2019_setup/2022-02-23-07-32-09.png)
 
 Visual Studio 2019でプロジェクトを開きます。
 
-![](https://storage.googleapis.com/zenn-user-upload/f99e832c2da6-20220109.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_01_vs2019_setup/2022-02-23-07-33-20.png)
 
 Visual Studio 2019でC++のソースコードが編集できるようになります。
 

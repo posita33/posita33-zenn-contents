@@ -13,24 +13,23 @@ BlueprintにComponentを追加し、Viewportタブで追加したComponentを組
 
 ### 学習用の新規レベル「Chapter_2_Component」を作成する
 
-学習用の新規レベルを作成します。
+学習用に新規レベルを作成します。
 [File]から[New Level…]を選択します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-01-27-09-46-22.png)
-*File > New Level…*
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-11-21-55.png)
 
-[Default]を選択します。
+[Basic]を選択し、[Create]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-01-27-09-46-34.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-11-23-32.png)
 
 [File]メニューからCurrent Levelを保存します。
 ショートカット「Ctrl + S」でも保存できます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-01-26-22-32-19.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-11-24-39.png)
 
 「Maps」フォルダを選択し、Nameに「Chapter_2_Component」を入力し、[Save]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-02-11-17-40-52.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-02-23-16-36-44.png)
 *Mapsフォルダを選択 > Name：Chapeter_2_Component > Saveボタンクリック*
 
 ### Engine ContentからStaticMeshとMaterialをコピーする
@@ -39,61 +38,61 @@ BlueprintにComponentを追加し、Viewportタブで追加したComponentを組
 
 [Content Browser]の[Settings]ボタンをクリックし、[Show Engine Content]を有効にします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-02-11-17-45-45.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-02-23-16-10-28.png)
 *[Content Browser]の[Settings]ボタンをクリック > [Show Engine Content]を有効*
 
 [Show Engine Content]を有効にすると[Content Browser]が表示されます。
 「Engine Content」から「StaticMesh」と「Material」をコピーするので、「CPP_BP」に「Materials」「Meshes」フォルダを作成します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-02-11-17-47-50.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-02-23-16-12-14.png)
 
 「Engine Content」の「BasicShaps」フォルダに移動します。
 「BasicShaps」フォルダには、PlaceActorからDrag&DropでViewportに追加できるプリミティブのメッシュが格納されています。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-02-11-17-51-16.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-02-23-16-15-18.png)
 
 [Engine Content]を直接変更してしまうと、他のプロジェクトでEngine Contentを使用している箇所にも影響してしまいます。
 [Engine Content]のStaticMesh「Cube」を先ほど作成した「Meshes」フォルダにコピーします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-02-11-17-57-06.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-02-23-16-16-41.png)
 
 CubeをMeshewフォルダにDrag&Drop > [Copy Here]を選択
 「Meshes」フォルダに「Cube」がコピーされました。
 名前を「SM_SampleCube」に変更します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-02-11-18-02-24.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-02-23-16-18-17.png)
 
 「SM_SampleCube」の質感を設定するためのMaterial「BasicShapeMaterial」を「Materials」フォルダにコピーします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-02-11-18-06-01.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-02-23-16-19-46.png)
 *「BasicShapesフォルダ」の「BasicShapeMaterial」を「Materials」フォルダにDrag&Drop > [Copy Here]を選択*
 
 「Materials」フォルダに「BasicShapeMaterial」がコピーされます。
 名前を「M_SampleMaterial」に変更します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-02-11-18-08-29.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-02-23-16-21-33.png)
 
 「Meshes」フォルダの「SM_SampleCube」をダブルクリックしてStaticMesh Editorを開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-02-11-18-09-44.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-02-23-16-22-20.png)
 
 StaticMesh Editorの[Detil]パネルでMaterialを「M_SampleMaterial」に設定します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-02-11-18-12-49.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-02-23-16-24-29.png)
 
 Cubeの質感が、「M_SampleMaterial」で設定している白い色に変わります。[Compile]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-02-11-18-14-35.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-02-23-16-25-40.png)
 
 Content Browserの「SM_SampleCube」のサムネイルも「M_SampleCube」の質感が反映されました。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-02-11-18-17-25.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-02-23-16-26-52.png)
 
 ### Blueprintを複製する
 
 「BP_Variable」を複製（Ctrl + W）して、「BP_Component」を作成します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-02-11-18-19-57.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-02-23-16-29-56.png)
 
 ### StaticMeshComponentを追加する
 
@@ -102,16 +101,16 @@ UnrealEngineのComponentは「Actor（俳優）」の「Component（部品、構
 
 「BP_Component」をダブルクリックしてBlueprint Editorを開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-02-11-18-21-44.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-02-23-16-30-50.png)
 
 「Component」は「Viewport」タブで確認しながら、「Component」パネルからコンポーネント追加・設定します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-02-11-18-24-17.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-02-23-16-32-39.png)
 
 [Static Mesh Component]を追加します。
 [Component]パネルの[Add]ボタンから[Static Mesh]を選択します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-02-11-18-25-41.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-02-23-16-33-58.png)
 
 [Component]パネルに[StaticMesh]が追加されます。
 [StaticMesh]Componentの[Detail]パネルから先ほど準備した「SM_SampleCube」を設定します。
@@ -132,15 +131,15 @@ Viewportで確認したStaticMeshComponentが表示されます。
 コントローラーのアイコンが表示されているActorの水色の矢印の先に移動させます。
 コントローラーのアイコンはPlayerStartというPlayした時にプレイヤーの開始位置になります。水色の矢印はPlay開始時にプレイヤーの向いている方向です。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-02-11-18-34-58.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-02-23-16-38-42.png)
 
 [Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-01-27-10-54-27.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 StaticMeshComponentに設定したSM_SampleCubeが表示されます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-02-11-18-37-06.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-02-23-16-40-05.png)
 
 ### ArrowComponentを追加する
 
@@ -148,7 +147,7 @@ StaticMeshComponentに設定したSM_SampleCubeが表示されます。
 
 「BP_Component」をダブルクリックしてBlueprint Editorを開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-02-11-18-56-36.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-02-23-16-40-46.png)
 
 [Component]パネルの[Add]ボタンをクリックし、[Arrow]で検索し、[Arrow]を選択します。
 
@@ -197,12 +196,12 @@ LevelEditorのViewportに配置した「BP_Component」を確認します。
 
 [Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-01-27-10-59-29.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 [ArrowComponent]はPlayすると表示されません。
 [ArrowComponent]は配置した時に方向を確認するために使用するComponentです。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-02-11-18-55-18.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-02-23-16-43-22.png)
 
 ### PointLightComponentを追加する
 
@@ -210,7 +209,7 @@ Cubeの前方にLight追加することで、[Play]ボタンを押した後に�
 
 「BP_Component」をダブルクリックしてBlueprint Editorを開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-02-11-18-56-36.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-02-23-16-40-46.png)
 
 [StaticMesh]を選択し、[Add]ボタンをクリックします。
 
@@ -232,15 +231,15 @@ LevelEditorのViewportで[Arrow]の前方が明るくなりました。
 
 [Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-01-27-11-01-38.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 [Play]してからでもArrowの矢印が向いている方が明るいので、前方がどちらかが分かります。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-02-11-19-07-04.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-02-23-16-45-33.png)
 
 ### すべて保存する
 
 Blueprint側の説明はここまでになります。
 [Content Browser]から[Save All]ボタンをクリックし、[Save Selected]ボタンをクリックしてプロジェクトの変更のあったアセットをすべて保存します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-02-11-19-08-34.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-component/2022-02-23-16-46-33.png)

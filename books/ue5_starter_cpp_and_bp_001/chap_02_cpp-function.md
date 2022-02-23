@@ -23,7 +23,6 @@ Blueptintの計算結果の出力処理するFunction[PrintCalcResult]を再現�
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-01-26-07-03-31.png)
 
-
 ### 編集するActorクラスを作成する
 
 プロジェクトを閉じていたら、プロジェクトを開き、
@@ -37,7 +36,7 @@ Blueptintの計算結果の出力処理するFunction[PrintCalcResult]を再現�
 
 親クラスに[Actor]を選択します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-01-26-07-32-21.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-02-23-08-40-15.png)
 
 ClassTypeとClass名を設定します。
 
@@ -238,7 +237,7 @@ switch文のAddの分岐に入るため、「CPPFunction.h」に宣言されて�
 
 ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-02-13-17-20-17.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-23-10-58-50.png)
 
 「CPPFunction」をViewportにDrag&Dropします。
 PrintStringの出力結果が分かりづらくなるので、「BP_Function」を削除します。
@@ -247,7 +246,7 @@ PrintStringの出力結果が分かりづらくなるので、「BP_Function」�
 
 Level Editorの[Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-01-26-09-17-33.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 Function[Sum]が実行され、足し算の計算結果が出力されます。
 
@@ -338,11 +337,11 @@ case ECPPCalcType::Add:
 
 ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-02-13-17-20-17.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-23-10-58-50.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-01-26-09-17-33.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 値渡しのFunction[Sum]と参照渡しのFunction[SumRef]は同じ結果を出力します。
 
@@ -389,11 +388,11 @@ case ECPPCalcType::Add:
 
 ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-02-13-17-20-17.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-23-10-58-50.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-01-26-09-17-33.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 値渡しのFunction[Sum]と、参照渡しのFunction[SumRef]で出力結果が違います。
 値渡しのFunction[Sum]の計算は「7 + 3 = 16」で間違っています。
@@ -588,11 +587,11 @@ void ACPPFunction::BeginPlay()
 
 ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-02-13-17-20-17.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-23-10-58-50.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-01-26-09-17-33.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 足し算の計算結果が出力されました。
 Function[PrintCalcResult]が問題なく動作していることが確認できました。

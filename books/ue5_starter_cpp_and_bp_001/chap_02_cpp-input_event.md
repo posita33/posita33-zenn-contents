@@ -27,7 +27,7 @@ Project Settingsに入力イベントを追加して、Blueprintで追加した�
 
 親クラスに[Actor]を選択します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-input_event/2022-01-28-06-15-50.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-input_event/2022-02-23-08-43-38.png)
 
 ClassTypeとClass名を設定します。
 
@@ -224,7 +224,7 @@ C++でも同様に、EnableInputで入力を有効にできます。
 
 ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-input_event/2022-02-13-17-59-08.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-23-10-58-50.png)
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-input_event/2022-01-28-10-06-01.png)
 
@@ -270,7 +270,7 @@ void ACPPInputEvent::BeginPlay()
 
 ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-input_event/2022-02-13-17-59-08.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-23-10-58-50.png)
 
 Build.csを修正したことでLinkエラーが解決しました。
 
@@ -283,7 +283,7 @@ PrintStringの出力結果が分かりづらくなるので、「BP_InputEvent�
 
 Level Editorの[Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-01-26-09-17-33.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 [H]キーの入力するとPrintStringが出力されます。
 Blueprintのキーボード入力イベントの処理を再現できました。
@@ -331,11 +331,11 @@ void ACPPInputEvent::SetupInput()
 
 ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-input_event/2022-02-13-17-59-08.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-23-10-58-50.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-01-26-09-17-33.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 Action[ActionPrintCalcResult]に設定した[C]キーを入力すると、[PressedActionPrintCalcResult]が処理されます。
 

@@ -28,19 +28,20 @@ Blueprintで四則演算ノードを使用して、PrintStringで計算結果を
 
 ### 学習用の新規レベル「Chapter_2_Calculation」を作成する
 
-学習用の新規レベルを作成します。
+学習用に新規レベルを作成します。
 [File]から[New Level…]を選択します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-01-18-07-32-48.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-11-21-55.png)
+
+[Basic]を選択し、[Create]ボタンをクリックします。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-11-23-32.png)
 
 [File]メニューからCurrent Levelを保存します。
 ショートカット「Ctrl + S」でも保存できます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-01-26-22-32-19.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-11-24-39.png)
 
-[Default]を選択します。
-
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-01-18-07-33-00.png)
 
 「Maps」フォルダを選択し、Nameに「Chapter_2_Calculation」を入力し、[Save]ボタンをクリックします。
 
@@ -102,7 +103,7 @@ Level Editorに戻り、Viewportに「**BP_Calculation**」をDrag&Dropします
 
 [Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-01-18-16-29-46.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 赤い文字列がAddノードの計算結果です。
 
@@ -191,7 +192,7 @@ CalcVarAからDrag&Dropし、[**/（スラッシュ）**]で検索します。�
 
 [Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-01-18-16-29-46.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 四則演算ノードのそれぞれの結果は合っています。
 しかし、割り算の小数点が切り捨てられてしまいました。
@@ -239,7 +240,7 @@ UE4では型ごとに四則演算ノードが用意されていました。
 
 [Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-01-18-16-29-46.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 出力された文字列を確認すると、小数点まで表示されています。
 数値を扱うときはVariableType（変数の型）を意識しないと、意図しない数値になってしまいます。
@@ -275,7 +276,7 @@ PrintStringノードでOutputピンの値を出力するように処理を修正
 
 [Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-01-18-16-29-46.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 [MathExpression]ノードのOutputピンの数値が出力されました。
 

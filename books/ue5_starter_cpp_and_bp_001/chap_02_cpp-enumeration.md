@@ -27,7 +27,7 @@ Switch文をint32から作成したEnumeration（列挙型）に変更します�
 
 親クラスに[Actor]を選択します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-01-24-16-00-18.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-02-23-08-38-35.png)
 
 ClassTypeとClass名を設定します。
 
@@ -312,7 +312,7 @@ void ACPPFlowControlSwitchEnum::BeginPlay()
 
 ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-02-13-16-30-12.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-23-10-58-50.png)
 
 「CPPFlowControlSwitchEnum」をViewportにDrag&Dropします。
 PrintStringの出力結果が分かりづらくなるので、「BP_FlowControl_SwitchEnum」を削除します。
@@ -321,7 +321,7 @@ PrintStringの出力結果が分かりづらくなるので、「BP_FlowControl_
 
 Level Editorの[Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-01-24-18-31-04.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 変数[CalcType]の値が[ECPPCalcType::Subtract]なので、引き算の出力結果が表示されます。
 
@@ -381,7 +381,7 @@ enum class ECPPCalcType : uint8
 
 ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-enumeration/2022-02-13-16-30-12.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-23-10-58-50.png)
 
 「CPPCalcType.h」を変更してCompileすると、変数[CPPCalcType]に設定していたVariableTypeが「HOTRELOADED ECPPCalcType 0」というVariableTypeになってしまいます。
 VariableTypeを[ECPPCalcType]に再設定します。

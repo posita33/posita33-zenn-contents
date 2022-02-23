@@ -28,19 +28,19 @@ Array（配列）の取得でよく使用する2つの方法について解説�
 
 ### 学習用の新規レベル「Chapter_2_Array」を作成する
 
-学習用の新規レベルを作成します。
-[File]メニューから[New Level…]を選択します。
+学習用に新規レベルを作成します。
+[File]から[New Level…]を選択します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-01-29-21-51-56.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-11-21-55.png)
 
-[Default]を選択します。
+[Basic]を選択し、[Create]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-01-29-21-52-05.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-11-23-32.png)
 
 [File]メニューからCurrent Levelを保存します。
 ショートカット「Ctrl + S」でも保存できます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-01-29-21-52-15.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-11-24-39.png)
 
 「Maps」フォルダを選択し、Nameに「Chapter_2_Array」を入力し、[Save]ボタンをクリックします。
 
@@ -133,7 +133,7 @@ Level Editorに戻り、「BP_Array」をViewportにDrag&Dropします。
 
 Level Editorの[Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-01-29-23-14-00.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 [H]キーをPressすると、変数[Messages]のIndex[4]に設定した文字列が表示されます。
 
@@ -162,7 +162,7 @@ Level Editorの[Play]ボタンをクリックします。
 
 Level Editorの[Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-01-29-23-14-00.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 [H]キーをPressすると、変数[Messages]の文字列がランダムに表示されます。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-01-30-06-38-46.png)
@@ -189,7 +189,7 @@ Level Editorの[Play]ボタンをクリックします。
 
 Level Editorの[Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-01-29-23-14-00.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 [H]キーをPressすると、先ほどと同じように配列の文字列をランダムに取得できます。配列数が変わってもMaxの値を変更せずに済むので[Length]ノードを使用した取得は便利です。
 
@@ -287,8 +287,7 @@ Increamentをして[+1]した変数[TypeIndex]の値をループする計算を�
 
 Level Editorの[Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-01-29-23-14-00.png)
-
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 [C]キーをPressすると、変数[CalcTypes]の値を順番（[0:Add]> [1:Subtract] > [2:Multiply] > [3:Divide] > [0:Add] > 繰り返し）に出力します。
 

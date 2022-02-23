@@ -32,7 +32,7 @@ Array（配列）の取得でよく使用する2つの方法について解説�
 
 親クラスに[Actor]を選択します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-array/2022-01-30-18-52-05.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-array/2022-02-23-08-44-06.png)
 
 ClassTypeとClass名を設定します。
 
@@ -271,7 +271,7 @@ ArrayVariable[IndexNo]
 
 ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-array/2022-02-13-19-15-30.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-23-10-58-50.png)
 
 「ACPPArray」をViewportにDrag&Dropします。
 PrintStringの出力結果が分かりづらくなるので、「BP_Array」を削除します。
@@ -280,7 +280,7 @@ PrintStringの出力結果が分かりづらくなるので、「BP_Array」を�
 
 Level Editorの[Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-event_dispatcher/2022-01-29-00-54-14.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 [H]キーをPressすると、変数[Messages]の[4]を取得するので、日本語の文字列が表示されました。
 
@@ -296,11 +296,11 @@ TArray<FString> Messages = { "C++ Hello World!", "你好 世界!", "Bonjour le m
 
 ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-array/2022-02-13-19-15-30.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-23-10-58-50.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-event_dispatcher/2022-01-29-00-54-14.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 ”?????????????????????!”と文字化けして出力されてしまいました。
 これはUnreaEngineとテキストの文字コードが違うので起こってしまった現象です。
@@ -397,11 +397,11 @@ void ACPPArray::PressedActionPrintCalcResult()
 
 ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-array/2022-02-13-19-15-30.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-23-10-58-50.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-event_dispatcher/2022-01-29-00-54-14.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 [C]キーをPressすると、変数[CalcTypes]の値を順番（[0:Add]> [1:Subtract] > [2:Multiply] > [3:Divide] > [0:Add] > 繰り返し）に出力します。
 

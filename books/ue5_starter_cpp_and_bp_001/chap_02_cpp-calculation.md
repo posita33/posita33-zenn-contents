@@ -34,7 +34,7 @@ Blueprint版で実装した四則演算の結果をPrintStringで出力する処
 
 親クラスに[Actor]を選択します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-02-12-18-36-23.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-02-23-08-43-09.png)
 
 ClassTypeとClass名を設定します。
 
@@ -242,7 +242,7 @@ PrintString関数以外は、Blueprintで使用したノードを使用しない
 
 ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-02-12-18-55-41.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-23-10-58-50.png)
 
 LevelEditorに戻り「CPPCalculation」をViewportに配置します。
 Blueprit側のPrintStringが出力されると確認しづらいので、Viewportに配置した「BP_Calculation」を削除します。
@@ -251,7 +251,7 @@ Blueprit側のPrintStringが出力されると確認しづらいので、Viewpor
 
 Level Editorの[Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-19-09-30-37.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 CalcVarA + CalcVarB（7+3）の結果が正しく出力されました。
 
@@ -330,11 +330,11 @@ Blueprint以外にもMaterialなど他のEditorでも四則演算ノードが用
 
 ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-02-12-18-55-41.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-23-10-58-50.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-19-09-30-37.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 四則演算の結果が正しく表示されました。
 Blueprintの時と同様に、割り算の結果が小数点切り捨てになります。
@@ -385,11 +385,11 @@ https://www.k-cube.co.jp/wakaba/server/format.html
 
 ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-02-12-18-55-41.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-23-10-58-50.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-19-09-30-37.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 割り算の結果が小数点まで表示されます。
 

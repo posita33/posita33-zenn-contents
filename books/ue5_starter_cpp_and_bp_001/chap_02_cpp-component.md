@@ -19,7 +19,7 @@ Blueprintで追加したComponentとComponentの親子構成をC++で再現し�
 
 プロジェクトを閉じていたら、プロジェクトを開き、「Chapter_2_Component」を開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-component/2022-02-11-20-54-48.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-component/2022-02-23-16-49-48.png)
 
 [Tools]メニューから[New C++ Class]を開きます。
 
@@ -27,7 +27,7 @@ Blueprintで追加したComponentとComponentの親子構成をC++で再現し�
 
 親クラスに[Actor]を選択します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-component/2022-02-11-20-57-32.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-component/2022-02-23-08-42-50.png)
 
 ClassTypeとClass名を設定します。
 
@@ -36,7 +36,7 @@ ClassTypeとClass名を設定します。
 | Class Type | Public       |
 | Name       | CPPComponent |
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-component/2022-02-11-21-00-43.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-component/2022-02-23-16-51-33.png)
 
 Solution Explorerから今回編集する2つのファイルを開きます。
 
@@ -75,7 +75,7 @@ private:
 };
 ```
 
-```cpp:.cpp
+```cpp:CPPComponent.cpp
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
@@ -156,16 +156,16 @@ ACPPComponent::ACPPComponent()
 
 ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-component/2022-02-11-21-18-12.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-23-10-58-50.png)
 
 「CPPComponent」を「BP_Component」の隣に配置します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-component/2022-02-11-21-23-06.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-component/2022-02-23-16-57-37.png)
 
 C++ではBlueprintのようにEditorで確認することが出来ないので、レベルに配置した「CPPComponent」を選択します。
 [Detail]パネルでComponentの構成を確認します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-component/2022-02-11-21-28-12.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-component/2022-02-23-17-00-47.png)
 
 [Detail]パネルに表示される名称は、VarableName（左）、SubobjectFName（右）、（Inherited）は継承したという意味です。
 SubobjectFNameには任意の文字列を設定できます。
@@ -205,6 +205,8 @@ ACPPComponent::ACPPComponent()
 {
 	// SceneComponentをRootComponentに設定する。
 	DefaultSceneRoot = CreateDefaultSubobject<USceneComponent>(TEXT("SceneComponent"));
+
+	// SceneComponentをRootComponentに設定する
 	RootComponent = DefaultSceneRoot;
 
 	// StaticMeshComponentを作成する
@@ -230,11 +232,11 @@ StaticMeshの読み込み処理はLoadObject関数で行っています。
 Pathが分からない時はアセットをマウスオーバーすると、「 Path：/Game/CPP_BP/Meshes 」とSM_SampleCubeが置かれているフォルダまでの文字列書かれています。
 「/Game/CPP_BP/Meshes/SM_SampleCube 」とすることで、「SM_SampleCube」の場所を指定できます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-component/2022-02-11-21-42-29.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-component/2022-02-23-17-08-43.png)
 
 ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-component/2022-02-11-21-18-12.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-23-10-58-50.png)
 
 Compileを行うと、変数[DefaultSceneRoot]の子として[StaticMesh]が追加されます。
 [StaticMesh]プロパティには「SM_SampleCube」が設定されています。
@@ -316,7 +318,7 @@ ACPPComponent::ACPPComponent()
 
 ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-component/2022-02-11-21-18-12.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-23-10-58-50.png)
 
 変数[Arrow]が変数[StaticMesh]の子として追加されました。
 Locationも移動した位置が設定されています。
@@ -406,7 +408,7 @@ ACPPComponent::ACPPComponent()
 
 ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-component/2022-02-11-21-18-12.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-23-10-58-50.png)
 
 [PointLight]が[StaticMesh]の子として追加されました。
 Locationも移動した位置に設定されています。
@@ -416,19 +418,19 @@ ViewportにPointLightが表示されました。
 
 [Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-component/2022-01-27-11-29-45.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 BlueprintとC++同じ構成のComponentを実装した状態です。
 当然ながら同じ動きをします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-component/2022-02-11-22-11-49.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-component/2022-02-23-17-12-51.png)
 
 ### すべて保存する
 
 C++側の説明は以上になります。
 プロジェクトをすべて保存しましょう。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-component/2022-02-11-22-17-59.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-component/2022-02-23-17-13-46.png)
 
 Visual StudioのSolutionもすべて保存しましょう。
 

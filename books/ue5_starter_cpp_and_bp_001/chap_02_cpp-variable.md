@@ -17,7 +17,7 @@ C++では関数の引数がBlueprintのInputピンになります。
 
 プロジェクトを閉じていたら、プロジェクトを開き、「Chapter_2_Variable」を開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-02-11-15-04-52.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-02-23-15-37-48.png)
 
 [Tools]メニューから[New C++ Class]を開きます。
 
@@ -25,7 +25,7 @@ C++では関数の引数がBlueprintのInputピンになります。
 
 親クラスに[Actor]を選択します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-02-11-15-10-15.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-02-23-08-39-03.png)
 
 ClassTypeとClass名を設定します。
 
@@ -34,7 +34,7 @@ ClassTypeとClass名を設定します。
 | Class Type | Public      |
 | Name       | CPPVariable |
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-02-11-15-14-06.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-02-23-15-41-26.png)
 
 Solution Explorerから今回編集する2つのファイルを開きます。
 
@@ -123,25 +123,25 @@ Blueprintは変数[Message]のGetノードからPrintStringノードの[In Strin
 
 ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-09-06-34-01.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-23-10-58-50.png)
 
 BlueprintではCompile > 保存でした。
 C++は保存されたファイルに対してCompileを行います。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-01-27-08-39-06.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-02-23-15-48-13.png)
 
 編集したC++のActorクラスをLevelEditorのViewportにDrag&Dropします。
 World Outlinerに追加したActorクラス名が表示されることを確認します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-02-11-15-49-18.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-02-23-15-45-37.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-01-27-08-39-22.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 変数「Message」に設定した文字列が表示されました。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-02-11-15-52-08.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-02-23-15-46-07.png)
 
 :::message
 **【Column】 String型ではなくUnrealEngine独自のFStringクラス**
@@ -257,24 +257,24 @@ DurationをPrintString関数の引数に記述する。
 
 ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-09-06-34-01.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-23-10-58-50.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-01-27-08-46-39.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 文字が変数[Duration]に設定した[3.0f]（3秒間）表示されます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-01-27-08-46-49.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-02-23-15-53-16.png)
 
 ### 変数を定数化（const）して値を変更できなくする（ReadOnly：読み取り専用を再現）
 
 Blueprintで変数の[Blueprint Read Only]を有効にして、読み取り専用にしたのでCompileでSetノードがErrorになりました。
 C++で読み取り専用の変数を再現します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-01-27-08-47-20.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-02-23-15-49-28.png)
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-02-11-16-24-53.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-02-23-15-49-14.png)
 
 「CPPVariable.h」に宣言したDurationの先頭に「const」を追加します。
 
@@ -299,13 +299,13 @@ const 修飾子を使う目的は、コンパイラによる最適化を促進�
 
 ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-09-06-34-01.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-23-10-58-50.png)
 
 Blueprintの時と同じようにCompileがエラーになります。
 [Output]ウィンドウのErrorメッセージをダブルクリックします。
 エラー箇所に移動すると、変数[Duration]の値を変更している箇所がエラーと判定されています。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-02-11-16-30-05.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-02-23-15-57-10.png)
 
 変数[Duration]に値を設定している行を削除します。
 
@@ -313,20 +313,20 @@ Blueprintの時と同じようにCompileがエラーになります。
 
 ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-09-06-34-01.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-23-10-58-50.png)
 
 今度はCompileが成功しました。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-02-11-16-32-57.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-02-23-15-59-01.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-01-27-09-24-57.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 const修飾子を一緒に宣言したことで、変数に設定したDefault Valueが約束されます。値を変更したくない変数にはconst修飾子を宣言することで、読み取り専用の変数として使用できます。
 const修飾子は関数で大活躍します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-02-11-16-34-33.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-02-23-16-00-09.png)
 
 https://zenn.dev/posita33/articles/a0ee3a45e5cdb2
 
@@ -377,15 +377,15 @@ UKismetStringLibraryクラスのConv_FloatToString関数はKismetStringLibrary.h
 
 ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-09-06-34-01.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-23-10-58-50.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-01-27-09-30-36.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 変数[Duration]の値が文字列として画面に表示されます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-02-11-16-37-25.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-02-23-16-02-01.png)
 
 https://zenn.dev/posita33/articles/8dd51074f1915a
 
@@ -431,15 +431,15 @@ void ACPPVariable::BeginPlay()
 
 ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-09-06-34-01.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-23-10-58-50.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-01-27-09-33-57.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 TextColorが変更されました。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-02-11-16-40-07.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-02-23-16-04-01.png)
 
 https://zenn.dev/posita33/articles/41737b3be89aa4
 
@@ -454,7 +454,7 @@ C++とBlueprintの比較画像です。
 C++側の説明は以上になります。
 プロジェクトをすべて保存しましょう。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-02-11-16-47-23.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-variable/2022-02-23-16-05-18.png)
 
 Visual StudioのSolutionもすべて保存しましょう。
 

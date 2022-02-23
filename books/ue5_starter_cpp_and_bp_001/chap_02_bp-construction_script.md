@@ -19,19 +19,19 @@ ConstructionScriptタブはPlayが実行される前に、配置したActorのCo
 
 ### 学習用の新規レベル「Chapter_2_ConstructionScript」を作成する
 
-学習用の新規レベルを作成します。
+学習用に新規レベルを作成します。
 [File]から[New Level…]を選択します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-construction_script/2022-01-27-11-48-00.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-11-21-55.png)
 
-[Default]を選択します。
+[Basic]を選択し、[Create]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-construction_script/2022-01-27-11-48-11.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-11-23-32.png)
 
 [File]メニューからCurrent Levelを保存します。
 ショートカット「Ctrl + S」でも保存できます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-01-26-22-32-19.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-11-24-39.png)
 
 「Maps」フォルダを選択し、Nameに「Chapter_2_ConstructionScript」を入力し、[Save]ボタンをクリックします。
 

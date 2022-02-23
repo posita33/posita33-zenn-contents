@@ -33,19 +33,19 @@ Blueprintには3種類のLoopノードが用意されています。
 
 ### 学習用の新規レベル「Chapter_2_FlowControl_Loop」を作成する
 
-学習用の新規レベルを作成します。
-[File]メニューから[New Level…]を選択します。
+学習用に新規レベルを作成します。
+[File]から[New Level…]を選択します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_loop/2022-01-31-11-14-41.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-11-21-55.png)
 
-[Default]を選択します。
+[Basic]を選択し、[Create]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_loop/2022-01-31-11-14-52.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-11-23-32.png)
 
 [File]メニューからCurrent Levelを保存します。
 ショートカット「Ctrl + S」でも保存できます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_loop/2022-01-31-11-15-15.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-11-24-39.png)
 
 「Maps」フォルダを選択し、Nameに「Chapter_2_FlowControl_Loop」を入力し、[Save]ボタンをクリックします。
 
@@ -93,7 +93,7 @@ Level Editorに戻り、「BP_FlowControl_Loop」をViewportにDrag&Dropしま�
 
 Level Editorの[Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_loop/2022-01-31-13-31-22.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 [H]キーをPressすると[PrintString]ノードが繰り返し呼び出されました。
 [For Loop]ノードの[First Index]で[0]、[Last Index]が[4]と設定されているので、0～4の5回繰り返されます。
@@ -126,7 +126,7 @@ Level Editorの[Play]ボタンをクリックします。
 
 Level Editorの[Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_loop/2022-01-31-13-31-22.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 [H]キーをPressすると配列[Messages]の値を最初から最後まで出力します。
 
@@ -173,7 +173,7 @@ Level Editorの[Play]ボタンをクリックします。
 
 Level Editorの[Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_loop/2022-01-31-13-31-22.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 [H]キーをPressすると配列[Messages]の値に[Bonjour]が含まれている時にBreakが呼ばれるので、配列[Messages]のIndex[2]までが[PrintString]ノードで出力されます。
 
@@ -205,7 +205,7 @@ Level Editorの[Play]ボタンをクリックします。
 
 Level Editorの[Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_loop/2022-01-31-13-31-22.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 [H]キーをPressすると配列[Messages]の値に[Bonjour]が含まれている時にBreakが呼ばれるので、配列[Messages]のIndex[2]までが[PrintString]ノードで出力されます。
 配列を順番に繰り返しするのであれば、[For Loop]ノードより[For Each Loop]の方がスマートに処理を実装できます。
@@ -242,7 +242,7 @@ Level Editorの[Play]ボタンをクリックします。
 
 Level Editorの[Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_loop/2022-01-31-13-31-22.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 [H]キーをPressすると配列[Messages]の値に[Bonjour]が含まれている時に、[While Loop]ノードの[Condision]が[False]になるので、[While Loop]ノードの[Conpleted]が呼ばれます。
 [While Loop]ノードは[Condition]の値が[True]の時に[Loop Body]を呼び出し、[Condition]の値が[False]の時に[Completed]を呼び出します。

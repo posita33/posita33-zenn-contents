@@ -25,7 +25,7 @@ Event Dispatcherを作成します。
 
 親クラスに[Actor]を選択します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-input_event/2022-01-28-06-15-50.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-event_dispatcher/2022-02-23-08-40-58.png)
 
 ClassTypeとClass名を設定します。
 
@@ -265,7 +265,7 @@ void ACPPEventDispatcher::PressedH()
 
 ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-event_dispatcher/2022-02-13-18-35-50.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-23-10-58-50.png)
 
 「ACPPEventDispatcher」をViewportにDrag&Dropします。
 PrintStringの出力結果が分かりづらくなるので、「BP_EventDispatcher」を削除します。
@@ -274,7 +274,7 @@ PrintStringの出力結果が分かりづらくなるので、「BP_EventDispatc
 
 Level Editorの[Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-event_dispatcher/2022-01-29-00-54-14.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 「H」キーをPressすると、「OnPrintHello.Broadcast()」が呼ばれ、バインドしていたCustom Event[PrintHello]が呼ばれます。
 

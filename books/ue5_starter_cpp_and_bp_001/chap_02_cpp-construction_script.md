@@ -34,7 +34,7 @@ C++でBlueprintのConstruction Scriptで実装した処理を再現します。
 
 親クラスに[Actor]を選択します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-construction_script/2022-02-12-14-50-08.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-construction_script/2022-02-23-08-42-18.png)
 
 ClassTypeとClass名を設定します。
 
@@ -180,7 +180,7 @@ UPROPERTY(EditAnywhere, Category = "Point Light")
 
 ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-construction_script/2022-02-12-15-13-07.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-23-10-58-50.png)
 
 LevelEditorのViewportに「CPPConstructionScript」をDrag&Dropします。
 
@@ -213,7 +213,7 @@ void ACPPConstructionScript::OnConstruction(const FTransform& Transform)
 
 ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-construction_script/2022-02-12-15-13-07.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-23-10-58-50.png)
 
 LevelEditorの[Detail]パネルで変数[IsVisible]を有効/無効に切り替えます。
 変数[bIsVisible]が有効になるとPointLightが表示され、無効になるとPointLightが非表示になります。
@@ -240,7 +240,7 @@ void ACPPConstructionScript::OnConstruction(const FTransform& Transform)
 
 ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-construction_script/2022-02-12-15-13-07.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-23-10-58-50.png)
 
 LevelEditorの[Detail]パネルで変数[Intensity]の値を大きくすると光が強くなります。
 
@@ -266,7 +266,7 @@ void ACPPConstructionScript::OnConstruction(const FTransform& Transform)
 
 ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-construction_script/2022-02-12-15-13-07.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-23-10-58-50.png)
 
 LevelEditorの[Detail]パネルで変数[LightColor]をクリックすると、ColorPickerが表示されます。色を選択して、OKボタンをクリックすると光の色が選択した色に変わります。
 BlueprintのConstructionScriptをC++側ではOnConstruction関数で再現できました。

@@ -18,19 +18,19 @@ free: false
 
 ### 学習用の新規レベル「Chapter_2_Function」を作成する
 
-学習用の新規レベルを作成します。
-[File]メニューから[New Level…]を選択します。
+学習用に新規レベルを作成します。
+[File]から[New Level…]を選択します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-Function/2022-01-25-08-52-51.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-11-21-55.png)
 
-[Default]を選択します。
+[Basic]を選択し、[Create]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-Function/2022-01-25-08-52-59.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-11-23-32.png)
 
 [File]メニューからCurrent Levelを保存します。
 ショートカット「Ctrl + S」でも保存できます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-01-26-22-32-19.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-11-24-39.png)
 
 「Maps」フォルダを選択し、Nameに「Chapter_2_Function」を入力し、[Save]ボタンをクリックします。
 
@@ -109,7 +109,7 @@ LevelEditorに戻り、「BP_Function」をViewportにDrag&Dropします。
 
 Level Editorの[Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-Function/2022-01-25-09-57-35.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 Function[Sum]で計算した結果が表示されます。
 
@@ -240,7 +240,7 @@ Function化したことで、処理がまとめられて分かりやすくなり
 
 Level Editorの[Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-Function/2022-01-25-09-57-35.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 先ほどと同じ足し算の計算結果が表示されました。
 

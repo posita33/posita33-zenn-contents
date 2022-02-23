@@ -9,7 +9,7 @@ free: false
 
 Blueprintと同様にViewportに文字列を表示することを再現します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-09-06-44-29.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-23-11-12-10.png)
 
 PrintStringノードをC++で再現し、C++とBlueprintのPrintStringが対応している箇所を把握します。
 
@@ -19,12 +19,12 @@ PrintStringノードをC++で再現し、C++とBlueprintのPrintStringが対応�
 
 プロジェクトを閉じていたら、プロジェクトを開き、「Chapter_2_HelloWorld」を開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-09-06-39-14.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-23-10-17-25.png)
 
 Visual Studio 2019を開きます。
 UE5のエディタからは[Tools]メニューか、[Content Drawer]から作成したActorクラスをダブルクリックとVisual Studioが開けます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-09-06-19-38.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-23-10-19-39.png)
 
 CPPHelloWorld.cppのBeginPlay関数にPrintString実装します。
 まず、#inclueにKismet/KismetSystemLibrary.hを追加します。
@@ -57,39 +57,41 @@ Build ＞Build Solutionを行いコンパイルを行います。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-01-27-06-17-19.png)
 
+Editorを開いている状態でBuildすると、UnrealBuildToolsがエラーになります。
+Editorを開いている状態では、[Ctrl + Alt + F11]を押すことでEditor上のコンパイルを実行できます。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-23-10-35-35.png)
+
 UE5のLevelEditor右下の小さいアイコンがC++のソースコードをコンパイルするボタンなので、アイコンをクリックするとコンパイルが実行されます。
-「Compile Complite!」が表示されればコンパイル成功です。
+「Live coding succeeded」が表示されればコンパイル成功です。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-01-27-06-17-30.png)
-
-Unreal VS拡張をインストールしているのであれば、[Build Startup Project]をクリックするだけなので便利です。今後はUnreal VS拡張がインストールされている前提で説明します。
-
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-09-06-34-01.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-23-10-58-50.png)
 
 ### LevelEditorのViewportにC++のクラスを追加してプレイする
+
 「CPPHelloWorld」をLevelEditorのViewportに追加します。
 追加する方法はBlueprintと同じです。
 
-- [Content Drawer]から「CPPHelloWorld」をレベルのビューポートにドラッグ&ドロップ
-- Place Actorsの検索バーで「CPPHelloWorld」を検索して、レベルのビューポートにドラッグ&ドロップ
+- [Content Browser][Content Drawer]から「CPPHelloWorld」をレベルのビューポートにドラッグ&ドロップ
+- [Place Actors]の検索バーで「CPPHelloWorld」を検索して、レベルのビューポートにドラッグ&ドロップ
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-09-06-43-12.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-23-10-24-22.png)
 
 C++のActorクラスにはコンポーネントが何もないのでサムネイルが表示されません。レベルに追加されたかは[World Outliner]から確認してください。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-01-27-06-34-35.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-23-10-26-26.png)
 
 [Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-01-27-06-34-49.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 BluepintのPrintStringノードと同様にLevelEditorのVieport左上に出力がされました。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-09-06-44-29.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-23-11-12-10.png)
 
 Output LogタブにもBlueprintノードのPrintStringノードと同様の出力がされています。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-09-06-45-33.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-23-11-13-35.png)
 
 ### UKismetSystemLibraryクラスのPrintString関数とBlueprintのPrintStringノードを比較する
 
@@ -267,27 +269,26 @@ void ACPPHelloWorld::BeginPlay()
 
 ソースコードを保存して、Compileを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-09-06-34-01.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-23-10-58-50.png)
 
 [Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-01-27-06-40-54.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 PrintString関数とは違うサイズで出力されました。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-09-06-50-22.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-23-11-16-06.png)
 
 Output Logにはそれぞれ色の違う文字列が出力されています。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-09-06-51-04.png)
-
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-23-11-16-56.png)
 
 ### すべて保存
 
 C++側の説明は以上になります。
 プロジェクトをすべて保存しましょう。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-09-06-52-50.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-23-11-18-34.png)
 
 Visual StudioのSolutionもすべて保存しましょう。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-01-23-21-46-14.png)

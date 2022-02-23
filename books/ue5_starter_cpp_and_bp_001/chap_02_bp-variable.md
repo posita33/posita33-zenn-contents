@@ -18,25 +18,25 @@ Variable（変数）を使用した処理に変更します。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-01-27-07-11-04.png)
 
-
 ### 学習用の新規レベル「Chapter_2_Variable」を作成する
 
 学習用に新規レベルを作成します。
+[File]から[New Level…]を選択します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-01-27-07-05-26.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-11-21-55.png)
 
-[Default]を選択します。
+[Basic]を選択し、[Create]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-10-03-28-31.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-11-23-32.png)
 
 [File]メニューからCurrent Levelを保存します。
 ショートカット「Ctrl + S」でも保存できます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-01-26-22-32-19.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-11-24-39.png)
 
 「Maps」フォルダを選択し、Nameに「Chapter_2_Variable」を設定して、「Save」ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-10-03-32-41.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-11-32-14.png)
 
 ### Blueprintを複製する
 
@@ -45,13 +45,13 @@ Variable（変数）を使用した処理に変更します。
 ショートカットキーは[Ctrl + W]です。[Ctrl + C > Ctrl + V（コピー&ペースト）]でも同じことができますが、[Duplicate（複製）]は1回で複製できます。
 名前を「BP_Variable」に設定します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-10-03-38-30.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-11-35-11.png)
 
 ### 変数を追加する（ノードのInputピンから）
 
 「BP_Variable」をダブルクリックしてBlueprint Editorで開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-10-03-44-46.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-11-35-55.png)
 
 Print Stringの[In String]を変数化します。
 In StringのInputピンからDrag&Dropします。
@@ -72,12 +72,12 @@ InStringと書かれたノードとPrint StringのInputピンが接続されて�
 My Blueprintパネルの「Variable」カテゴリーに「In String」という項目が増えています。これがVariable（変数）です。
 Variable（変数）を選択すると[Detail]パネルに変数の設定が表示されます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-10-07-28-09.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-11-38-17.png)
 
 [Detail]パネルの[Variable Name]を[Message]に変更します。
 Print StringのIn Stringに接続していたノードの名称も「Message」に変換されます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-01-27-07-07-56.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-11-40-23.png)
 
 Default Value（初期値）を設定します。
 しかし、Default Valueに「Please compile the blueprint」と表示されており、設定できません。
@@ -95,19 +95,19 @@ InputピンからDrag&Dropして変数を作成すると、Inputピンに設定�
 
 再び、[Compile]ボタンをクリックして、[Save]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-10-07-32-16.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-11-45-10.png)
 
 LevelEditorに戻り、Viewportに「BP_Variable」をDrag&Dropします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-10-07-36-17.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-11-46-21.png)
 
 [Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-01-27-07-09-19.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 変数「Message」に設定されていたDefault Valueの文字列が表示されます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-10-07-37-05.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-11-47-30.png)
 
 同じ結果です。
 - Print StringのIn Stringに文字列を設定する。
@@ -125,11 +125,11 @@ Blueprint Edior左上の[Compile]ボタンをクリックします。
 
 Level Editorの[Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-01-27-07-10-41.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 変数「Message」のDefault Valueを「BP Hello World!」が表示されます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-10-07-39-16.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-11-48-24.png)
 
 複数のノードに同じ値を設定しようとした時に、ノードに直接入力すると、「入力の間違い」「入力の漏れ」といったヒューマンエラーが起きます。
 変数を作成し、変数から値を取得するようにBlueprintを組んでおくことで、複数のノードで変数の値を使うことが約束されます。
@@ -162,35 +162,39 @@ Print StringのDurationピンに変数を追加して設定します。
 次に[Variable Type（変数の型）]を設定します。
 設定したいInputピンにマウスオーバーします。
 表示される文字（ToolTip）からInputピンのVariableTypeを確認します。
-DurationのVariableTypeはFloatということが分かりました。
+DurationのVariableTypeは[Float Real]ということが分かりました。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-01-27-07-13-55.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-12-55-56.png)
 
-[Variable Type]のリストから[Float]を選択します。
+[Variable Type]のリストから[Real]を選択します。
 （Inputピンをマウスオーバーした時に表示されたVariable Type）
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-01-27-07-38-26.png)
+:::message
+Unreal Engine Preview 1では[Float]が[Real]になりました。
+:::
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-12-58-31.png)
 
 次にDefault Valueを設定します。
 Default ValueはComplireしてから設定できるので、左上のComplireボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-10-07-41-53.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-13-00-56.png)
 
 [Compile]することで、Default Valueが設定できます。
 Print StringのDurationに設定された値[10.0]を設定します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-01-27-07-37-05.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-13-02-19.png)
 
 ### 変数の値をGet（取得）する
 
 変数「Message」ノードと同じように、Inputピンに接続するノードを追加します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-01-27-07-38-53.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-13-04-03.png)
 
 [Variavles]カテゴリーの[Duration]をDrag&Dropします。
 マウスを離すと、メニューが表示されるので[Get Duration]を選択します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-01-27-07-39-03.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-13-05-13.png)
 
 変数「Duration」の右側（Outputピン）からDrag&Dropし、[Print String]のDurationに接続します。
 Variable Typeが一致しているので接続できます。
@@ -203,19 +207,19 @@ Blueprint Edior左上の[Compile]ボタンをクリックします。
 
 Level Editorの[Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-01-27-07-39-45.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 文字列がDurationに設定した変数DurationのDefault Value[10.0]（10秒間）表示されます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-10-07-45-24.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-13-06-28.png)
 
 ### 変数の値をSet（設定）する
 
-次にPrint Stringで変数を使う前に、値を[3.0](3秒)に変更するように変更します。
+次にPrint Stringで変数を使う前に、値を[3.0]（3.0秒）に変更するように変更します。
 Get Durationを追加したのと同様に、変数[Duration]をEventGraphにDrag&Dropします。
 マウスを離すとメニューが表示されるので、[Set Duration]を選択します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-01-27-07-42-51.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-13-07-47.png)
 
 Setと書かれたノードの実行ピンを[Print String]が実行される前に実行されるように接続し直します。
 Durationには[3.0]（3秒）を設定します。
@@ -228,11 +232,11 @@ Blueprint Edior左上の[Compile]ボタンをクリックします。
 
 Level Editorの[Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-01-27-07-44-41.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
-文字列がDurationに設定した変数DurationのDefault Value[10.0](10秒間)ではなく、Setノードで設定した[3.0](3秒)表示されます。
+文字列がDurationに設定した変数DurationのDefault Value[10.0]（10秒間）ではなく、Setノードで設定した[3.0]（3秒）表示されます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-10-07-47-31.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-13-09-31.png)
 
 Default Valueは初期値なので、Setノードを使用すると処理の途中で値を変更できます。
 
@@ -241,11 +245,11 @@ Default Valueは初期値なので、Setノードを使用すると処理の途�
 変数の値を途中で変えられてしまっては困る場合に、Setノードを使えなくし、Getノードのみしか使えなくできます。
 [Blueprint Read Only]を有効にします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-01-27-07-45-20.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-13-11-20.png)
 
 Blueprint Edior左上の[Compile]ボタンをクリックすると、ノードの下部分に「Error！」と赤く表示されます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-11-14-31-23.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-13-13-13.png)
 
 Compiler Resultsにエラーメッセージが表示されます。
 下線が付いている「Set Duraion」をクリックすると、エラーがあるノードにフォーカスがあいます。
@@ -256,7 +260,7 @@ Compiler Resultsにエラーメッセージが表示されます。
 Setノードは使えなくなったので削除します。Shift + Deleteキーで接続を維持したままノードを削除できます。
 実行ピンを元に戻して、Blueprint Edior左上の[Compile]ボタンをクリックするとエラーが解消されます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-11-14-38-17.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-13-16-04.png)
 
 ### Variable Type（変数の型）をCast（変数の型を別の型に変える）する
 
@@ -277,13 +281,13 @@ Blueprint Edior左上の[Compile]ボタンをクリックします。
 
 Level Editorの[Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-01-27-07-47-05.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 DurationのDefault Valueである[10.0]が文字列として表示されます。
 Variable Typeが一致していなくても、Variable Typeを変換できれば値を使用できます。
 Blueprintでは変換できるVariable Typeであれば変換ノードを接続した時に作成してくれます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-11-14-41-11.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-13-17-23.png)
 
 ### Variable Type（変数の型）のリストにないVariable Typeを検索して設定する
 
@@ -298,18 +302,18 @@ Variable Type（変数の型）のリストにないVariable Typeを設定につ
 変数を追加時にVariable Nameを変更できます。
 Variable Nameは[TextColor]に設定します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-01-27-07-48-13.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-13-19-43.png)
 
 DetailパネルからVariable Typeを設定します。
 しかし、リストには[Linear Color Structure]というVariable Typeが表示されません。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-01-27-07-48-39.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-13-22-25.png)
 
 検索バーに[Linear Color]と入力します。
 [Linear Color]と書かれた項目を選択します。
 リストにない項目は検索することで見つけられます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-01-27-07-48-49.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-13-25-04.png)
 
 次にDefault Valueを設定するので、Blueprint Edior左上の[Compile]ボタンをクリックします。
 
@@ -325,7 +329,7 @@ AはAlpha（透明度）の数値なので、0.0が設定されていると、�
 変数を[Ctrl]キーを押しながらDrag&Dropするとメニューが表示されずにGetノードが追加されます。
 Setノードは[Alt]キーを押しながらDrag&Dropすると追加できます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-01-27-07-49-49.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-13-30-48.png)
 
 変数[TextColor]のGetノードと[Print String]の[Text Color]ピーンを接続します
 文字列の出力を変数[Message]に戻し、変換ノードを削除します。
@@ -334,15 +338,15 @@ Setノードは[Alt]キーを押しながらDrag&Dropすると追加できます
 
 Blueprint Edior左上の[Compile]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-11-14-49-43.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-13-32-06.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-01-27-07-50-36.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 表示される文字列の色が変数[TextColor]に設定した色で表示されます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-11-14-50-43.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-13-32-39.png)
 
 ### 変数のCategoryを設定する
 
@@ -355,11 +359,11 @@ Level Editorの[Play]ボタンをクリックします。
 Categoryはリストに[Default]しかないので、最初は入力してCategoryを増やします。
 Categoryに[Print String]を設定します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-01-27-07-54-45.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-13-35-35.png)
 
 Variavlesカテゴリーに[Print String]というCategoryが作成され、変数[Message]がメンバーとして登録されました。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-01-27-07-55-27.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-13-37-34.png)
 
 Categoryへのメンバー登録は2パターンあります。
 - 変数をCategoryにDrag&Drop
@@ -368,19 +372,19 @@ Categoryへのメンバー登録は2パターンあります。
 変数[Duration]を[Print String]CategoryにDrag&Dropします。
 変数[Duration]が[Print String]Categoryのメンバーになりました。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-01-27-07-51-28.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-13-40-13.png)
 
 変数[TextColor]を選択します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-01-27-07-51-45.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-13-41-34.png)
 
 Categoryのリストから[Print String]を選択します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-01-27-07-51-55.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-13-42-32.png)
 
 Print Stringで使用している変数が[Print String]Categoryのメンバーになりました。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-01-27-07-52-07.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-13-44-58.png)
 
 Categoryを整理することでVariavlesカテゴリーが見やすくなります。
 
@@ -389,14 +393,13 @@ Categoryを整理することでVariavlesカテゴリーが見やすくなりま
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-01-27-07-52-35.png)
 
-
 ### すべて保存する
 
 他にも変数の設定項目がありますが、Blueprint用のクラスや変数をC++で作成する時に説明します。
 
 コンテンツブラウザの[Save All]をクリックし、保存されていないアセットを保存します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-10-07-54-39.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-13-46-12.png)
 
 ## 【参照URL】
 

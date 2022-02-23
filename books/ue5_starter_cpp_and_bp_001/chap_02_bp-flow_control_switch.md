@@ -13,19 +13,19 @@ free: false
 
 ### 学習用の新規レベル「Chapter_2_FlowControl_Switch」を作成する
 
-学習用の新規レベルを作成します。
-[File]メニューから[New Level…]を選択します。
+学習用に新規レベルを作成します。
+[File]から[New Level…]を選択します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_switch/2022-01-23-16-14-53.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-11-21-55.png)
 
-[Default]を選択します。
+[Basic]を選択し、[Create]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_switch/2022-01-23-16-15-04.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-11-23-32.png)
 
 [File]メニューからCurrent Levelを保存します。
 ショートカット「Ctrl + S」でも保存できます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-01-26-22-32-19.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-11-24-39.png)
 
 「Maps」フォルダを選択し、Nameに「Chapter_2_FlowControl_Switch」を入力し、[Save]ボタンをクリックします。
 
@@ -75,7 +75,7 @@ LevelEditorに戻り、「BP_FlowControl_Switch」をViewportにDrag&Dropしま�
 
 Level Editorの[Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_switch/2022-01-23-16-54-23.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 変数[CalcType]の値が[1]なので、引き算の出力結果が表示されます。
 

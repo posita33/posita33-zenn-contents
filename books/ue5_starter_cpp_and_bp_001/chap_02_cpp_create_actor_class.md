@@ -9,7 +9,7 @@ free: false
 
 C++でクラス（親クラス：Actor）を作成できます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp_create_actor_class/2022-02-07-06-57-33.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp_create_actor_class/2022-02-23-11-08-26.png)
 
 ### C++のクラス（親クラス：Actor）を追加する
 
@@ -18,14 +18,14 @@ C++のクラスを新規作成します。
 メニューから作成する方法と、[Content Drawer]から作成する方法があります。
 
 ・[Tools]メニューから[New C++ Class…]を選択する
-・[Content Drawer]の[C++ Classes]を選択すると右クリックやAddボタンのメニューが変わる。[New C++ Class…]を選択する。
+・[Content Browser][Content Drawer]の[C++ Classes]を選択すると右クリックやAddボタンのメニューが変わる。[New C++ Class…]を選択する。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp_create_actor_class/2022-02-07-06-36-23.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp_create_actor_class/2022-02-23-08-32-40.png)
 
 親クラスを選択します。
 [Actor]を選択して、[Next >]をクリックします。
 
-![](https://storage.googleapis.com/zenn-user-upload/199eda59b081-20220110.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp_create_actor_class/2022-02-23-08-38-08.png)
 
 Class TypeとClass名を設定して、[Create Class]をクリックします。
 
@@ -34,11 +34,11 @@ Class TypeとClass名を設定して、[Create Class]をクリックします。
 | Class Type | Public        |
 | Name       | CPPHelloWorld |
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp_create_actor_class/2022-02-07-06-38-53.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp_create_actor_class/2022-02-23-08-47-47.png)
 
-[Content Drawer]の[C++ Classes]フォルダ側に作成したC++のクラスが追加されます。
+[Content Browser]の[C++ Classes]フォルダ側に作成したC++のクラスが追加されます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp_create_actor_class/2022-02-07-06-45-29.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp_create_actor_class/2022-02-23-08-49-14.png)
 
 Visual Studio側を確認します。
 

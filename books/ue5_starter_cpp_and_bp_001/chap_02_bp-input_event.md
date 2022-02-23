@@ -17,19 +17,19 @@ Project Settingsに入力イベントを追加して、Blueprintで追加した�
 
 ### 学習用の新規レベル「Chapter_2_InputEvent」を作成する
 
-学習用の新規レベルを作成します。
-[File]メニューから[New Level…]を選択します。
+学習用に新規レベルを作成します。
+[File]から[New Level…]を選択します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-01-27-17-53-07.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-11-21-55.png)
 
-[Default]を選択します。
+[Basic]を選択し、[Create]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-01-27-17-53-44.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-11-23-32.png)
 
 [File]メニューからCurrent Levelを保存します。
 ショートカット「Ctrl + S」でも保存できます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-01-26-22-32-19.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-11-24-39.png)
 
 「Maps」フォルダを選択し、Nameに「Chapter_2_InputEvent」を入力し、[Save]ボタンをクリックします。
 
@@ -65,7 +65,8 @@ Level Editorに戻り、「BP_InputEvent」をViewportにDrag&Dropします。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-02-13-17-41-35.png)
 
 Level Editorの[Play]ボタンをクリックします。
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-01-27-18-16-07.png)
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 [H]キーを入力してもBlueprintが反応しません。
 
@@ -94,7 +95,7 @@ Blueprintが入力を受け付けるように修正します。
 
 Level Editorの[Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-01-27-18-16-07.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 [H]キーを入力するとBlueprintが反応します。
 
@@ -175,7 +176,7 @@ Input Action[PrintCalcResult]の[Pressed]をFunction[PrintCalcResult]の[実行]
 
 Level Editorの[Play]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-01-27-18-16-07.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 Project Settingsで追加したActionイベントを入力した時にunction[PrintCalcResult]を処理するようになりました。
 

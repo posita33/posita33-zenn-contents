@@ -14,7 +14,7 @@ C++でBlueprintのConstruction Scriptで実装した処理を再現します。
 - PointLightの光の強さ調整（Set Intensityノード）
 - PointLightの光の色調整（Set LightColorノード）
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-construction_script/2022-02-12-14-42-04.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-construction_script/2022-03-01-06-14-30.png)
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-construction_script/2022-01-27-13-57-36.png)
 
@@ -26,11 +26,11 @@ C++でBlueprintのConstruction Scriptで実装した処理を再現します。
 
 プロジェクトを閉じていたら、プロジェクトを開き、「Chapter_2_ConstructionScript」を開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-construction_script/2022-02-12-14-46-45.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-construction_script/2022-03-01-06-15-48.png)
 
 [Tools]メニューから[New C++ Class]を開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-construction_script/2022-02-12-14-48-33.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-construction_script/2022-03-01-06-16-41.png)
 
 親クラスに[Actor]を選択します。
 
@@ -43,7 +43,7 @@ ClassTypeとClass名を設定します。
 | Class Type | Public                |
 | Name       | CPPConstructionScript |
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-construction_script/2022-02-12-15-02-34.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-construction_script/2022-03-01-06-18-16.png)
 
 Solution Explorerから今回編集する2つのファイルを開きます。
 
@@ -126,6 +126,9 @@ ACPPConstructionScript::ACPPConstructionScript()
 	UStaticMesh* Mesh = LoadObject<UStaticMesh>(NULL, TEXT("/Game/CPP_BP/Meshes/SM_SampleCube"), NULL, LOAD_None, NULL);
 	StaticMesh->SetStaticMesh(Mesh);
 
+	// StaticMeshComponentをRootComponentにAttachする
+	StaticMesh->SetupAttachment(RootComponent);
+	
 	// ArrowComponentを作成する
 	Arrow = CreateDefaultSubobject<UArrowComponent>(TEXT("ArrowComponent"));
 
@@ -184,12 +187,12 @@ UPROPERTY(EditAnywhere, Category = "Point Light")
 
 LevelEditorのViewportに「CPPConstructionScript」をDrag&Dropします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-construction_script/2022-02-12-15-26-34.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-construction_script/2022-03-01-06-29-15.png)
 
 「CPPConstructionScript」の[Detail]パネルをスクロールすると、[Point Light]Catetoryがあります。
 「CPPConstructionScript.hのpublic」に追加した変数が表示されています。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-construction_script/2022-02-12-15-32-19.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-construction_script/2022-03-01-06-31-53.png)
 
 OnConstruction関数でPointLightの表示/表示を設定する
 次にBlueprintのConstructionScriptタブを再現します。
@@ -220,7 +223,7 @@ LevelEditorの[Detail]パネルで変数[IsVisible]を有効/無効に切り替�
 
 bを先頭に付けた変数はプロパティには、先頭の"b"が表示されません。先頭の"b"はbooleanの変数であるということを明記させるために付け、UnrealEngine のEditorでは表示されません（少し特殊な名前の扱いです）
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-construction_script/2022-02-12-15-41-01.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-construction_script/2022-03-01-06-47-45.png)
 
 ### OnConstruction関数でPointLightのIntesity（光の強さ）を調整をする
 
@@ -244,7 +247,7 @@ void ACPPConstructionScript::OnConstruction(const FTransform& Transform)
 
 LevelEditorの[Detail]パネルで変数[Intensity]の値を大きくすると光が強くなります。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-construction_script/2022-02-12-15-43-56.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-construction_script/2022-03-01-06-49-03.png)
 
 OnConstruction関数でPointLightのLightColor（光の色）を調整をする
 最後に、PointLightのLightColorを変更します。
@@ -271,7 +274,7 @@ void ACPPConstructionScript::OnConstruction(const FTransform& Transform)
 LevelEditorの[Detail]パネルで変数[LightColor]をクリックすると、ColorPickerが表示されます。色を選択して、OKボタンをクリックすると光の色が選択した色に変わります。
 BlueprintのConstructionScriptをC++側ではOnConstruction関数で再現できました。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-construction_script/2022-02-12-15-47-38.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-construction_script/2022-03-01-06-51-02.png)
 
 https://zenn.dev/posita33/articles/41737b3be89aa4
 
@@ -303,7 +306,7 @@ PointLightの光の色はPointLightComponentの[SetLightColor]関数から設定
 C++側の説明はここまでになります。
 [Content Browser]から[Save All]ボタンをクリックし、[Save Selected]ボタンをクリックしてプロジェクトの変更のあったアセットをすべて保存します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-construction_script/2022-02-12-15-53-53.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-construction_script/2022-03-01-06-52-07.png)
 
 ## ソースコードとプロジェクト
 

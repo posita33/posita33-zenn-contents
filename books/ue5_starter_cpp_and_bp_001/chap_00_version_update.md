@@ -52,3 +52,7 @@ UE5のLevelEditor右下の小さいアイコンがC++のソースコードをコ
 「Live coding succeeded」が表示されればコンパイル成功です。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-print_string/2022-02-23-10-58-50.png)
+
+列挙型(Enumeration)エディタのUIが変わりました。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_00_version_update/2022-03-05-16-24-36.png)

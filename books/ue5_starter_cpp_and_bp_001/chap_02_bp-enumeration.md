@@ -33,24 +33,23 @@ Enumeration（列挙型）をVariableTypeに設定することで、DefaultValue
 
 「Maps」フォルダを選択し、Nameに「Chapter_2_Enumeration」を入力し、[Save]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-01-24-08-52-19.png)
-
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-03-05-16-14-45.png)
 
 ### Enumeration（列挙型）を作成する
 
 Enumeration（列挙型）を作成します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-01-24-09-04-13.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-03-05-16-16-04.png)
 *Contents Browserの空きスペースを右クリック > Blueprints > Enumeration（列挙型）*
 
 アセット名を「EBPCalcType」に設定します。
 「EBPCalcType」をダブルクリックで開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-02-13-15-47-45.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-03-05-16-16-45.png)
 
-[New]ボタンをクリックすることで列挙定数を追加できます。
+[Add Enumerator]ボタンをクリックすることで列挙定数を追加できます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-02-13-15-49-11.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-03-05-16-18-05.png)
 
 列挙型を設定するEditorの入力項目について一覧にまとめました。
 
@@ -60,9 +59,9 @@ Enumeration（列挙型）を作成します。
 | Description      | -        | 列挙定数の説明       |
 | Enum Description | -        | 作成した列挙型の説明 |
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-02-13-15-53-04.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-03-05-16-26-06.png)
 
-[New]ボタンで列挙定数を追加し、各行表の値を設定します。
+[Add Enumerator]ボタンで列挙定数を追加し、各行表の値を設定します。
 
 | Display Name | Description      |
 | ------------ | ---------------- |
@@ -71,12 +70,13 @@ Enumeration（列挙型）を作成します。
 | Multiply     | Multiplicatation |
 | Divide       | Division         |
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-02-13-15-54-15.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-03-05-16-28-01.png)
 
 ### Blueprintを複製する
 
 「BP_FlowControl_Switch」をDuplicate（複製）して、「BP_FlowControl_SwitchEnum」を作成します。
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-01-24-09-01-54.png)
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-03-05-16-30-10.png)
 
 
 ### 変数[CalcType]のVariableTypeを[Integer]から[EBPCalcType]に変更する
@@ -125,7 +125,7 @@ Enumeration（列挙型）はDisplayNameに設定した列挙定数しか設定�
 
 LevelEditorに戻り、「BP_FlowControl_SwitchEnum」をViewportにDrag&Dropします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-02-13-16-10-37.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-03-05-16-34-54.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
@@ -133,14 +133,14 @@ Level Editorの[Play]ボタンをクリックします。
 
 変数[CalcType]の値が[Subtract]なので、引き算の出力結果が表示されます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-01-24-10-21-59.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-03-05-16-35-28.png)
 
 ### すべて保存
 
 Blueprint側の説明はここまでになります。
 [Content Browser]から[Save All]ボタンをクリックし、[Save Selected]ボタンをクリックしてプロジェクトの変更のあったアセットをすべて保存します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-02-13-16-11-41.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-enumeration/2022-03-05-16-36-27.png)
 
 ## 参照URL
 

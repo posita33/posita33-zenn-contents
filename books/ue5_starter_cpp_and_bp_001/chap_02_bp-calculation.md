@@ -42,22 +42,21 @@ Blueprintで四則演算ノードを使用して、PrintStringで計算結果を
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-11-24-39.png)
 
-
 「Maps」フォルダを選択し、Nameに「Chapter_2_Calculation」を入力し、[Save]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-02-12-16-09-12.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-03-05-10-29-17.png)
 
 ### Blueprintを複製する
 
-「BP_ConstructionScript」を複製（Ctrl + W）して、「BP_Calculation」を作成します。
+「BP_ConstructionScript」を複製（Ctrl + D）して、「BP_Calculation」を作成します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-02-12-16-13-06.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-03-02-06-01-12.png)
 
 ### 計算に使用する変数を追加する
 
 「**BP_Calculation**」をBlueprint Editorで開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-02-12-16-14-34.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-03-02-06-07-35.png)
 
 四則演算ノードの計算で使用する変数を追加します。
 今回は**FloatとInegerの違いを説明するため**に、**VariableTypeをInteger**(**整数**)に設定します。
@@ -91,7 +90,7 @@ $$
 [PrintString]ノードの[TextColor]は赤を設定します。
 [PrintString]ノード同士を実行ピンで接続します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-01-18-16-26-47.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-03-05-10-21-24.png)
 
 [Compile]ボタンをクリックします。
 
@@ -99,7 +98,7 @@ $$
 
 Level Editorに戻り、Viewportに「**BP_Calculation**」をDrag&Dropします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-02-12-16-22-36.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-03-05-09-50-42.png)
 
 [Play]ボタンをクリックします。
 
@@ -139,12 +138,12 @@ $$
 
 「**BP_Calculation**」をBlueprint Editorで開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-02-12-16-14-34.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-03-05-09-51-49.png)
 
 足し算の処理を範囲選択して、Copy&Pasteします。
 [Add]ノードを削除します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-01-18-16-43-27.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-03-05-10-23-06.png)
 
 [**Subtract（引き算）**]ノードを追加します。
 CalcVarAからDrag&Dropし、[**-（マイナス）**]で検索します。
@@ -155,8 +154,7 @@ CalcVarAからDrag&Dropし、[**-（マイナス）**]で検索します。
 [**Subtract（引き算）**]ノードのOutputピンを[PrintString]ノードの[InString]ピンに接続します。
 [PrintString]ノードの[TextColor]ピンには「黄色」を設定します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-01-18-17-20-49.png)
-
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-03-05-09-57-24.png)
 
 [**Multiply（掛け算）**]ノードを追加します。
 [**Subtract（引き算）**]ノードを追加手順と同様に範囲選択してCopy&Pasteし、四則演算ノードを削除します。
@@ -168,7 +166,7 @@ CalcVarAからDrag&Dropし、[**\*（アスタリスク）**]で検索します�
 [**Multiply（掛け算）**]ノードのOutputピンを[PrintString]ノードの[InString]ピンに接続します。
 [PrintString]ノードの[TextColor]ピンには「緑」を設定します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-01-18-17-25-52.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-03-05-10-04-47.png)
 
 [**Divide（割り算）**]ノードを追加します。
 [**Subtract（引き算）**]ノードを追加手順と同様に範囲選択してCopy&Pasteし、四則演算ノードを削除します。
@@ -180,11 +178,11 @@ CalcVarAからDrag&Dropし、[**/（スラッシュ）**]で検索します。�
 [**Divide（割り算）**]ノードのOutputピンを[PrintString]ノードの[InString]ピンに接続します。
 [PrintString]ノードの[TextColor]ピンには「水色」を設定します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-01-18-17-27-24.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-03-05-10-03-27.png)
 
 四則演算ノード「**足し算（+）**」「**引き算（-）**」「**掛け算（×）**」「**割り算（÷）**」をPrintStringで出力するBlueprintです。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-01-18-17-31-52.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-03-05-10-06-14.png)
 
 [Compile]ボタンをクリックします。
 
@@ -225,14 +223,14 @@ UE4では型ごとに四則演算ノードが用意されていました。
 
 **UE5からはピンの型を変更できます。**
 
-[Divide]ノードのOutputピンを右クリックし、「Convert Pin... > Float」と選択します。
+[Divide]ノードのOutputピンを右クリックし、「Convert Pin... > Float Real」と選択します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-01-18-18-03-27.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-03-05-10-08-39.png)
 
 [**Divide（割り算）**]ノードのOutputピンから再び、[PrintString]ノードの[InString]ピンに接続します。
 [Integer]から[String]に変換するノードは使用しないので削除します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-01-18-18-05-01.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-03-05-10-10-11.png)
 
 [Compile]ボタンをクリックします。
 
@@ -250,7 +248,7 @@ UE4では型ごとに四則演算ノードが用意されていました。
 
 何を変数に設定するかでVariableTypeに気を付けましょう。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-01-18-18-10-17.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-03-05-10-12-59.png)
 
 ### MathExpressionノードで数式を書く
 
@@ -264,11 +262,11 @@ EventGraphを右クリックし、メニューから[Add Math Expression]を選�
 
 数式内のA,Bという文字列はInputピンに変換されます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-01-18-18-25-48.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-03-05-10-15-22.png)
 
 PrintStringノードでOutputピンの値を出力するように処理を修正します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-01-18-18-34-52.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-03-05-10-25-58.png)
 
 [Compile]ボタンをクリックします。
 
@@ -296,7 +294,7 @@ https://docs.unrealengine.com/4.27/ja/RenderingAndGraphics/Materials/ExpressionR
 Blueprint側の説明はここまでになります。
 [Content Drawer]から[Save All]ボタンをクリックし、[Save Selected]ボタンをクリックしてプロジェクトの変更のあったアセットをすべて保存します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-02-12-16-35-32.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-calculation/2022-03-05-10-30-39.png)
 
 ## 参照URL
 

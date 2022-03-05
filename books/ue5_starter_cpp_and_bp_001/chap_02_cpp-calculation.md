@@ -14,23 +14,23 @@ Blueprint版で実装した四則演算の結果をPrintStringで出力する処
 - 緑：Multiply（掛け算）ノード
 - 青：Divide（割り算）ノード
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-19-07-57-14.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-03-05-10-41-32.png)
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-19-07-57-30.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-03-05-10-41-51.png)
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-19-07-57-48.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-03-05-10-42-09.png)
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-19-09-43-43.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-03-05-10-42-25.png)
 
 ### 編集するActorクラスを作成する
 
 プロジェクトを閉じていたら、プロジェクトを開き、「Chapter_2_Calculation」を開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-02-12-18-35-03.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-03-05-10-43-16.png)
 
 [Tools]メニューから[New C++ Class]を開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-02-12-18-36-03.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-03-05-10-44-00.png)
 
 親クラスに[Actor]を選択します。
 
@@ -43,7 +43,7 @@ ClassTypeとClass名を設定します。
 | Class Type | Public         |
 | Name       | CPPCalculation |
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-02-12-18-38-34.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-03-05-10-45-34.png)
 
 Solution Explorerから今回編集する2つのファイルを開きます。
 
@@ -55,7 +55,7 @@ Solution Explorerから今回編集する2つのファイルを開きます。
 開いたファイルを学習する初期状態に修正します。
 この後にComponentやConstructionScriptは使用しないので処理を削除してあります。
 
-```cpp:.cpp
+```cpp:CPPCalculation.h
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
@@ -173,7 +173,7 @@ CPPCalculation.cpp BeginePlay関数に処理を追記します。
 		, Duration);
 ```
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-19-07-57-14.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-03-05-10-41-32.png)
 
 [Add]ノードは「KismetMathLibrary.h」で[Add_IntInt]関数として宣言されています。
 Blueprintを再現するので、使用するには「KismetMathLibrary.h」をincludeします。
@@ -247,7 +247,7 @@ PrintString関数以外は、Blueprintで使用したノードを使用しない
 LevelEditorに戻り「CPPCalculation」をViewportに配置します。
 Blueprit側のPrintStringが出力されると確認しづらいので、Viewportに配置した「BP_Calculation」を削除します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-02-12-18-59-43.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-03-05-10-54-36.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
@@ -294,8 +294,7 @@ Blueprint以外にもMaterialなど他のEditorでも四則演算ノードが用
 		, FColor::Yellow
 		, Duration);
 ```
-
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-19-07-57-30.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-03-05-10-41-51.png)
 
 ```cpp:CPPCalculation.cpp BeginePlay()
 	// Multiply(掛け算)の処理
@@ -310,7 +309,7 @@ Blueprint以外にもMaterialなど他のEditorでも四則演算ノードが用
 		, Duration);
 ```
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-19-07-57-48.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-03-05-10-42-09.png)
 
 ```cpp:CPPCalculation.cpp BeginePlay()
 	// Divide(割り算)の処理
@@ -326,7 +325,7 @@ Blueprint以外にもMaterialなど他のEditorでも四則演算ノードが用
 
 ```
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-01-19-09-43-43.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-03-05-10-42-25.png)
 
 ソースコードを保存して、Compileを実行します。
 
@@ -400,7 +399,7 @@ Level Editorの[Play]ボタンをクリックします。
 C++側の説明は以上になります。
 プロジェクトをすべて保存しましょう。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-02-12-19-20-01.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-calculation/2022-03-05-10-58-35.png)
 
 Visual StudioのSolutionもすべて保存しましょう。
 

@@ -34,6 +34,7 @@ chapters:
   - update-book
   - conclusion
   - chap_00_about
+  - chap_00_version_update
   - chap_01_settings
   - chap_01_ue5_install
   - chap_01_vs2019_setup

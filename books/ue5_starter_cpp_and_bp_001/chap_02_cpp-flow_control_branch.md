@@ -28,11 +28,11 @@ free: false
 
 プロジェクトを閉じていたら、プロジェクトを開き、「Chapter_2_FlowControl_Branch」を開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-02-12-21-09-50.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-03-05-11-28-31.png)
 
 [Tools]メニューから[New C++ Class]を開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-06-09-39.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-03-05-11-29-23.png)
 
 親クラスに[Actor]を選択します。
 
@@ -45,7 +45,7 @@ ClassTypeとClass名を設定します。
 | Class Type | Public               |
 | Name       | CPPFlowControlBranch |
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-06-12-16.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-03-05-11-30-56.png)
 
 Solution Explorerから今回編集する2つのファイルを開きます。
 
@@ -143,7 +143,7 @@ void ACPPFlowControlBranch::BeginPlay()
 private:
 	// Flow Control用の変数
 	bool IsPrintHello = true;
-	int32 CalcType = 1;
+	int32 CalcType = 0;
 	int32 NumA = 1;
 	int32 NumB = 2;
 	int32 NumC = 15;
@@ -219,7 +219,7 @@ void ACPPFlowControlBranch::BeginPlay()
 LevelEditorに戻り、「CPPFlowControlBranch」をViewportにDrag&Dropします。
 PrintStringの表示を分かりやすくするために、「BP_FlowControl_Branch」を削除します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-02-12-21-20-13.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-03-05-11-38-29.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
@@ -227,8 +227,7 @@ Level Editorの[Play]ボタンをクリックします。
 
 変数[IsPrintHello]の値がtrueなので、「Hello World!」を出力するPrintStringが実行されました。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-07-04-59.png)
-
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-03-05-11-40-18.png)
 
 ### 比較演算子で条件を書く（比較演算子ノード）
 
@@ -374,7 +373,7 @@ Level Editorの[Play]ボタンをクリックします。
 
 変数[NumC]の値は[15]なので、「NumCは10より大きく、30以下」の結果は[true]になり、「Hello World!」を出力するPrintStringの処理が実行されました。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-10-23-36.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-03-05-11-41-48.png)
 
 C++側の「AND Boolean」「OR Boolean」「Not Boolean」の書き方です。
 ```cpp
@@ -447,7 +446,7 @@ Level Editorの[Play]ボタンをクリックします。
 
 変数[Message]の値が「Blueprint Hello World!」で出力されました。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-10-39-25.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-03-05-11-43-11.png)
 
 条件演算子は変数の値を条件で値を代入できます。
 
@@ -499,12 +498,12 @@ Blueprint側と同様に、変数[CalcType]の数値で引き算の計算結果�
 
 ```cpp:CPPFlowControlBranch.h
 	// Flow Control用の変数
-	bool IsPrintHello = true;
+	bool IsPrintHello = false;
 	int32 CalcType = 1;
 	int32 NumA = 1;
 	int32 NumB = 2;
 	int32 NumC = 15;
-	bool IsPrintHello = true;
+	bool IsBlueprint = true;
 ```
 
 計算結果を出力する処理を変数[CalcType]の値で分岐するように変更しましょう。
@@ -565,14 +564,14 @@ Level Editorの[Play]ボタンをクリックします。
 
 変数[CalcType]の値が[1]なので、引き算の計算結果のPrintStringが実行されました。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-01-23-11-26-47.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-03-05-11-48-06.png)
 
 ### すべて保存
 
 C++側の説明は以上になります。
 プロジェクトをすべて保存しましょう。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-02-12-21-28-17.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_branch/2022-03-05-11-48-55.png)
 
 Visual StudioのSolutionもすべて保存しましょう。
 

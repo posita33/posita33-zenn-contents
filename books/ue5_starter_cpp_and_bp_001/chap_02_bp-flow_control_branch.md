@@ -51,13 +51,13 @@ free: false
 
 「Maps」フォルダを選択し、Nameに「Chapter_2_FlowControl_Branch」を入力し、[Save]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_branch/2022-02-12-20-29-46.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_branch/2022-03-05-11-02-56.png)
 
 ### Blueprintを複製する
 
 「BP_Calculation」を複製（Ctrl + W）して、「BP_FlowControl_Branch」を作成します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_branch/2022-02-12-20-33-50.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_branch/2022-03-05-11-05-01.png)
 
 ### Flow Controlに使用する変数を宣言する
 今回使用する変数を宣言します。
@@ -92,7 +92,7 @@ Sequenceノードの[Then 0]実行ピンと「Hello World!」を出力する[Pri
 
 LevelEditorに移動し、「BP_FlowControl_Branch」をViewportにDrag&Dropします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_branch/2022-02-12-20-39-09.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_branch/2022-03-05-11-13-12.png)
 
 [Play]ボタンをクリックします。
 
@@ -100,11 +100,11 @@ LevelEditorに移動し、「BP_FlowControl_Branch」をViewportにDrag&Dropし�
 
 「Hello World!」を出力する[PrintString]ノードの処理のみが実行されました。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_branch/2022-02-12-20-40-00.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_branch/2022-03-05-11-14-27.png)
 
 Playボタンを押した時にBlurprintEditorを表示しておくと、Blueprintがどのような動きをしているか確認できます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_branch/2022-02-12-20-41-50.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_branch/2022-03-05-11-16-11.png)
 
 [Branch]ノードは[Condition]ピンに接続したノードの値に応じて、実行される実行ピンが切り替わります。
 今回は変数[IsPrintHello]に[True]の値が設定されていたので、[Branch]ノードは[True]の実行ピンに処理を切り替えて、[Hello World!]を出力する[PrintString]ノードを実行しました。
@@ -124,7 +124,7 @@ graph TB
 
 変数[NumA]と変数[NumB]が一致しているかを比較して、その結果を[Branch]ノードの[Condition]ピンに接続します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_branch/2022-01-22-15-01-29.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_branch/2022-03-05-11-17-50.png)
 
 比較演算子ノードを追加する時は、比較演算子で検索し、図のノードコメントをメニューから選択します。
 後ほど、比較演算子の一覧を載せましたので有効活用してください。
@@ -141,7 +141,7 @@ graph TB
 
 計算結果のPrintStringが出力されました。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_branch/2022-02-12-20-46-59.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_branch/2022-03-05-11-19-56.png)
 
 変数[NumA]の値は[1]、変数[NumB]の値は[2]なので、一致しません。
 [Branch]ノードは[False]の実行ピンに処理を切り替えて、計算結果を出力する[PrintString]ノードを実行しました。
@@ -151,7 +151,7 @@ graph TB
 比較演算子は「一致している（Equal）」以外にも用意されています。
 一覧を用意しましたので、有効活用してください。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_branch/2022-01-22-16-46-25.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_branch/2022-03-05-11-20-27.png)
 
 | 検索Word | Menu項目      | Blueprint                                                                                            | 数式 | 読み方     | 使い方 | 意味             |
 | -------- | ------------- | ---------------------------------------------------------------------------------------------------- | ---- | ---------- | ------ | ---------------- |
@@ -185,7 +185,7 @@ graph TB
 
 「Hello World!」を出力する[PrintString]ノードの処理のみが実行されました。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_branch/2022-02-12-20-40-00.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_branch/2022-03-05-11-21-36.png)
 
 今回は変数[NumC]に[15]の値が設定されていたので、「10<NumC（15）」と[NumC（15）<30]の条件が両方ともTrueだったので、[AND Boolean]ノードは[True]になります。
 [Branch]ノードは[True]の処理に切り替えて、[Hello World!]を出力する[PrintString]ノードを実行しました。
@@ -207,7 +207,7 @@ graph TB
 論理演算子はこの3種類以外にも用意されています。
 興味があれば調べてみてください。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_branch/2022-01-22-22-07-26.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_branch/2022-03-05-11-22-24.png)
 
 ### 複数の選択肢で分岐する
 
@@ -234,7 +234,7 @@ DefaultValueを変更して、引き算のPrintStringが出力されるように
 
 引き算の結果が表示されます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_branch/2022-02-12-20-56-26.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_branch/2022-03-05-11-25-30.png)
 
 変数[IsPrintString]が[False]なので、最初の[Branch]ノードは[False]の実行ピンを実行します。
 次の[Branch]ノードでは、変数[CalcType]と値が一致していないので[False]の実行ピンを実行します。
@@ -248,4 +248,4 @@ DefaultValueを変更して、引き算のPrintStringが出力されるように
 Blueprint側の説明は以上になります。
 プロジェクトをすべて保存しましょう。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_branch/2022-02-12-21-04-32.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_branch/2022-03-05-11-26-57.png)

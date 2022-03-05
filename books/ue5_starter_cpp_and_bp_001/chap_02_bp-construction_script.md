@@ -39,9 +39,9 @@ ConstructionScriptタブはPlayが実行される前に、配置したActorのCo
 
 ### Blueprintを複製する
 
-「BP_Component」を複製（Ctrl + W）して、「BP_ConstructionScript」を作成します。
+「BP_Component」を複製（Ctrl + D）して、「BP_ConstructionScript」を作成します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-construction_script/2022-02-24-05-45-09.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-construction_script/2022-03-02-06-02-28.png)
 
 ### LevelEditorで編集可能な変数を追加する
 

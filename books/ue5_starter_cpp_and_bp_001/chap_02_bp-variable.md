@@ -42,10 +42,10 @@ Variable（変数）を使用した処理に変更します。
 
 学習でBlueprintを振り返れるように、ファイルが別々になるように複製します。
 複製したいBlueprintを右クリックし、[Duplicate（複製）]を選択します。
-ショートカットキーは[Ctrl + W]です。[Ctrl + C > Ctrl + V（コピー&ペースト）]でも同じことができますが、[Duplicate（複製）]は1回で複製できます。
+ショートカットキーは[Ctrl + D]です。[Ctrl + C > Ctrl + V（コピー&ペースト）]でも同じことができますが、[Duplicate（複製）]は1回で複製できます。
 名前を「BP_Variable」に設定します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-11-35-11.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-03-02-06-06-35.png)
 
 ### 変数を追加する（ノードのInputピンから）
 

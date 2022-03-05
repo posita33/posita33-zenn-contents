@@ -29,21 +29,20 @@ free: false
 
 「Maps」フォルダを選択し、Nameに「Chapter_2_FlowControl_Switch」を入力し、[Save]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_switch/2022-01-23-16-17-30.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_switch/2022-03-05-15-42-35.png)
 
 ### Blueprintを複製する
 
 「BP_FlowControl_Branch」をDuplicate（複製）して、「BP_FlowControl_Switch」を作成します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_switch/2022-01-23-16-20-45.png)
-
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_switch/2022-03-05-15-45-18.png)
 
 ### Switchノードを使用して数値で分岐する
 
 [Branch]ノードを複数使用して、変数[CalcType]の値に応じて計算結果の出力処理を切り替えました。
 [Switch]ノードを使用して、処理を見やすく変更しましょう。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_switch/2022-01-23-16-23-50.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_switch/2022-03-05-15-49-56.png)
 
 メニューから[Switch on int]を選択します。
 [Switch]ノードを追加する時は、追加したいVariableTypeのSwitchノードを[Switch （ValiableType）]で検索すると、メニューから見つけることができます。
@@ -71,7 +70,7 @@ Outputピンは以下のように計算結果の出力を切り替えます。
 
 LevelEditorに戻り、「BP_FlowControl_Switch」をViewportにDrag&Dropします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_switch/2022-02-12-21-49-14.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_switch/2022-03-05-15-54-16.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
@@ -79,7 +78,7 @@ Level Editorの[Play]ボタンをクリックします。
 
 変数[CalcType]の値が[1]なので、引き算の出力結果が表示されます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_switch/2022-01-23-16-58-06.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_switch/2022-03-05-15-54-50.png)
 
 [Switch]ノードを使用することで処理の流れが見やすくなりました。
 
@@ -102,4 +101,4 @@ Level Editorの[Play]ボタンをクリックします。
 Blueprint側の説明はここまでになります。
 [Content Browser]から[Save All]ボタンをクリックし、[Save Selected]ボタンをクリックしてプロジェクトの変更のあったアセットをすべて保存します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_switch/2022-02-12-21-50-51.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_switch/2022-03-05-15-56-28.png)

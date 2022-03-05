@@ -16,15 +16,15 @@ BlueprintのSwitchノードをC++で再現します。
 プロジェクトを閉じていたら、プロジェクトを開き、
 「Chapter_2_FlowControl_Switch」を開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-02-12-21-55-24.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-03-05-16-01-42.png)
 
 [Tools]メニューから[New C++ Class]を開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-01-23-18-41-57.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-03-05-16-02-36.png)
 
 親クラスに[Actor]を選択します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-02-23-08-39-27.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-03-05-16-04-32.png)
 
 ClassTypeとClass名を設定します。
 
@@ -253,7 +253,7 @@ void ACPPFlowControlSwitch::BeginPlay()
 「CPPFlowControlSwitch」をViewportにDrag&Dropします。
 PrintStringの出力結果が分かりづらくなるので、「BP_FlowControl_Switch」を削除します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-02-13-15-31-22.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-03-05-16-08-50.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
@@ -261,14 +261,14 @@ Level Editorの[Play]ボタンをクリックします。
 
 変数[CalcType]の値が[1]なので、引き算の出力結果が表示されます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-01-23-21-35-57.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-03-05-16-09-29.png)
 
 ### すべて保存
 
 C++側の説明は以上になります。
 プロジェクトをすべて保存しましょう。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-02-13-15-38-26.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_switch/2022-03-05-16-10-40.png)
 
 Visual StudioのSolutionもすべて保存しましょう。
 

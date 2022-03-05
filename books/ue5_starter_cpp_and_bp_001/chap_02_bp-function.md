@@ -34,14 +34,14 @@ free: false
 
 「Maps」フォルダを選択し、Nameに「Chapter_2_Function」を入力し、[Save]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-Function/2022-01-25-08-55-15.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-function/2022-03-05-17-11-58.png)
 
 
 ### Blueprintを複製する
 
 「BP_FlowControl_SwitchEnum」を複製（Ctrl + W）して、「BP_Function」を作成します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-Function/2022-01-25-09-02-46.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-function/2022-03-05-17-13-56.png)
 
 
 ### Function[Sum]を作成する
@@ -105,7 +105,7 @@ Function[Sum]の実行ピンを通過するように、変数[CalcType]のDefaul
 
 LevelEditorに戻り、「BP_Function」をViewportにDrag&Dropします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-function/2022-02-13-17-02-07.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-function/2022-03-05-17-21-19.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
@@ -113,7 +113,7 @@ Level Editorの[Play]ボタンをクリックします。
 
 Function[Sum]で計算した結果が表示されます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-Function/2022-01-25-10-07-14.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-function/2022-03-05-17-22-23.png))
 
 Functionを使用した時の処理の流れは図のようになります。
 
@@ -220,7 +220,7 @@ Input[A],[B],[Duration]を接続されていない、「引き算」,「掛け�
 Function Nameを[PrintCalcResult]に変更します。
 Inputの順番を入れ替えたり、適切な名称に変更します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-Function/2022-01-25-12-15-33.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-function/2022-03-05-17-38-44.png)
 
 計算結果を出力する処理が1つの関数にまとめられました。
 
@@ -244,14 +244,14 @@ Level Editorの[Play]ボタンをクリックします。
 
 先ほどと同じ足し算の計算結果が表示されました。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-Function/2022-01-25-12-28-09.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-function/2022-03-05-17-41-35.png)
 
 ### すべて保存
 
 Blueprint側の説明は以上になります。
 プロジェクトをすべて保存しましょう。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-function/2022-02-13-17-09-37.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-function/2022-03-05-17-43-40.png)
 
 ## 参照URL
 

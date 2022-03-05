@@ -28,11 +28,11 @@ Blueptintの計算結果の出力処理するFunction[PrintCalcResult]を再現�
 プロジェクトを閉じていたら、プロジェクトを開き、
 「Chapter_2_Function」を開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-02-13-17-12-08.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-03-05-17-45-38.png)
 
 [Tools]メニューから[New C++ Class]を開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-01-26-07-31-47.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-03-05-17-46-23.png)
 
 親クラスに[Actor]を選択します。
 
@@ -45,7 +45,7 @@ ClassTypeとClass名を設定します。
 | Class Type | Public      |
 | Name       | CPPFunction |
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-01-26-07-37-35.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-03-05-17-48-08.png)
 
 Solution Explorerから今回編集する2つのファイルを開きます。
 
@@ -242,7 +242,7 @@ switch文のAddの分岐に入るため、「CPPFunction.h」に宣言されて�
 「CPPFunction」をViewportにDrag&Dropします。
 PrintStringの出力結果が分かりづらくなるので、「BP_Function」を削除します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-02-13-17-22-03.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-03-05-17-53-29.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
@@ -250,7 +250,7 @@ Level Editorの[Play]ボタンをクリックします。
 
 Function[Sum]が実行され、足し算の計算結果が出力されます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-01-26-09-25-43.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-03-05-17-54-07.png)
 
 ### Function内でのみ使用できるLocal Variable（ローカル変数）を宣言する
 
@@ -345,7 +345,7 @@ Level Editorの[Play]ボタンをクリックします。
 
 値渡しのFunction[Sum]と参照渡しのFunction[SumRef]は同じ結果を出力します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-01-26-09-25-43.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-03-05-17-54-07.png)
 
 何が違うのでしょうか？
 
@@ -602,14 +602,14 @@ Function化することで、何の処理をするのか明確になり読みや
 
 そのようなときにはFunction化を考えてみてはいかがでしょうか。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-01-26-15-56-36.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-03-05-17-54-07.png)
 
 ### すべて保存
 
 C++側の説明は以上になります。
 プロジェクトをすべて保存しましょう。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-02-13-17-30-23.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-03-05-17-59-06.png)
 
 Visual StudioのSolutionもすべて保存しましょう。
 

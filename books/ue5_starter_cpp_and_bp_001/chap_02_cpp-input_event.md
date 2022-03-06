@@ -9,21 +9,21 @@ free: false
 
 キーボードやゲームコントローラーの入力イベントからPrintStringを出力します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-01-27-18-32-22.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-03-06-09-58-18.png)
 
 Project Settingsに入力イベントを追加して、Blueprintで追加した入力イベント呼び出します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-01-27-19-13-30.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-03-06-10-19-40.png)
 
 ### 編集するActorクラスを作成する
 
 プロジェクトを閉じていたら、プロジェクトを開き、「Chapter_2_InputEvent」を開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-input_event/2022-02-13-17-52-13.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-input_event/2022-03-06-10-24-20.png)
 
 [Tools]メニューから[New C++ Class]を開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-input_event/2022-01-28-06-14-25.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-input_event/2022-03-06-10-25-00.png)
 
 親クラスに[Actor]を選択します。
 
@@ -36,7 +36,7 @@ ClassTypeとClass名を設定します。
 | Class Type | Public         |
 | Name       | CPPInputEvent |
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-input_event/2022-01-28-06-19-06.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-input_event/2022-03-06-10-26-28.png)
 
 Solution Explorerから今回編集する2つのファイルを開きます。
 
@@ -164,7 +164,7 @@ void ACPPInputEvent::PrintCalcResult(const ECPPCalcType Type, const int32 A, con
 
 Blueprintの点線で囲んだ箇所をC++で再現します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-input_event/2022-01-28-10-58-07.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-input_event/2022-03-06-10-30-48.png)
 
 「CPPInputEvent.h」に必要となるプロトタイプ宣言を記述します。
 
@@ -279,7 +279,7 @@ Build.csを修正したことでLinkエラーが解決しました。
 「CPPInputEvent」をViewportにDrag&Dropします。
 PrintStringの出力結果が分かりづらくなるので、「BP_InputEvent」を削除します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-input_event/2022-02-13-18-04-20.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-input_event/2022-03-06-10-36-53.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
@@ -288,17 +288,17 @@ Level Editorの[Play]ボタンをクリックします。
 [H]キーの入力するとPrintStringが出力されます。
 Blueprintのキーボード入力イベントの処理を再現できました。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-input_event/2022-01-28-09-37-47.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-input_event/2022-03-06-10-38-28.png)
 
 ### Project Settingsで追加したActionイベントを追加する
 
 Project settingsでActionを追加しました。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-input_event/2022-01-28-10-25-13.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-input_event/2022-03-06-10-39-40.png)
 
 BlueprintでActionEventを使用した処理をC++で再現します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-input_event/2022-01-28-11-10-42.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-input_event/2022-03-06-10-40-53.png)
 
 「CPPInputEvent.h」にAction「PrintCalcResult」が発生した時に処理する関数のプロトタイプを宣言します。
 
@@ -339,14 +339,14 @@ Level Editorの[Play]ボタンをクリックします。
 
 Action[ActionPrintCalcResult]に設定した[C]キーを入力すると、[PressedActionPrintCalcResult]が処理されます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-input_event/2022-01-28-10-40-04.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-input_event/2022-03-06-10-44-54.png)
 
 ### すべて保存
 
 C++側の説明は以上になります。
 プロジェクトをすべて保存しましょう。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-input_event/2022-02-13-18-10-27.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-input_event/2022-03-06-10-46-10.png)
 
 Visual StudioのSolutionもすべて保存しましょう。
 

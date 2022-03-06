@@ -9,11 +9,11 @@ free: false
 
 キーボードやゲームコントローラーの入力イベントからPrintStringを出力します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-01-27-18-32-22.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-03-06-09-58-18.png)
 
 Project Settingsに入力イベントを追加して、Blueprintで追加した入力イベント呼び出します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-01-27-19-13-30.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-03-06-10-19-40.png)
 
 ### 学習用の新規レベル「Chapter_2_InputEvent」を作成する
 
@@ -33,13 +33,13 @@ Project Settingsに入力イベントを追加して、Blueprintで追加した�
 
 「Maps」フォルダを選択し、Nameに「Chapter_2_InputEvent」を入力し、[Save]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-01-27-17-56-03.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-03-06-09-43-38.png)
 
 ### Blueprintを複製する
 
 「BP_Function」を複製（Ctrl + W）して、「BP_InputEvent」を作成します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-01-27-18-00-10.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-03-06-09-47-04.png)
 
 ### キーボード入力イベントノードを追加する
 
@@ -55,14 +55,14 @@ Project Settingsに入力イベントを追加して、Blueprintで追加した�
 
 「H」のイベントノードの[Pressed][Released]の[実行]ピンを[PrintString]ノードとFunction[PrintCalcResult]ノードの[実行]ピンに接続します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-01-27-18-13-23.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-03-06-09-49-36.png)
 
 [Compile]ボタンをクリックします。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-01-27-18-14-10.png)
 
 Level Editorに戻り、「BP_InputEvent」をViewportにDrag&Dropします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-02-13-17-41-35.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-03-06-09-50-50.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
@@ -70,7 +70,7 @@ Level Editorの[Play]ボタンをクリックします。
 
 [H]キーを入力してもBlueprintが反応しません。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-01-27-18-18-16.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-03-06-09-52-48.png)
 
 ### [Enable Input]ノードを有効にしてキーボード入力できるようにする
 
@@ -87,7 +87,7 @@ Blueprintが入力を受け付けるように修正します。
 
 [Sequence]ノード[Then 0]の[実行]ピンを[Enable Input]ノードの[実行]ピンに接続します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-01-27-18-26-56.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-03-06-09-56-25.png)
 
 [Compile]ボタンをクリックします。
 
@@ -99,12 +99,11 @@ Level Editorの[Play]ボタンをクリックします。
 
 [H]キーを入力するとBlueprintが反応します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-01-27-18-32-22.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-03-06-09-58-18.png)
 
 入力イベントノードは「Pressed（キーを押した）」「Released（キーを離した）」の入力を取得できます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-01-27-18-35-53.png)
-
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-03-06-10-00-03.png)
 
 ### Project Settingsで入力イベントを追加する
 
@@ -115,7 +114,7 @@ Level Editorの[Play]ボタンをクリックします。
 - [Edit]メニュー > [Project Settings...]
 - 右上の[Settings] > [Project Settings...]
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-01-27-18-45-33.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-03-06-10-03-21.png)
 
 入力の設定は[Engine]カテゴリーの[Input]から行います。
 [Bindings]カテゴリーで詳細な入力設定を行えます。
@@ -127,18 +126,18 @@ Level Editorの[Play]ボタンをクリックします。
 
 [Action Mappings]の[+]ボタンをクリックするとActionイベントが追加されます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-01-27-19-56-08.png)
-
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-03-06-10-05-49.png)
 
 Action Mappingsに追加されたActionを設定します。
 
 - Action Name：ActionPrintCalcResult
 - Input Key：Cキー
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-01-27-18-54-03.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-03-06-10-09-31.png)
 
 Inputキーの左側のアイコンをクリックしてから、設定したいキーを入力すると設定したいキーが設定されます。
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-01-27-18-55-45.png)
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-03-06-10-11-03.png)
 
 キーボード以外にもゲームパッドの入力を同じActionに設定できます。
 Action名の[+]ボタンをクリックすることでInputキーを追加できます。
@@ -152,7 +151,7 @@ Action名の[+]ボタンをクリックすることでInputキーを追加でき
 | ゲームパッド Xボタン | Gamepad Face Button Left   |
 | ゲームパッド Yボタン | Gamepad Face Button Top    |
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-01-27-19-01-32.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-03-06-10-13-42.png)
 
 ### Project Settingsで追加したActionイベントを追加する
 
@@ -160,7 +159,7 @@ Project Settingsで追加したActionイベントを入力した時にFunction[P
 
 「BP_InputEvent」を開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-02-13-17-46-38.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-03-06-10-14-41.png)
 
 メニューからProject Settingsで追加したInput Actionイベント[ActionPrintCalcResult]を選択します。
 
@@ -168,7 +167,7 @@ Project Settingsで追加したActionイベントを入力した時にFunction[P
 
 Input Action[PrintCalcResult]の[Pressed]をFunction[PrintCalcResult]の[実行]ピンに接続します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-01-27-19-09-49.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-03-06-10-17-12.png)
 
 [Compile]ボタンをクリックします。
 
@@ -180,14 +179,14 @@ Level Editorの[Play]ボタンをクリックします。
 
 Project Settingsで追加したActionイベントを入力した時にunction[PrintCalcResult]を処理するようになりました。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-01-27-19-13-30.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-03-06-10-19-40.png)
 
 ### すべて保存する
 
 Blueprint側の説明は以上になります。
 プロジェクトをすべて保存しましょう。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-02-13-17-49-29.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-03-06-10-20-49.png)
 
 ## 参照URL
 

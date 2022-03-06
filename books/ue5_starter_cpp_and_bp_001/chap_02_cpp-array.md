@@ -9,7 +9,8 @@ free: false
 
 変数をArray（配列）に変更します。
 Array（配列）の設定方法や取得について解説します。
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-01-29-22-59-46.png)
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-03-06-11-48-01.png)
 
 Array（配列）の取得でよく使用する2つの方法について解説します。
 
@@ -18,13 +19,13 @@ Array（配列）の取得でよく使用する2つの方法について解説�
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-01-30-11-58-55.png)
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-01-30-07-50-57.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-03-06-13-16-36.png)
 
 ### 編集するActorクラスを作成する
 
 プロジェクトを閉じていたら、プロジェクトを開き、「Chapter_2_Array」を開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-array/2022-02-13-19-07-25.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-array/2022-03-06-13-21-06.png)
 
 [Tools]メニューから[New C++ Class]を開きます。
 
@@ -41,7 +42,7 @@ ClassTypeとClass名を設定します。
 | Class Type | Public   |
 | Name       | CPPArray |
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-array/2022-01-30-18-56-26.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-array/2022-03-06-13-23-31.png)
 
 Solution Explorerから今回編集する2つのファイルを開きます。
 
@@ -228,7 +229,7 @@ void ACPPArray::PrintHello()
 
 変数[Message]を配列の変数[Messages]に変更してDefaultValueを設定しました。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-array/2022-01-30-21-40-54.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-array/2022-03-06-13-28-02.png)
 
 C++で再現すると以下のようになります。
 
@@ -250,7 +251,7 @@ TArray<(VariableType)> VariableName = { [0], [1], [2] };
 
 変数[Messages]から値を取得しました。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-array/2022-01-30-21-44-56.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-array/2022-03-06-13-29-12.png)
 
 C++で再現すると以下のようになります。
 
@@ -276,7 +277,7 @@ ArrayVariable[IndexNo]
 「ACPPArray」をViewportにDrag&Dropします。
 PrintStringの出力結果が分かりづらくなるので、「BP_Array」を削除します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-array/2022-02-13-19-17-32.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-array/2022-03-06-13-33-29.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
@@ -284,7 +285,7 @@ Level Editorの[Play]ボタンをクリックします。
 
 [H]キーをPressすると、変数[Messages]の[4]を取得するので、日本語の文字列が表示されました。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-array/2022-01-30-21-56-40.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-array/2022-03-06-13-36-07.png)
 
 TEXT("こんにちは世界!")を"こんにちは世界!"に変えてみます。
 
@@ -302,10 +303,10 @@ Level Editorの[Play]ボタンをクリックします。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
-”?????????????????????!”と文字化けして出力されてしまいました。
+”￣ﾁﾓ￣ﾂﾓ￣ﾁﾫ￣ﾁﾡ￣ﾁﾯ￤ﾸﾖ￧ﾕﾌ!”と文字化けして出力されてしまいました。
 これはUnreaEngineとテキストの文字コードが違うので起こってしまった現象です。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-array/2022-01-30-21-59-06.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-array/2022-03-06-13-37-43.png)
 
 TEXTマクロで文字列をUnrealEngineが使用している文字コードに文字列を変換してくれます。日本語のような文字列（2バイト文字）を扱いたい時にはTEXTマクロを使用してFStringの変数に値を代入してください。
 
@@ -321,7 +322,7 @@ FString str = TEXT("文字列");
 
 変数[Messages]からランダムに値を取得しました。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-array/2022-01-30-22-07-15.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-array/2022-03-06-13-38-27.png)
 
 C++で再現すると以下のようになります。
 
@@ -347,11 +348,11 @@ FMath::RandRange(Min, Max)
 
 配列の値をランダムに取得できました。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-array/2022-01-30-22-15-16.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-array/2022-03-06-13-41-13.png)
 
 Blueprintの処理はノードを複数つないでいますが、C++では1行で処理を書けます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-array/2022-01-30-22-18-34.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-array/2022-03-06-13-43-23.png)
 
 ### 変数[CalcType]を配列の変数[CalcTypes]に変更する
 
@@ -416,7 +417,7 @@ Level Editorの[Play]ボタンをクリックします。
 | 4    | 3                | [3]：Divide          | 4            | 4%4              | 0               |
 | 5    | 0                | [0]：Add             | 1            | 4%1              | 1               |
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-array/2022-01-30-22-47-18.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-array/2022-03-06-13-47-54.png)
 
 BlueprintとC++の処理の対応図です。
 
@@ -427,7 +428,7 @@ BlueprintとC++の処理の対応図です。
 C++側の説明は以上になります。
 プロジェクトをすべて保存しましょう。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-array/2022-02-13-19-27-28.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-array/2022-03-06-13-49-12.png)
 
 Visual StudioのSolutionもすべて保存しましょう。
 

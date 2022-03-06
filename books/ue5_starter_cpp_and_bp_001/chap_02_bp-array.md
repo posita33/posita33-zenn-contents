@@ -14,7 +14,7 @@ Array（配列）は同じVariableTypeを複数持つことができます。
 
 Array（配列）の設定方法や取得について解説します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-01-29-22-59-46.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-03-06-11-48-01.png)
 
 Array（配列）の取得でよく使用する2つの方法について解説します。
 
@@ -23,8 +23,7 @@ Array（配列）の取得でよく使用する2つの方法について解説�
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-01-30-11-58-55.png)
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-01-30-07-50-57.png)
-
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-03-06-13-16-36.png)
 
 ### 学習用の新規レベル「Chapter_2_Array」を作成する
 
@@ -44,34 +43,34 @@ Array（配列）の取得でよく使用する2つの方法について解説�
 
 「Maps」フォルダを選択し、Nameに「Chapter_2_Array」を入力し、[Save]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-01-29-21-54-06.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-03-06-11-38-36.png)
 
 ### Blueprintを複製する
 
 「BP_EventDispatchcer」を複製（Ctrl + D）して、「BP_Array」を作成します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-01-29-22-52-59.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-03-06-11-41-15.png)
 
 ### 変数[Message]を配列の変数[Messages]に変更する
 
 「BP_Array」を開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-02-13-21-04-39.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-03-06-11-41-57.png)
 
 変数[Message]を配列の変数[Messages]に変更します。
 
 変数[Message]を選択し、Variable Nameを[Messages]に変更します。配列の変数を宣言する時は複数形の名前にすると配列ということが分かりやすくなります。
 Variable Typeの右端のアイコンをクリックし、[Array（配列）]を選択します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-01-29-22-59-46.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-03-06-11-48-01.png)
 
 Variable TypeをArray（配列）に変更すると、変数をEvent Graphで使用しているので確認ダイアログが表示されます。[Change Variable Type]をクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-01-30-11-30-10.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-03-06-11-50-24.png)
 
 [My Blueprint]パネルの変数[Messages]のVariable Typeのアイコンが変わっています。アイコンを確認することで変数が配列か判別できます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-01-30-11-31-43.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-03-06-11-53-14.png)
 
 ### 変数[Messages]にDefault Valueを設定する
 
@@ -104,11 +103,11 @@ Default Valueの[+]ボタンをクリックすると設定できる要素が増�
 
 Variable Typeを変更したので、変数[Messages]のGetノードでエラーが発生しています。エラーとなっているピンの接続を切断します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-01-30-11-33-13.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-03-06-11-55-50.png)
 
 変数[Messages]のGetノードからDrag&Dropし、[Get（a ref）]を選択します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-01-30-11-35-34.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-03-06-11-57-07.png)
 
 Array（配列）のGetノードには[Get(a ref)]と[Get(a copy)]の2種類があります。
 Function（関数）で説明した「参照渡し」と「値渡し」でArray（配列）の値を取得するかの違いです。
@@ -121,15 +120,15 @@ Function（関数）で説明した「参照渡し」と「値渡し」でArray�
 日本語の"こんにちは世界!"を取得するように、Getノードの数値には[4]を設定します。
 Getノードを[Print String]ノードの[In String]に接続します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-01-30-11-38-45.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-03-06-11-59-25.png)
 
 [Compile]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-01-30-11-40-12.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-03-06-12-00-24.png)
 
 Level Editorに戻り、「BP_Array」をViewportにDrag&Dropします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-02-13-18-48-34.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-03-06-12-01-31.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
@@ -137,8 +136,7 @@ Level Editorの[Play]ボタンをクリックします。
 
 [H]キーをPressすると、変数[Messages]のIndex[4]に設定した文字列が表示されます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-01-29-23-16-07.png)
-
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-03-06-12-03-36.png)
 
 ### 変数[Messages]からランダムに値を取得する
 
@@ -147,14 +145,15 @@ Level Editorの[Play]ボタンをクリックします。
 まずは、変数[Messages]からランダムに値を取得する方法です。
 
 メニューから[Random Integer in Range]を選択します。
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-01-30-11-42-17.png)
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-03-06-12-51-05.png)
 
 [Random Integer in Range]の[Max]ピンに配列の最後のIndex Noである[4]を設定します。
 [Random Integer in Range]の[Return Value]ピンとGetノードを接続します。
 
 配列は[0]から始まるので、Index NoのMaxは「配列数 - 1」になります。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-01-30-11-45-10.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-03-06-12-53-43.png)
 
 [compile]ボタンをクリックします。
 
@@ -165,7 +164,8 @@ Level Editorの[Play]ボタンをクリックします。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-02-23-09-19-08.png)
 
 [H]キーをPressすると、変数[Messages]の文字列がランダムに表示されます。
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-01-30-06-38-46.png)
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-03-06-12-56-05.png)
 
 配列数が変わっても処理を変えずに済むように変更します。
 
@@ -181,7 +181,7 @@ Level Editorの[Play]ボタンをクリックします。
 配列は[0]から始まるので、Index NoのMaxは「配列数 - 1」になります。
 配列の数を増やしても処理を変えずにMaxの値を取得できます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-01-30-11-55-40.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-03-06-13-00-00.png)
 
 [compile]ボタンをクリックします。
 
@@ -197,7 +197,7 @@ Level Editorの[Play]ボタンをクリックします。
 
 配列からRandomのElementとIndexを取得できるRandom関数があります。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-02-06-12-01-04.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-03-06-13-03-33.png)
 
 Random関数から取得できるElementは値渡しになるので、参照渡しにしたい場合はRandom関数のIndexをGet（a ref）に渡して取得します。
 
@@ -233,7 +233,7 @@ Default Valueを設定するので、[Compile]ボタンをクリックします�
 | [2]   | Multiply |
 | [3]   | Divide   |
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-01-30-07-16-50.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-03-06-13-08-08.png)
 
 ### 変数[CalcTypes]の値を順番に取得して出力する
 
@@ -293,14 +293,14 @@ Level Editorの[Play]ボタンをクリックします。
 
 現在のIndex ÷ Length（配列数）の余りを現在のIndexに設定する処理はif文で最大数を比較しなくて済むのでスマートな書き方になります。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-01-30-07-50-57.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-03-06-13-16-36.png)
 
 ### すべて保存
 
 Blueprint側の説明は以上になります。
 プロジェクトをすべて保存しましょう。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-02-13-19-05-12.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-03-06-13-18-10.png)
 
 ## 参照URL
 

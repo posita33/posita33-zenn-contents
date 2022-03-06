@@ -15,7 +15,7 @@ Blueprintの3種類のLoopノードをC++で再現します。
 
 [For Loop]と[For Earch Loop]にはBreak付きのノードが用意されています。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_loop/2022-01-31-15-40-34.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-03-06-17-01-34.png)
 
 3つのLoopで同じ結果になる処理を紹介します。
 
@@ -23,24 +23,24 @@ Blueprintの3種類のLoopノードをC++で再現します。
 - For Each Loop
 - While Loop
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_loop/2022-01-31-15-40-54.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_loop/2022-03-06-16-30-47.png)
 *For Loop*
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_loop/2022-01-31-15-41-03.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_loop/2022-03-06-16-41-37.png)
 *For Each Loop*
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_loop/2022-01-31-15-41-14.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_loop/2022-03-06-17-03-22.png)
 *While Loop*
 
 ### 編集するActorクラスを作成する
 
 プロジェクトを閉じていたら、プロジェクトを開き、「Chapter_2_FlowControl_Loop」を開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-13-21-33-59.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-03-06-17-08-04.png)
 
 [Tools]メニューから[New C++ Class]を開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-01-05-41-06.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-03-06-17-08-47.png)
 
 親クラスに[Actor]を選択します。
 
@@ -53,7 +53,7 @@ ClassTypeとClass名を設定します。
 | Class Type | Public             |
 | Name       | CPPFlowControlLoop |
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-01-05-43-31.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-03-06-17-10-38.png)
 
 Solution Explorerから今回編集する2つのファイルを開きます。
 
@@ -253,7 +253,7 @@ void ACPPFlowControlLoop::PrintHello()
 
 For LoopノードでPrintStringを繰り返し呼び出した処理をC++で再現します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-03-05-49-38.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-03-06-17-13-25.png)
 
 C++でFor Loopノードを再現すると以下のようになります。
 indexでは文字が長いので、i,j,kといった1文字を使用します。
@@ -310,7 +310,7 @@ void ACPPFlowControlLoop::PrintHello()
 「CPPFlowControlLoop」をViewportにDrag&Dropします。
 PrintStringの出力結果が分かりづらくなるので、「BP_FlowControl_Loop」を削除します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-13-21-41-47.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-03-06-17-15-49.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
@@ -318,13 +318,13 @@ Level Editorの[Play]ボタンをクリックします。
 
 Blueprintと同様に配列のIndexNoがすべて出力された後に、Completedの文字が出力されました。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-01-06-43-14.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-03-06-17-20-56.png)
 
 ### For Loopノードで配列をすべて出力する
 
 [For Loop]ノードの[Last Index]ピンに配列[Messages]のLastIndexを接続して、配列をすべて出力する処理をC++で再現します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-01-05-49-07.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-03-06-17-21-26.png)
 
 C++ではfor文の条件を柔軟に書き換えられます。
 配列のLastIndexか配列数でfor文を続けるか条件を書きます。
@@ -372,13 +372,13 @@ Level Editorの[Play]ボタンをクリックします。
 
 Blueprintと同様に配列を最初から最後まで出力できました。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-01-07-06-48.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-03-06-17-24-05.png)
 
 ### For Loop with BreakノードでLoopを途中で抜ける
 
 配列[Messages]の文字列に「Boujour」が含まれていた時に[Break]実行ピンでLoopを途中で抜けた処理をC++で再現します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-01-05-51-31.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-03-06-17-24-42.png)
 
 C++ではfor文内の「`break`」が呼び出されるとfor文を途中で抜けます。
 
@@ -457,7 +457,7 @@ Level Editorの[Play]ボタンをクリックします。
 
 [Bonjour]が含まれていない、[Break]が実行される前の文字列のみ表示されました。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-02-05-58-37.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-03-06-17-26-38.png)
 
 ### continue文（C++のみ）
 
@@ -513,13 +513,13 @@ Level Editorの[Play]ボタンをクリックします。
 
 [Bonjour]が含まれていた文字以外は出力されました。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-02-05-55-59.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-03-06-17-28-37.png)
 
 ### Foreach Loop with Breakノードで配列をすべて出力する
 
 [For Loop with Break]ノードから[For Each Loop with Break]ノードに変更した処理をC++で再現します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-01-05-53-20.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-03-06-17-30-28.png)
 
 C++で[For Each Loop]ノードを再現した書き方は以下になります。
 
@@ -566,13 +566,13 @@ Level Editorの[Play]ボタンをクリックします。
 [For Each Loop with Break]ノードの処理と同様の結果となりました。
 配列を0～LastIndexまで処理するのであれば、「For Each Loop」の書き方が最適です。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-03-06-34-18.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-03-06-17-32-46.png)
 
 ### While loopノード
 
 最後に[While Loop]ノードの処理を再現します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-01-05-53-46.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-03-06-17-33-10.png)
 
 [While Loop]ノードはC++では以下のように書きます。
 whileの条件が[false]になった時、Loopを抜けます。
@@ -635,14 +635,14 @@ Level Editorの[Play]ボタンをクリックします。
 
 [While Loop]ノードと同様の処理になりました。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-02-06-34-19.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-03-06-17-35-37.png)
 
 ### すべて保存
 
 C++側の説明は以上になります。
 プロジェクトをすべて保存しましょう。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-02-13-21-48-17.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-flow_control_loop/2022-03-06-17-36-39.png)
 
 Visual StudioのSolutionもすべて保存しましょう。
 

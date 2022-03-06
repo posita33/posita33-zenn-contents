@@ -56,3 +56,12 @@ UE5のLevelEditor右下の小さいアイコンがC++のソースコードをコ
 列挙型(Enumeration)エディタのUIが変わりました。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_00_version_update/2022-03-05-16-24-36.png)
+
+構造体(Structure)エディタのUIが変わりました。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-structure/2022-02-05-06-00-20.png)
+
+UE5 Preview 1から変数の設定、Default Valueの設定でタブが分かれました。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_00_version_update/2022-03-06-19-23-24.png)
+

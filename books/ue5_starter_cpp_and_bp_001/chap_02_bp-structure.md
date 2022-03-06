@@ -15,11 +15,11 @@ Array（配列）との違いは、Array（配列）は1つのVariableTypeしか
 
 構造体の作り方について知ることができます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-structure/2022-02-05-14-46-35.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-structure/2022-03-06-19-21-27.png)
 
 構造体の設定について知ることができます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-structure/2022-02-05-06-00-20.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-structure/2022-03-06-19-23-12.png)
 
 PrintCalcResultのInputをStructer（構造体）に変更することでより処理が見やすくなります。
 
@@ -43,19 +43,19 @@ PrintCalcResultのInputをStructer（構造体）に変更することでより�
 
 「Maps」フォルダを選択し、Nameに「Chapter_2_Structure」を入力し、[Save]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-structure/2022-02-04-05-32-13.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-structure/2022-03-06-17-50-03.png)
 
 ### Blueprintを複製する
 
 「BP_FlowControl_Loop」を複製（Ctrl + D）して、「BP_Structure」を作成します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-structure/2022-02-04-05-35-51.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-structure/2022-03-06-17-52-41.png)
 
 ### Structure（構造体）「FBPCalcInfo」を作成する
 
 Structure（構造体）「FBPCalcInfo」を作成します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-structure/2022-02-04-05-40-37.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-structure/2022-03-06-17-53-55.png)
 *コンテンツブラウザの空きスペース右クリック > Blueprints > Structure*
 
 名前を「FBPCalcInfo」に設定します。
@@ -63,9 +63,9 @@ Structure（構造体）「FBPCalcInfo」を作成します。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-structure/2022-02-05-05-57-43.png)
 
 変数を追加する。
-[New Variable]ボタンをクリックすると変数が追加されます。
+[Add Variable]ボタンをクリックすると変数が追加されます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-structure/2022-02-05-06-02-04.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-structure/2022-03-06-18-01-30.png)
 
 変数を一覧に書かれている内容で設定します。
 
@@ -77,24 +77,26 @@ Structure（構造体）「FBPCalcInfo」を作成します。
 
 設定できたら、[Save]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-structure/2022-02-05-06-00-20.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-structure/2022-03-06-18-03-35.png)
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-structure/2022-03-06-18-07-44.png)
 
 ### Function[PrintCalcResult]を複製してFunction[PrintCalcResultArgStructure]を作成する
 
 「BP_Structure」を開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-structure/2022-02-13-21-56-03.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-structure/2022-03-06-18-08-47.png)
 
 Function「PrintCalcResult」のInput側を[FBPCalcInfo]に置き換えたFunction[PrintCalcResultArgStructure]を作成します。
 
 Function「PrintCalcResult」を複製します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-structure/2022-02-05-18-39-16.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-structure/2022-03-06-19-00-05.png)
 *Function「PrintCalcResult」を右クリック > Duplicate*
 
 名前を[PrintCalcResultArgStructure]に設定します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-structure/2022-02-05-05-54-24.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-structure/2022-03-06-19-02-08.png)
 
 InputをStructure（構造体）「FBPCalcInfo」を使用するように変更します。
 
@@ -106,7 +108,7 @@ InputをStructure（構造体）「FBPCalcInfo」を使用するように変更�
 [Duration]を「FBPCalcInfo」に入れなかったのは、[Duration]は計算には使わず、PrintStringに使用するための変数だからです。
 構造体は「何に使うか」のカテゴリー化ができるとメンバーが決まります。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-structure/2022-02-05-06-06-42.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-structure/2022-03-06-19-04-59.png)
 
 ### Structure（構造体）を分解する
 
@@ -150,7 +152,7 @@ Structure（構造体）のメンバーにアクセスできるBreakノードが
 
 Structure（構造体）[FBPCalcInfo]を使用した処理は以下のようになります。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-structure/2022-02-05-13-57-14.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-structure/2022-03-06-19-08-19.png)
 
 今回はStructure（構造体）のメンバーが少なかったので、どちらの分解方法を使用しても大丈夫でした。
 Structure（構造体）のメンバーが大量にある場合は、Breakノードで構造体にアクセスした方が見やすいです。
@@ -201,7 +203,7 @@ Inputが整理されて構造体化されることで、ピンに設定する項
 
 Level Editorに戻り、「BP_Structure」をViewportにDrag&Dropします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-structure/2022-02-13-22-01-55.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-structure/2022-03-06-19-13-06.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
@@ -209,15 +211,15 @@ Level Editorの[Play]ボタンをクリックします。
 
 [C]キーをPressするとFunction[PrintCalcResultArgStructure]はFunction[PrintCalcResult]と同様の処理を行います。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-structure/2022-02-05-14-42-52.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-structure/2022-03-06-19-14-08.png)
 
 ### Structure（構造体）の配列を使った処理に修正する
 
 Structure（構造体）もArray（配列）として宣言できます。
 
-| VariableName | VariableType         | Category     | DefaultValue |
-| ------------ | -------------------- | ------------ | ------------ |
-| CalcInfos    | FBPCalcInfo（Array） | Flow Control | 0            |
+| VariableName | VariableType         | Category     |
+| ------------ | -------------------- | ------------ |
+| CalcInfos    | FBPCalcInfo（Array） | Flow Control |
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-structure/2022-02-06-17-12-33.png)
 
@@ -250,14 +252,14 @@ Level Editorの[Play]ボタンをクリックします。
 
 [C]キーをPressするとFunction[PrintCalcResultArgStructure]はFunction[PrintCalcResult]と同様の処理を行います。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-structure/2022-02-05-14-42-52.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-structure/2022-03-06-19-17-32.png)
 
 ### すべて保存
 
 Blueprint側の説明は以上になります。
 プロジェクトをすべて保存しましょう。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-structure/2022-02-13-22-06-03.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-structure/2022-03-06-19-18-35.png)
 
 ## 参照URL
 

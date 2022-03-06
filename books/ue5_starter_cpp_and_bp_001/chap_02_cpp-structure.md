@@ -15,7 +15,7 @@ Array（配列）との違いは、Array（配列）は1つのVariableTypeしか
 
 C++の構造体の作り方について知ることができます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-structure/2022-02-06-17-55-37.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-structure/2022-03-06-19-26-04.png)
 
 PrintCalcResultのInputをStructer（構造体）に変更することでより処理が見やすくなります。
 C++では参照渡しをConst宣言できるので安全に処理が軽くなります。
@@ -26,11 +26,11 @@ C++では参照渡しをConst宣言できるので安全に処理が軽くなり
 
 プロジェクトを閉じていたら、プロジェクトを開き、「Chapter_2_Structure」を開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-structure/2022-02-13-22-08-25.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-structure/2022-03-06-19-27-16.png)
 
 [Tools]メニューから[New C++ Class]を開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-structure/2022-02-06-12-16-08.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-structure/2022-03-06-19-27-49.png)
 
 親クラスに[Actor]を選択します。
 
@@ -43,7 +43,7 @@ ClassTypeとClass名を設定します。
 | Class Type | Public       |
 | Name       | CPPStructure |
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-structure/2022-02-06-13-06-19.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-structure/2022-03-06-19-29-15.png)
 
 Solution Explorerから今回編集する2つのファイルを開きます。
 
@@ -257,11 +257,11 @@ Structure（構造体）「FCPPCalcInfo」を作成します。
 
 [Tools]メニューから[New C++ Class]を開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-structure/2022-02-06-12-16-08.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-structure/2022-03-06-21-59-03.png)
 
 親クラスに[None]を選択します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-structure/2022-02-06-12-21-05.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-structure/2022-03-06-22-02-03.png)
 
 ClassTypeとClass名を設定します。
 
@@ -270,7 +270,7 @@ ClassTypeとClass名を設定します。
 | Class Type | Public      |
 | Name       | CPPCalcInfo |
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-structure/2022-02-06-12-25-36.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-structure/2022-03-06-22-01-08.png)
 
 「CPPCalcInfo.h」のみ使用するので、「CPPCalcInfo.cpp」は削除します。
 
@@ -301,7 +301,7 @@ struct F(構造体名)
 
 BluerintのStructure（構造体）「FBPCalcInfo」をC++で再現します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-structure/2022-02-06-17-51-13.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-structure/2022-03-06-22-04-40.png)
 
 C++で再現すると以下のような書き方になります。
 
@@ -329,7 +329,7 @@ struct FCPPCalcInfo
 
 引数にStructure（構造体）「FBPCalcInfo」を渡すFunction[PrintCalcResultArgStructure]を作成します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-structure/2022-02-06-16-33-12.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-structure/2022-03-06-22-06-12.png)
 
 C++でFunction[PrintCalcResultArgStructure]を宣言します。
 
@@ -352,7 +352,7 @@ private：
 
 Function[PrintCalcResultArgStructure]のBlueprintの処理です。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-structure/2022-02-06-16-34-50.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-structure/2022-03-06-22-07-29.png)
 
 Structure（構造体）「FCPPCalcInfo」のメンバー変数にアクセスするには[構造体変数.メンバー変数名]と書きます。
 
@@ -461,7 +461,7 @@ void ACPPStructure::PressedActionPrintCalcResult()
 「CPPStructure」をViewportにDrag&Dropします。
 PrintStringの出力結果が分かりづらくなるので、「BP_Structure」を削除します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-structure/2022-02-13-22-32-02.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-structure/2022-03-06-22-12-11.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
@@ -469,14 +469,14 @@ Level Editorの[Play]ボタンをクリックします。
 
 [C]キーをPressするとStructure（構造体）の配列を順番に処理します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-structure/2022-02-06-17-43-37.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-structure/2022-03-06-22-14-17.png)
 
 ### すべて保存
 
 C++側の説明は以上になります。
 プロジェクトをすべて保存しましょう。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-structure/2022-02-13-22-33-37.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-structure/2022-03-06-22-15-21.png)
 
 Visual StudioのSolutionもすべて保存しましょう。
 

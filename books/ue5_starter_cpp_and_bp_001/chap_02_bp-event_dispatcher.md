@@ -11,7 +11,7 @@ Event Dispatcherを作成します。
 作成したEvent DispatcherにCustom EventをBindします。
 「H」キーをPressした時に、Event Dispatherを呼び出し、Custom Eventを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-event_dispatcher/2022-01-28-15-52-22.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-event_dispatcher/2022-03-06-11-13-14.png)
 
 ### 学習用の新規レベル「Chapter_2_EventDispatcher」を作成する
 
@@ -31,13 +31,13 @@ Event Dispatcherを作成します。
 
 「Maps」フォルダを選択し、Nameに「Chapter_2_EventDispather」を入力し、[Save]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-event_dispatcher/2022-01-28-14-55-19.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-event_dispatcher/2022-03-06-10-50-33.png)
 
 ### Blueprintを複製する
 
-「BP_InputEvent」を複製（Ctrl + W）して、「BP_EventDispatcher」を作成します。
+「BP_InputEvent」を複製（Ctrl + D）して、「BP_EventDispatcher」を作成します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-event_dispatcher/2022-01-28-14-58-03.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-event_dispatcher/2022-03-06-10-53-01.png)
 
 ### Event Dispatcher[OnPrintHello]を追加する
 
@@ -45,12 +45,12 @@ Event Dispatcher[OnPrintHello]を作成します。
 
 「BP_EventDispatcher」を開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-event_dispatcher/2022-02-13-18-18-23.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-event_dispatcher/2022-03-06-10-57-09.png)
 
 [My Blueprint]パネルの[Event Dispatchers]カテゴリーの[+]ボタンをクリックします。
 追加されたEvent Dispatherの名前を[OnPrintHello]に設定します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-event_dispatcher/2022-01-28-15-14-25.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-event_dispatcher/2022-03-06-11-00-18.png)
 
 ### Event Dispatcher[OnPrintHello]をCustom Event[PrintHello]にバインドする
 
@@ -71,18 +71,18 @@ Event Dispatcher[OnPrintHello]をEvent GraphにDrag&Dropします。
 Custom Event[PrintHello]の[実行]ピンを”Hello World!”を出力するPrintStringに接続します。
 「H」キーのPressedの接続を切ります。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-event_dispatcher/2022-01-28-15-29-54.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-event_dispatcher/2022-03-06-11-03-08.png)
 
 ### 「H」キーのPressedからEventDispatcher「OnPrintHello」を呼び出す
 
 Event Dispatcher[OnPrintHello]をEvent GraphにDrag&Dropします。
 メニューから[Call]を選択します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-event_dispatcher/2022-01-28-15-31-37.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-event_dispatcher/2022-03-06-11-04-52.png)
 
 「H」キーのPressedとEvent Dispatcher[OnPrintHello]のCallノードを接続します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-event_dispatcher/2022-01-28-15-34-52.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-event_dispatcher/2022-03-06-11-06-33.png)
 
 [Compile]ボタンをクリックします。
 
@@ -90,7 +90,7 @@ Event Dispatcher[OnPrintHello]をEvent GraphにDrag&Dropします。
 
 Level Editorに戻り、「BP_EventDispatcher」をViewportにDrag&Dropします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-event_dispatcher/2022-02-13-18-22-19.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-event_dispatcher/2022-03-06-11-07-46.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
@@ -98,19 +98,19 @@ Level Editorの[Play]ボタンをクリックします。
 
 「H」キーをPressすると、Event Dispatcher[OnPrintHello]のCallノードが呼ばれた後に、Custom Event[PrintHello]が呼ばれます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-event_dispatcher/2022-01-28-15-45-55.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-event_dispatcher/2022-03-06-11-10-19.png)
 
 Event DispatherにBindしたイベントは、Event Dispatherを呼び出す（Call）と、Bindしたイベントが呼ばれます。
 イベントを呼ぶことがTrrigerとなるので、Tickイベントで監視するような処理を書くより処理が軽くなります。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-event_dispatcher/2022-01-28-15-52-22.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-event_dispatcher/2022-03-06-11-13-14.png)
 
 ### すべて保存する
 
 Blueprint側の説明は以上になります。
 プロジェクトをすべて保存しましょう。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-event_dispatcher/2022-02-13-18-24-42.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-event_dispatcher/2022-03-06-11-14-21.png)
 
 ## 参照URL
 

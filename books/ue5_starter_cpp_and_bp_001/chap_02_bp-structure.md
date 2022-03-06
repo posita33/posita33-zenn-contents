@@ -47,7 +47,7 @@ PrintCalcResultのInputをStructer（構造体）に変更することでより�
 
 ### Blueprintを複製する
 
-「BP_FlowControl_Loop」を複製（Ctrl + W）して、「BP_Structure」を作成します。
+「BP_FlowControl_Loop」を複製（Ctrl + D）して、「BP_Structure」を作成します。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-structure/2022-02-04-05-35-51.png)
 

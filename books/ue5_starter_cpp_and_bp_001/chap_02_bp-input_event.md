@@ -37,7 +37,7 @@ Project Settingsに入力イベントを追加して、Blueprintで追加した�
 
 ### Blueprintを複製する
 
-「BP_Function」を複製（Ctrl + W）して、「BP_InputEvent」を作成します。
+「BP_Function」を複製（Ctrl + D）して、「BP_InputEvent」を作成します。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-input_event/2022-03-06-09-47-04.png)
 

@@ -39,7 +39,7 @@ free: false
 
 ### Blueprintを複製する
 
-「BP_FlowControl_SwitchEnum」を複製（Ctrl + W）して、「BP_Function」を作成します。
+「BP_FlowControl_SwitchEnum」を複製（Ctrl + D）して、「BP_Function」を作成します。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-function/2022-03-05-17-13-56.png)
 

@@ -53,7 +53,7 @@ Blueprintには3種類のLoopノードが用意されています。
 
 ### Blueprintを複製する
 
-「BP_Array」を複製（Ctrl + W）して、「BP_FlowControl_Loop」を作成します。
+「BP_Array」を複製（Ctrl + D）して、「BP_FlowControl_Loop」を作成します。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-flow_control_loop/2022-01-31-11-23-03.png)
 

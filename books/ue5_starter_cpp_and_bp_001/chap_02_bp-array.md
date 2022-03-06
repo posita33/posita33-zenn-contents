@@ -48,7 +48,7 @@ Array（配列）の取得でよく使用する2つの方法について解説�
 
 ### Blueprintを複製する
 
-「BP_EventDispatchcer」を複製（Ctrl + W）して、「BP_Array」を作成します。
+「BP_EventDispatchcer」を複製（Ctrl + D）して、「BP_Array」を作成します。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-array/2022-01-29-22-52-59.png)
 

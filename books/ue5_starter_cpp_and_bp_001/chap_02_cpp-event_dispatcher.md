@@ -11,17 +11,17 @@ Event Dispatcherを作成します。
 作成したEvent DispatcherにCustom EventをBindします。
 「H」キーをPressした時に、Event Dispatherを呼び出し、Custom Eventを実行します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-event_dispatcher/2022-01-28-15-52-22.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-event_dispatcher/2022-03-06-11-13-14.png)
 
 ### 編集するActorクラスを作成する
 
 プロジェクトを閉じていたら、プロジェクトを開き、「Chapter_2_EventDispatcher」を開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-event_dispatcher/2022-02-13-18-27-41.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-event_dispatcher/2022-03-06-11-20-19.png)
 
 [Tools]メニューから[New C++ Class]を開きます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-event_dispatcher/2022-01-28-17-46-17.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-event_dispatcher/2022-03-06-11-21-00.png)
 
 親クラスに[Actor]を選択します。
 
@@ -34,7 +34,7 @@ ClassTypeとClass名を設定します。
 | Class Type | Public             |
 | Name       | CPPEventDispatcher |
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-event_dispatcher/2022-01-28-17-51-00.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-event_dispatcher/2022-03-06-11-22-39.png)
 
 Solution Explorerから今回編集する2つのファイルを開きます。
 
@@ -200,7 +200,7 @@ void ACPPEventDispatcher::PressedActionPrintCalcResult()
 Blueprintで[My Blueprint]パネルの[Event Dispatchers]カテゴリーにEvent Dispatcher[OnPrintHello]を追加しました。
 C++でEvent Dispatcherを再現します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-event_dispatcher/2022-01-28-23-36-41.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-event_dispatcher/2022-03-06-11-24-13.png)
 
 C++では以下のようなソースコードになります。
 
@@ -217,7 +217,7 @@ public:
 
 Event Dispatcher[OnPrintHello]をCustom Event[PrintHello]にバインドする処理をC++で再現します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-event_dispatcher/2022-01-28-23-59-30.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-event_dispatcher/2022-03-06-11-25-58.png)
 
 「ACPPEventDispatcher.h」にコンストラクタとカスタムイベントにあたる関数[PrintHello]のプロトタイプを宣言します。
 
@@ -251,7 +251,7 @@ void ACPPEventDispatcher::PrintHello()
 
 「H」キーのPressedからEvent Dispatcher[OnPrintHello]のCallノードを呼び出す処理をC++で再現します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-event_dispatcher/2022-01-29-00-44-55.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-event_dispatcher/2022-03-06-11-29-24.png)
 
 Broadcast()がCallノードにあたります。
 
@@ -270,7 +270,7 @@ void ACPPEventDispatcher::PressedH()
 「ACPPEventDispatcher」をViewportにDrag&Dropします。
 PrintStringの出力結果が分かりづらくなるので、「BP_EventDispatcher」を削除します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-event_dispatcher/2022-02-13-18-37-46.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-event_dispatcher/2022-03-06-11-31-49.png)
 
 Level Editorの[Play]ボタンをクリックします。
 
@@ -278,7 +278,7 @@ Level Editorの[Play]ボタンをクリックします。
 
 「H」キーをPressすると、「OnPrintHello.Broadcast()」が呼ばれ、バインドしていたCustom Event[PrintHello]が呼ばれます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-event_dispatcher/2022-01-29-00-56-16.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-event_dispatcher/2022-03-06-11-33-07.png)
 
 BlueprintとC++との処理を対応させた図です。
 
@@ -289,7 +289,7 @@ BlueprintとC++との処理を対応させた図です。
 C++側の説明は以上になります。
 プロジェクトをすべて保存しましょう。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-event_dispatcher/2022-02-13-18-39-11.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-event_dispatcher/2022-03-06-11-34-04.png)
 
 Visual StudioのSolutionもすべて保存しましょう。
 

@@ -398,7 +398,7 @@ Level Editorの[Play]ボタンをクリックします。
 値渡しのFunction[Sum]の計算は「7 + 3 = 16」で間違っています。
 参照渡しのFunction[SumRef]の計算は「9 + 7 = 16」で正しいです。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-01-26-14-37-01.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-function/2022-03-06-09-38-34.png)
 
 値渡しのFunction[Sum]の計算は「7 + 3 = 16」で間違っています。
 

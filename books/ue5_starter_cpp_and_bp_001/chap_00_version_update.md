@@ -10,6 +10,20 @@ Unreal Engineは年間で2~3バージョンがアップします。
 本の画像がバージョンアップに追いついていないことがあります。
 このページでは本に影響があるバージョンアップによる変更点をまとめています。
 
+## UE5 Preivew 2
+
+2022/2/23にUE5 Preview 2が使用できるようになりました。
+Preview1から変更点があるので、正式版まで変更がありそうです。
+
+BasicレベルのFloorの形状やMaterialが変更されました。
+レベルの選択画面の並び順が変わりました。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_00_version_update/2022-03-09-06-03-22.png)
+
+Preview1で[Real]型になりましたが、Preview2で[Float]型に戻りました。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_00_version_update/2022-03-09-06-11-20.png)
+
 ## UE5 Preivew 1
 
 2022/2/23にUE5 Preview 1が使用できるようになりました。

@@ -27,7 +27,7 @@ Variable（変数）を使用した処理に変更します。
 
 [Basic]を選択し、[Create]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-11-23-32.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-print_string/2022-03-09-06-14-25.png)
 
 [File]メニューからCurrent Levelを保存します。
 ショートカット「Ctrl + S」でも保存できます。
@@ -162,15 +162,16 @@ Print StringのDurationピンに変数を追加して設定します。
 次に[Variable Type（変数の型）]を設定します。
 設定したいInputピンにマウスオーバーします。
 表示される文字（ToolTip）からInputピンのVariableTypeを確認します。
-DurationのVariableTypeは[Float Real]ということが分かりました。
+DurationのVariableTypeは[Float]ということが分かりました。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-12-55-56.png)
 
-[Variable Type]のリストから[Real]を選択します。
+[Variable Type]のリストから[Float]を選択します。
 （Inputピンをマウスオーバーした時に表示されたVariable Type）
 
 :::message
 Unreal Engine Preview 1では[Float]が[Real]になりました。
+Unreal Engine Preview 2で[Real]から[Float]に戻りました。
 :::
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_bp-variable/2022-02-23-12-58-31.png)

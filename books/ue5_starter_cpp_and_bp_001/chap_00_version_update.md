@@ -13,6 +13,9 @@ Unreal Engineは年間で2~3バージョンがアップします。
 ## UE5 5.0.0(2022/4/6)
 
 UE5の正式版が使用できるようになりました。
+リリースノートが公開されているので一読しましょう。
+
+https://docs.unrealengine.com/5.0/ja/unreal-engine-5-0-release-notes/
 
 ## UE5 Preivew 2
 

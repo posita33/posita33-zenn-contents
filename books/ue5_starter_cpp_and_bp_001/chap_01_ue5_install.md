@@ -41,7 +41,7 @@ https://www.unrealengine.com/ja/download
 
 ![](https://storage.googleapis.com/zenn-user-upload/49d8d3543a4d-20220109.png)
 
-## Unreal Engine 5 Preview 1 をインストールする
+## Unreal Engine 5 をインストールする
 
 EpicGamesLauncherの[Unreal Engine]タブから[ライブラリ]に移動します。
 Engineバージョンの[+]ボタンをクリックします。
@@ -49,17 +49,13 @@ Engineバージョンの[+]ボタンをクリックします。
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_01_ue5_install/2022-02-23-04-55-30.png)
 
 バージョンが書かれている▼の個所をクリックするとインストールするバージョンが選べます。
-[5.0.0 Preview 1]を選択します。
+[5.0.0]を選択します。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_01_ue5_install/2022-02-23-04-58-41.png)
-
-[インストール]ボタンをクリックします。
-
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_01_ue5_install/2022-02-23-05-09-36.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_01_ue5_install/2022-04-06-22-44-22.png)
 
 [インストール]ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_01_ue5_install/2022-02-23-05-00-56.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_01_ue5_install/2022-04-06-22-45-45.png)
 
 [オプション]をクリックします。
 
@@ -67,7 +63,7 @@ Engineバージョンの[+]ボタンをクリックします。
 C++の開発をしない方はこのままインストールボタンをクリックして大丈夫です。
 :::
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_01_ue5_install/2022-02-23-05-04-58.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_01_ue5_install/2022-04-06-22-47-00.png)
 
 [デバッグに必要なエディタシンボル]を有効☑にし、[適用]ボタンをクリックします。
 
@@ -76,7 +72,7 @@ C++の開発では以下の2つの項目は必要になります。
 - **エンジンソース**
 - **デバッグに必要なエディタシンボル**
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_01_ue5_install/2022-02-23-05-03-32.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_01_ue5_install/2022-04-06-22-49-54.png)
 
 [インストール]ボタンをクリックします。
 
@@ -84,20 +80,7 @@ C++の開発では以下の2つの項目は必要になります。
 
 Unreal Engine 5のインストールが開始されます。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_01_ue5_install/2022-02-23-05-06-06.png)
-
-## 一足先にUE5 正式版を試したい方
-
-Unreal EngineはGitHubからソースコードを取得できます。「ue5-main」ブランチがUE5の正式版ソースコードになります。
-一足先にUE5正式版を試したい方はコチラの記事を参考に試してみるのもおススメです。
-
-https://zenn.dev/pokotaro/articles/7d60ecaf7a2f57
-
-
-https://twitter.com/posita33/status/1490217759820890113
-
-
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_01_ue5_install/2022-02-23-04-59-50.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_01_ue5_install/2022-04-06-22-50-32.png)
 
 ## オンラインラーニング：Unreal Engine 5クイックスタート
 

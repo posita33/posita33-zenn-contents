@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"name": "posita33-zenn-contents",
+			"path": "."
+		},
+		{
+			"path": "..\\UE5Starter-CPPAndBP_Projects"
+		},
+		{
+			"path": "..\\UE5-MetaSound-CreateSound_Projects"
+		},
+		{
+			"path": "..\\UE5-Mathematical-Programing"
+		}
+	],
+	"settings": {
+		"pasteImage.basePath": "${projectRoot}",
+		"pasteImage.insertPattern": "${imageSyntaxPrefix}/${imageFilePath}${imageSyntaxSuffix}",
+		"pasteImage.path": "${projectRoot}/images/books/book-ue5_mathematical_programming/${currentFileNameWithoutExt}"
+	}
+}

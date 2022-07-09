@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"name": "posita33-zenn-contents",
+			"path": "."
+		},
+		{
+			"path": "..\\UE5Starter-CPPAndBP_Projects"
+		},
+		{
+			"path": "..\\UE5-MetaSound-CreateSound_Projects"
+		}
+	],
+	"settings": {
+		"pasteImage.basePath": "${projectRoot}",
+		"pasteImage.insertPattern": "${imageSyntaxPrefix}/${imageFilePath}${imageSyntaxSuffix}",
+		"pasteImage.path": "${projectRoot}/images/books/ue5_procedural_mesh_generation_tools/${currentFileNameWithoutExt}"
+	}
+}

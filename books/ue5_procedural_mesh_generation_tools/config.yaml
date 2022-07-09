@@ -1,0 +1,11 @@
+title: "UE5 Procedural Mesh Generation Tools"
+summary: |-
+   UE5から取り込まれた「Procedural Mesh Generation Tools」の作例を紹介します。
+
+topics: ["unrealengine", "ue5"]
+published: false
+price: 0 # 有料の場合200〜5000
+# 本に含めるチャプターを順番に並べましょう
+chapters:
+  - chap_00_about
+  - chap_01_create_project

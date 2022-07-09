@@ -5,9 +5,9 @@ free: false
 
 ## UE5でC++プロジェクトを作成する
 
-EpicGamesLauncherの右上の起動ボタンか、「ライブラリ」の5.0.0早期アクセスの起動ボタンをクリックします。
+EpicGamesLauncherの右上の起動ボタンか、「ライブラリ」の5.0.2の起動ボタンをクリックします。
 
-![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_create_project/2022-02-23-07-42-44.png)
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_create_project/2022-06-18-09-53-44.png)
 
 C++とBlueprint両方を実装していくプロジェクトを作成します。
 

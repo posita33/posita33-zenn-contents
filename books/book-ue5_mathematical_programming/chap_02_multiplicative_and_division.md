@@ -141,6 +141,24 @@ $$
 
 ![](/images/books/book-ue5_mathematical_programming/chap_02_multiplicative_and_division/2022-07-17-10-41-55.png)
 
+## C++で数式を表現
+
+```cpp
+	int answer = 0;
+
+	// (1) (+4) * (-8)
+	answer = (+4) * (-8);
+	
+	// (2) (-5) * (-7)
+	answer = (-5) * (-7);
+
+	// (3) (+3) * (-6) * (-5)
+	answer = (+3) * (-6) * (-5);
+	
+	// (4) (−3^2)×(−5)^2
+	answer = -(FMath::Pow(3, 2)) * FMath::Pow(-5, 2);
+```
+
 
 ## 問題(除法)
 
@@ -280,3 +298,22 @@ $$
 ## BPで数式を表現
 
 ![](/images/books/book-ue5_mathematical_programming/chap_02_multiplicative_and_division/2022-07-17-10-55-51.png)
+
+## C++で数式を表現
+
+```cpp
+	float answerF = 0.0f;
+
+	// (1) (-8) ÷ (+2)
+	answerF = (-8.0f) / (+2.0f);
+
+	// (2) (-3/5) ÷ (+5/9)
+	answerF = (-3.0f/5.0f) / (5.0f/9.0f);
+
+	// (3) (-4/5) ÷ (+1.6) ÷ (-3/10) × (-0.5)
+	answerF = (-4.0f/5.0f) / (1.6f) / (-3.0f/10.0f) * (-0.5f);
+
+	// (4) (-3)^4 ÷ (+3)^6 × (-3)^3
+	answerF = FMath::Pow(-3.0f,4.0f) / FMath::Pow(3.0f,6.0f) * FMath::Pow(-3.0f, 3.0f);
+
+```

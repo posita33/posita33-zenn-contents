@@ -127,7 +127,26 @@ $$
 = (+10) + (-15) = -5
 $$
 
-## ノードで数式を表現
+## BPで数式を表現
 
 ![](/images/books/book-ue5_mathematical_programming/chap_02_addition_and_subtraction/2022-07-10-16-56-00.png)
 
+
+## C++で数式を表現
+
+```cpp
+	int answer = 0;
+	
+	// (1) 
+	answer = (+2) + (+5);
+
+	// (2)
+	answer = (-8) + (-3);
+
+	// (3)
+	answer = (+4) - (-5);
+
+	// (4)
+	answer = (-6) - (+8) + (-7) - (-4);
+
+```

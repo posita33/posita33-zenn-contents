@@ -1,4 +1,4 @@
-title: "UE5 BPとC++で学ぶ数学（中学3年間編）"
+title: "UE5 BPとC++で学ぶ数学"
 summary: |-
     ゲーム業界でTAをしていると度々「三角関数」といった数学的な知識が求められます。
     趣味が特にないので、「数学」が趣味になるように中学生からやり直してみます。
@@ -17,3 +17,5 @@ chapters:
   - chap_02_about
   - chap_02_positive_and_negative_numbers
   - chap_02_addition_and_subtraction
+  - chap_02_multiplicative_and_division
+  

@@ -66,6 +66,14 @@ Print Stringで位置と絶対値を表示してみます。
 
 ![](/images/books/book-ue5_mathematical_programming/chap_02_positive_and_negative_numbers/2022-07-09-22-18-23.png)
 
+
+C++で絶対値を取得するにはFMath::Abs()を使用します。
+AbsはAbsolute（絶対値）の略称です。
+
+```cpp
+	float abs = FMath::Abs(400.0f);
+```
+
 ## 正の数・負の数の大小
 
 「緑」を-2m(-200uu)、「黄色」を1m(100uu)の位置に配置します。

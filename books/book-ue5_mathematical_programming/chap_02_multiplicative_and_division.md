@@ -156,7 +156,7 @@ $$
 	answer = (+3) * (-6) * (-5);
 	
 	// (4) (−3^2)×(−5)^2
-	answer = -(FMath::Pow(3.0f, 2.0f)) * FMath::Pow(-5.0f, 2.0f);
+	float answerf = -(FMath::Pow(3.0f, 2.0f)) * FMath::Pow(-5.0f, 2.0f);
 ```
 
 

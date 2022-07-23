@@ -336,7 +336,7 @@ $$
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_02_summary/2022-07-23-11-00-16.png)
 
 ```cpp
-    float ansewerF = FMath::Abs(400.0f);
+    float answerF = FMath::Abs(400.0f);
 ```
 
 ### 四則の混じった計算

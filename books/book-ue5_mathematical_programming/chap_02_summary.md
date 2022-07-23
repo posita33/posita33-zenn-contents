@@ -3,8 +3,6 @@ title: "📕1章 正の数・負の数 まとめ📕"
 free: false
 ---
 
-# 1章 正の数・負の数 まとめ
-
 ## 数学的知識
 
 ### 正の数・負の数
@@ -27,7 +25,7 @@ Unreal Engineでは正の数の符号は省略されますが、正の数は「+
 
 ![](/images/books/book-ue5_mathematical_programming/chap_02_positive_and_negative_numbers/2022-07-09-22-05-33.png)
 
-## 正の数・負の数の大小
+#### 正の数・負の数の大小
 
 ![](/images/books/book-ue5_mathematical_programming/chap_02_positive_and_negative_numbers/2022-07-09-22-28-09.png)
 

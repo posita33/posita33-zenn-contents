@@ -12,7 +12,7 @@ Constructorはデータメンバーの初期化を行うために使用します
 
 UnrealEngineのActorを継承したクラスではメンバ変数の初期化やコンポーネントの追加を行います。
 
-http://localhost:8000/books/ue5_starter_cpp_and_bp_001/chap_02_cpp-component%252Emd
+https://zenn.dev/posita33/books/ue5_starter_cpp_and_bp_001/viewer/chap_02_cpp-component
 
 ### Constructorでメンバ変数とコンポーネントを追加する
 

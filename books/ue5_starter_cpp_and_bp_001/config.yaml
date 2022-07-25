@@ -76,6 +76,7 @@ chapters:
   - chap_02_cpp-structure
   - chap_03_class_build
   - chap_03_class_and_object
+  - chap_03_constructor_destructor
   - chap_99_link_list
 
   

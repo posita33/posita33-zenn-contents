@@ -247,7 +247,7 @@ Level Editorの[Play]ボタンをクリックします。
 
 UnraelEngineでは通常のC++と同じ処理も実装出来ますが、UnrealEngineが用意しているUOBjectクラスやActorクラスを継承する際にはまとめて処理を行うように設計されているので処理の呼び方を意識して使用する必要があります。
 
-「::~」でEnginソースを含めたプロジェクトを全検索すると使用方法を確認できます。
+「::~」でEngineソースを含めたプロジェクトを全検索すると使用方法を確認できます。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_03_constructor_destructor/2022-07-26-07-17-35.png)
 

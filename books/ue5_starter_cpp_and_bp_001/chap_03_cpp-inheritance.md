@@ -257,7 +257,7 @@ Level Editorの[Play]ボタンをクリックします。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_03_cpp-inheritance/2022-07-28-08-02-54.png)
 
-## 派生クラスでできること
+### 派生クラスでできること
 
 この時の派生クラスのBeginPlayの処理順序です。
 

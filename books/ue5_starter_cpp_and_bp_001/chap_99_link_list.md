@@ -17,6 +17,9 @@ Unreal EngineのC++がよくまとまっているサイト
 
 https://jip.dev/notes/unreal-engine/
 
+クラス図
+https://lecture.ecc.u-tokyo.ac.jp/~hideo-t/references/uml/class-diagram/class-diagram.html
+
 ## 困った時に調べるサイト
 
 まずは公式ドキュメントを確認しましょう。

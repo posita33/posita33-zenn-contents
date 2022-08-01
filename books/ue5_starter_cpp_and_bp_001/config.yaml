@@ -77,6 +77,7 @@ chapters:
   - chap_03_class_build
   - chap_03_class_and_object
   - chap_03_constructor_destructor
+  - chap_03_cpp-inheritance
   - chap_99_link_list
 
   

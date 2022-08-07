@@ -152,7 +152,7 @@ Level Editorの[Play]ボタンをクリックします。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_03_constructor_destructor/2022-07-24-15-50-06.png)
 
-基底クラスの関数[CallParentFunc]が呼ばれた後に、関数[CallChildFunc]が呼ばれたことが分かります。
+基底クラスの関数[CallParentFunc]が呼ばれた後に、関数[CallChildFunc]が呼ばました。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_03_bp-inheritance/2022-08-03-07-12-07.png)
 

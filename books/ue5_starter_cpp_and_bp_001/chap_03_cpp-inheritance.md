@@ -9,7 +9,7 @@ free: false
 
 ### 継承について
 
-クラスのデータメンバやメンバ関数を引き継いだ子供のクラスを作成することを**継承**と言います。
+クラスのデータメンバやメンバ関数を引き継いだ派生クラスを作成することを**継承**と言います。
 継承の元になったクラスのことを「**基底クラス**」、継承して作ったクラスのことを「**派生クラス**」といいます。
 Unreal Engineでは親と子に例えて親クラス、子クラスと表示されます。
 
@@ -382,3 +382,12 @@ classDiagram
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_03_cpp-inheritance/2022-07-31-12-36-03.png)
 
+### ソースコード
+
+https://github.com/posita33/UE5Starter-CPPAndBP_Projects/blob/main/Resources/Chapter_03/Inheritance/Public/CPPClassBase.h
+
+https://github.com/posita33/UE5Starter-CPPAndBP_Projects/blob/main/Resources/Chapter_03/Inheritance/Private/CPPClassBase.cpp
+
+https://github.com/posita33/UE5Starter-CPPAndBP_Projects/blob/main/Resources/Chapter_03/Inheritance/Public/CPPClassChild.h
+
+https://github.com/posita33/UE5Starter-CPPAndBP_Projects/blob/main/Resources/Chapter_03/Inheritance/Private/CPPClassChild.cpp

@@ -23,7 +23,7 @@ MetaSoundでPitchとVolumeを特定の範囲をRandomに変更できれば、Mod
 
 前回ランダムで再生できるようにした「MS_Explosion」をMetaSoundエディタで開きます。
 
-![](/images/books/ue5_metasound_createsound/chapter01_modulator/2022-02-18-06-34-51.png)
+![](/images/books/ue5_metasound_createsound/chapter01_modulator/2022-08-17-07-32-26.png)
 *MS_Explosionを開く*
 
 前回までの状態です。

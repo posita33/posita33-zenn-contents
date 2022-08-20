@@ -14,16 +14,16 @@ Content/
      └ Audio/
 ```
 
-![](/images/books/ue5_metasound_createsound/chapter02_play_c_sound/2022-02-19-16-46-22.png)
+![](/images/books/ue5_metasound_createsound/chapter02_play_c_sound/2022-08-19-08-17-30.png)
 
 MataSound[MS_Procedual01]を作成します。
 
-![](/images/books/ue5_metasound_createsound/chapter02_play_c_sound/2022-02-19-16-47-43.png)
-*右クリック > Sounds > MetaSound*
+![](/images/books/ue5_metasound_createsound/chapter02_play_c_sound/2022-08-19-08-18-55.png)
+*右クリック > Sounds > MetaSound Source*
 
 名前を[MS_Procedual01]に設定し、ダブルクリックしてMetaSoundを開きます。
 
-![](/images/books/ue5_metasound_createsound/chapter02_play_c_sound/2022-02-19-16-48-38.png)
+![](/images/books/ue5_metasound_createsound/chapter02_play_c_sound/2022-08-19-08-20-00.png)
 *名前を[MS_Procedual01]に設定*
 
 ### Sine波を再生する

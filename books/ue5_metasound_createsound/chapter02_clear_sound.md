@@ -9,37 +9,37 @@ title: "音をクリアにする"
 まずはノードを組んでから、使用したノードについて調べていきます。
 今日使用するのは[**Ladder Filter**],[**LFO**],[**WaveShaper**]ノードです。
 
-![](/images/books/ue5_metasound_createsound/chapter02_clear_sound/2022-02-19-17-53-05.png)
+![](/images/books/ue5_metasound_createsound/chapter02_clear_sound/2022-08-21-22-15-23.png)
 *[Ladder Fillter] [LFO] [WaveShaper]*
 
 前回作成した MetaSoundを複製して、[MS_Procedual03]を作成します。
 
-![](/images/books/ue5_metasound_createsound/chapter02_clear_sound/2022-02-19-17-57-20.png)
+![](/images/books/ue5_metasound_createsound/chapter02_clear_sound/2022-08-21-21-46-59.png)
 *MS_Procedual02を右クリック > Duplicate*
 
 [ADSR Envelope(Audio)]から[AD Envelope(Audio)]を使用するように修正します。
 
-![](/images/books/ue5_metasound_createsound/chapter02_clear_sound/2022-02-19-17-58-01.png)
+![](/images/books/ue5_metasound_createsound/chapter02_clear_sound/2022-08-21-21-50-12.png)
 *ADSR Envelope(Audio)からAD Envelope(Audio)を使用するように修正*
 
 [Sine：Audio]からドラッグ&ドロップし、[Ladder Filter]を追加します。
 
-![](/images/books/ue5_metasound_createsound/chapter02_clear_sound/2022-02-19-17-58-27.png)
+![](/images/books/ue5_metasound_createsound/chapter02_clear_sound/2022-08-21-22-03-36.png)
 *[Sine：Audio]からドラッグ＆ドロップ > Ladder Filter*
 
 [Ladder Filter：Cutoff Frequency]からドラッグ&ドロップして[LFO]を追加します。
 
-![](/images/books/ue5_metasound_createsound/chapter02_clear_sound/2022-02-19-17-58-44.png)
+![](/images/books/ue5_metasound_createsound/chapter02_clear_sound/2022-08-21-22-06-13.png)
 *[Ladder Filter：Cutoff Frequency]からドラッグ＆ドロップ > LFO*
 
 [Ladder Filter：Ount]からドラッグ&ドロップして[WaveShaper]を追加する。
 
-![](/images/books/ue5_metasound_createsound/chapter02_clear_sound/2022-02-19-17-58-58.png)
+![](/images/books/ue5_metasound_createsound/chapter02_clear_sound/2022-08-21-22-08-13.png)
 *Ladder Filter：Outからドラッグ＆ドロップ > WaveShaper*
 
 [WaveShpaer：Out]と[AD Envelope(Audio)：Ont Envelope]を掛け合わせる音を再生するように接続する。
 
-![](/images/books/ue5_metasound_createsound/chapter02_clear_sound/2022-02-19-17-59-16.png)
+![](/images/books/ue5_metasound_createsound/chapter02_clear_sound/2022-08-21-22-10-42.png)
 *[WaveShpaer：Out]と[AD Envelope(Audio)：Ont Envelope]を掛け合わせる音を再生する*
 
 各ノードの値を変更します。
@@ -67,8 +67,7 @@ title: "音をクリアにする"
 | Bias     | 0.6             |
 | Type     | Inverse Tangent |
 
-
-![](/images/books/ue5_metasound_createsound/chapter02_clear_sound/2022-02-19-18-02-26.png)
+![](/images/books/ue5_metasound_createsound/chapter02_clear_sound/2022-08-21-22-14-28.png)
 *各ノードの値を変更する*
 
 SineのAudioを直接再生するよりクリアな音を再生できます。
@@ -82,7 +81,7 @@ https://twitter.com/posita33/status/1468451854032207876
 まずは【Ladder Filter】について調べてみましょう。
 パラメーターとして用意されているのは[Cutoff Frequency]と[Resonance]です。
 
-![](/images/books/ue5_metasound_createsound/chapter02_clear_sound/2022-02-19-18-05-40.png)
+![](/images/books/ue5_metasound_createsound/chapter02_clear_sound/2022-08-21-22-15-55.png)
 *Ladder Filter*
 
 公式ドキュメントの【**Ladder Filter**】の説明文です。
@@ -117,7 +116,7 @@ https://www.newdtm-rain.com/article/446212175.html
 
 Cutoff Frequencyしか設定できない、[One-Pole Low Pass Filter]と[One-Pole High Pass Filter]も用意されています。
 
-![](/images/books/ue5_metasound_createsound/chapter02_clear_sound/2022-02-19-18-09-59.png)
+![](/images/books/ue5_metasound_createsound/chapter02_clear_sound/2022-08-21-22-17-12.png)
 *Cutoff Frequencyしか設定できない、[One-Pole Low Pass Filter]と[One-Pole High Pass Filter]*
 
 High Pass FilterはCutoff Frequencyをより大きい周波数はそのままの音にするFilterです。
@@ -135,7 +134,7 @@ High Pass FilterはCutoff Frequencyをより大きい周波数はそのままの
 次に【**LFO**】について調べていきます。
 YouTubeでMetaSoundのメイキングを真似していると必ず出てくるノードです。
 
-![](/images/books/ue5_metasound_createsound/chapter02_clear_sound/2022-02-19-18-11-17.png)
+![](/images/books/ue5_metasound_createsound/chapter02_clear_sound/2022-08-21-22-22-19.png)
 *LFO*
 
 色々調べたのですが、まだ良く分からないので、今回は解るところまででもう少し詳しくなったら再挑戦します。
@@ -162,7 +161,7 @@ https://note.com/masatsumu/n/n42aab8563422
 ![](/images/books/ue5_metasound_createsound/chapter02_clear_sound/2022-02-19-18-13-15.png)
 *Frequencyの動き*
 
-![](/images/books/ue5_metasound_createsound/chapter02_clear_sound/2022-02-19-18-13-43.png)
+![](/images/books/ue5_metasound_createsound/chapter02_clear_sound/2022-08-21-22-27-18.png)
 *LFOのOut(Float)をAudioに変えて再生してみて調べてみました。*
 
 [Max Value]と[Min Value]ですが、良く分かりませんでした。
@@ -190,7 +189,7 @@ https://www.elektronauts.com/t/lfo-depth-question/39721/2
 
 最後に【WaveShaper】について調べていきます。
 
-![](/images/books/ue5_metasound_createsound/chapter02_clear_sound/2022-02-19-18-15-33.png)
+![](/images/books/ue5_metasound_createsound/chapter02_clear_sound/2022-08-21-22-27-51.png)
 *WaveShaper*
 
 公式ドキュメントに【WaveShaper】の説明がありませんでした。

@@ -7,29 +7,29 @@ title: "Envelopeを使ってアタック音を再生する"
 
 前回作成した[MS_Procedual01]を複製して、[MS_Procedual02]を作成します。
 
-![](/images/books/ue5_metasound_createsound/chapter02_Envelope/2022-02-19-17-24-49.png)
+![](/images/books/ue5_metasound_createsound/chapter02_Envelope/2022-08-21-18-50-14.png)
 *[MS_Procedual01]をDuplicate(複製)して、[MS_Procedual02]を作成する*
 
 [AD Envelope(Audio)]を追加します。
 
-![](/images/books/ue5_metasound_createsound/chapter02_Envelope/2022-02-19-17-26-08.png)
+![](/images/books/ue5_metasound_createsound/chapter02_Envelope/2022-08-21-18-51-55.png)
 *右クリック > AD Envelope(Audio)*
 
 [Input：On Play]と[AD Envelope(Audio)]を接続します。
 Print Log(Float)は削除します。
 
-![](/images/books/ue5_metasound_createsound/chapter02_Envelope/2022-02-19-17-26-37.png)
+![](/images/books/ue5_metasound_createsound/chapter02_Envelope/2022-08-21-18-53-03.png)
 *[Input：On Play]と[AD Envelope(Audio)]を接続*
 
 [AD Envelope(Audio)：Out Envelope]と[Sine：Audio]を掛け算(Multiply)する処理を実装します。
 [AD Envelope(Audio)：Out Envelope]からドラッグ&ドロップし、[Multiply(Audio)]を追加します。
 
-![](/images/books/ue5_metasound_createsound/chapter02_Envelope/2022-02-19-17-27-20.png)
+![](/images/books/ue5_metasound_createsound/chapter02_Envelope/2022-08-21-18-54-41.png)
 *AD Envelope(Audio)からドラッグ＆ドロップ > Multiply(Audio)*
 
 [AD Envelope(Audio)：Out Envelope]と[Sine：Audio]を掛け算(Multiply)した結果を[Output：Audio]に接続します。
 
-![](/images/books/ue5_metasound_createsound/chapter02_Envelope/2022-02-19-17-27-47.png)
+![](/images/books/ue5_metasound_createsound/chapter02_Envelope/2022-08-21-18-59-42.png)
 *[AD Envelope(Audio)：Out Envelope]と[Sine：Audio]を掛け算(Multiply)した結果を[Output：Audio]に接続*
 
 https://twitter.com/posita33/status/1468043276112764928
@@ -66,14 +66,14 @@ https://www.perfectcircuit.com/signal/learning-synthesis-envelopes-1
 
 
 最後に[Looping]のチェックボックスをチェックし、[On Finished]を呼び出さないようにします。
-[AD Envelope(Audio)：On Done]が呼ばれるタイミングで、再び[AD Envelope(Audio)：Trigger]が呼ばれてLoopします。
+[AD Envelope(Audio)：On Done]が呼ばれるタイミングで、再び[AD Envelope(Audio)：Trigger]が呼ばれてループします。
 
-![](/images/books/ue5_metasound_createsound/chapter02_Envelope/2022-02-19-17-32-49.png)
+![](/images/books/ue5_metasound_createsound/chapter02_Envelope/2022-08-21-19-01-45.png)
 *[AD Envelope(Audio)：Looping]にチェック > On Finesedを呼び出さないようにする*
 
 [AD Envelope(Audio)：On Done]で[Output：On Finished]を呼び出すとMetaSoundを停止するのでループは行われません。
 
-![](/images/books/ue5_metasound_createsound/chapter02_Envelope/2022-02-19-17-33-06.png)
+![](/images/books/ue5_metasound_createsound/chapter02_Envelope/2022-08-21-19-03-09.png)
 *On Finishedを呼び出すとMetaSoundが停止（強制終了）扱いになるのでループしない*
 
 https://twitter.com/posita33/status/1468118043494854661
@@ -85,29 +85,29 @@ AD Envelopeは太鼓のバチで叩いた時のようなアタック音を再現
 Envelopeノードは[AD Envelope]と[ADSR Envelope]の2種類が用意されています。
 [ADSR Envelope(Audio)]を試してみましょう。
 
-![](/images/books/ue5_metasound_createsound/chapter02_Envelope/2022-02-19-17-35-02.png)
+![](/images/books/ue5_metasound_createsound/chapter02_Envelope/2022-08-21-19-04-42.png)
 *右クリック > ADSR Envelope(Audio)*
 
 [ADSR Envelope(Audio)：Audio]と[Sine：Audio]を掛け合わせた音を再生するように編集します。
 [AD Envelope]より[ADSR Envelope]の方が細かく値を設定できることが分かります。
 この状態で再生しても[ADSR Envelope(Audio)：On Done]が実行されず、[Sine：Audio]が実行された状態になります。
 
-![](/images/books/ue5_metasound_createsound/chapter02_Envelope/2022-02-19-17-36-01.png)
+![](/images/books/ue5_metasound_createsound/chapter02_Envelope/2022-08-21-19-08-17.png)
 *[ADSR Envelope(Audio)：Audio]と[Sine：Audio]を掛け合わせた音を再生するように編集*
 
 [ADSR Envelope(Audio)：Trigger Release]を実行するように[Input：On Release]を追加しましょう。
 
-![](/images/books/ue5_metasound_createsound/chapter02_Envelope/2022-02-19-17-36-24.png)
+![](/images/books/ue5_metasound_createsound/chapter02_Envelope/2022-08-21-21-25-26.png)
 *[ADSR Envelope(Audio)：Trigger Release]からドラッグ＆ドロップ > Promote To Graph Input*
 
-[Input Name]を[On Release]に変更します。
+[Input]を[On Release]に変更します。
 
-![](/images/books/ue5_metasound_createsound/chapter02_Envelope/2022-02-19-17-36-45.png)
-*Input Name：On Releaseに変更*
+![](/images/books/ue5_metasound_createsound/chapter02_Envelope/2022-08-21-21-28-50.png)
+*Input：On Releaseに変更*
 
 [Play]後に[On Release]をSimuleteすると、Trigger Release > On Done > On Finishが呼ばれて停止します。
 
-![](/images/books/ue5_metasound_createsound/chapter02_Envelope/2022-02-19-17-37-01.png)
+![](/images/books/ue5_metasound_createsound/chapter02_Envelope/2022-08-21-21-32-53.png)
 *[Play]後に[On Release]をSimuleteすると、
 Trigger Release > On Done > On Finishが呼ばれて停止する*
 
@@ -125,7 +125,7 @@ Trigger Releaseが呼ばれるまでSustain Levelの数値でSineのAudioが再�
 [Sustain]の状態にも時間を指定してみます。
 [Trigger Delay]を追加します。
 
-![](/images/books/ue5_metasound_createsound/chapter02_Envelope/2022-02-19-17-38-11.png)
+![](/images/books/ue5_metasound_createsound/chapter02_Envelope/2022-08-21-21-37-57.png)
 *右クリック > Trigger Delay*
 
 Sustain Timeが[0.2（秒）]になるように[Trigger Delay：Delay Time]に[0.41]を設定します。
@@ -140,7 +140,7 @@ Inputに[Attack Time],[Decay Time],[Sustain Time]を作成して、Delay Timeを
 **Delay Time = Attack Time + Decay Time + Sustain Time**
 0.41 = 0.01 + 0.2 + 0.2
 
-![](/images/books/ue5_metasound_createsound/chapter02_Envelope/2022-02-19-17-38-47.png)
+![](/images/books/ue5_metasound_createsound/chapter02_Envelope/2022-08-21-21-40-53.png)
 *Sustain Time = Delay Time - (Attack Time + Decay Time)*
 
 ADSR Envelopeでは[Attack Curve]と[Decay Curve]の他に[Release Curve]が追加されます。分かりやすくした図を作成しました。

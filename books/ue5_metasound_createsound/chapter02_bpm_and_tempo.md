@@ -13,12 +13,12 @@ title: "BPMでテンポとリズムを作る"
 
 前回作成した MetaSoundを複製して、[MS_Procedual04]を作成します。
 
-![](/images/books/ue5_metasound_createsound/chapter02_bpm_and_tempo/2022-02-19-18-41-17.png)
+![](/images/books/ue5_metasound_createsound/chapter02_bpm_and_tempo/2022-08-21-22-34-21.png)
 *MS_Procedual03を右クリック > Duplicate*
 
 リズムを刻むので、単音がクリアに聞こえるように各ノードの数値を調整します。
 
-![](/images/books/ue5_metasound_createsound/chapter02_bpm_and_tempo/2022-02-19-18-43-37.png)
+![](/images/books/ue5_metasound_createsound/chapter02_bpm_and_tempo/2022-08-21-22-35-15.png)
 *各ノードの設定を調整した開始時の状態*
 
 [Trigger Repeat]を追加します。

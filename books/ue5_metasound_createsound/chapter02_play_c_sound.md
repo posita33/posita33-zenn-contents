@@ -30,13 +30,13 @@ MataSound[MS_Procedual01]を作成します。
 
 [Sine]ノードを追加します。
 
-![](/images/books/ue5_metasound_createsound/chapter02_play_c_sound/2022-02-19-16-51-01.png)
+![](/images/books/ue5_metasound_createsound/chapter02_play_c_sound/2022-08-21-18-27-33.png)
 *右クリック > Sine*
 
 [Sine：Audio]と[Output：Audio]を接続します。
 [Play]を押すと音が再生されます。
 
-![](/images/books/ue5_metasound_createsound/chapter02_play_c_sound/2022-02-19-16-53-42.png)
+![](/images/books/ue5_metasound_createsound/chapter02_play_c_sound/2022-08-21-18-29-51.png)
 *SineとOutputのAudioを接続すると音が再生される*
 
 Frequencyは「周波数」です。
@@ -68,13 +68,13 @@ https://tomari.org/main/java/oto.html
 MIDIのNote Noでド（C4）の周波数を取得して、ド（C4）の音を再生できるようにします。
 [MIDI To Frequency(Int32)]を追加します。
 
-![](/images/books/ue5_metasound_createsound/chapter02_play_c_sound/2022-02-19-16-57-53.png)
+![](/images/books/ue5_metasound_createsound/chapter02_play_c_sound/2022-08-21-18-31-32.png)
 *右クリック > MIDI To Frequency(Int32)*
 
 [MIDI To Frequency(Int32)：Out Frequency]と[Sine：Frequency]を接続します。
 [Play]ボタンを押すとドの音が再生されます。
 
-![](/images/books/ue5_metasound_createsound/chapter02_play_c_sound/2022-02-19-16-58-18.png)
+![](/images/books/ue5_metasound_createsound/chapter02_play_c_sound/2022-08-21-18-34-27.png)
 *[MIDI To Frequency(Int32)のOut Frequency]と[SineのFrequency]を接続*
 
 [MIDI To Frequency(Int32)：Out Frequency]の周波数を確認します。
@@ -87,17 +87,18 @@ MIDIのNote Noでド（C4）の周波数を取得して、ド（C4）の音を�
 [Input：On Play]と[Print Log(Float)：Trigger]を接続します。
 [MIDI To Frequency(Int32)：Out Frequency]を[Print Log(Float)：Value To Log]を接続します。
 
-![](/images/books/ue5_metasound_createsound/chapter02_play_c_sound/2022-02-19-16-59-12.png)
+![](/images/books/ue5_metasound_createsound/chapter02_play_c_sound/2022-08-21-18-35-57.png)
 *[MIDI To Frequency(Int32)：Out Frequency]の数値をLogに出力する*
 
 [Print Log(Float)]のLog出力は[Output Log]ウィンドウに出力されます。
 [Output Log]は[Windows]メニューから[Output Log]を選択することで表示できます。
 
-![](/images/books/ue5_metasound_createsound/chapter02_play_c_sound/2022-02-19-17-06-51.png)
+![](/images/books/ue5_metasound_createsound/chapter02_play_c_sound/2022-08-21-18-37-30.png)
+*[Window] > [Output Log]*
 
 261.625549が出力されていたので、[MIDI To Frequency(Int32)：Out Frequency]の周波数は261.625549Hz（ヘルツ）ということが分かりました。
 
-![](/images/books/ue5_metasound_createsound/chapter02_play_c_sound/2022-02-19-16-59-35.png)
+![](/images/books/ue5_metasound_createsound/chapter02_play_c_sound/2022-08-21-18-40-36.png)
 *[Print Log(Float)]のLog出力は[Output Log]ウィンドウに出力される*
 
 261.625549Hz（ヘルツ）はド4（C4）の音の周波数(261.626)とほぼ一致しています。
@@ -108,7 +109,7 @@ MIDIのNote Noでド（C4）の周波数を取得して、ド（C4）の音を�
 
 [MIDI To Frequency(Int32)：MIDI In]の数値はMIDIのNote Noを指定しています。
 
-![](/images/books/ue5_metasound_createsound/chapter02_play_c_sound/2022-02-19-17-00-22.png)
+![](/images/books/ue5_metasound_createsound/chapter02_play_c_sound/2022-08-21-18-41-06.png)
 *MIDI Inの数値はMIDI Note No*
 
 MIDI Note Noの[60]はド4（C4）なので、ド4（C4）の周波数である[261.626]を取得できます。

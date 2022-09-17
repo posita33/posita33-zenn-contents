@@ -83,6 +83,7 @@ chapters:
   - chap_03_cpp_access_specifier
   - chap_03_bp_access_specifier
   - chap_03_cpp-bp-access_specifier
+  - chap_03_cpp-redefinition_of_function
   - chap_99_link_list
 
   

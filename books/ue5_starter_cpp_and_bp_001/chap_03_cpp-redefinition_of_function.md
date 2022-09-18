@@ -219,7 +219,6 @@ void ACPPRedefinitionTest::BeginPlay()
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_03_cpp-redefinition_of_function/2022-09-17-23-19-45.png)
 
-
 Level Editorの[Play]ボタンをクリックします。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_03_constructor_destructor/2022-07-24-15-50-06.png)

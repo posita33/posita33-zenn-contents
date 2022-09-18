@@ -26,6 +26,8 @@ Class名を「BP_ParentRedefinition」に設定します。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_03_bp-redefinition_of_function/2022-09-18-09-14-59.png)
 
+変数を追加します。
+
 | Variable Name | Variable Type |
 | ------------- | ------------- |
 | Point         | Integer       |
@@ -100,21 +102,28 @@ Class名を「BP_RedefinitionTest」に設定します。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_03_bp-redefinition_of_function/2022-09-18-10-07-07.png)
 
+基底クラス「BP_ParentRedefinition」と派生クラス「BP_ChildRedefinition」を生成してSetPointでPointを設定します。
 
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_03_bp-redefinition_of_function/2022-09-18-10-41-06.png)
 
 @[blueprintue](https://blueprintue.com/render/6ytlakkp/)
 
+[Compile]ボタンをクリックします。
 
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_03_bp-redefinition_of_function/2022-09-18-10-33-13.png)
 
+「BP_RedefinitionTest」をViewportにDrag&Dropします。
 
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_03_bp-redefinition_of_function/2022-09-18-10-38-03.png)
 
+Level Editorの[Play]ボタンをクリックします。
 
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_03_constructor_destructor/2022-07-24-15-50-06.png)
 
+メンバ変数を設定するSetPointを派生クラスで再定義することができました。
 
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_03_bp-redefinition_of_function/2022-09-18-10-44-04.png)
 
+メンバ変数を設定するSetPointを派生クラスで再定義しました。
 
-
-
-
-
-
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_03_cpp-redefinition_of_function/2022-09-17-23-54-22.png)

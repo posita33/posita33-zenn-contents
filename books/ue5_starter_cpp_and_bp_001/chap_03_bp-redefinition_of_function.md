@@ -102,7 +102,7 @@ Class名を「BP_RedefinitionTest」に設定します。
 
 
 
-@[blueprintue](https://blueprintue.com/blueprint/6ytlakkp/)
+@[blueprintue](https://blueprintue.com/render/6ytlakkp/)
 
 
 

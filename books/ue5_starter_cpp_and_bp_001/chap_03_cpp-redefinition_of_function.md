@@ -146,6 +146,10 @@ void ACPPChildRedefinition::SetPoint(int myPoint)
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_03_cpp-redefinition_of_function/2022-09-17-22-19-28.png)
 
+親クラスに[Actor]を選択します。
+
+![](/images/books/ue5_starter_cpp_and_bp_001/chap_03_cpp-virtual_function_override/2022-09-19-16-30-51.png)
+
 ClassTypeとClass名を設定します。
 
 | Property   | Value        |
@@ -213,7 +217,6 @@ void ACPPRedefinitionTest::BeginPlay()
 ソースコードを保存して、Compileを実行します。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_03_constructor_destructor/2022-07-24-15-49-43.png)
-
 
 「CPPRedefinitionTest」をViewportにDrag&Dropします。
 

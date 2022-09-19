@@ -42,6 +42,8 @@ Class名を「BP_VirtualTest」に設定します。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_03_bp-virtual_function_override/2022-09-19-17-50-13.png)
 
+@[blueprintue](https://blueprintue.com/render/g1yj2ycs/)
+
 [Compile]ボタンをクリックします。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_03_bp-virtual_function_override/2022-09-19-17-53-13.png)

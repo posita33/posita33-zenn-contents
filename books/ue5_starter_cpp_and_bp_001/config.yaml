@@ -87,6 +87,8 @@ chapters:
   - chap_03_bp-redefinition_of_function
   - chap_03_cpp-virtual_function_override
   - chap_03_bp-virtual_function_override
+  - chap_03_cpp-static_variable
+  - chap_03_cpp-static_function
   - chap_99_link_list
 
   

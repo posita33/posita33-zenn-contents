@@ -32,7 +32,7 @@
     "textlint-rule-no-surrogate-pair": "^1.0.1",
     "textlint-rule-prefer-tari-tari": "^1.0.3",
     "textlint-rule-use-si-units": "^1.0.2",
-    "zenn-cli": "^0.1.106"
+    "zenn-cli": "^0.1.125"
   },
   "devDependencies": {
     "textlint-rule-preset-ja-spacing": "^2.2.0",

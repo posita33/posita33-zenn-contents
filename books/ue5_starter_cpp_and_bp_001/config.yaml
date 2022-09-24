@@ -89,6 +89,9 @@ chapters:
   - chap_03_bp-virtual_function_override
   - chap_03_cpp-static_variable
   - chap_03_cpp-static_function
+  - chap_03_cpp-interface
+  - chap_03_bp-interface
+  - chap_03_cpp-bp-interface
   - chap_99_link_list
 
   

@@ -1,5 +1,5 @@
 ---
-title: "【CPP】メンバ関数の再定義"
+title: "【C++】メンバ関数の再定義"
 free: false
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "【CPP】仮想関数とオーバーライド"
+title: "【C++】仮想関数とオーバーライド"
 free: false
 ---
 
@@ -229,7 +229,7 @@ Level Editorの[Play]ボタンをクリックします。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_03_constructor_destructor/2022-07-24-15-50-06.png)
 
-メンバ変数を設定するSetPointを派生クラスで再定義することができました。
+メンバ変数を設定するSetPointを派生クラスで再定義できました。
 
 ![](/images/books/ue5_starter_cpp_and_bp_001/chap_03_cpp-virtual_function_override/2022-09-19-16-52-07.png)
 

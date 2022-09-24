@@ -177,15 +177,21 @@ https://docs.unrealengine.com/4.26/ja/InteractiveExperiences/Input/SetUpInput/
 
 https://docs.unrealengine.com/4.27/ja/ProgrammingAndScripting/Blueprints/UserGuide/EventDispatcher/
 
-### 配列
+#### 配列
 
 https://docs.unrealengine.com/4.27/ja/ProgrammingAndScripting/Blueprints/UserGuide/Arrays/
 
 https://docs.unrealengine.com/4.27/ja/ProgrammingAndScripting/Blueprints/BP_HowTo/WorkingWithArrays/
 
-### 構造体
+#### 構造体
 
 https://docs.unrealengine.com/4.27/ja/ProgrammingAndScripting/Blueprints/UserGuide/Variables/Structs/
+
+#### インターフェイス
+
+https://docs.unrealengine.com/4.27/ja/ProgrammingAndScripting/Blueprints/UserGuide/Types/Interface/
+
+https://docs.unrealengine.com/4.27/ja/ProgrammingAndScripting/Blueprints/UserGuide/Types/Interface/UsingInterfaces/
 
 ### C++
 
@@ -200,6 +206,8 @@ https://github.com/DaedalicEntertainment/unreal-coding-conventions
 https://docs.unrealengine.com/4.27/ja/ProductionPipelines/BuildTools/UnrealBuildTool/ModuleFiles/
 
 #### UPROPERTY
+
+https://docs.unrealengine.com/4.27/ja/ProgrammingAndScripting/GameplayArchitecture/Metadata/
 
 https://qiita.com/bigengelt/items/b17545fffe7b8d69e5e8
 
@@ -236,3 +244,9 @@ https://www.youtube.com/watch?v=aHHTXIqUUxY
 #### Loop
 
 https://www.unrealengine.com/ja/blog/ranged-based-for-loops
+
+#### Interface
+
+
+https://docs.unrealengine.com/4.27/ja/ProgrammingAndScripting/GameplayArchitecture/Interfaces/
+

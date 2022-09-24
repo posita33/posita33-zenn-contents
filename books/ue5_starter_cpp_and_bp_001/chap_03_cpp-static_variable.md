@@ -1,5 +1,5 @@
 ---
-title: "【CPP】静的メンバ変数"
+title: "【C++】静的メンバ変数"
 free: false
 ---
 

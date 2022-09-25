@@ -18,83 +18,69 @@ title: "BPMでテンポとリズムを作る"
 
 リズムを刻むので、単音がクリアに聞こえるように各ノードの数値を調整します。
 
-![](/images/books/ue5_metasound_createsound/chapter02_bpm_and_tempo/2022-08-21-22-35-15.png)
+![](/images/books/ue5_metasound_createsound/chapter02_bpm_and_tempo/2022-08-22-08-00-26.png)
 *各ノードの設定を調整した開始時の状態*
 
 [Trigger Repeat]を追加します。
 
-![](/images/books/ue5_metasound_createsound/chapter02_bpm_and_tempo/2022-02-19-18-44-02.png)
+![](/images/books/ue5_metasound_createsound/chapter02_bpm_and_tempo/2022-08-22-08-02-02.png)
 *右クリック > Trigger Repeat*
 
 [Trigger Repeat]を[Input：On Play]と[AD Envelope(Audio)]の間に実行されるように接続します。
 [Ountput：On Finished]が呼び出されると停止してしまうので、[AD Envelope(Audio):On Done]と[Ountput：On Finished]の接続を解除して、ループするようにします。
 
-![](/images/books/ue5_metasound_createsound/chapter02_bpm_and_tempo/2022-02-19-18-45-18.png)
+![](/images/books/ue5_metasound_createsound/chapter02_bpm_and_tempo/2022-08-22-08-04-19.png)
 *Trigger Repeatが実行されるように接続、On Finishedを呼び出さないようにしてループさせる*
 
 Stopを制御するInput Triggerを作成します。
 [Trigger Repeat：Stop]からドラッグ＆ドロップし、[Promote To Graph Input]を選択します。
 
-![](/images/books/ue5_metasound_createsound/chapter02_bpm_and_tempo/2022-02-19-18-45-39.png)
+![](/images/books/ue5_metasound_createsound/chapter02_bpm_and_tempo/2022-08-22-08-06-10.png)
 *Trigger Repeat：Stopからドラッグ＆ドロップ > Promote To Graph Input*
 
-Input Nameを[On Stop]に変更します。
+Inputを[On Stop]に変更します。
 
-![](/images/books/ue5_metasound_createsound/chapter02_bpm_and_tempo/2022-02-19-18-45-52.png)
-*Input Name：On Stop*
+![](/images/books/ue5_metasound_createsound/chapter02_bpm_and_tempo/2022-08-22-08-07-55.png)
+*Input：On Stop*
 
 再生時に変化を確認しやすように、[Trigger Repeat：Period]をInput化します。
 [Trigger Repeat：Repeat]からドラッグ＆ドロップし、[Promote To Graph Input]を選択します。
 
-![](/images/books/ue5_metasound_createsound/chapter02_bpm_and_tempo/2022-02-19-18-46-09.png)
+![](/images/books/ue5_metasound_createsound/chapter02_bpm_and_tempo/2022-08-22-08-09-54.png)
 *Trigger Repeat：Periodからドラッグ＆ドロップ > Promote To Graph Input*
-
-Input Nameを[Period]に変更します。
-
-![](/images/books/ue5_metasound_createsound/chapter02_bpm_and_tempo/2022-02-19-18-46-27.png)
-*Input Name：Period*
 
 [Input：On Stop]で[Trigger Repeat：Stop]で[Trigger Repeat]を停止させてから再び[Trigger Repeat：Start]を呼び出せるように[Input：On Replay]というTriggerInputを追加します。
 [Input：On Play]からドラッグ＆ドロップし、 [Trigger Any(2)]を追加します。
 
-![](/images/books/ue5_metasound_createsound/chapter02_bpm_and_tempo/2022-02-19-18-46-41.png)
+![](/images/books/ue5_metasound_createsound/chapter02_bpm_and_tempo/2022-08-22-08-13-11.png)
 *Input：On Playからドラッグ＆ドロップ > Trigger Any(2)*
 
 [Trigger Any(2)：In 1]からドラッグ＆ドロップし、[Promote To Graph Input]を選択します。
 
-![](/images/books/ue5_metasound_createsound/chapter02_bpm_and_tempo/2022-02-19-18-46-54.png)
+![](/images/books/ue5_metasound_createsound/chapter02_bpm_and_tempo/2022-08-22-08-15-00.png)
 *[Trigger Any(2)：In 1]からドラッグ＆ドロップ > Promote To Graph Input*
 
-Input Nameを[On Replay]にします。
+Inputを[On Replay]にします。
 
-![](/images/books/ue5_metasound_createsound/chapter02_bpm_and_tempo/2022-02-19-18-47-09.png)
-*Input Name：On Replay*
+![](/images/books/ue5_metasound_createsound/chapter02_bpm_and_tempo/2022-08-22-08-16-42.png)
+*Input：On Replay*
+
+[Input:On Play]と[Trigger Any(2):in 0]を接続します
+![](/images/books/ue5_metasound_createsound/chapter02_bpm_and_tempo/2022-08-22-08-17-51.png)
+*[Input:On Play]と[Trigger Any(2):in 0]を接続*
 
 [Play]をクリックして再生します。
 [Input：Period]の[Default]を[1.0]に変更すると、1秒間隔で音が再生されます。
+
+![](/images/books/book-ue5_mathematical_programming/chapter02_bpm_and_tempo/2022-09-25-21-28-36.png)
+
 [Trigger Repeat：RepeatOut]はPeriodの値が[1.0]を1秒として、Periodで指定した時間(秒)で繰り返し実行されます。
 ノードのパラメータをInput化しておくと、Play後に値を変えて音を確認出来るのでInput化は非常に便利です。
 
-![](/images/books/ue5_metasound_createsound/chapter02_bpm_and_tempo/2022-02-19-18-47-24.png)
+![](/images/books/book-ue5_mathematical_programming/chapter02_bpm_and_tempo/2022-09-25-21-31-08.png)
 *Period 1.0の時、1秒ごとにTrigger Repeat：RepeatOutが実行される*
 
-[Play]後に、[Input：On Stop]のSimulateボタンをクリックすると[Trigger Repeat：Stop]が実行され、Trigger Repeatが停止します。
-
-![](/images/books/ue5_metasound_createsound/chapter02_bpm_and_tempo/2022-02-19-18-47-41.png)
-*[Play]後に、[Input：On Stop]のSimulateボタンをクリックすると
-[Trigger Repeat：Stop]が実行され、Trigger Repeatが停止*
-
-[Input：On Replay]のSimulateボタンを実行すると、[Trigger Repeat：Start]が実行され、再び[Trigger Repeat]が再生します。
-[Input：On Play]はPlayボタンが押された時に1度だけ実行される特別なノードので、再生後にStart、StopをTriggerで実行したい時には、[Trigger Any]ノードを使用します。
-
-![](/images/books/ue5_metasound_createsound/chapter02_bpm_and_tempo/2022-02-19-18-48-04.png)
-*[Input：On Replay]のSimulateボタンを実行すると、
-[Trigger Repeat：Start]が実行され、再び[Trigger Repeat]が再生
-[Input：On Play]はPlayボタンが押された時に1度だけ実行される特別なノード*
-
-[Trigger Repeat]ノードを組み込んだ状態です。
-
-![](/images/books/ue5_metasound_createsound/chapter02_bpm_and_tempo/2022-02-19-18-49-02.png)
+![](/images/books/book-ue5_mathematical_programming/chapter02_bpm_and_tempo/2022-09-25-21-34-44.png)
 *[Trigger Repeat]ノードを組み込んだ状態*
 
 https://twitter.com/posita33/status/1468951170828083202

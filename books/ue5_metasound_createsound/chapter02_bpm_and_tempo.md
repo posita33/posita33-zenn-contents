@@ -104,33 +104,35 @@ https://masatsumu-dtm.com/word_78-bpm/
 
 例)Secondsが1.0（秒）を出力する結果の時、Beat Multiplierが2.0の場合、Secondsは1.0 x 2.0 = 2.0(秒)になる
 
-![](/images/books/ue5_metasound_createsound/chapter02_bpm_and_tempo/2022-02-19-18-51-00.png)
+![](/images/books/ue5_metasound_createsound/chapter02_bpm_and_tempo/2022-09-28-07-59-22.png)
 *BPM To Seconds*
 
 BPM To Secondsの動きを確認できるようにノードを組んでいきます。
 [Trigger Repeat：Period]からドラッグ＆ドロップし、[BPM To Seconds]を追加します。
 
-![](/images/books/ue5_metasound_createsound/chapter02_bpm_and_tempo/2022-02-19-18-52-32.png)
+![](/images/books/ue5_metasound_createsound/chapter02_bpm_and_tempo/2022-09-28-08-00-49.png)
 *Trigger Repeat：Periodからドラッグ＆ドロップ > BPM To Seconds*
 
 [Input：Period]はもう使用しないので削除します。
 
-![](/images/books/ue5_metasound_createsound/chapter02_bpm_and_tempo/2022-02-19-18-52-54.png)
+![](/images/books/ue5_metasound_createsound/chapter02_bpm_and_tempo/2022-09-28-08-03-30.png)
 *Input：Periodは削除*
 
 [BPM To Seconds]のパラメータをすべてInput化します。
 
-![](/images/books/ue5_metasound_createsound/chapter02_bpm_and_tempo/2022-02-19-18-53-46.png)
+![](/images/books/ue5_metasound_createsound/chapter02_bpm_and_tempo/2022-09-28-08-05-07.png)
 *[BPM To Seconds]のパラメータをすべてInput化*
 
-Input化したら、それぞれInput Nameを変更します。
+Input化するとInputピンの名前が適用されます。
+必要に応じて分かりやすいInput Nameを変更します。
+今回は名前を変更せずに使用します。
 
-![](/images/books/ue5_metasound_createsound/chapter02_bpm_and_tempo/2022-02-19-18-54-07.png)
-*Input Nameを変更する*
+![](/images/books/ue5_metasound_createsound/chapter02_bpm_and_tempo/2022-09-28-08-06-48.png)
+*必要に応じてInput Nameを変更する*
 
 [BPM To Seconds]ノードを組み込んだ状態です。
 
-![](/images/books/ue5_metasound_createsound/chapter02_bpm_and_tempo/2022-02-19-18-54-37.png)
+![](/images/books/ue5_metasound_createsound/chapter02_bpm_and_tempo/2022-09-28-08-08-15.png)
 *[BPM To Seconds]ノードを組み込んだ状態*
 
 ### Trigger CounterでMIDI Noteを1小節ごとにRandomに変更する
@@ -139,12 +141,12 @@ Input化したら、それぞれInput Nameを変更します。
 [Input：On Play]から[Trigger Repeat]までの処理を左側に移動します。
 [Trigger Repeat：RepeatOut]からドラッグ＆ドロップし、[Trigger Counter]を追加します。
 
-![](/images/books/ue5_metasound_createsound/chapter02_bpm_and_tempo/2022-02-19-18-55-09.png)
+![](/images/books/ue5_metasound_createsound/chapter02_bpm_and_tempo/2022-09-28-08-10-45.png)
 *[Trigger Repeat：RepeatOut]からドラッグ＆ドロップ > [Trigger Counter]を追加*
 
 [Trigger Counter：On Reset]からドラッグ＆ドロップし、[Random(Int)]を追加します。
 
-![](/images/books/ue5_metasound_createsound/chapter02_bpm_and_tempo/2022-02-19-18-55-23.png)
+![](/images/books/ue5_metasound_createsound/chapter02_bpm_and_tempo/2022-09-28-08-12-45.png)
 *[Trigger Counter：On Reset]からドラッグ＆ドロップ > [Random(Int)]を追加*
 
 Random(int)のValueをMIDI Note Noとして使用するように設定します。
@@ -156,12 +158,12 @@ Reset Count：4
 Min：60
 Max：70
 
-![](/images/books/ue5_metasound_createsound/chapter02_bpm_and_tempo/2022-02-19-18-55-54.png)
+![](/images/books/ue5_metasound_createsound/chapter02_bpm_and_tempo/2022-09-28-08-15-31.png)
 *Random(int)のValueをMIDI Note Noとして使用するように設定*
 
 Reset Countを4にすると、5拍目が1拍目にリセットされます。
 
-![](/images/books/ue5_metasound_createsound/chapter02_bpm_and_tempo/2022-02-19-18-56-15.png)
+![](/images/books/ue5_metasound_createsound/chapter02_bpm_and_tempo/2022-09-28-08-15-57.png)
 *Reset Count 4の時のTrigger Counterの動き*
 
 MIDI Note No. 60～71はド4～シ4なので、Random (int)に60～71になる値を設定しています。
@@ -172,7 +174,7 @@ MIDI Note No. 60～71はド4～シ4なので、Random (int)に60～71になる�
 [Trigger Counter]ノードを組み込んだ状態です。
 これで、1小節ごとにTrigger CounterのResetが実行されRandomなMIDI Note Noが再生されるようになります。
 
-![](/images/books/ue5_metasound_createsound/chapter02_bpm_and_tempo/2022-02-19-18-56-46.png)
+![](/images/books/ue5_metasound_createsound/chapter02_bpm_and_tempo/2022-09-28-08-16-48.png)
 *[Trigger Counter]ノードを組み込んだ状態*
 
 https://twitter.com/posita33/status/1468978903637454848

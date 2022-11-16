@@ -14,7 +14,7 @@ Content/
      └ Audio/
 ```
 
-![](/images/books/ue5_metasound_createsound/chapter03_noise/2022-02-20-19-18-53.png)
+![](/images/books/ue5_metasound_createsound/chapter03_noise/2022-09-30-08-17-52.png)
 
 ### Noiseノードを再生する
 
@@ -23,23 +23,23 @@ Content/
 
 Content Drawerから右クリックし、MetaSound[MS_Noise01]を作成します。
 
-![](/images/books/ue5_metasound_createsound/chapter03_noise/2022-02-20-11-29-37.png)
-*右クリック > Sounds > > MetaSound > 名前を[MS_Noise01]に設定*
+![](/images/books/ue5_metasound_createsound/chapter03_noise/2022-09-30-08-28-44.png)
+*右クリック > Sounds > > MetaSound Source > 名前を[MS_Noise01]に設定*
 
 [Noise]ノードを追加します。
 
-![](/images/books/ue5_metasound_createsound/chapter03_noise/2022-02-20-11-30-34.png)
+![](/images/books/ue5_metasound_createsound/chapter03_noise/2022-10-01-09-31-55.png)
 *右クリック > Noise*
 
 [Noise：Audio]を[Output：Audio]に接続します。
 [Play]ボタンをクリックし、[Noise]ノードを再生します。
 
-![](/images/books/ue5_metasound_createsound/chapter03_noise/2022-02-20-11-31-02.png)
+![](/images/books/ue5_metasound_createsound/chapter03_noise/2022-10-01-09-33-51.png)
 
 [Noise：Audio]を[Output：Audio]に接続 > [Play]ボタンをクリックし、[Noise]ノードを再生
 NoseのTypeは2種類あるので、Typeの違いについて調べましょう。
 
-![](/images/books/ue5_metasound_createsound/chapter03_noise/2022-02-20-11-31-22.png)
+![](/images/books/ue5_metasound_createsound/chapter03_noise/2022-10-01-09-35-10.png)
 *NoiseのTypeは2種類[Pink Noise]、[White Noise]*
 
 ## Pink Noise
